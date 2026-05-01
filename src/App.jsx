@@ -428,59 +428,6 @@ function TypewriterRow({ word, answer, correct, animate, onDone }) {
   );
 }
 
-function MobileInput({ value, freeCount, canInput, onSubmit, onChange }) {
-  const inputRef = useRef(null);
-
-  // Refocus whenever canInput becomes true (new round started)
-  useEffect(() => {
-    if (canInput && inputRef.current) {
-      setTimeout(() => inputRef.current?.focus(), 100);
-    }
-  }, [canInput]);
-
-  return (
-    <div style={{ width:"100%", maxWidth:400, display:"flex", flexDirection:"column", alignItems:"center", gap:10 }}>
-      <input
-        ref={inputRef}
-        autoFocus
-        autoComplete="off"
-        autoCorrect="off"
-        autoCapitalize="characters"
-        spellCheck={false}
-        value={value}
-        onChange={e => {
-          if (!canInput) return;
-          const val = e.target.value.replace(/[^a-zA-Z]/g,"").toUpperCase().slice(0, freeCount);
-          onChange(val);
-        }}
-        onKeyUp={e => { if (e.key==="Enter" && canInput) onSubmit(); }}
-        onClick={() => inputRef.current?.focus()}
-        style={{
-          width:"100%", height:52,
-          background:"rgba(255,255,255,0.05)",
-          border:"1px solid #333",
-          borderRadius:8,
-          fontSize:22, fontWeight:700,
-          color:"#fff", textAlign:"center",
-          letterSpacing:6,
-          fontFamily:"'Courier New',monospace",
-          textTransform:"uppercase",
-          outline:"none",
-          caretColor:"#d4a843",
-        }}
-        placeholder="TAP TO TYPE"
-        readOnly={!canInput}
-      />
-      <button
-        onClick={() => { if (canInput) onSubmit(); }}
-        style={{ width:"100%", height:52, border:"1px solid #d4a843", borderRadius:6, background:"rgba(212,168,67,0.1)", color:"#d4a843", fontSize:13, fontWeight:700, letterSpacing:3, cursor:"pointer", fontFamily:"'Courier New',monospace" }}
-      >
-        ENTER
-      </button>
-    </div>
-  );
-}
-
 function AnswerDisplay({ length, revealed, input, shake }) {
   let freeIdx = 0;
   const cells = [];
@@ -545,7 +492,6 @@ const CSS = `
 
 // ─── MAIN APP ─────────────────────────────────────────────────────────────────
 export default function FiveToNine() {
-  const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
   const [started,   setStarted]   = useState(false);
   const [puzzle]    = useState(() => {
     // TO TEST A SPECIFIC PUZZLE: change PUZZLES[0] to PUZZLES[n]
@@ -573,7 +519,7 @@ export default function FiveToNine() {
   const round    = puzzle.rounds[roundIdx];
   const alen     = round?.answer.length ?? 0;
   const canInput = phase === "playing" && !animating;
-  const freeCount = alen - Object.keys(revealed).length;
+  const freeCount = Array.from({length: alen}, (_,i) => i).filter(i => !revealed[i]).length;
 
   // Assign revealIdx to each round based on puzzle index
   const revealIdxMap = [0, 1, 2, 3, 4];
@@ -658,7 +604,7 @@ export default function FiveToNine() {
       if (["Backspace"," "].includes(e.key)||/^[a-zA-Z]$/.test(e.key)) e.preventDefault();
       const k=e.key.toUpperCase();
       if (k==="BACKSPACE") setInput(s=>s.slice(0,-1));
-      else if (/^[A-Z]$/.test(k) && input.length<freeCount) setInput(s=>s+k);
+      else if (/^[A-Z]$/.test(k) && input.length < freeCount) setInput(s => s + k);
     };
     const onUp = (e) => {
       if (e.key!=="Enter") return;
@@ -674,7 +620,7 @@ export default function FiveToNine() {
     if (!canInput) return;
     if (k==="ENTER") submit();
     else if (k==="DEL") setInput(s=>s.slice(0,-1));
-    else if (input.length<freeCount) setInput(s=>s+k);
+    else if (input.length < freeCount) setInput(s => s + k);
   };
 
   const submitAnagram = () => {
@@ -883,39 +829,25 @@ export default function FiveToNine() {
             <TypewriterRow key={`r${roundIdx}-a${i}`} word={a.word} answer={round.answer} correct={a.correct} animate={i===latestIdx&&animating} onDone={i===latestIdx?onRevealDone:undefined} />
           ))}
         </div>
-        {canInput && !isMobile && <div style={{ marginBottom:16 }}><AnswerDisplay length={alen} revealed={revealed} input={input} shake={shake} /></div>}
-        {canInput && isMobile && <div style={{ marginBottom:8 }} />}
+        {canInput && <div style={{ marginBottom:12 }}><AnswerDisplay length={alen} revealed={revealed} input={input} shake={shake} /></div>}
         <div style={{ display:"flex", justifyContent:"center", marginBottom:20, gap:10, alignItems:"center" }}>
           <button onClick={takeHint} disabled={!canInput||hintsLeft<=0} style={{ background:"transparent", border:`1px solid ${canInput&&hintsLeft>0?"#d4a843":"#333"}`, color:canInput&&hintsLeft>0?"#d4a843":"#555", borderRadius:4, padding:"8px 20px", fontSize:10, fontWeight:700, letterSpacing:2, cursor:canInput&&hintsLeft>0?"pointer":"default", fontFamily:"'Courier New',monospace" }}>
             HINT (−{HINT_PENALTY}s)
           </button>
           <div style={{ fontSize:11, color:"#666", letterSpacing:1 }}>{hintsLeft}/{MAX_HINTS} left</div>
         </div>
-        {isMobile ? (
-          /* Mobile: visible tappable input that stays focused */
-          <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:10 }}>
-            <MobileInput
-              value={input}
-              freeCount={freeCount}
-              canInput={canInput}
-              onSubmit={submit}
-              onChange={setInput}
-            />
-          </div>
-        ) : (
-          /* Desktop: on-screen keyboard */
-          <div style={{ display:"flex", flexDirection:"column", gap:6, alignItems:"center" }}>
-            {["QWERTYUIOP","ASDFGHJKL","ZXCVBNM"].map((row,ri)=>(
-              <div key={ri} style={{ display:"flex", gap:4 }}>
-                {ri===2 && <button onClick={submit} style={{ minWidth:50, height:44, border:"1px solid #2a2a2a", borderRadius:4, background:"rgba(212,168,67,0.08)", color:"#d4a843", fontSize:9, fontWeight:700, letterSpacing:1, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>ENTER</button>}
-                {row.split("").map(k=>(
-                  <button key={k} onClick={()=>pressKey(k)} style={{ width:30, height:44, borderRadius:4, border:"1px solid #333", background:"rgba(255,255,255,0.04)", color:"#ddd", fontSize:12, fontWeight:700, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>{k}</button>
-                ))}
-                {ri===2 && <button onClick={()=>pressKey("DEL")} style={{ minWidth:50, height:44, border:"1px solid #333", borderRadius:4, background:"rgba(255,255,255,0.04)", color:"#aaa", fontSize:16, cursor:"pointer" }}>&#9003;</button>}
-              </div>
-            ))}
-          </div>
-        )}
+        {/* Unified responsive keyboard — works on all devices */}
+        <div style={{ display:"flex", flexDirection:"column", gap:5, alignItems:"center" }}>
+          {["QWERTYUIOP","ASDFGHJKL","ZXCVBNM"].map((row,ri)=>(
+            <div key={ri} style={{ display:"flex", gap:4, width:"100%" , justifyContent:"center" }}>
+              {ri===2 && <button onClick={submit} style={{ flex:"0 0 auto", minWidth:56, height:50, border:"1px solid #2a2a2a", borderRadius:6, background:"rgba(212,168,67,0.1)", color:"#d4a843", fontSize:10, fontWeight:700, letterSpacing:0.5, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation" }}>ENTER</button>}
+              {row.split("").map(k=>(
+                <button key={k} onClick={()=>pressKey(k)} style={{ flex:"1 1 0", maxWidth:38, minWidth:28, height:50, borderRadius:6, border:"1px solid #333", background:"rgba(255,255,255,0.06)", color:"#ddd", fontSize:15, fontWeight:700, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation" }}>{k}</button>
+              ))}
+              {ri===2 && <button onClick={()=>pressKey("DEL")} style={{ flex:"0 0 auto", minWidth:56, height:50, border:"1px solid #333", borderRadius:6, background:"rgba(255,255,255,0.06)", color:"#aaa", fontSize:18, cursor:"pointer", touchAction:"manipulation" }}>⌫</button>}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
