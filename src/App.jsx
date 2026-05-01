@@ -5,14 +5,14 @@ import { useState, useEffect, useCallback, useRef } from "react";
 const PUZZLES = [
   {
     rounds: [
-      { clue: "Board game of kings and pawns", answer: "CHESS",     revealIdx: 3 }, // S
-      { clue: "Italian city near Mount Vesuvius", answer: "NAPLES",  revealIdx: 2 }, // P
-      { clue: "The Emerald Isle", answer: "IRELAND",                 revealIdx: 0 }, // I
-      { clue: "French emperor exiled to Elba", answer: "NAPOLEON",   revealIdx: 0 }, // N
-      { clue: "Spanish city famous for Gaudi's architecture", answer: "BARCELONA", revealIdx: 4 }, // E
+      { clue: "Cambridge graduate", answer: "RONAN",     revealIdx: 0 },           // R
+      { clue: "Tea Party location from 1773", answer: "BOSTON",   revealIdx: [0,2] }, // B, S
+      { clue: "Cillian and Conall's garden?", answer: "WICKLOW",  revealIdx: 4 },   // L
+      { clue: "Fermanagh's nickname where Maeve and Maia play", answer: "LAKELAND", revealIdx: 3 }, // E
+      { clue: "Fiadh's oil refinery town", answer: "WHITEGATE", revealIdx: 4 },     // E
     ],
-    anagram: { letters:["E","S","P","N","I"], answer:"SPINE", clue:"noun · the backbone; also strength of character or resolve" },
-    quote: `"It is not the mountain we conquer but ourselves — courage is the SPINE of every great achievement." — Edmund Hillary`,
+    anagram: { letters:["S","R","E","B","L","E"], answer:"REBELS", clue:"Lunatic Cork supporters shout this at the hurling!" },
+    quote: `"Here's to the crazy ones, the misfits, the REBELS — the ones who see things differently." — Steve Jobs`,
   },
   {
     rounds: [
@@ -353,7 +353,8 @@ const TOTAL_SECONDS = 3 * 60;
 function getDailyPuzzle() {
   const today = new Date();
   const dayNum = Math.floor((today - new Date("2026-04-30")) / 86400000);
-  const puzzle = PUZZLES[dayNum % PUZZLES.length];
+  // TEMPORARY: force puzzle 0 (family quiz) for testing
+  const puzzle = PUZZLES[0];
   // Shuffle anagram letters so they never spell the answer in order
   const letters = [...puzzle.anagram.letters];
   // Keep shuffling until it doesn't spell the answer
@@ -451,12 +452,14 @@ function AnswerDisplay({ length, revealed, input, shake }) {
 }
 
 function RoundSummary({ r, i }) {
+  // revealIdx can be a single number or an array
+  const highlights = Array.isArray(r.revealIdx) ? r.revealIdx : [r.revealIdx];
   return (
     <div style={{ display:"flex", alignItems:"center", gap:10, padding:"7px 12px", background:r.solved?"rgba(0,255,136,0.04)":"rgba(255,60,60,0.04)", border:`1px solid ${r.solved?"rgba(0,255,136,0.15)":"rgba(255,60,60,0.12)"}`, borderRadius:8, marginBottom:5 }}>
       <div style={{ fontSize:10, color:"#444", width:16, flexShrink:0 }}>{i+1}</div>
       <div style={{ flex:1, display:"flex", gap:3, flexWrap:"wrap" }}>
         {r.answer.split("").map((ch,ci) => {
-          const hl = ci===r.revealIdx;
+          const hl = highlights.includes(ci);
           return <div key={ci} style={{ width:20, height:20, borderRadius:3, border:`1px solid ${hl?"#d4a843":r.solved?"rgba(0,255,136,0.25)":"rgba(255,255,255,0.08)"}`, background:hl?"rgba(212,168,67,0.15)":"transparent", display:"flex", alignItems:"center", justifyContent:"center", fontSize:9, fontWeight:700, color:hl?"#d4a843":r.solved?"#00ff88":"#555", fontFamily:"'Courier New',monospace", boxShadow:hl?"0 0 6px rgba(212,168,67,0.4)":"none" }}>{ch}</div>;
         })}
       </div>
@@ -568,7 +571,7 @@ export default function FiveToNine() {
         setTimeout(() => {
           // Use revealIdx from puzzle data if present, else middle letter
           const revIdx = round.revealIdx !== undefined ? round.revealIdx : Math.floor(round.answer.length / 2);
-          const completedRound = { ...round, solved:true, revealIdx: revIdx };
+          const completedRound = { ...round, solved:true, revealIdx: revIdx }; // preserves array or single
           setDone(d => [...d, completedRound]);
           setAttempts([]);
           setInput("");
@@ -798,7 +801,7 @@ export default function FiveToNine() {
       <div style={{ display:"flex", gap:10, justifyContent:"center", marginBottom:12 }}>
         {puzzle.anagram.letters.map((l,i)=><div key={i} style={{ width:50, height:50, border:"2px solid #d4a843", borderRadius:4, display:"flex", alignItems:"center", justifyContent:"center", fontSize:22, fontWeight:700, color:"#d4a843", fontFamily:"'Courier New',monospace", animation:`tileGlow 2s ease-in-out ${i*0.2}s infinite` }}>{l}</div>)}
       </div>
-      <div style={{ fontSize:11, color:"#777", fontStyle:"italic", marginBottom:20, textAlign:"center", maxWidth:340, lineHeight:1.7 }}>{puzzle.anagram.clue}</div>
+      <div style={{ fontSize:15, color:"#aaa", fontStyle:"italic", marginBottom:20, textAlign:"center", maxWidth:380, lineHeight:1.7 }}>{puzzle.anagram.clue}</div>
       <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:12, animation:anShake?"shake 0.4s ease":"none" }}>
         <input autoFocus value={anInput} onChange={e=>setAnInput(e.target.value.replace(/[^a-zA-Z]/g,"").toUpperCase().slice(0,puzzle.anagram.answer.length))} onKeyDown={e=>e.key==="Enter"&&submitAnagram()} placeholder={"_ ".repeat(puzzle.anagram.answer.length).trim()} style={{ background:"transparent", border:`1px solid ${anWrong?"#ff4444":"#d4a843"}`, padding:"12px 20px", fontSize:22, color:"#d4a843", textAlign:"center", letterSpacing:8, fontFamily:"'Courier New',monospace", fontWeight:700, width:260, outline:"none", textTransform:"uppercase", borderRadius:4 }} />
         <button onClick={submitAnagram} style={{ background:"transparent", border:"1px solid #d4a843", color:"#d4a843", borderRadius:4, padding:"10px 32px", fontSize:11, fontWeight:700, letterSpacing:3, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>SOLVE</button>
@@ -831,10 +834,10 @@ export default function FiveToNine() {
         </div>
         {canInput && <div style={{ marginBottom:12 }}><AnswerDisplay length={alen} revealed={revealed} input={input} shake={shake} /></div>}
         <div style={{ display:"flex", justifyContent:"center", marginBottom:20, gap:10, alignItems:"center" }}>
-          <button onClick={takeHint} disabled={!canInput||hintsLeft<=0} style={{ background:"transparent", border:`1px solid ${canInput&&hintsLeft>0?"#d4a843":"#333"}`, color:canInput&&hintsLeft>0?"#d4a843":"#555", borderRadius:4, padding:"8px 20px", fontSize:10, fontWeight:700, letterSpacing:2, cursor:canInput&&hintsLeft>0?"pointer":"default", fontFamily:"'Courier New',monospace" }}>
+          <button onClick={takeHint} disabled={!canInput||hintsLeft<=0} style={{ background:canInput&&hintsLeft>0?"rgba(212,168,67,0.1)":"transparent", border:`2px solid ${canInput&&hintsLeft>0?"#d4a843":"#444"}`, color:canInput&&hintsLeft>0?"#d4a843":"#666", borderRadius:6, padding:"10px 24px", fontSize:11, fontWeight:700, letterSpacing:2, cursor:canInput&&hintsLeft>0?"pointer":"default", fontFamily:"'Courier New',monospace" }}>
             HINT (−{HINT_PENALTY}s)
           </button>
-          <div style={{ fontSize:11, color:"#666", letterSpacing:1 }}>{hintsLeft}/{MAX_HINTS} left</div>
+          <div style={{ fontSize:12, color:"#aaa", letterSpacing:1, fontWeight:700 }}>{hintsLeft}/{MAX_HINTS} left</div>
         </div>
         {/* Unified responsive keyboard — works on all devices */}
         <div style={{ display:"flex", flexDirection:"column", gap:5, alignItems:"center" }}>
