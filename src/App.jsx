@@ -363,7 +363,7 @@ const TOTAL_SECONDS = 3 * 60;
 
 function getDailyPuzzle() {
   const today = new Date();
-  const dayNum = Math.floor((today - new Date("2026-04-30")) / 86400000);
+  const dayNum = Math.floor((today - new Date("2026-05-01")) / 86400000);
   const puzzle = PUZZLES[dayNum % PUZZLES.length];
   // Shuffle anagram letters so they never spell the answer in order
   const letters = [...puzzle.anagram.letters];
