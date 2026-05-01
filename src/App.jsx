@@ -16,6 +16,17 @@ const PUZZLES = [
   },
   {
     rounds: [
+      { clue: "Golfing Tiger",                        answer: "WOODS",     revealIdx: 1 }, // O
+      { clue: "Capital of Colombia",                  answer: "BOGOTA",    revealIdx: 0 }, // B
+      { clue: "IT Valley in California",              answer: "SILICON",   revealIdx: 5 }, // O
+      { clue: "Country of Mount Kilimanjaro",         answer: "TANZANIA",  revealIdx: 0 }, // T
+      { clue: "Third US President, surname",          answer: "JEFFERSON", revealIdx: 6 }, // S
+    ],
+    anagram: { letters:["O","T","B","O","S"], answer:"BOOST", clue:"noun · a push upward; something that increases power, confidence or success" },
+    quote: `"Small daily improvements are the BOOST that compounds into extraordinary results." — James Clear`,
+  },
+  {
+    rounds: [
       { clue: "Capital of France", answer: "PARIS" },
       { clue: "Largest country by land area", answer: "RUSSIA" },
       { clue: "Farthest planet from the Sun", answer: "NEPTUNE" },
@@ -353,8 +364,7 @@ const TOTAL_SECONDS = 3 * 60;
 function getDailyPuzzle() {
   const today = new Date();
   const dayNum = Math.floor((today - new Date("2026-04-30")) / 86400000);
-  // TEMPORARY: force puzzle 0 (family quiz) for testing
-  const puzzle = PUZZLES[0];
+  const puzzle = PUZZLES[dayNum % PUZZLES.length];
   // Shuffle anagram letters so they never spell the answer in order
   const letters = [...puzzle.anagram.letters];
   // Keep shuffling until it doesn't spell the answer
