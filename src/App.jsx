@@ -348,7 +348,7 @@ const PUZZLES = [
 
 const MAX_HINTS     = 3;
 const HINT_PENALTY  = 10;
-const TOTAL_SECONDS = 5 * 60;
+const TOTAL_SECONDS = 3 * 60;
 
 function getDailyPuzzle() {
   const today = new Date();
@@ -372,8 +372,31 @@ function formatTime(s) {
   return `${Math.floor(s / 60)}:${(s % 60).toString().padStart(2, "0")}`;
 }
 
+function evaluateGuess(guess, answer) {
+  const result = Array(answer.length).fill("absent");
+  const used   = Array(answer.length).fill(false);
+  for (let i = 0; i < answer.length; i++) {
+    if (guess[i] === answer[i]) { result[i] = "correct"; used[i] = true; }
+  }
+  for (let i = 0; i < answer.length; i++) {
+    if (result[i] === "correct") continue;
+    for (let j = 0; j < answer.length; j++) {
+      if (!used[j] && guess[i] === answer[j]) { result[i] = "present"; used[j] = true; break; }
+    }
+  }
+  return result;
+}
+
 // ─── COMPONENTS ───────────────────────────────────────────────────────────────
-function TypewriterRow({ word, correct, animate, onDone }) {
+// Calculate tile size based on word length and screen width
+function tileSize(wordLen) {
+  const screen = typeof window !== "undefined" ? window.innerWidth : 400;
+  const available = Math.min(screen - 48, 560);
+  const size = Math.floor((available - (wordLen - 1) * 5) / wordLen);
+  return Math.min(52, Math.max(36, size));
+}
+
+function TypewriterRow({ word, answer, correct, animate, onDone }) {
   const [count,   setCount]   = useState(animate ? 0 : word.length);
   const [flipped, setFlipped] = useState(!animate);
   useEffect(() => {
@@ -381,14 +404,22 @@ function TypewriterRow({ word, correct, animate, onDone }) {
     if (count < word.length) { const t = setTimeout(() => setCount(c => c+1), 100); return () => clearTimeout(t); }
     else { const t = setTimeout(() => { setFlipped(true); onDone?.(); }, 300); return () => clearTimeout(t); }
   }, [count, word.length, animate, onDone]);
+  const evaluation = correct ? Array(word.length).fill("correct") : evaluateGuess(word, answer);
+  const sz = tileSize(word.length);
+  const fs = Math.max(13, Math.min(20, Math.floor(sz * 0.44)));
   return (
     <div style={{ display:"flex", gap:5, justifyContent:"center", marginBottom:6 }}>
       {word.split("").map((ch, i) => {
         const shown = i < count;
-        let color="#eee", border="#555", content=shown?ch:"";
-        if (flipped) { color=correct?"#00ff88":"#ff4444"; border=correct?"#00ff88":"#ff4444"; content=ch; }
-        else if (!shown) { border="#1a1a1a"; color="transparent"; }
-        return <div key={i} style={{ width:42, height:42, border:`2px solid ${border}`, borderRadius:4, display:"flex", alignItems:"center", justifyContent:"center", fontSize:17, fontWeight:700, color, fontFamily:"'Courier New',monospace", transition:flipped?`border-color 0.15s ${i*0.04}s,color 0.15s ${i*0.04}s`:"none", position:"relative" }}>
+        const ev = evaluation[i];
+        let color="#eee", border="#555", bg="transparent", content=shown?ch:"";
+        if (flipped) {
+          if (ev==="correct")      { color="#00ff88"; border="#00ff88"; bg="rgba(0,255,136,0.12)"; }
+          else if (ev==="present") { color="#ffaa00"; border="#ffaa00"; bg="rgba(255,170,0,0.12)"; }
+          else                     { color="#ff4444"; border="#ff4444"; bg="rgba(255,68,68,0.08)"; }
+          content=ch;
+        } else if (!shown) { border="#1a1a1a"; color="transparent"; }
+        return <div key={i} style={{ width:sz, height:sz, border:`2px solid ${border}`, borderRadius:4, background:bg, display:"flex", alignItems:"center", justifyContent:"center", fontSize:fs, fontWeight:700, color, fontFamily:"'Courier New',monospace", transition:flipped?`border-color 0.15s ${i*0.04}s,color 0.15s ${i*0.04}s,background 0.15s ${i*0.04}s`:"none", position:"relative" }}>
           {content}
           {animate && !flipped && i===count && <div style={{ position:"absolute", right:3, top:7, bottom:7, width:2, background:"#d4a843", animation:"blink 0.6s step-end infinite" }} />}
         </div>;
@@ -400,6 +431,8 @@ function TypewriterRow({ word, correct, animate, onDone }) {
 function AnswerDisplay({ length, revealed, input, shake }) {
   let freeIdx = 0;
   const cells = [];
+  const sz = tileSize(length);
+  const fs = Math.max(13, Math.min(20, Math.floor(sz * 0.44)));
   for (let i = 0; i < length; i++) {
     const hinted = revealed[i];
     if (hinted) { cells.push({ i, hinted, ch:hinted, isCursor:false }); }
@@ -408,7 +441,7 @@ function AnswerDisplay({ length, revealed, input, shake }) {
   return (
     <div style={{ display:"flex", gap:5, justifyContent:"center", marginBottom:6, animation:shake?"shake 0.4s ease":"none" }}>
       {cells.map(({ i, hinted, ch, isCursor }) => (
-        <div key={i} style={{ width:42, height:42, border:`2px solid ${hinted?"#d4a843":ch?"#888":"#2a2a2a"}`, borderRadius:4, display:"flex", alignItems:"center", justifyContent:"center", fontSize:17, fontWeight:700, color:hinted?"#d4a843":"#eee", fontFamily:"'Courier New',monospace", background:hinted?"rgba(212,168,67,0.1)":"transparent", position:"relative" }}>
+        <div key={i} style={{ width:sz, height:sz, border:`2px solid ${hinted?"#d4a843":ch?"#888":"#2a2a2a"}`, borderRadius:4, display:"flex", alignItems:"center", justifyContent:"center", fontSize:fs, fontWeight:700, color:hinted?"#d4a843":"#eee", fontFamily:"'Courier New',monospace", background:hinted?"rgba(212,168,67,0.1)":"transparent", position:"relative" }}>
           {ch}
           {!hinted && isCursor && <div style={{ position:"absolute", right:3, top:7, bottom:7, width:2, background:"#d4a843", animation:"blink 0.6s step-end infinite" }} />}
         </div>
@@ -459,6 +492,8 @@ const CSS = `
 
 // ─── MAIN APP ─────────────────────────────────────────────────────────────────
 export default function FiveToNine() {
+  const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+  const [started,   setStarted]   = useState(false);
   const [puzzle]    = useState(() => {
     // TO TEST A SPECIFIC PUZZLE: change PUZZLES[0] to PUZZLES[n]
     // TO GO LIVE: uncomment getDailyPuzzle() and remove the line below
@@ -631,6 +666,63 @@ export default function FiveToNine() {
     </button>
   );
 
+  // ── LANDING PAGE ──────────────────────────────────────────────────────────
+  if (!started) return (
+    <div style={{ minHeight:"100vh", background:"#080808", fontFamily:"'Courier New',monospace", color:"#fff", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:"24px 20px" }}>
+      <style>{CSS}</style>
+      <div style={{ width:"100%", maxWidth:480, textAlign:"center" }}>
+        {/* Title */}
+        <h1 style={{ fontSize:72, letterSpacing:12, color:"#d4a843", fontFamily:"'Bebas Neue',sans-serif", animation:"flicker 8s infinite", lineHeight:1, marginBottom:8 }}>5 TO 9</h1>
+        <p style={{ fontSize:11, letterSpacing:4, color:"#555", marginBottom:40, textTransform:"uppercase" }}>Daily General Knowledge</p>
+
+        {/* How to play */}
+        <div style={{ border:"1px solid #1a1a1a", borderRadius:12, padding:"24px 20px", marginBottom:32, textAlign:"left" }}>
+          <div style={{ fontSize:9, letterSpacing:3, color:"#d4a843", marginBottom:18, textTransform:"uppercase" }}>How to Play</div>
+          <div style={{ display:"flex", flexDirection:"column", gap:14 }}>
+            {[
+              ["🧠", "5 general knowledge questions"],
+              ["📏", "Answers grow from 5 to 9 letters"],
+              ["💡", "Use hints if you're stuck — each costs 10 seconds"],
+              ["🔤", "Spot the gold letters to solve the final anagram"],
+              ["⏱️", "You have 3 minutes — good luck!"],
+            ].map(([icon, text], i) => (
+              <div key={i} style={{ display:"flex", alignItems:"flex-start", gap:12 }}>
+                <span style={{ fontSize:18, flexShrink:0 }}>{icon}</span>
+                <span style={{ fontSize:13, color:"#aaa", lineHeight:1.5 }}>{text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Colour guide */}
+        <div style={{ border:"1px solid #1a1a1a", borderRadius:12, padding:"18px 20px", marginBottom:36, textAlign:"left" }}>
+          <div style={{ fontSize:9, letterSpacing:3, color:"#d4a843", marginBottom:14, textTransform:"uppercase" }}>Letter Colours</div>
+          <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
+            {[
+              ["#00ff88", "Correct letter, correct position"],
+              ["#ffaa00", "Correct letter, wrong position"],
+              ["#ff4444", "Letter not in the answer"],
+            ].map(([color, label]) => (
+              <div key={color} style={{ display:"flex", alignItems:"center", gap:12 }}>
+                <div style={{ width:28, height:28, border:`2px solid ${color}`, borderRadius:4, background:`${color}20`, flexShrink:0 }} />
+                <span style={{ fontSize:12, color:"#888" }}>{label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Start button */}
+        <button
+          onClick={() => setStarted(true)}
+          style={{ width:"100%", height:58, background:"linear-gradient(135deg,#a07d20,#d4a843)", border:"none", borderRadius:8, fontSize:16, fontWeight:700, letterSpacing:4, cursor:"pointer", color:"#000", fontFamily:"'Bebas Neue',sans-serif" }}
+        >
+          START TODAY'S PUZZLE
+        </button>
+        <p style={{ color:"#2a2a2a", marginTop:20, fontSize:9, letterSpacing:2 }}>NEW PUZZLE EVERY DAY</p>
+      </div>
+    </div>
+  );
+
   // ── TIMEOUT ───────────────────────────────────────────────────────────────
   if (phase === "timeout") {
     const all = [...done, ...puzzle.rounds.slice(done.length).map(r=>({...r,solved:false,revealIdx:0}))];
@@ -735,7 +827,7 @@ export default function FiveToNine() {
         </div>
         <div style={{ marginBottom:8 }}>
           {attempts.map((a,i)=>(
-            <TypewriterRow key={`r${roundIdx}-a${i}`} word={a.word} correct={a.correct} animate={i===latestIdx&&animating} onDone={i===latestIdx?onRevealDone:undefined} />
+            <TypewriterRow key={`r${roundIdx}-a${i}`} word={a.word} answer={round.answer} correct={a.correct} animate={i===latestIdx&&animating} onDone={i===latestIdx?onRevealDone:undefined} />
           ))}
         </div>
         {canInput && <div style={{ marginBottom:16 }}><AnswerDisplay length={alen} revealed={revealed} input={input} shake={shake} /></div>}
@@ -745,17 +837,40 @@ export default function FiveToNine() {
           </button>
           <div style={{ fontSize:11, color:"#666", letterSpacing:1 }}>{hintsLeft}/{MAX_HINTS} left</div>
         </div>
-        <div style={{ display:"flex", flexDirection:"column", gap:6, alignItems:"center" }}>
-          {["QWERTYUIOP","ASDFGHJKL","ZXCVBNM"].map((row,ri)=>(
-            <div key={ri} style={{ display:"flex", gap:4 }}>
-              {ri===2 && <button onClick={submit} style={{ minWidth:50, height:44, border:"1px solid #2a2a2a", borderRadius:4, background:"rgba(212,168,67,0.08)", color:"#d4a843", fontSize:9, fontWeight:700, letterSpacing:1, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>ENTER</button>}
-              {row.split("").map(k=>(
-                <button key={k} onClick={()=>pressKey(k)} style={{ width:30, height:44, borderRadius:4, border:"1px solid #333", background:"rgba(255,255,255,0.04)", color:"#ddd", fontSize:12, fontWeight:700, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>{k}</button>
-              ))}
-              {ri===2 && <button onClick={()=>pressKey("DEL")} style={{ minWidth:50, height:44, border:"1px solid #333", borderRadius:4, background:"rgba(255,255,255,0.04)", color:"#aaa", fontSize:16, cursor:"pointer" }}>&#9003;</button>}
-            </div>
-          ))}
-        </div>
+        {isMobile ? (
+          /* Mobile: use native keyboard with hidden input */
+          <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:10 }}>
+            <input
+              autoFocus
+              value={input}
+              onChange={e => {
+                if (!canInput) return;
+                const val = e.target.value.replace(/[^a-zA-Z]/g,"").toUpperCase().slice(0, freeCount);
+                setInput(val);
+              }}
+              onKeyUp={e => { if (e.key==="Enter" && canInput) submit(); }}
+              style={{ position:"absolute", opacity:0, width:1, height:1, pointerEvents:"none" }}
+              readOnly={!canInput}
+            />
+            <button onClick={submit} style={{ width:"100%", maxWidth:300, height:52, border:"1px solid #d4a843", borderRadius:6, background:"rgba(212,168,67,0.1)", color:"#d4a843", fontSize:13, fontWeight:700, letterSpacing:3, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>
+              ENTER
+            </button>
+            <div style={{ fontSize:10, color:"#555", letterSpacing:1 }}>Type on your keyboard then tap ENTER</div>
+          </div>
+        ) : (
+          /* Desktop: on-screen keyboard */
+          <div style={{ display:"flex", flexDirection:"column", gap:6, alignItems:"center" }}>
+            {["QWERTYUIOP","ASDFGHJKL","ZXCVBNM"].map((row,ri)=>(
+              <div key={ri} style={{ display:"flex", gap:4 }}>
+                {ri===2 && <button onClick={submit} style={{ minWidth:50, height:44, border:"1px solid #2a2a2a", borderRadius:4, background:"rgba(212,168,67,0.08)", color:"#d4a843", fontSize:9, fontWeight:700, letterSpacing:1, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>ENTER</button>}
+                {row.split("").map(k=>(
+                  <button key={k} onClick={()=>pressKey(k)} style={{ width:30, height:44, borderRadius:4, border:"1px solid #333", background:"rgba(255,255,255,0.04)", color:"#ddd", fontSize:12, fontWeight:700, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>{k}</button>
+                ))}
+                {ri===2 && <button onClick={()=>pressKey("DEL")} style={{ minWidth:50, height:44, border:"1px solid #333", borderRadius:4, background:"rgba(255,255,255,0.04)", color:"#aaa", fontSize:16, cursor:"pointer" }}>&#9003;</button>}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
