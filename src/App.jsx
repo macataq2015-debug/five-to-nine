@@ -357,6 +357,46 @@ const PUZZLES = [
   },
 ];
 
+// ─── STREAK SYSTEM ───────────────────────────────────────────────────────────
+function getToday() {
+  const d = new Date();
+  return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+}
+
+function getStreak() {
+  try {
+    const data = JSON.parse(localStorage.getItem("ftn_streak") || "{}");
+    return data;
+  } catch { return {}; }
+}
+
+function saveStreak(won) {
+  try {
+    const today = getToday();
+    const data = getStreak();
+    const yesterday = (() => {
+      const d = new Date();
+      d.setDate(d.getDate() - 1);
+      return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
+    })();
+
+    if (data.lastPlayed === today) return data; // already saved today
+
+    const newStreak = won
+      ? (data.lastPlayed === yesterday ? (data.current || 0) + 1 : 1)
+      : 0;
+
+    const newData = {
+      current: newStreak,
+      best: Math.max(newStreak, data.best || 0),
+      lastPlayed: today,
+      lastWon: won,
+    };
+    localStorage.setItem("ftn_streak", JSON.stringify(newData));
+    return newData;
+  } catch { return { current: 0, best: 0 }; }
+}
+
 const MAX_HINTS     = 3;
 const HINT_PENALTY  = 10;
 const TOTAL_SECONDS = 3 * 60;
@@ -479,13 +519,14 @@ function RoundSummary({ r, i }) {
 }
 
 // Share result — no answers revealed
-function buildShareText(done, timeLeft, anagramSolved) {
+function buildShareText(done, timeLeft, anagramSolved, streak) {
   const taken = TOTAL_SECONDS - timeLeft;
   const mins = Math.floor(taken/60), secs = taken%60;
   const today = new Date().toLocaleDateString("en-GB", { day:"numeric", month:"short" });
   const boxes = done.map(r => r.solved ? "✅" : "❌").join(" ");
   const anBox = anagramSolved ? "🔤✅" : "🔤❌";
-  return `5 TO 9 · ${today}\n${boxes} ${anBox}\n⏱ ${mins}m ${secs}s\nfive-to-nine.vercel.app`;
+  const streakLine = streak && streak.current > 1 ? `\n🔥 ${streak.current} day streak` : "";
+  return `5 TO 9 · ${today}\n${boxes} ${anBox}\n⏱ ${mins}m ${secs}s${streakLine}\nfive-to-nine.vercel.app`;
 }
 
 const CSS = `
@@ -506,6 +547,7 @@ const CSS = `
 // ─── MAIN APP ─────────────────────────────────────────────────────────────────
 export default function FiveToNine() {
   const [started,   setStarted]   = useState(false);
+  const [streak,    setStreak]    = useState(() => getStreak());
   const [puzzle]    = useState(() => {
     // TO TEST A SPECIFIC PUZZLE: change PUZZLES[0] to PUZZLES[n]
     // TO GO LIVE: uncomment getDailyPuzzle() and remove the line below
@@ -540,7 +582,12 @@ export default function FiveToNine() {
   useEffect(() => {
     if (!started) return; // don't start timer until user clicks Start
     if (phase === "win" || phase === "timeout") return;
-    if (timeLeft <= 0) { setPhase("timeout"); return; }
+    if (timeLeft <= 0) {
+      saveStreak(false);
+      setStreak(getStreak());
+      setPhase("timeout");
+      return;
+    }
     const id = setTimeout(() => setTimeLeft(t => t-1), 1000);
     return () => clearTimeout(id);
   }, [timeLeft, phase, started]);
@@ -640,6 +687,8 @@ export default function FiveToNine() {
   const submitAnagram = () => {
     if (anInput.toUpperCase().trim()===puzzle.anagram.answer) {
       setAnagramSolved(true);
+      const newStreak = saveStreak(true);
+      setStreak(newStreak);
       setTimeout(()=>setPhase("win"),800);
     } else {
       setAnWrong(true); setAnShake(true);
@@ -648,7 +697,7 @@ export default function FiveToNine() {
   };
 
   const handleShare = () => {
-    const text = buildShareText(done, timeLeft, anagramSolved);
+    const text = buildShareText(done, timeLeft, anagramSolved, streak);
     const waUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
     // Try WhatsApp first on mobile, fallback to clipboard
     const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
