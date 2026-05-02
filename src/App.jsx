@@ -904,6 +904,12 @@ export default function FiveToNine() {
           <div style={{ display:"flex", flexDirection:"column", alignItems:"center", marginBottom:8 }}>
             <h2 style={{ fontSize:52, letterSpacing:6, color:t.color, fontFamily:"'Bebas Neue',sans-serif", margin:"16px 0 4px", textShadow:`0 0 20px ${t.color}` }}>{t.title}</h2>
             <p style={{ color:"#888", fontSize:11, letterSpacing:2, marginBottom:4 }}>⏱ {Math.floor(timeLeft/60)}m {timeLeft%60}s remaining</p>
+            {streak.current > 0 && (
+              <div style={{ display:"flex", alignItems:"center", gap:6, marginTop:4 }}>
+                <span style={{ fontSize:16 }}>👑</span>
+                <span style={{ fontSize:14, color:"#d4a843", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:2 }}>{streak.current} DAY STREAK {streak.current===streak.best&&streak.current>1?"🏆":""}</span>
+              </div>
+            )}
           </div>
         ); })()}
         <div style={{ fontSize:26, letterSpacing:10, fontWeight:700, color:"#00ff88", border:"1px solid rgba(0,150,70,0.4)", borderRadius:6, padding:"14px 28px", marginBottom:16, fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
@@ -921,14 +927,8 @@ export default function FiveToNine() {
             })}
           </p>
         </div>
-        {/* Streak and Share - identical size */}
-        <div style={{ width:"100%", maxWidth:440, display:"flex", flexDirection:"column", gap:8, marginBottom:8 }}>
-          {streak.current > 0 && (
-            <div style={{ display:"flex", alignItems:"center", justifyContent:"center", gap:10, width:"100%", height:56, border:"1px solid rgba(212,168,67,0.3)", borderRadius:10, background:"rgba(212,168,67,0.08)", boxSizing:"border-box" }}>
-              <span style={{ fontSize:22 }}>👑</span>
-              <span style={{ fontSize:18, fontWeight:800, color:"#d4a843", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:3 }}>{streak.current} DAY STREAK {streak.current===streak.best&&streak.current>1?"🏆":""}</span>
-            </div>
-          )}
+        {/* Share button - full width */}
+        <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}>
           <ShareButton />
         </div>
         {/* Collapsible scoring guide */}
