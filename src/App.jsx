@@ -397,6 +397,16 @@ function saveStreak(won) {
   } catch { return { current: 0, best: 0 }; }
 }
 
+// ─── SCORING SYSTEM ──────────────────────────────────────────────────────────
+function getTitle(timeLeft) {
+  const remaining = timeLeft; // seconds left on clock
+  if (remaining >= 120) return { title: "CHANCELLOR",        color: "#d4a843" };
+  if (remaining >= 90)  return { title: "DEAN",              color: "#c0c0c0" };
+  if (remaining >= 60)  return { title: "PROFESSOR",         color: "#cd7f32" };
+  if (remaining >= 30)  return { title: "LECTURER",          color: "#7ec8e3" };
+  return                       { title: "TEACHING ASSISTANT", color: "#aaa" };
+}
+
 const MAX_HINTS     = 3;
 const HINT_PENALTY  = 10;
 const TOTAL_SECONDS = 3 * 60;
@@ -525,8 +535,9 @@ function buildShareText(done, timeLeft, anagramSolved, streak) {
   const today = new Date().toLocaleDateString("en-GB", { day:"numeric", month:"short" });
   const boxes = done.map(r => r.solved ? "✅" : "❌").join(" ");
   const anBox = anagramSolved ? "🔤✅" : "🔤❌";
-  const streakLine = streak && streak.current > 1 ? `\n🔥 ${streak.current} day streak` : "";
-  return `5 TO 9 · ${today}\n${boxes} ${anBox}\n⏱ ${mins}m ${secs}s${streakLine}\nfive-to-nine.vercel.app`;
+  const streakLine = streak && streak.current > 0 ? `\n👑 ${streak.current} day streak` : "";
+  const title = getTitle(timeLeft).title;
+  return `5 TO 9 · ${today}\n🎓 ${title}\n${boxes} ${anBox}\n⏱ ${mins}m ${secs}s${streakLine}\nfive-to-nine.vercel.app`;
 }
 
 const CSS = `
@@ -834,8 +845,12 @@ export default function FiveToNine() {
       <div style={{ minHeight:"100vh", background:"#1a1a2e", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", fontFamily:"'Courier New',monospace", color:"#16213e", padding:"24px 20px", textAlign:"center" }}>
         <style>{CSS}</style>
         <div style={{ fontSize:56, animation:"float 2s ease-in-out infinite" }}>🏆</div>
-        <h2 style={{ fontSize:52, letterSpacing:8, color:"#d4a843", fontFamily:"'Bebas Neue',sans-serif", margin:"16px 0 4px", animation:"glow 2s ease-in-out infinite" }}>BRILLIANT</h2>
-        <p style={{ color:"#e0e0e0", fontSize:11, letterSpacing:2, marginBottom:28 }}>{Math.floor(taken/60)}m {taken%60}s</p>
+        {(() => { const t = getTitle(timeLeft); return (
+          <div style={{ display:"flex", flexDirection:"column", alignItems:"center", marginBottom:8 }}>
+            <h2 style={{ fontSize:52, letterSpacing:6, color:t.color, fontFamily:"'Bebas Neue',sans-serif", margin:"16px 0 4px", textShadow:`0 0 20px ${t.color}` }}>{t.title}</h2>
+            <p style={{ color:"#888", fontSize:11, letterSpacing:2, marginBottom:4 }}>⏱ {Math.floor(taken/60)}m {taken%60}s remaining</p>
+          </div>
+        ); })()}
         <div style={{ fontSize:26, letterSpacing:10, fontWeight:700, color:"#00ff88", border:"1px solid rgba(0,150,70,0.4)", borderRadius:6, padding:"14px 28px", marginBottom:32, fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
         <div style={{ maxWidth:440, border:"1px solid #1a1a1a", borderRadius:10, padding:"22px 26px", animation:"fadeUp 0.8s ease", textAlign:"left", marginBottom:28 }}>
           <div style={{ fontSize:9, letterSpacing:3, color:"#d4a843", marginBottom:14 }}>TODAY'S QUOTE</div>
@@ -845,8 +860,23 @@ export default function FiveToNine() {
             ))}
           </p>
         </div>
+        {/* Streak display */}
+        {streak.current > 0 && (
+          <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:6, margin:"20px 0", padding:"16px 28px", border:"1px solid rgba(212,168,67,0.3)", borderRadius:10, background:"rgba(212,168,67,0.08)", width:"100%", maxWidth:440 }}>
+            <div style={{ display:"flex", alignItems:"center", gap:10 }}>
+              <span style={{ fontSize:32 }}>👑</span>
+              <div style={{ textAlign:"left" }}>
+                <div style={{ fontSize:26, fontWeight:800, color:"#d4a843", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:3, lineHeight:1 }}>{streak.current} DAY STREAK</div>
+                {streak.best > 1 && <div style={{ fontSize:10, color:"#888", letterSpacing:2, marginTop:2 }}>BEST: {streak.best} DAYS</div>}
+              </div>
+            </div>
+            {streak.current === streak.best && streak.current > 1 && (
+              <div style={{ fontSize:11, color:"#d4a843", letterSpacing:2 }}>🏆 NEW PERSONAL BEST!</div>
+            )}
+          </div>
+        )}
         <ShareButton />
-        <p style={{ color:"#b0b0b0", marginTop:24, fontSize:9, letterSpacing:3 }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
+        <p style={{ color:"#555", marginTop:20, fontSize:9, letterSpacing:3 }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
       </div>
     );
   }
