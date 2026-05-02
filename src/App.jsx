@@ -27,6 +27,42 @@ const PUZZLES = [
   },
   {
     rounds: [
+      { clue: "Brian Cowen's nickname!",                          answer: "BIFFO",     revealIdx: 4 },           // O
+      { clue: "Kurt of Nirvana",                         answer: "COBAIN",    revealIdx: [0,3] },       // C, A
+      { clue: "CR7",                                              answer: "RONALDO",   revealIdx: [0,5] },       // R, D
+      { clue: "*",          answer: "ASTERISK",  revealIdx: [1,6] },       // S, S
+      { clue: "It's a long way to last year's hurling winners",   answer: "TIPPERARY", revealIdx: [2,0] },       // P, T
+    ],
+    anagram: { letters:["S","O","T","C","P","A","R","D","S"], answer:"POSTCARDS", clue:"One page picture letters mailed while on holidays perhaps" },
+    quote: `Going Places
+
+It doesn't happen often. Stuck in my room, say,
+Looking at rain or for a book, seeing that the floor may
+Need hoovering, hungover possibly,
+Re-arranging the POSTCARDS on the wall:
+                                        At times like this
+I begin to remember childhood afternoons,
+Sitting in the backseats of cars, going places,
+Telephone wires on either side, like fences
+For giant invisible horses.
+
+— John McAuliffe`,
+  },
+  {
+    rounds: [
+      { clue: "The Kingdom!",                          answer: "KERRY",     revealIdx: 1 },       // E
+      { clue: "Where is Sarajevo?",                    answer: "BOSNIA",    revealIdx: 2 },       // S
+      { clue: "Farthest planet from the Sun",          answer: "NEPTUNE",   revealIdx: 4 },       // U
+      { clue: "Old Man Utd venue!",                    answer: "TRAFFORD",  revealIdx: 5 },       // O
+      { clue: "Winner of last year's British Open",    answer: "SCHEFFLER", revealIdx: [0,2] },   // S, H
+    ],
+    anagram: { letters:["U","S","H","E","O","S"], answer:"HOUSES", clue:"noun · plural of home; where people live" },
+    quote: `"Out of that £100,000, I run a home in Dublin, Castlebar and Brussels. I want to tell you something, try it sometime when you have a couple of cars and three HOUSES and three homes and a few housekeepers." — Padraig Flynn, 1999
+
+🎬 https://youtu.be/UB0mdecbW8w`,
+  },
+  {
+    rounds: [
       { clue: "Capital of France", answer: "PARIS" },
       { clue: "Largest country by land area", answer: "RUSSIA" },
       { clue: "Farthest planet from the Sun", answer: "NEPTUNE" },
@@ -825,11 +861,18 @@ export default function FiveToNine() {
           <div style={{ fontSize:24, letterSpacing:8, fontWeight:700, color:"#00ff88", fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
         </div>
         <div style={{ width:"100%", maxWidth:580, border:"1px solid #1a1a1a", borderRadius:10, padding:"16px 20px", marginBottom:28 }}>
-          <div style={{ fontSize:9, letterSpacing:3, color:"#e0e0e0", marginBottom:10 }}>TODAY'S QUOTE</div>
-          <p style={{ fontSize:13, lineHeight:1.8, color:"#e0e0e0", fontStyle:"italic", margin:0 }}>
-            {puzzle.quote.split(puzzle.anagram.answer).map((part, i, arr) => (
-              <span key={i}>{part}{i < arr.length-1 && <span style={{ color:"#d4a843", fontWeight:"bold", fontStyle:"normal", letterSpacing:1 }}>{puzzle.anagram.answer}</span>}</span>
-            ))}
+          <div style={{ fontSize:9, letterSpacing:3, color:"#e0e0e0", marginBottom:10 }}>BEFORE YOU GO...</div>
+          <p style={{ fontSize:13, lineHeight:1.9, color:"#e0e0e0", fontStyle:"italic", margin:0, whiteSpace:"pre-wrap" }}>
+            {puzzle.quote.split(puzzle.anagram.answer).map((part, i, arr) => {
+              // Make URLs clickable
+              const urlRegex = /(https?:\/\/[^\s]+)/g;
+              const withLinks = part.split(urlRegex).map((chunk, j) =>
+                urlRegex.test(chunk)
+                  ? <a key={j} href={chunk} target="_blank" rel="noopener noreferrer" style={{ color:"#d4a843", fontStyle:"normal", wordBreak:"break-all" }}>{chunk}</a>
+                  : chunk
+              );
+              return <span key={i}>{withLinks}{i < arr.length-1 && <span style={{ color:"#d4a843", fontWeight:"bold", fontStyle:"normal", letterSpacing:1 }}>{puzzle.anagram.answer}</span>}</span>;
+            })}
           </p>
         </div>
         <ShareButton />
@@ -848,16 +891,23 @@ export default function FiveToNine() {
         {(() => { const t = getTitle(timeLeft); return (
           <div style={{ display:"flex", flexDirection:"column", alignItems:"center", marginBottom:8 }}>
             <h2 style={{ fontSize:52, letterSpacing:6, color:t.color, fontFamily:"'Bebas Neue',sans-serif", margin:"16px 0 4px", textShadow:`0 0 20px ${t.color}` }}>{t.title}</h2>
-            <p style={{ color:"#888", fontSize:11, letterSpacing:2, marginBottom:4 }}>⏱ {Math.floor(taken/60)}m {taken%60}s remaining</p>
+            <p style={{ color:"#888", fontSize:11, letterSpacing:2, marginBottom:4 }}>⏱ {Math.floor(timeLeft/60)}m {timeLeft%60}s remaining</p>
           </div>
         ); })()}
         <div style={{ fontSize:26, letterSpacing:10, fontWeight:700, color:"#00ff88", border:"1px solid rgba(0,150,70,0.4)", borderRadius:6, padding:"14px 28px", marginBottom:32, fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
         <div style={{ maxWidth:440, border:"1px solid #1a1a1a", borderRadius:10, padding:"22px 26px", animation:"fadeUp 0.8s ease", textAlign:"left", marginBottom:28 }}>
-          <div style={{ fontSize:9, letterSpacing:3, color:"#d4a843", marginBottom:14 }}>TODAY'S QUOTE</div>
-          <p style={{ fontSize:13, lineHeight:1.8, color:"#e0e0e0", fontStyle:"italic", margin:0 }}>
-            {puzzle.quote.split(puzzle.anagram.answer).map((part, i, arr) => (
-              <span key={i}>{part}{i < arr.length-1 && <span style={{ color:"#d4a843", fontWeight:"bold", fontStyle:"normal", letterSpacing:1 }}>{puzzle.anagram.answer}</span>}</span>
-            ))}
+          <div style={{ fontSize:9, letterSpacing:3, color:"#d4a843", marginBottom:14 }}>BEFORE YOU GO...</div>
+          <p style={{ fontSize:13, lineHeight:1.9, color:"#e0e0e0", fontStyle:"italic", margin:0, whiteSpace:"pre-wrap" }}>
+            {puzzle.quote.split(puzzle.anagram.answer).map((part, i, arr) => {
+              // Make URLs clickable
+              const urlRegex = /(https?:\/\/[^\s]+)/g;
+              const withLinks = part.split(urlRegex).map((chunk, j) =>
+                urlRegex.test(chunk)
+                  ? <a key={j} href={chunk} target="_blank" rel="noopener noreferrer" style={{ color:"#d4a843", fontStyle:"normal", wordBreak:"break-all" }}>{chunk}</a>
+                  : chunk
+              );
+              return <span key={i}>{withLinks}{i < arr.length-1 && <span style={{ color:"#d4a843", fontWeight:"bold", fontStyle:"normal", letterSpacing:1 }}>{puzzle.anagram.answer}</span>}</span>;
+            })}
           </p>
         </div>
         {/* Streak display */}
