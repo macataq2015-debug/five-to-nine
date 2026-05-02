@@ -856,6 +856,21 @@ export default function FiveToNine() {
             </div>
           )}
         </div>
+        {/* Before you go */}
+        <div style={{ maxWidth:440, border:"1px solid #1a1a2e", borderRadius:10, padding:"18px 22px", marginBottom:16, width:"100%", textAlign:"left" }}>
+          <div style={{ fontSize:9, letterSpacing:3, color:"#d4a843", marginBottom:12 }}>BEFORE YOU GO...</div>
+          <p style={{ fontSize:13, lineHeight:1.9, color:"#e0e0e0", fontStyle:"italic", margin:0, whiteSpace:"pre-wrap" }}>
+            {puzzle.quote.split(puzzle.anagram.answer).map((part, i, arr) => {
+              const urlRegex = /(https?:\/\/[^\s]+)/g;
+              const withLinks = part.split(urlRegex).map((chunk, j) =>
+                urlRegex.test(chunk)
+                  ? <a key={j} href={chunk} target="_blank" rel="noopener noreferrer" style={{ color:"#d4a843", fontStyle:"normal", wordBreak:"break-all" }}>{chunk}</a>
+                  : chunk
+              );
+              return <span key={i}>{withLinks}{i < arr.length-1 && <span style={{ color:"#d4a843", fontWeight:"bold", fontStyle:"normal", letterSpacing:1 }}>{puzzle.anagram.answer}</span>}</span>;
+            })}
+          </p>
+        </div>
         <div style={{ width:"100%", maxWidth:440, display:"flex", flexDirection:"column", gap:8, marginBottom:16 }}>
           <ShareButton />
         </div>
