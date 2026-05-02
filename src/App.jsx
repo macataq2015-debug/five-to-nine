@@ -436,14 +436,13 @@ function saveStreak(won) {
 // ─── SCORING SYSTEM ──────────────────────────────────────────────────────────
 function getTitle(timeLeft) {
   const remaining = timeLeft; // seconds left on clock
-  if (remaining >= 120) return { title: "CHANCELLOR",        color: "#d4a843" };
-  if (remaining >= 90)  return { title: "DEAN",              color: "#c0c0c0" };
-  if (remaining >= 60)  return { title: "PROFESSOR",         color: "#cd7f32" };
-  if (remaining >= 30)  return { title: "LECTURER",          color: "#7ec8e3" };
-  return                       { title: "TEACHING ASSISTANT", color: "#aaa" };
+  if (remaining >= 120) return { title: "CEO",        color: "#d4a843" };
+  if (remaining >= 90)  return { title: "DIRECTOR", color: "#c0c0c0" };
+  if (remaining >= 60)  return { title: "MANAGER",  color: "#cd7f32" };
+  if (remaining >= 30)  return { title: "INTERN",   color: "#7ec8e3" };
+  return                       { title: "MAILROOM", color: "#888"    };
 }
 
-const MAX_HINTS     = 3;
 const HINT_PENALTY  = 10;
 const TOTAL_SECONDS = 3 * 60;
 
@@ -607,7 +606,7 @@ export default function FiveToNine() {
   const [animating, setAnimating] = useState(false);
   const [input,     setInput]     = useState("");
   const [revealed,  setRevealed]  = useState({});
-  const [hintsLeft, setHintsLeft] = useState(MAX_HINTS);
+  const [hintsUsed,  setHintsUsed]  = useState(0);
   const [shake,     setShake]     = useState(false);
   const [phase,     setPhase]     = useState("playing");
   const [anInput,   setAnInput]   = useState("");
@@ -617,6 +616,7 @@ export default function FiveToNine() {
   const [penalty,   setPenalty]   = useState(null);
   const [shared,    setShared]    = useState(false);
   const [anagramSolved, setAnagramSolved] = useState(false);
+  const [showAnswers,  setShowAnswers]  = useState(false);
 
   const round    = puzzle.rounds[roundIdx];
   const alen     = round?.answer.length ?? 0;
@@ -672,6 +672,7 @@ export default function FiveToNine() {
     setAttempts(prev => {
       const latest = prev[prev.length-1];
       if (!latest) return prev;
+      if (latest.skipped) return prev; // skip handles its own transition
       if (latest.correct) {
         setTimeout(() => {
           // Use revealIdx from puzzle data if present, else middle letter
@@ -681,26 +682,30 @@ export default function FiveToNine() {
           setAttempts([]);
           setInput("");
           setRevealed({});
-          setHintsLeft(MAX_HINTS);
+          setHintsUsed(0);
           setAnimating(false);
           revealFired.current = false;
           if (roundIdx >= puzzle.rounds.length-1) { setPhase("anagram"); }
           else { setRoundIdx(r => r+1); }
         }, 700);
-      } else { setAnimating(false); }
+      } else {
+        // Wrong answer - unlock input after typewriter finishes
+        setAnimating(false);
+        setTimeout(() => setInput(""), 100);
+      }
       return prev;
     });
   }, []);
 
   const takeHint = () => {
-    if (!canInput || hintsLeft<=0) return;
+    if (!canInput) return;
     const unrevealed = [];
     for (let i=0; i<alen; i++) { if (!revealed[i]) unrevealed.push(i); }
     if (!unrevealed.length) return;
     const idx = unrevealed[Math.floor(Math.random()*unrevealed.length)];
     setRevealed(prev => ({ ...prev, [idx]:round.answer[idx] }));
     setInput("");
-    setHintsLeft(h => h-1);
+    setHintsUsed(h => h+1);
     setTimeLeft(t => Math.max(0,t-HINT_PENALTY));
     setPenalty("-10s");
     setTimeout(()=>setPenalty(null),1200);
@@ -739,7 +744,7 @@ export default function FiveToNine() {
       setTimeout(()=>setPhase("win"),800);
     } else {
       setAnWrong(true); setAnShake(true);
-      setTimeout(()=>{ setAnShake(false); setAnWrong(false); },700);
+      setTimeout(()=>{ setAnShake(false); setAnWrong(false); setAnInput(""); },700);
     }
   };
 
@@ -791,7 +796,7 @@ export default function FiveToNine() {
             {[
               ["🧠", "5 general knowledge questions"],
               ["📏", "Answers grow from 5 to 9 letters"],
-              ["💡", "Use hints if you're stuck — each costs 10 seconds"],
+              ["💡", "Use HINT for a letter clue — unlimited but each costs 10 seconds"],
               ["🔤", "Spot the gold letters to solve the final anagram"],
               ["⏱️", "You have 3 minutes — good luck!"],
             ].map(([icon, text], i) => (
@@ -834,49 +839,56 @@ export default function FiveToNine() {
 
   // ── TIMEOUT ───────────────────────────────────────────────────────────────
   if (phase === "timeout") {
-    const all = [...done, ...puzzle.rounds.slice(done.length).map(r=>({...r,solved:false,revealIdx:0}))];
     return (
-      <div style={{ minHeight:"100vh", background:"#1a1a2e", fontFamily:"'Courier New',monospace", color:"#16213e", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 48px" }}>
+      <div style={{ minHeight:"100vh", background:"#1a1a2e", fontFamily:"'Courier New',monospace", color:"#e0e0e0", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 48px" }}>
         <style>{CSS}</style>
         <div style={{ width:"100%", maxWidth:580, display:"flex", alignItems:"center", justifyContent:"space-between", padding:"18px 0 14px", borderBottom:"1px solid #1e1e1e", marginBottom:20 }}>
-          <div style={{ fontSize:10, letterSpacing:3, color:"#ff4444" }}>TIME'S UP</div>
+          <div style={{ fontSize:10, letterSpacing:3, color:"#888" }}>TIME UP</div>
           <h1 style={{ fontSize:40, letterSpacing:8, color:"#d4a843", fontFamily:"'Bebas Neue',sans-serif" }}>5 TO 9</h1>
-          <div style={{ fontSize:10, color:"#e0e0e0" }}>0:00</div>
+          <div style={{ fontSize:10, color:"#555" }}>0:00</div>
         </div>
-        <div style={{ width:"100%", maxWidth:580, marginBottom:20 }}>
-          <div style={{ fontSize:9, letterSpacing:3, color:"#e0e0e0", marginBottom:10 }}>TODAY'S ANSWERS</div>
-          {all.map((r,i) => (
-            <div key={i} style={{ padding:"10px 14px", background:"rgba(0,0,0,0.03)", border:"1px solid #1a1a1a", borderRadius:8, marginBottom:6 }}>
-              <div style={{ fontSize:10, color:"#e0e0e0", marginBottom:6 }}>{r.clue}</div>
-              <div style={{ display:"flex", gap:4 }}>
-                {r.answer.split("").map((ch,ci) => <div key={ci} style={{ width:26, height:26, borderRadius:3, border:"1px solid #2a2a2a", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:700, color:r.solved?"#00ff88":"#b0b0b0", fontFamily:"'Courier New',monospace" }}>{ch}</div>)}
+        <div style={{ textAlign:"center", marginBottom:24, padding:"0 20px" }}>
+          <p style={{ fontSize:18, color:"#e0e0e0", lineHeight:1.7, fontStyle:"italic" }}>"The questions just didn't suit you today"</p>
+          {streak.current === 0 && streak.best > 0 && (
+            <div style={{ marginTop:12 }}>
+              <div style={{ fontSize:18, color:"#ff6b6b", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:2 }}>STREAK LOST</div>
+              <div style={{ fontSize:10, color:"#555", letterSpacing:2, marginTop:4 }}>YOUR BEST WAS {streak.best} DAYS</div>
+            </div>
+          )}
+        </div>
+        <div style={{ width:"100%", maxWidth:440, display:"flex", flexDirection:"column", gap:8, marginBottom:16 }}>
+          <ShareButton />
+        </div>
+        {/* Collapsible review answers */}
+        <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}>
+          <button onClick={() => setShowAnswers(s => !s)} style={{ width:"100%", background:"transparent", border:"1px solid #2a2a5e", borderRadius:8, padding:"10px", fontSize:11, color:"#666", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>
+            {showAnswers ? "▲ HIDE ANSWERS" : "▼ REVIEW TODAY'S ANSWERS"}
+          </button>
+          {showAnswers && (
+            <div style={{ marginTop:8 }}>
+              {puzzle.rounds.map((r, i) => {
+                const highlights = Array.isArray(r.revealIdx) ? r.revealIdx : [r.revealIdx];
+                const solved = done[i]?.solved;
+                return (
+                  <div key={i} style={{ padding:"10px 14px", background:"rgba(255,255,255,0.02)", border:"1px solid #1a1a2e", borderRadius:8, marginBottom:6 }}>
+                    <div style={{ fontSize:10, color:"#555", marginBottom:6 }}>{r.clue}</div>
+                    <div style={{ display:"flex", gap:4, flexWrap:"wrap" }}>
+                      {r.answer.split("").map((ch, ci) => {
+                        const hl = highlights.includes(ci);
+                        return <div key={ci} style={{ width:26, height:26, borderRadius:3, border:`1px solid ${hl?"#d4a843":"#2a2a5e"}`, background:hl?"rgba(212,168,67,0.15)":"transparent", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:700, color:hl?"#d4a843":solved?"#00ff88":"#888", fontFamily:"'Courier New',monospace" }}>{ch}</div>;
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
+              <div style={{ padding:"10px 14px", background:"rgba(212,168,67,0.05)", border:"1px solid rgba(212,168,67,0.2)", borderRadius:8 }}>
+                <div style={{ fontSize:10, color:"#d4a843", marginBottom:6 }}>ANAGRAM · {puzzle.anagram.clue}</div>
+                <div style={{ fontSize:18, letterSpacing:6, fontWeight:700, color:"#00ff88", fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
               </div>
             </div>
-          ))}
+          )}
         </div>
-        <div style={{ width:"100%", maxWidth:580, border:"1px solid rgba(212,168,67,0.2)", borderRadius:10, padding:"16px 20px", marginBottom:20 }}>
-          <div style={{ fontSize:9, letterSpacing:3, color:"#d4a843", marginBottom:10 }}>TODAY'S ANAGRAM</div>
-          <div style={{ display:"flex", gap:8, marginBottom:10 }}>{puzzle.anagram.letters.map((l,i) => <div key={i} style={{ width:40, height:40, border:"2px solid #d4a843", display:"flex", alignItems:"center", justifyContent:"center", fontSize:18, fontWeight:700, color:"#d4a843", borderRadius:4, fontFamily:"'Courier New',monospace" }}>{l}</div>)}</div>
-          <div style={{ fontSize:11, color:"#e0e0e0", marginBottom:10, fontStyle:"italic" }}>{puzzle.anagram.clue}</div>
-          <div style={{ fontSize:24, letterSpacing:8, fontWeight:700, color:"#00ff88", fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
-        </div>
-        <div style={{ width:"100%", maxWidth:580, border:"1px solid #1a1a1a", borderRadius:10, padding:"16px 20px", marginBottom:28 }}>
-          <div style={{ fontSize:9, letterSpacing:3, color:"#e0e0e0", marginBottom:10 }}>BEFORE YOU GO...</div>
-          <p style={{ fontSize:13, lineHeight:1.9, color:"#e0e0e0", fontStyle:"italic", margin:0, whiteSpace:"pre-wrap" }}>
-            {puzzle.quote.split(puzzle.anagram.answer).map((part, i, arr) => {
-              // Make URLs clickable
-              const urlRegex = /(https?:\/\/[^\s]+)/g;
-              const withLinks = part.split(urlRegex).map((chunk, j) =>
-                urlRegex.test(chunk)
-                  ? <a key={j} href={chunk} target="_blank" rel="noopener noreferrer" style={{ color:"#d4a843", fontStyle:"normal", wordBreak:"break-all" }}>{chunk}</a>
-                  : chunk
-              );
-              return <span key={i}>{withLinks}{i < arr.length-1 && <span style={{ color:"#d4a843", fontWeight:"bold", fontStyle:"normal", letterSpacing:1 }}>{puzzle.anagram.answer}</span>}</span>;
-            })}
-          </p>
-        </div>
-        <ShareButton />
-        <p style={{ color:"#e0e0e0", marginTop:24, fontSize:10, letterSpacing:3, textAlign:"center" }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
+        <p style={{ color:"#888", marginTop:16, fontSize:10, letterSpacing:3, textAlign:"center" }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
       </div>
     );
   }
@@ -885,7 +897,7 @@ export default function FiveToNine() {
   if (phase === "win") {
     const taken = TOTAL_SECONDS - timeLeft;
     return (
-      <div style={{ minHeight:"100vh", background:"#1a1a2e", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", fontFamily:"'Courier New',monospace", color:"#16213e", padding:"24px 20px", textAlign:"center" }}>
+      <div style={{ minHeight:"100vh", background:"#1a1a2e", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", fontFamily:"'Courier New',monospace", color:"#e0e0e0", padding:"24px 20px", textAlign:"center" }}>
         <style>{CSS}</style>
         <div style={{ fontSize:56, animation:"float 2s ease-in-out infinite" }}>🏆</div>
         {(() => { const t = getTitle(timeLeft); return (
@@ -894,12 +906,11 @@ export default function FiveToNine() {
             <p style={{ color:"#888", fontSize:11, letterSpacing:2, marginBottom:4 }}>⏱ {Math.floor(timeLeft/60)}m {timeLeft%60}s remaining</p>
           </div>
         ); })()}
-        <div style={{ fontSize:26, letterSpacing:10, fontWeight:700, color:"#00ff88", border:"1px solid rgba(0,150,70,0.4)", borderRadius:6, padding:"14px 28px", marginBottom:32, fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
-        <div style={{ maxWidth:440, border:"1px solid #1a1a1a", borderRadius:10, padding:"22px 26px", animation:"fadeUp 0.8s ease", textAlign:"left", marginBottom:28 }}>
+        <div style={{ fontSize:26, letterSpacing:10, fontWeight:700, color:"#00ff88", border:"1px solid rgba(0,150,70,0.4)", borderRadius:6, padding:"14px 28px", marginBottom:16, fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
+        <div style={{ maxWidth:440, border:"1px solid #1a1a1a", borderRadius:10, padding:"22px 26px", animation:"fadeUp 0.8s ease", textAlign:"left", marginBottom:16, width:"100%" }}>
           <div style={{ fontSize:9, letterSpacing:3, color:"#d4a843", marginBottom:14 }}>BEFORE YOU GO...</div>
           <p style={{ fontSize:13, lineHeight:1.9, color:"#e0e0e0", fontStyle:"italic", margin:0, whiteSpace:"pre-wrap" }}>
             {puzzle.quote.split(puzzle.anagram.answer).map((part, i, arr) => {
-              // Make URLs clickable
               const urlRegex = /(https?:\/\/[^\s]+)/g;
               const withLinks = part.split(urlRegex).map((chunk, j) =>
                 urlRegex.test(chunk)
@@ -910,30 +921,78 @@ export default function FiveToNine() {
             })}
           </p>
         </div>
-        {/* Streak display */}
-        {streak.current > 0 && (
-          <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:6, margin:"20px 0", padding:"16px 28px", border:"1px solid rgba(212,168,67,0.3)", borderRadius:10, background:"rgba(212,168,67,0.08)", width:"100%", maxWidth:440 }}>
-            <div style={{ display:"flex", alignItems:"center", gap:10 }}>
-              <span style={{ fontSize:32 }}>👑</span>
-              <div style={{ textAlign:"left" }}>
-                <div style={{ fontSize:26, fontWeight:800, color:"#d4a843", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:3, lineHeight:1 }}>{streak.current} DAY STREAK</div>
-                {streak.best > 1 && <div style={{ fontSize:10, color:"#888", letterSpacing:2, marginTop:2 }}>BEST: {streak.best} DAYS</div>}
+        {/* Streak and Share - identical size */}
+        <div style={{ width:"100%", maxWidth:440, display:"flex", flexDirection:"column", gap:8, marginBottom:8 }}>
+          {streak.current > 0 && (
+            <div style={{ display:"flex", alignItems:"center", justifyContent:"center", gap:10, width:"100%", height:56, border:"1px solid rgba(212,168,67,0.3)", borderRadius:10, background:"rgba(212,168,67,0.08)", boxSizing:"border-box" }}>
+              <span style={{ fontSize:22 }}>👑</span>
+              <span style={{ fontSize:18, fontWeight:800, color:"#d4a843", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:3 }}>{streak.current} DAY STREAK {streak.current===streak.best&&streak.current>1?"🏆":""}</span>
+            </div>
+          )}
+          <ShareButton />
+        </div>
+        {/* Collapsible scoring guide */}
+        <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}>
+          <button onClick={() => setShowAnswers(s => !s)} style={{ width:"100%", background:"transparent", border:"1px solid #2a2a5e", borderRadius:8, padding:"10px", fontSize:11, color:"#666", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>
+            {showAnswers ? "▲ HIDE SCORING GUIDE" : "▼ SCORING GUIDE"}
+          </button>
+          {showAnswers && (
+            <div style={{ marginTop:6 }}>
+              {[
+                { title:"CEO",      time:"2:00+", color:"#d4a843" },
+                { title:"DIRECTOR", time:"1:30+", color:"#c0c0c0" },
+                { title:"MANAGER",  time:"1:00+", color:"#cd7f32" },
+                { title:"INTERN",   time:"0:30+", color:"#7ec8e3" },
+                { title:"MAILROOM", time:"0:00+", color:"#888"    },
+              ].map(({ title, time, color }) => {
+                const isCurrent = getTitle(timeLeft).title === title;
+                return (
+                  <div key={title} style={{ display:"flex", alignItems:"center", justifyContent:"space-between", padding:"7px 14px", borderRadius:6, background:isCurrent?"rgba(255,255,255,0.05)":"transparent", border:isCurrent?`1px solid ${color}`:"1px solid transparent", marginBottom:3 }}>
+                    <span style={{ fontSize:13, fontWeight:isCurrent?800:400, color:isCurrent?color:"#555", letterSpacing:1, fontFamily:"'Bebas Neue',sans-serif" }}>{isCurrent?"★ ":""}{title}</span>
+                    <span style={{ fontSize:11, color:isCurrent?color:"#555" }}>{time}</span>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </div>
+        {/* Collapsible review answers */}
+        <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}>
+          <button onClick={() => setShowAnswers(s => !s)} style={{ width:"100%", background:"transparent", border:"1px solid #2a2a5e", borderRadius:8, padding:"10px", fontSize:11, color:"#666", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>
+            {showAnswers ? "▲ HIDE ANSWERS" : "▼ REVIEW TODAY'S ANSWERS"}
+          </button>
+          {showAnswers && (
+            <div style={{ marginTop:8 }}>
+              {puzzle.rounds.map((r, i) => {
+                const highlights = Array.isArray(r.revealIdx) ? r.revealIdx : [r.revealIdx];
+                const solved = done[i]?.solved;
+                return (
+                  <div key={i} style={{ padding:"10px 14px", background:"rgba(255,255,255,0.02)", border:"1px solid #1a1a2e", borderRadius:8, marginBottom:6 }}>
+                    <div style={{ fontSize:10, color:"#555", marginBottom:6 }}>{r.clue}</div>
+                    <div style={{ display:"flex", gap:4, flexWrap:"wrap" }}>
+                      {r.answer.split("").map((ch, ci) => {
+                        const hl = highlights.includes(ci);
+                        return <div key={ci} style={{ width:26, height:26, borderRadius:3, border:`1px solid ${hl?"#d4a843":"#2a2a5e"}`, background:hl?"rgba(212,168,67,0.15)":"transparent", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:700, color:hl?"#d4a843":solved?"#00ff88":"#888", fontFamily:"'Courier New',monospace" }}>{ch}</div>;
+                      })}
+                    </div>
+                  </div>
+                );
+              })}
+              <div style={{ padding:"10px 14px", background:"rgba(212,168,67,0.05)", border:"1px solid rgba(212,168,67,0.2)", borderRadius:8 }}>
+                <div style={{ fontSize:10, color:"#d4a843", marginBottom:6 }}>ANAGRAM · {puzzle.anagram.clue}</div>
+                <div style={{ fontSize:18, letterSpacing:6, fontWeight:700, color:"#00ff88", fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
               </div>
             </div>
-            {streak.current === streak.best && streak.current > 1 && (
-              <div style={{ fontSize:11, color:"#d4a843", letterSpacing:2 }}>🏆 NEW PERSONAL BEST!</div>
-            )}
-          </div>
-        )}
-        <ShareButton />
-        <p style={{ color:"#555", marginTop:20, fontSize:9, letterSpacing:3 }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
+          )}
+        </div>
+        <p style={{ color:"#888", fontSize:10, letterSpacing:3, marginTop:8 }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
       </div>
     );
   }
 
   // ── ANAGRAM ───────────────────────────────────────────────────────────────
   if (phase === "anagram") return (
-    <div style={{ minHeight:"100vh", background:"#1a1a2e", fontFamily:"'Courier New',monospace", color:"#16213e", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 48px" }}>
+    <div style={{ minHeight:"100vh", background:"#1a1a2e", fontFamily:"'Courier New',monospace", color:"#e0e0e0", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 48px" }}>
       <style>{CSS}</style>
       <Header label="FINAL" />
       <div style={{ width:"100%", maxWidth:580, marginBottom:16 }}>{done.map((r,i)=><RoundSummary key={i} r={r} i={i}/>)}</div>
@@ -953,7 +1012,7 @@ export default function FiveToNine() {
   // ── PLAYING ───────────────────────────────────────────────────────────────
   const latestIdx = attempts.length-1;
   return (
-    <div style={{ minHeight:"100vh", background:"#1a1a2e", fontFamily:"'Courier New',monospace", color:"#16213e", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 40px" }}>
+    <div style={{ minHeight:"100vh", background:"#1a1a2e", fontFamily:"'Courier New',monospace", color:"#e0e0e0", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 40px" }}>
       <style>{CSS}</style>
       <div style={{ position:"fixed", inset:0, backgroundImage:"none", pointerEvents:"none", zIndex:10 }} />
       <Header label={`Q${roundIdx+1}/5`} />
@@ -973,11 +1032,10 @@ export default function FiveToNine() {
           ))}
         </div>
         {canInput && <div style={{ marginBottom:12 }}><AnswerDisplay length={alen} revealed={revealed} input={input} shake={shake} /></div>}
-        <div style={{ display:"flex", justifyContent:"center", marginBottom:20, gap:10, alignItems:"center" }}>
-          <button onClick={takeHint} disabled={!canInput||hintsLeft<=0} style={{ background:canInput&&hintsLeft>0?"rgba(212,168,67,0.1)":"transparent", border:`2px solid ${canInput&&hintsLeft>0?"#d4a843":"#2a4a8a"}`, color:canInput&&hintsLeft>0?"#d4a843":"#b0b0b0", borderRadius:6, padding:"10px 24px", fontSize:11, fontWeight:700, letterSpacing:2, cursor:canInput&&hintsLeft>0?"pointer":"default", fontFamily:"'Courier New',monospace" }}>
-            HINT (−{HINT_PENALTY}s)
+        <div style={{ display:"flex", justifyContent:"center", marginBottom:20, gap:12, alignItems:"center" }}>
+          <button onClick={takeHint} disabled={!canInput} style={{ background:canInput?"rgba(212,168,67,0.1)":"transparent", border:`2px solid ${canInput?"#d4a843":"#333"}`, color:canInput?"#d4a843":"#555", borderRadius:6, padding:"10px 24px", fontSize:11, fontWeight:700, letterSpacing:2, cursor:canInput?"pointer":"default", fontFamily:"'Courier New',monospace" }}>
+            HINT −{HINT_PENALTY}s
           </button>
-          <div style={{ fontSize:12, color:"#e0e0e0", letterSpacing:1, fontWeight:700 }}>{hintsLeft}/{MAX_HINTS} left</div>
         </div>
         {/* Unified responsive keyboard — works on all devices */}
         <div style={{ display:"flex", flexDirection:"column", gap:5, alignItems:"center" }}>
