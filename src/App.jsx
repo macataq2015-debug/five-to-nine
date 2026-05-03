@@ -1012,7 +1012,7 @@ export default function FiveToNine() {
       <Header label="FINAL" />
       <div style={{ width:"100%", maxWidth:580, marginBottom:16 }}>{done.map((r,i)=><RoundSummary key={i} r={r} i={i}/>)}</div>
       <div style={{ fontSize:9, letterSpacing:3, color:"#e0e0e0", marginBottom:16, textAlign:"center" }}>UNSCRAMBLE THE LETTERS</div>
-      <div style={{ display:"flex", gap:10, justifyContent:"center", marginBottom:12 }}>
+      <div style={{ display:"flex", gap:6, justifyContent:"center", marginBottom:12, flexWrap:"nowrap", width:"100%", maxWidth:440 }}>
         {puzzle.anagram.letters.map((l,i)=><div key={i} style={{ width:50, height:50, border:"2px solid #d4a843", borderRadius:4, display:"flex", alignItems:"center", justifyContent:"center", fontSize:22, fontWeight:700, color:"#d4a843", fontFamily:"'Courier New',monospace", animation:`tileGlow 2s ease-in-out ${i*0.2}s infinite` }}>{l}</div>)}
       </div>
       <div style={{ fontSize:15, color:"#e0e0e0", fontStyle:"italic", marginBottom:20, textAlign:"center", maxWidth:380, lineHeight:1.7 }}>{puzzle.anagram.clue}</div>
