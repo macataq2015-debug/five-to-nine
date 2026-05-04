@@ -16,6 +16,24 @@ const PUZZLES = [
   },
   {
     rounds: [
+      { clue: "A group of Lions",                          answer: "PRIDE",     revealIdx: 1 },       // R
+      { clue: "Austrian capital",                          answer: "VIENNA",    revealIdx: [5,0] },   // A, V
+      { clue: "Which metal is liquid at room temperature?",answer: "MERCURY",   revealIdx: 6 },       // Y
+      { clue: "Which organ produces insulin?",             answer: "PANCREAS",  revealIdx: [5,4] },   // E, R
+      { clue: "When an animal sleeps for the winter they...",answer: "HIBERNATE",revealIdx: 2 },      // B
+    ],
+    anagram: { letters:["R","V","E","A","B","Y","R"], answer:"BRAVERY", clue:"noun · great courage in the face of danger or difficulty" },
+    quote: `Van Diemen's land is a hell for a man
+To end out his whole life in slavery
+Where the climate is raw and the gun makes the law
+Neither wind nor rain care for BRAVERY
+
+Oh, oh, I wish I was back home in Derry
+— Bobby Sands
+🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
+  },
+  {
+    rounds: [
       { clue: "Golfing Tiger",                        answer: "WOODS",     revealIdx: 1 }, // O
       { clue: "Capital of Colombia",                  answer: "BOGOTA",    revealIdx: 0 }, // B
       { clue: "IT Valley in California",              answer: "SILICON",   revealIdx: 5 }, // O
@@ -148,6 +166,24 @@ For giant invisible horses.
     ],
     anagram: { letters:["D","K","N","M","J"], answer:"DMKNJ", clue:"· today's letters don't form a common word — solver's bonus!" },
     quote: `"Act as if what you do makes a difference. It does." — William James`,
+  },
+  {
+    rounds: [
+      { clue: "A group of Lions",                          answer: "PRIDE",     revealIdx: 1 },       // R
+      { clue: "Austrian capital",                          answer: "VIENNA",    revealIdx: [5,0] },   // A, V
+      { clue: "Which metal is liquid at room temperature?",answer: "MERCURY",   revealIdx: 6 },       // Y
+      { clue: "Which organ produces insulin?",             answer: "PANCREAS",  revealIdx: [5,4] },   // E, R
+      { clue: "When an animal sleeps for the winter they...",answer: "HIBERNATE",revealIdx: 2 },      // B
+    ],
+    anagram: { letters:["R","V","E","A","B","Y","R"], answer:"BRAVERY", clue:"noun · great courage in the face of danger or difficulty" },
+    quote: `Van Diemen's land is a hell for a man
+To end out his whole life in slavery
+Where the climate is raw and the gun makes the law
+Neither wind nor rain care for BRAVERY
+
+Oh, oh, I wish I was back home in Derry
+— Bobby Sands
+🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
   },
   {
     rounds: [
@@ -1042,8 +1078,8 @@ export default function FiveToNine() {
         <style>{CSS}</style>
         <Header label="FINAL" showTimer={true} />
         <div style={{ width:"100%", maxWidth:580, marginBottom:16 }}>{done.map((r,i)=><RoundSummary key={i} r={r} i={i}/>)}</div>
-        <div style={{ fontSize:14, letterSpacing:4, color:"#c4941f", marginBottom:6, textAlign:"center", fontWeight:700 }}>ANAGRAM</div>
-        <div style={{ fontSize:15, color:"#444444", fontStyle:"italic", marginBottom:16, textAlign:"center", maxWidth:380, lineHeight:1.6 }}>{puzzle.anagram.clue}</div>
+        <div style={{ fontSize:18, letterSpacing:4, color:"#c4941f", marginBottom:8, textAlign:"center", fontWeight:700 }}>ANAGRAM</div>
+        <div style={{ fontSize:16, color:"#333333", fontStyle:"italic", marginBottom:16, textAlign:"center", maxWidth:400, lineHeight:1.7 }}>{puzzle.anagram.clue}</div>
         <div style={{ fontSize:11, color:"#c4941f", letterSpacing:2, marginBottom:16, textAlign:"center", fontWeight:700 }}>↓ TAP A LETTER TO PLACE IT</div>
         {/* Tappable letter pool */}
         <div style={{ display:"flex", gap:8, justifyContent:"center", marginBottom:8, flexWrap:"nowrap", width:"100%", maxWidth:500 }}>
@@ -1118,7 +1154,7 @@ export default function FiveToNine() {
         <div style={{ display:"flex", flexDirection:"column", gap:5, alignItems:"center" }}>
           {["QWERTYUIOP","ASDFGHJKL","ZXCVBNM"].map((row,ri)=>(
             <div key={ri} style={{ display:"flex", gap:4, width:"100%" , justifyContent:"center" }}>
-              {ri===2 && <button onClick={submit} style={{ flex:"0 0 auto", minWidth:80, height:56, border:"2px solid #9a7000", borderRadius:8, background:"#b8860b", color:"#ffffff", fontSize:14, fontWeight:900, letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation", boxShadow:"0 4px 16px rgba(184,134,11,0.5)" }}>ENTER</button>}
+              {ri===2 && <button onClick={submit} style={{ flex:"0 0 auto", minWidth:68, height:50, border:"2px solid #9a7000", borderRadius:8, background:"#b8860b", color:"#ffffff", fontSize:12, fontWeight:800, letterSpacing:1, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation", boxShadow:"0 4px 16px rgba(184,134,11,0.5)" }}>ENTER</button>}
               {row.split("").map(k=>(
                 <button key={k} onClick={()=>pressKey(k)} style={{ flex:"1 1 0", maxWidth:38, minWidth:28, height:50, borderRadius:6, border:"1px solid #888", background:"#e8e8e8", color:"#111111", fontSize:15, fontWeight:800, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation" }}>{k}</button>
               ))}
