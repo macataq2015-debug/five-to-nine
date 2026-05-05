@@ -62,6 +62,19 @@ For giant invisible horses.
   },
   {
     rounds: [
+      { clue: "What is the name for molten rock?",              answer: "MAGMA",     revealIdx: 1 },         // A
+      { clue: "What's a group of geese called?",               answer: "GAGGLE",    revealIdx: 5 },         // E
+      { clue: "China's capital?",                               answer: "BEIJING",   revealIdx: 0 },         // B
+      { clue: "What is the main gas in Earth's atmosphere?",    answer: "NITROGEN",  revealIdx: [0,3,7] },   // N, R, N
+      { clue: "Group combined to promote a common interest",    answer: "SYNDICATE", revealIdx: [0,4,7] },   // S, I, T
+    ],
+    anagram: { letters:["N","B","I","A","T","N","E","R","S"], answer:"BANNISTER", clue:"First sub four minute miler" },
+    quote: `"The man who can drive himself further once the effort gets painful is the man who will win." — Roger BANNISTER
+
+🔗 https://www.guinnessworldrecords.com/records/hall-of-fame/first-sub-four-minute-mile`,
+  },
+  {
+    rounds: [
       { clue: "A group of Lions",                              answer: "PRIDE",     revealIdx: 1 },
       { clue: "Austrian capital",                              answer: "VIENNA",    revealIdx: [5,0] },
       { clue: "Which metal is liquid at room temperature?",    answer: "MERCURY",   revealIdx: 6 },
@@ -377,7 +390,7 @@ export default function FiveToNine() {
     const anBox = anagramSolved?"🔤✅":"🔤❌";
     const title = getTitle(timeLeft).title;
     const streakLine = streak&&streak.current>0?`\n👑 ${streak.current} day streak`:"";
-    const text = `5 TO 9 · ${today}\n🎓 ${title}\n${boxes} ${anBox}\n⏱ ${mins}m ${secs}s remaining${streakLine}\nfive-to-nine.vercel.app`;
+    const text = `5 TO 9 · ${today}\n🎓 ${title}\n${boxes} ${anBox}\n⏱ ${mins}m ${secs}s remaining${streakLine}\n5to9daily.com`;
     const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
     if (isMobile) window.open(`https://wa.me/?text=${encodeURIComponent(text)}`,"_blank");
     else navigator.clipboard.writeText(text).then(()=>{ setShared(true); setTimeout(()=>setShared(false),2500); });
