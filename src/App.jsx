@@ -1,55 +1,36 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 
-// ─── 30 DAILY PUZZLES ────────────────────────────────────────────────────────
-// Each puzzle: 5 rounds (lengths 5,6,7,8,9) + anagram + quote
+// ─── DAILY PUZZLES ────────────────────────────────────────────────────────────
 const PUZZLES = [
   {
     rounds: [
-      { clue: "Cambridge graduate", answer: "RONAN",     revealIdx: 0 },           // R
-      { clue: "Tea Party location from 1773", answer: "BOSTON",   revealIdx: [0,2] }, // B, S
-      { clue: "Cillian and Conall's garden?", answer: "WICKLOW",  revealIdx: 4 },   // L
-      { clue: "Fermanagh's nickname where Maeve and Maia play", answer: "LAKELAND", revealIdx: 3 }, // E
-      { clue: "Fiadh's oil refinery town", answer: "WHITEGATE", revealIdx: 4 },     // E
+      { clue: "Cambridge graduate",                             answer: "RONAN",     revealIdx: 0 },
+      { clue: "Tea Party location from 1773",                   answer: "BOSTON",    revealIdx: [0,2] },
+      { clue: "Cillian and Conall's garden?",                  answer: "WICKLOW",   revealIdx: 4 },
+      { clue: "Fermanagh's nickname where Maeve and Maia play", answer: "LAKELAND",  revealIdx: 3 },
+      { clue: "Fiadh's oil refinery town",                     answer: "WHITEGATE", revealIdx: 4 },
     ],
     anagram: { letters:["S","R","E","B","L","E"], answer:"REBELS", clue:"Lunatic Cork supporters shout this at the hurling!" },
     quote: `"Here's to the crazy ones, the misfits, the REBELS — the ones who see things differently." — Steve Jobs`,
   },
   {
     rounds: [
-      { clue: "A group of Lions",                          answer: "PRIDE",     revealIdx: 1 },       // R
-      { clue: "Austrian capital",                          answer: "VIENNA",    revealIdx: [5,0] },   // A, V
-      { clue: "Which metal is liquid at room temperature?",answer: "MERCURY",   revealIdx: 6 },       // Y
-      { clue: "Which organ produces insulin?",             answer: "PANCREAS",  revealIdx: [5,4] },   // E, R
-      { clue: "When an animal sleeps for the winter they...",answer: "HIBERNATE",revealIdx: 2 },      // B
-    ],
-    anagram: { letters:["R","V","E","A","B","Y","R"], answer:"BRAVERY", clue:"noun · great courage in the face of danger or difficulty" },
-    quote: `Van Diemen's land is a hell for a man
-To end out his whole life in slavery
-Where the climate is raw and the gun makes the law
-Neither wind nor rain care for BRAVERY
-
-Oh, oh, I wish I was back home in Derry
-— Bobby Sands
-🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
-  },
-  {
-    rounds: [
-      { clue: "Golfing Tiger",                        answer: "WOODS",     revealIdx: 1 }, // O
-      { clue: "Capital of Colombia",                  answer: "BOGOTA",    revealIdx: 0 }, // B
-      { clue: "IT Valley in California",              answer: "SILICON",   revealIdx: 5 }, // O
-      { clue: "Country of Mount Kilimanjaro",         answer: "TANZANIA",  revealIdx: 0 }, // T
-      { clue: "Third US President, surname",          answer: "JEFFERSON", revealIdx: 6 }, // S
+      { clue: "Golfing Tiger",                                 answer: "WOODS",     revealIdx: 1 },
+      { clue: "Capital of Colombia",                           answer: "BOGOTA",    revealIdx: 0 },
+      { clue: "IT Valley in California",                       answer: "SILICON",   revealIdx: 5 },
+      { clue: "Country of Mount Kilimanjaro",                  answer: "TANZANIA",  revealIdx: 0 },
+      { clue: "Third US President, surname",                   answer: "JEFFERSON", revealIdx: 6 },
     ],
     anagram: { letters:["O","T","B","O","S"], answer:"BOOST", clue:"noun · a push upward; something that increases power, confidence or success" },
     quote: `"Small daily improvements are the BOOST that compounds into extraordinary results." — James Clear`,
   },
   {
     rounds: [
-      { clue: "Brian Cowen's nickname!",                          answer: "BIFFO",     revealIdx: 4 },           // O
-      { clue: "Kurt of Nirvana",                         answer: "COBAIN",    revealIdx: [0,3] },       // C, A
-      { clue: "CR7",                                              answer: "RONALDO",   revealIdx: [0,5] },       // R, D
-      { clue: "*",          answer: "ASTERISK",  revealIdx: [1,6] },       // S, S
-      { clue: "It's a long way to last year's hurling winners",   answer: "TIPPERARY", revealIdx: [2,0] },       // P, T
+      { clue: "Brian Cowen's nickname!",                       answer: "BIFFO",     revealIdx: 4 },
+      { clue: "Kurt of Nirvana",                               answer: "COBAIN",    revealIdx: [0,3] },
+      { clue: "CR7",                                           answer: "RONALDO",   revealIdx: [0,5] },
+      { clue: "*",                                             answer: "ASTERISK",  revealIdx: [1,6] },
+      { clue: "It's a long way to last year's hurling winners", answer: "TIPPERARY", revealIdx: [2,0] },
     ],
     anagram: { letters:["S","O","T","C","P","A","R","D","S"], answer:"POSTCARDS", clue:"One page picture letters mailed while on holidays perhaps" },
     quote: `Going Places
@@ -68,11 +49,11 @@ For giant invisible horses.
   },
   {
     rounds: [
-      { clue: "The Kingdom!",                          answer: "KERRY",     revealIdx: 1 },       // E
-      { clue: "Where is Sarajevo?",                    answer: "BOSNIA",    revealIdx: 2 },       // S
-      { clue: "Farthest planet from the Sun",          answer: "NEPTUNE",   revealIdx: 4 },       // U
-      { clue: "Old Man Utd venue!",                    answer: "TRAFFORD",  revealIdx: 5 },       // O
-      { clue: "Winner of last year's British Open",    answer: "SCHEFFLER", revealIdx: [0,2] },   // S, H
+      { clue: "The Kingdom!",                                  answer: "KERRY",     revealIdx: 1 },
+      { clue: "Where is Sarajevo?",                            answer: "BOSNIA",    revealIdx: 2 },
+      { clue: "Farthest planet from the Sun",                  answer: "NEPTUNE",   revealIdx: 4 },
+      { clue: "Old Man Utd venue!",                            answer: "TRAFFORD",  revealIdx: 5 },
+      { clue: "Winner of last year's British Open",            answer: "SCHEFFLER", revealIdx: [0,2] },
     ],
     anagram: { letters:["U","S","H","E","O","S"], answer:"HOUSES", clue:"noun · plural of home; where people live" },
     quote: `"Out of that £100,000, I run a home in Dublin, Castlebar and Brussels. I want to tell you something, try it sometime when you have a couple of cars and three HOUSES and three homes and a few housekeepers." — Padraig Flynn, 1999
@@ -81,99 +62,11 @@ For giant invisible horses.
   },
   {
     rounds: [
-      { clue: "Capital of France", answer: "PARIS" },
-      { clue: "Largest country by land area", answer: "RUSSIA" },
-      { clue: "Farthest planet from the Sun", answer: "NEPTUNE" },
-      { clue: "Ocean between Europe and the Americas", answer: "ATLANTIC" },
-      { clue: "Country where Messi was born", answer: "ARGENTINA" },
-    ],
-    anagram: { letters:["P","R","N","A","A"], answer:"PRANA", clue:"noun · life force or breath energy in Hindu philosophy" },
-    quote: `"The secret of getting ahead is getting started." — Mark Twain`,
-  },
-  {
-    rounds: [
-      { clue: "Board game of kings and pawns", answer: "CHESS" },
-      { clue: "Planet with the most visible rings", answer: "SATURN" },
-      { clue: "Largest planet in the solar system", answer: "JUPITER" },
-      { clue: "French emperor exiled to Elba", answer: "NAPOLEON" },
-      { clue: "British PM during World War II, surname", answer: "CHURCHILL" },
-    ],
-    anagram: { letters:["S","U","J","N","C"], answer:"JUNCS", clue:"noun · informal plural for junctions or connection points" },
-    quote: `"Opportunities don't happen. You create them." — Chris Grosser`,
-  },
-  {
-    rounds: [
-      { clue: "Country shaped like a boot", answer: "ITALY" },
-      { clue: "Sport played at Wimbledon", answer: "TENNIS" },
-      { clue: "Scandinavian country bordering Germany", answer: "DENMARK" },
-      { clue: "African country with Mount Kilimanjaro", answer: "TANZANIA" },
-      { clue: "City-state at the tip of Malaysia", answer: "SINGAPORE" },
-    ],
-    anagram: { letters:["I","T","D","T","S"], answer:"DIRTS", clue:"noun · soils or smears; also plural of dirt" },
-    quote: `"Whether you think you can or you think you can't, you're right." — Henry Ford`,
-  },
-  {
-    rounds: [
-      { clue: "Home of Mount Fuji", answer: "JAPAN" },
-      { clue: "Capital of Turkey", answer: "ANKARA" },
-      { clue: "Flightless bird of Antarctica", answer: "PENGUIN" },
-      { clue: "Physicist who developed the theory of relativity", answer: "EINSTEIN" },
-      { clue: "Spanish city famous for Gaudi's architecture", answer: "BARCELONA" },
-    ],
-    anagram: { letters:["J","A","P","E","B"], answer:"JAPES", clue:"noun · practical jokes or playful tricks" },
-    quote: `"You miss 100% of the shots you don't take." — Wayne Gretzky`,
-  },
-  {
-    rounds: [
-      { clue: "Land of the pharaohs", answer: "EGYPT" },
-      { clue: "Country of the Acropolis", answer: "GREECE" },
-      { clue: "Sport with wickets, bats and a crease", answer: "CRICKET" },
-      { clue: "Original Olympic race of approximately 26 miles", answer: "MARATHON" },
-      { clue: "German composer who wrote while deaf", answer: "BEETHOVEN" },
-    ],
-    anagram: { letters:["E","G","C","M","B"], answer:"BECMG", clue:"abbrev · becoming — used in aviation weather reports" },
-    quote: `"Courage is not the absence of fear, but the triumph over it." — Nelson Mandela`,
-  },
-  {
-    rounds: [
-      { clue: "King of rock and roll, first name", answer: "ELVIS" },
-      { clue: "World's largest hot desert", answer: "SAHARA" },
-      { clue: "Pop icon known as the Material Girl", answer: "MADONNA" },
-      { clue: "Westernmost country of mainland Europe", answer: "PORTUGAL" },
-      { clue: "Greek philosopher who taught Alexander the Great", answer: "ARISTOTLE" },
-    ],
-    anagram: { letters:["E","S","M","P","A"], answer:"SCAPE", clue:"noun · a view or scene, often used as a suffix like landscape" },
-    quote: `"The mind is everything. What you think you become." — Buddha`,
-  },
-  {
-    rounds: [
-      { clue: "Rock star who sang Space Oddity, surname", answer: "BOWIE" },
-      { clue: "Tiny principality on the French Riviera", answer: "MONACO" },
-      { clue: "US President who ended slavery, surname", answer: "LINCOLN" },
-      { clue: "City formerly known as Constantinople", answer: "ISTANBUL" },
-      { clue: "Capital of Sweden", answer: "STOCKHOLM" },
-    ],
-    anagram: { letters:["B","M","L","I","S"], answer:"LIMBS", clue:"noun · arms, legs or branches of a tree or body" },
-    quote: `"Fall seven times, stand up eight." — Japanese Proverb`,
-  },
-  {
-    rounds: [
-      { clue: "Author of Sherlock Holmes, surname", answer: "DOYLE" },
-      { clue: "Japanese martial art meaning empty hand", answer: "KARATE" },
-      { clue: "Famous waterfall on the US-Canada border", answer: "NIAGARA" },
-      { clue: "Landlocked Asian country, home of Genghis Khan", answer: "MONGOLIA" },
-      { clue: "Third US President, surname", answer: "JEFFERSON" },
-    ],
-    anagram: { letters:["D","K","N","M","J"], answer:"DMKNJ", clue:"· today's letters don't form a common word — solver's bonus!" },
-    quote: `"Act as if what you do makes a difference. It does." — William James`,
-  },
-  {
-    rounds: [
-      { clue: "A group of Lions",                          answer: "PRIDE",     revealIdx: 1 },       // R
-      { clue: "Austrian capital",                          answer: "VIENNA",    revealIdx: [5,0] },   // A, V
-      { clue: "Which metal is liquid at room temperature?",answer: "MERCURY",   revealIdx: 6 },       // Y
-      { clue: "Which organ produces insulin?",             answer: "PANCREAS",  revealIdx: [5,4] },   // E, R
-      { clue: "When an animal sleeps for the winter they...",answer: "HIBERNATE",revealIdx: 2 },      // B
+      { clue: "A group of Lions",                              answer: "PRIDE",     revealIdx: 1 },
+      { clue: "Austrian capital",                              answer: "VIENNA",    revealIdx: [5,0] },
+      { clue: "Which metal is liquid at room temperature?",    answer: "MERCURY",   revealIdx: 6 },
+      { clue: "Which organ produces insulin?",                 answer: "PANCREAS",  revealIdx: [5,4] },
+      { clue: "When an animal sleeps for the winter they..",   answer: "HIBERNATE", revealIdx: 2 },
     ],
     anagram: { letters:["R","V","E","A","B","Y","R"], answer:"BRAVERY", clue:"noun · great courage in the face of danger or difficulty" },
     quote: `Van Diemen's land is a hell for a man
@@ -185,387 +78,127 @@ Oh, oh, I wish I was back home in Derry
 — Bobby Sands
 🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
   },
-  {
-    rounds: [
-      { clue: "Golfing Tiger", answer: "WOODS" },
-      { clue: "Author of 1984 and Animal Farm, surname", answer: "ORWELL" },
-      { clue: "Spanish Cubist painter, surname", answer: "PICASSO" },
-      { clue: "Ancient Greek philosopher, teacher of Plato", answer: "SOCRATES" },
-      { clue: "Sport played with a net and shuttlecock", answer: "BADMINTON" },
-    ],
-    anagram: { letters:["W","O","P","S","B"], answer:"BROWS", clue:"noun · eyebrows, or the edge of a steep hill" },
-    quote: `"Change your thoughts and you change your world." — Norman Vincent Peale`,
-  },
-  {
-    rounds: [
-      { clue: "Landlocked Himalayan country", answer: "NEPAL" },
-      { clue: "Capital of Portugal", answer: "LISBON" },
-      { clue: "Smallest planet in the solar system", answer: "MERCURY" },
-      { clue: "Great Lake bordering Chicago", answer: "MICHIGAN" },
-      { clue: "Continent and country combined", answer: "AUSTRALIA" },
-    ],
-    anagram: { letters:["N","L","M","M","A"], answer:"LLNAM", clue:"· rearrange for a fresh start tomorrow!" },
-    quote: `"Keep your face always toward the sunshine, and shadows will fall behind you." — Walt Whitman`,
-  },
-  {
-    rounds: [
-      { clue: "Second planet from the Sun", answer: "VENUS" },
-      { clue: "Capital of Colombia", answer: "BOGOTA" },
-      { clue: "The Windy City, USA", answer: "CHICAGO" },
-      { clue: "First name of Da Vinci", answer: "LEONARDO" },
-      { clue: "British PM during World War II, surname", answer: "CHURCHILL" },
-    ],
-    anagram: { letters:["V","B","C","L","C"], answer:"VBCLC", clue:"· no common word today — bonus point just for finishing!" },
-    quote: `"It does not matter how slowly you go as long as you do not stop." — Confucius`,
-  },
-  {
-    rounds: [
-      { clue: "Titan who bore the sky in Greek myth", answer: "ATLAS" },
-      { clue: "Baroque composer of the Messiah", answer: "HANDEL" },
-      { clue: "Largest planet in the solar system", answer: "JUPITER" },
-      { clue: "Explorer who sailed to America in 1492, surname", answer: "COLUMBUS" },
-      { clue: "Luke's surname in Star Wars", answer: "SKYWALKER" },
-    ],
-    anagram: { letters:["A","H","J","C","S"], answer:"JACKS", clue:"noun · playing cards, or the childhood game with a ball and metal pieces" },
-    quote: `"Hardships often prepare ordinary people for an extraordinary destiny." — C.S. Lewis`,
-  },
-  {
-    rounds: [
-      { clue: "Greek letter meaning change in maths", answer: "DELTA" },
-      { clue: "World's largest hot desert", answer: "SAHARA" },
-      { clue: "Flightless bird of Antarctica", answer: "PENGUIN" },
-      { clue: "Religion founded by Siddhartha Gautama", answer: "BUDDHISM" },
-      { clue: "Harry Potter's main villain", answer: "VOLDEMORT" },
-    ],
-    anagram: { letters:["D","S","P","B","V"], answer:"DVBSP", clue:"· no common word today — well done for reaching the anagram!" },
-    quote: `"In the middle of every difficulty lies opportunity." — Albert Einstein`,
-  },
-  {
-    rounds: [
-      { clue: "Card suit shaped like a shovel", answer: "SPADE" },
-      { clue: "English city of dreaming spires", answer: "OXFORD" },
-      { clue: "Caucasus country, capital Tbilisi", answer: "GEORGIA" },
-      { clue: "Capital of Hungary", answer: "BUDAPEST" },
-      { clue: "Marvel's web-slinging superhero", answer: "SPIDERMAN" },
-    ],
-    anagram: { letters:["S","O","G","B","S"], answer:"BOGS", clue:"noun · marshy ground, or informal British term for toilets" },
-    quote: `"Today is the first day of the rest of your life." — Abbie Hoffman`,
-  },
-  {
-    rounds: [
-      { clue: "Ribbon-shaped South American country", answer: "CHILE" },
-      { clue: "Largest island in the Mediterranean", answer: "SICILY" },
-      { clue: "Empire that ruled Turkey for centuries", answer: "OTTOMAN" },
-      { clue: "English city where the Pilgrim Fathers departed", answer: "PLYMOUTH" },
-      { clue: "Scientist who discovered penicillin, surname", answer: "ALEXANDER" },
-    ],
-    anagram: { letters:["C","S","O","P","A"], answer:"CAPOS", clue:"noun · leaders of a criminal organisation, or guitar fretting devices" },
-    quote: `"Well done is better than well said." — Benjamin Franklin`,
-  },
-  {
-    rounds: [
-      { clue: "River flowing through Rome", answer: "TIBER" },
-      { clue: "Leader of the Cuban Revolution, surname", answer: "CASTRO" },
-      { clue: "Author of The Lord of the Rings, surname", answer: "TOLKIEN" },
-      { clue: "US state famous for horse racing and bourbon", answer: "KENTUCKY" },
-      { clue: "Capital of Sweden", answer: "STOCKHOLM" },
-    ],
-    anagram: { letters:["T","C","T","K","S"], answer:"STUCK", clue:"adjective · unable to move or make progress" },
-    quote: `"The best time to plant a tree was 20 years ago. The second best time is now." — Chinese Proverb`,
-  },
-  {
-    rounds: [
-      { clue: "Author of Huckleberry Finn, surname", answer: "TWAIN" },
-      { clue: "Tennis legend Andre, surname", answer: "AGASSI" },
-      { clue: "Prestigious US university in Cambridge MA", answer: "HARVARD" },
-      { clue: "Landlocked South American country, capital Asuncion", answer: "PARAGUAY" },
-      { clue: "City-state at the tip of Malaysia", answer: "SINGAPORE" },
-    ],
-    anagram: { letters:["T","A","H","P","S"], answer:"PATHS", clue:"noun · routes or tracks, literal or metaphorical" },
-    quote: `"An investment in knowledge pays the best interest." — Benjamin Franklin`,
-  },
-  {
-    rounds: [
-      { clue: "US state famous for potatoes", answer: "IDAHO" },
-      { clue: "Capital of Zambia", answer: "LUSAKA" },
-      { clue: "Ancient city destroyed by Vesuvius", answer: "POMPEII" },
-      { clue: "Fictional detective of Baker Street, first name", answer: "SHERLOCK" },
-      { clue: "Country where kangaroos are native", answer: "AUSTRALIA" },
-    ],
-    anagram: { letters:["I","L","P","S","A"], answer:"PLAIS", clue:"noun · pleats or folds in fabric — also spelled plaits" },
-    quote: `"Education is the most powerful weapon which you can use to change the world." — Nelson Mandela`,
-  },
-  {
-    rounds: [
-      { clue: "East African country, capital Nairobi", answer: "KENYA" },
-      { clue: "Capital of Croatia", answer: "ZAGREB" },
-      { clue: "Games held every four years", answer: "OLYMPIC" },
-      { clue: "Southern African country, capital Harare", answer: "ZIMBABWE" },
-      { clue: "Greek philosopher who taught Alexander the Great", answer: "ARISTOTLE" },
-    ],
-    anagram: { letters:["K","Z","O","Z","A"], answer:"KAZOO", clue:"noun · a simple humming musical instrument" },
-    quote: `"The beautiful thing about learning is that no one can take it away from you." — B.B. King`,
-  },
-  {
-    rounds: [
-      { clue: "Equine animal, also a gymnastics apparatus", answer: "HORSE" },
-      { clue: "Indian leader of nonviolent resistance", answer: "GANDHI" },
-      { clue: "North African country, capital Algiers", answer: "ALGERIA" },
-      { clue: "Capital of Belgium", answer: "BRUSSELS" },
-      { clue: "German composer who wrote while deaf", answer: "BEETHOVEN" },
-    ],
-    anagram: { letters:["H","G","A","B","B"], answer:"BAHGB", clue:"· no common English word today — respect for getting this far!" },
-    quote: `"Intellectual growth should commence at birth and cease only at death." — Albert Einstein`,
-  },
-  {
-    rounds: [
-      { clue: "World's most populous country", answer: "CHINA" },
-      { clue: "Sport played on ice with a puck", answer: "HOCKEY" },
-      { clue: "First name of President Lincoln", answer: "ABRAHAM" },
-      { clue: "Great Plains US state, capital Lincoln", answer: "NEBRASKA" },
-      { clue: "Sport played with a net and shuttlecock", answer: "BADMINTON" },
-    ],
-    anagram: { letters:["C","H","A","N","B"], answer:"BENCH", clue:"noun · a long seat, or where substitutes wait in sport" },
-    quote: `"Do what you can, with what you have, where you are." — Theodore Roosevelt`,
-  },
-  {
-    rounds: [
-      { clue: "Country of the Taj Mahal", answer: "INDIA" },
-      { clue: "Capital of Portugal", answer: "LISBON" },
-      { clue: "Baltic state, capital Tallinn", answer: "ESTONIA" },
-      { clue: "US state containing Rocky Mountain National Park", answer: "COLORADO" },
-      { clue: "Continent and country combined", answer: "AUSTRALIA" },
-    ],
-    anagram: { letters:["I","L","E","C","A"], answer:"LAICE", clue:"· try ALICE or rearrange for something new!" },
-    quote: `"He who has a why to live can bear almost any how." — Friedrich Nietzsche`,
-  },
-  {
-    rounds: [
-      { clue: "Longest river in France", answer: "LOIRE" },
-      { clue: "East African country, capital Kampala", answer: "UGANDA" },
-      { clue: "World's largest ocean", answer: "PACIFIC" },
-      { clue: "South American country, capital Bogota", answer: "COLOMBIA" },
-      { clue: "Third US President, surname", answer: "JEFFERSON" },
-    ],
-    anagram: { letters:["L","U","P","C","J"], answer:"CLUMP", clue:"noun · a cluster or group of trees, or a heavy thudding sound" },
-    quote: `"Live as if you were to die tomorrow. Learn as if you were to live forever." — Mahatma Gandhi`,
-  },
-  {
-    rounds: [
-      { clue: "Capital of South Korea", answer: "SEOUL" },
-      { clue: "Scandinavian country, capital Stockholm", answer: "SWEDEN" },
-      { clue: "London football club, home at Emirates Stadium", answer: "ARSENAL" },
-      { clue: "Capital of Chile", answer: "SANTIAGO" },
-      { clue: "Luke's surname in Star Wars", answer: "SKYWALKER" },
-    ],
-    anagram: { letters:["S","S","A","S","S"], answer:"SASSY", clue:"adjective · lively, bold and cheeky in manner" },
-    quote: `"A leader is one who knows the way, goes the way, and shows the way." — John C. Maxwell`,
-  },
-  {
-    rounds: [
-      { clue: "Iconic Argentine First Lady", answer: "PERON" },
-      { clue: "Balkan country, capital Sarajevo", answer: "BOSNIA" },
-      { clue: "Famous US presidential family — Bill, Hillary and Chelsea", answer: "CLINTON" },
-      { clue: "Capital of Hungary", answer: "BUDAPEST" },
-      { clue: "Marvel's web-slinging superhero", answer: "SPIDERMAN" },
-    ],
-    anagram: { letters:["P","B","C","B","S"], answer:"PBCBS", clue:"· no common word — you've reached the final stage, well done!" },
-    quote: `"Leadership is not about being in charge. It is about taking care of those in your charge." — Simon Sinek`,
-  },
-  {
-    rounds: [
-      { clue: "Largest Greek island", answer: "CRETE" },
-      { clue: "Ancient wonder — the Colossus stood here", answer: "RHODES" },
-      { clue: "Napoleon's island of birth", answer: "CORSICA" },
-      { clue: "French region famous for D-Day landings", answer: "NORMANDY" },
-      { clue: "Spanish city famous for Gaudi's architecture", answer: "BARCELONA" },
-    ],
-    anagram: { letters:["C","R","C","N","B"], answer:"RCNCB", clue:"· today's letters celebrate European geography — well played!" },
-    quote: `"If your actions inspire others to dream more, learn more, do more and become more, you are a leader." — John Quincy Adams`,
-  },
-  {
-    rounds: [
-      { clue: "Italian poet who wrote the Inferno", answer: "DANTE" },
-      { clue: "Beethoven's nationality", answer: "GERMAN" },
-      { clue: "Author of War and Peace, surname", answer: "TOLSTOY" },
-      { clue: "Musical — First US Treasury Secretary", answer: "HAMILTON" },
-      { clue: "Capital of Sweden", answer: "STOCKHOLM" },
-    ],
-    anagram: { letters:["D","G","T","H","S"], answer:"GHDS", clue:"noun · brand name become common word for hair straighteners" },
-    quote: `"The two most important days in your life are the day you are born and the day you find out why." — Mark Twain`,
-  },
-  {
-    rounds: [
-      { clue: "US state famous for potatoes", answer: "IDAHO" },
-      { clue: "Texas city famous for the Cowboys NFL team", answer: "DALLAS" },
-      { clue: "US state where the Grand Canyon is found", answer: "ARIZONA" },
-      { clue: "US state home of the Pentagon", answer: "VIRGINIA" },
-      { clue: "US city on Lake Erie, Ohio", answer: "CLEVELAND" },
-    ],
-    anagram: { letters:["I","D","A","V","C"], answer:"DIVAN", clue:"noun · a low bed or couch, often without a headboard" },
-    quote: `"Energy and persistence conquer all things." — Benjamin Franklin`,
-  },
-  {
-    rounds: [
-      { clue: "West African nation, capital Accra", answer: "GHANA" },
-      { clue: "Capital of Zambia", answer: "LUSAKA" },
-      { clue: "East African country, capital Asmara", answer: "ERITREA" },
-      { clue: "Landlocked African country, capital Gaborone", answer: "BOTSWANA" },
-      { clue: "Country where kangaroos are native", answer: "AUSTRALIA" },
-    ],
-    anagram: { letters:["G","L","E","B","A"], answer:"BAGEL", clue:"noun · a ring-shaped bread roll, boiled then baked" },
-    quote: `"The greatest glory in living lies not in never falling, but in rising every time we fall." — Nelson Mandela`,
-  },
-  {
-    rounds: [
-      { clue: "Landlocked Himalayan country", answer: "NEPAL" },
-      { clue: "Author of Dracula, surname", answer: "STOKER" },
-      { clue: "Balkan country, capital Tirana", answer: "ALBANIA" },
-      { clue: "Ancient Greek philosopher, teacher of Plato", answer: "SOCRATES" },
-      { clue: "Harry Potter's main villain", answer: "VOLDEMORT" },
-    ],
-    anagram: { letters:["N","S","A","S","V"], answer:"VANS", clue:"noun · vehicles for carrying goods, or flat-soled canvas shoes" },
-    quote: `"The measure of a man is what he does with power." — Plato`,
-  },
 ];
 
-// ─── STREAK SYSTEM ───────────────────────────────────────────────────────────
+// ─── STREAK ───────────────────────────────────────────────────────────────────
 function getToday() {
   const d = new Date();
   return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
 }
-
 function getStreak() {
-  try {
-    const data = JSON.parse(localStorage.getItem("ftn_streak") || "{}");
-    return data;
-  } catch { return {}; }
+  try { return JSON.parse(localStorage.getItem("ftn_streak") || "{}"); }
+  catch { return {}; }
 }
-
 function saveStreak(won) {
   try {
     const today = getToday();
     const data = getStreak();
-    const yesterday = (() => {
-      const d = new Date();
-      d.setDate(d.getDate() - 1);
-      return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`;
-    })();
-
-    if (data.lastPlayed === today) return data; // already saved today
-
-    const newStreak = won
-      ? (data.lastPlayed === yesterday ? (data.current || 0) + 1 : 1)
-      : 0;
-
-    const newData = {
-      current: newStreak,
-      best: Math.max(newStreak, data.best || 0),
-      lastPlayed: today,
-      lastWon: won,
-    };
+    const yesterday = (() => { const d=new Date(); d.setDate(d.getDate()-1); return `${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}`; })();
+    if (data.lastPlayed === today) return data;
+    const newStreak = won ? (data.lastPlayed===yesterday ? (data.current||0)+1 : 1) : 0;
+    const newData = { current:newStreak, best:Math.max(newStreak,data.best||0), lastPlayed:today, lastWon:won };
     localStorage.setItem("ftn_streak", JSON.stringify(newData));
     return newData;
-  } catch { return { current: 0, best: 0 }; }
+  } catch { return { current:0, best:0 }; }
 }
 
-// ─── SCORING SYSTEM ──────────────────────────────────────────────────────────
+// ─── SCORING ─────────────────────────────────────────────────────────────────
 function getTitle(timeLeft) {
-  const remaining = timeLeft; // seconds left on clock
-  if (remaining >= 120) return { title: "CEO",        color: "#c4941f" };
-  if (remaining >= 90)  return { title: "DIRECTOR", color: "#c0c0c0" };
-  if (remaining >= 60)  return { title: "MANAGER",  color: "#cd7f32" };
-  if (remaining >= 30)  return { title: "INTERN",   color: "#7ec8e3" };
-  return                       { title: "MAILROOM", color: "#222222"    };
+  if (timeLeft >= 120) return { title:"CEO",      color:"#c4941f" };
+  if (timeLeft >= 90)  return { title:"DIRECTOR", color:"#888888" };
+  if (timeLeft >= 60)  return { title:"MANAGER",  color:"#cd7f32" };
+  if (timeLeft >= 30)  return { title:"INTERN",   color:"#5b8db8" };
+  return                      { title:"MAILROOM", color:"#aaaaaa" };
 }
 
+// ─── CONSTANTS ────────────────────────────────────────────────────────────────
 const HINT_PENALTY  = 10;
 const TOTAL_SECONDS = 3 * 60;
 
 function getDailyPuzzle() {
-  const today = new Date();
+  const today  = new Date();
   const dayNum = Math.floor((today - new Date("2026-05-01")) / 86400000);
-  const puzzle = PUZZLES[dayNum % PUZZLES.length];
-  // Shuffle anagram letters so they never spell the answer in order
-  const letters = [...puzzle.anagram.letters];
-  // Keep shuffling until it doesn't spell the answer
-  for (let attempts = 0; attempts < 20; attempts++) {
-    for (let i = letters.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [letters[i], letters[j]] = [letters[j], letters[i]];
-    }
-    if (letters.join("") !== puzzle.anagram.answer) break;
-  }
-  return { ...puzzle, anagram: { ...puzzle.anagram, letters } };
+  return PUZZLES[dayNum % PUZZLES.length];
 }
 
 function formatTime(s) {
   if (s <= 0) return "0:00";
-  return `${Math.floor(s / 60)}:${(s % 60).toString().padStart(2, "0")}`;
+  return `${Math.floor(s/60)}:${(s%60).toString().padStart(2,"0")}`;
+}
+
+function tileSize(len) {
+  const w = typeof window !== "undefined" ? window.innerWidth : 400;
+  return Math.min(52, Math.floor((Math.min(w,500) - 48 - (len-1)*6) / len));
 }
 
 function evaluateGuess(guess, answer) {
-  const result = Array(answer.length).fill("absent");
-  const used   = Array(answer.length).fill(false);
-  for (let i = 0; i < answer.length; i++) {
-    if (guess[i] === answer[i]) { result[i] = "correct"; used[i] = true; }
-  }
-  for (let i = 0; i < answer.length; i++) {
-    if (result[i] === "correct") continue;
-    for (let j = 0; j < answer.length; j++) {
-      if (!used[j] && guess[i] === answer[j]) { result[i] = "present"; used[j] = true; break; }
-    }
-  }
+  const result = Array(guess.length).fill("absent");
+  const ansArr = answer.split(""); const gArr = guess.split("");
+  const used = Array(answer.length).fill(false);
+  gArr.forEach((ch,i) => { if (ch===ansArr[i]) { result[i]="correct"; used[i]=true; } });
+  gArr.forEach((ch,i) => {
+    if (result[i]==="correct") return;
+    const j = ansArr.findIndex((c,k)=>c===ch&&!used[k]);
+    if (j!==-1) { result[i]="present"; used[j]=true; }
+  });
   return result;
 }
 
-// ─── COMPONENTS ───────────────────────────────────────────────────────────────
-// Calculate tile size based on word length and screen width
-function tileSize(wordLen) {
-  const screen = typeof window !== "undefined" ? window.innerWidth : 400;
-  const available = Math.min(screen - 48, 560);
-  const size = Math.floor((available - (wordLen - 1) * 5) / wordLen);
-  return Math.min(52, Math.max(36, size));
-}
+// ─── CSS ─────────────────────────────────────────────────────────────────────
+const CSS = `
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  @keyframes flicker{0%,89%,91%,93%,100%{opacity:1}90%,92%{opacity:0.7}}
+  @keyframes tileGlow{0%,100%{box-shadow:0 0 6px rgba(196,148,31,0.3)}50%{box-shadow:0 0 18px rgba(196,148,31,0.7)}}
+  @keyframes penalty{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-30px)}}
+  *{box-sizing:border-box;margin:0;padding:0}
+  button:active{opacity:0.7}
+`;
 
+// ─── TYPEWRITER ROW ───────────────────────────────────────────────────────────
 function TypewriterRow({ word, answer, correct, animate, onDone }) {
   const [count,   setCount]   = useState(animate ? 0 : word.length);
   const [flipped, setFlipped] = useState(!animate);
   useEffect(() => {
     if (!animate) return;
-    if (count < word.length) { const t = setTimeout(() => setCount(c => c+1), 100); return () => clearTimeout(t); }
-    else { const t = setTimeout(() => { setFlipped(true); onDone?.(); }, 300); return () => clearTimeout(t); }
+    if (count < word.length) { const t=setTimeout(()=>setCount(c=>c+1),100); return ()=>clearTimeout(t); }
+    else { const t=setTimeout(()=>{ setFlipped(true); onDone?.(); },300); return ()=>clearTimeout(t); }
   }, [count, word.length, animate, onDone]);
-  const evaluation = correct ? Array(word.length).fill("correct") : evaluateGuess(word, answer);
   const sz = tileSize(word.length);
-  const fs = Math.max(13, Math.min(20, Math.floor(sz * 0.44)));
+  const fs = Math.max(13, Math.min(20, Math.floor(sz*0.44)));
+  const evaluation = correct ? Array(word.length).fill("correct") : evaluateGuess(word, answer);
   return (
     <div style={{ display:"flex", gap:5, justifyContent:"center", marginBottom:6 }}>
-      {word.split("").map((ch, i) => {
+      {word.split("").map((ch,i) => {
         const shown = i < count;
-        const ev = evaluation[i];
-        let color="#111111", border="#cccccc", bg="#ffffff", content=shown?ch:"";
+        let color="#111111", border="#cccccc", content=shown?ch:"";
         if (flipped) {
-          if (ev==="correct")      { color="#2e7d32"; border="#2e7d32"; bg="#ffffff"; }
-          else if (ev==="present") { color="#e65100"; border="#e65100"; bg="#ffffff"; }
-          else                     { color="#c62828"; border="#c62828"; bg="#ffffff"; }
-          content=ch;
-        } else if (!shown) { border="#cccccc"; color="transparent"; bg="#ffffff"; }
-        return <div key={i} style={{ width:sz, height:sz, border:`2px solid ${border}`, borderRadius:4, background:"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:fs, fontWeight:700, color: flipped ? color : shown ? "#111111" : "#cccccc", fontFamily:"'Courier New',monospace", transition:flipped?`border-color 0.15s ${i*0.04}s,color 0.15s ${i*0.04}s,background 0.15s ${i*0.04}s`:"none", position:"relative" }}>
-          {content}
-          {animate && !flipped && i===count && <div style={{ position:"absolute", right:3, top:7, bottom:7, width:2, background:"#c4941f", animation:"blink 0.6s step-end infinite" }} />}
-        </div>;
+          const ev = evaluation[i];
+          if (ev==="correct")      { color="#2e7d32"; border="#2e7d32"; }
+          else if (ev==="present") { color="#e65100"; border="#e65100"; }
+          else                     { color="#c62828"; border="#c62828"; }
+          content = ch;
+        } else if (!shown) { border="#cccccc"; color="transparent"; }
+        return (
+          <div key={i} style={{ width:sz, height:sz, border:`2px solid ${border}`, borderRadius:4, background:"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:fs, fontWeight:700, color: flipped?color:shown?"#111111":"#cccccc", fontFamily:"'Courier New',monospace", transition:flipped?`border-color 0.15s ${i*0.04}s,color 0.15s ${i*0.04}s`:"none", position:"relative" }}>
+            {content}
+            {animate && !flipped && i===count && <div style={{ position:"absolute", right:3, top:7, bottom:7, width:2, background:"#c4941f", animation:"blink 0.6s step-end infinite" }} />}
+          </div>
+        );
       })}
     </div>
   );
 }
 
+// ─── ANSWER DISPLAY ───────────────────────────────────────────────────────────
 function AnswerDisplay({ length, revealed, input, shake }) {
-  let freeIdx = 0;
-  const cells = [];
+  let freeIdx = 0; const cells = [];
   const sz = tileSize(length);
-  const fs = Math.max(13, Math.min(20, Math.floor(sz * 0.44)));
-  for (let i = 0; i < length; i++) {
+  const fs = Math.max(13, Math.min(20, Math.floor(sz*0.44)));
+  for (let i=0; i<length; i++) {
     const hinted = revealed[i];
     if (hinted) { cells.push({ i, hinted, ch:hinted, isCursor:false }); }
     else { const ch=input[freeIdx]||""; const isCursor=freeIdx===input.length; cells.push({ i, hinted:false, ch, isCursor }); freeIdx++; }
@@ -582,16 +215,16 @@ function AnswerDisplay({ length, revealed, input, shake }) {
   );
 }
 
+// ─── ROUND SUMMARY ────────────────────────────────────────────────────────────
 function RoundSummary({ r, i }) {
-  // revealIdx can be a single number or an array
   const highlights = Array.isArray(r.revealIdx) ? r.revealIdx : [r.revealIdx];
   return (
     <div style={{ display:"flex", alignItems:"center", gap:10, padding:"7px 12px", background:r.solved?"rgba(46,125,50,0.06)":"rgba(198,40,40,0.04)", border:`1px solid ${r.solved?"rgba(46,125,50,0.3)":"rgba(198,40,40,0.2)"}`, borderRadius:8, marginBottom:5 }}>
-      <div style={{ fontSize:10, color:"#111111", width:16, flexShrink:0 }}>{i+1}</div>
+      <div style={{ fontSize:10, color:"#666666", width:16, flexShrink:0 }}>{i+1}</div>
       <div style={{ flex:1, display:"flex", gap:3, flexWrap:"wrap" }}>
         {r.answer.split("").map((ch,ci) => {
           const hl = highlights.includes(ci);
-          return <div key={ci} style={{ width:20, height:20, borderRadius:3, border:`1px solid ${hl?"#c4941f":"#cccccc"}`, background:hl?"#c4941f":"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:9, fontWeight:700, color:hl?"#000000":r.solved?"#2e7d32":"#555555", fontFamily:"'Courier New',monospace", boxShadow:hl?"0 0 6px rgba(196,148,31,0.4)":"none" }}>{ch}</div>;
+          return <div key={ci} style={{ width:20, height:20, borderRadius:3, border:`1px solid ${hl?"#c4941f":"#cccccc"}`, background:hl?"#c4941f":"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:9, fontWeight:700, color:hl?"#000000":r.solved?"#2e7d32":"#555555", fontFamily:"'Courier New',monospace" }}>{ch}</div>;
         })}
       </div>
       <div style={{ fontSize:10, color:r.solved?"#2e7d32":"#c62828", flexShrink:0 }}>{r.solved?"✓":"✗"}</div>
@@ -599,86 +232,54 @@ function RoundSummary({ r, i }) {
   );
 }
 
-// Share result — no answers revealed
-function buildShareText(done, timeLeft, anagramSolved, streak) {
-  const taken = TOTAL_SECONDS - timeLeft;
-  const mins = Math.floor(taken/60), secs = taken%60;
-  const today = new Date().toLocaleDateString("en-GB", { day:"numeric", month:"short" });
-  const boxes = done.map(r => r.solved ? "✅" : "❌").join(" ");
-  const anBox = anagramSolved ? "🔤✅" : "🔤❌";
-  const streakLine = streak && streak.current > 0 ? `\n👑 ${streak.current} day streak` : "";
-  const title = getTitle(timeLeft).title;
-  return `5 TO 9 · ${today}\n🎓 ${title}\n${boxes} ${anBox}\n⏱ ${mins}m ${secs}s${streakLine}\nfive-to-nine.vercel.app`;
-}
-
-const CSS = `
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:wght@400;700&display=swap');
-  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
-  @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-  @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-  @keyframes flicker{0%,89%,91%,93%,100%{opacity:1}90%,92%{opacity:0.7}}
-  @keyframes glow{0%,100%{text-shadow:0 0 10px rgba(196,148,31,0.4)}50%{text-shadow:0 0 28px rgba(196,148,31,0.9)}}
-  @keyframes tileGlow{0%,100%{box-shadow:0 0 6px rgba(196,148,31,0.3)}50%{box-shadow:0 0 18px rgba(196,148,31,0.7)}}
-  @keyframes penalty{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-30px)}}
-  *{box-sizing:border-box;margin:0;padding:0}
-  button:hover{filter:brightness(1.2)}
-  button:active{opacity:0.7}
-`;
-
 // ─── MAIN APP ─────────────────────────────────────────────────────────────────
 export default function FiveToNine() {
-  const [started,   setStarted]   = useState(false);
-  const [streak,    setStreak]    = useState(() => getStreak());
-  const [puzzle]    = useState(() => {
-    // TO TEST A SPECIFIC PUZZLE: change PUZZLES[0] to PUZZLES[n]
-    // TO GO LIVE: uncomment getDailyPuzzle() and remove the line below
-    return getDailyPuzzle(); // uses date-based rotation
-    // return PUZZLES[0]; // force first puzzle for testing
-  });
+  const [puzzle]    = useState(() => getDailyPuzzle());
   const [roundIdx,  setRoundIdx]  = useState(0);
   const [done,      setDone]      = useState([]);
   const [attempts,  setAttempts]  = useState([]);
   const [animating, setAnimating] = useState(false);
   const [input,     setInput]     = useState("");
   const [revealed,  setRevealed]  = useState({});
-  const [hintsUsed,  setHintsUsed]  = useState(0);
   const [shake,     setShake]     = useState(false);
-  const [phase,     setPhase]     = useState("playing");
-  const [anInput,   setAnInput]   = useState("");
+  const [phase,     setPhase]     = useState("landing");
   const [anShake,   setAnShake]   = useState(false);
   const [anWrong,   setAnWrong]   = useState(false);
-  const [anSlots,   setAnSlots]   = useState([]); // letters placed in slots
-  const [anUsed,    setAnUsed]    = useState([]); // which tile indices are used
+  const [anSlots,   setAnSlots]   = useState([]);
+  const [anUsed,    setAnUsed]    = useState([]);
   const [timeLeft,  setTimeLeft]  = useState(TOTAL_SECONDS);
   const [penalty,   setPenalty]   = useState(null);
   const [shared,    setShared]    = useState(false);
   const [anagramSolved, setAnagramSolved] = useState(false);
+  const [started,   setStarted]   = useState(false);
+  const [streak,    setStreak]    = useState(() => getStreak());
   const [showAnswers,  setShowAnswers]  = useState(false);
   const [showScoring,  setShowScoring]  = useState(false);
 
   const round    = puzzle.rounds[roundIdx];
   const alen     = round?.answer.length ?? 0;
   const canInput = phase === "playing" && !animating;
-  const freeCount = Array.from({length: alen}, (_,i) => i).filter(i => !revealed[i]).length;
-
-  // Assign revealIdx to each round based on puzzle index
-  const revealIdxMap = [0, 1, 2, 3, 4];
+  const freeCount = Array.from({length:alen},(_,i)=>i).filter(i=>!revealed[i]).length;
 
   useEffect(() => {
-    if (!started) return; // don't start timer until user clicks Start
-    if (phase === "win" || phase === "timeout") return;
-    if (timeLeft <= 0) {
-      saveStreak(false);
-      setStreak(getStreak());
-      setPhase("timeout");
-      return;
-    }
-    const id = setTimeout(() => setTimeLeft(t => t-1), 1000);
+    if (!started || phase==="win" || phase==="timeout" || phase==="landing") return;
+    if (timeLeft <= 0) { saveStreak(false); setStreak(getStreak()); setPhase("timeout"); return; }
+    const id = setTimeout(()=>setTimeLeft(t=>t-1), 1000);
     return () => clearTimeout(id);
   }, [timeLeft, phase, started]);
 
   const timerColor = timeLeft<=30?"#c62828":timeLeft<=60?"#e65100":"#c4941f";
+
+  const takeHint = () => {
+    if (!canInput) return;
+    const unrevealed = [];
+    for (let i=0; i<alen; i++) { if (!revealed[i]) unrevealed.push(i); }
+    if (!unrevealed.length) return;
+    const idx = unrevealed[Math.floor(Math.random()*unrevealed.length)];
+    setRevealed(prev=>({ ...prev, [idx]:round.answer[idx] }));
+    setInput(""); setTimeLeft(t=>Math.max(0,t-HINT_PENALTY));
+    setPenalty("-10s"); setTimeout(()=>setPenalty(null),1200);
+  };
 
   const buildGuess = useCallback(() => {
     let result="", freeIdx=0;
@@ -698,10 +299,8 @@ export default function FiveToNine() {
     const guess = buildGuess();
     if (guess.includes(" ")) { setShake(true); setTimeout(()=>setShake(false),500); return; }
     const correct = guess === round.answer;
-    setAttempts(prev => [...prev, { word:guess, correct }]);
-    setInput("");
-    setAnimating(true);
-    revealFired.current = false;
+    setAttempts(prev=>[...prev, { word:guess, correct }]);
+    setInput(""); setAnimating(true); revealFired.current = false;
   }, [canInput, buildGuess, round]);
 
   const onRevealDone = useCallback(() => {
@@ -711,355 +310,254 @@ export default function FiveToNine() {
     setAttempts(prev => {
       const latest = prev[prev.length-1];
       if (!latest) return prev;
-      if (latest.skipped) return prev; // skip handles its own transition
       if (latest.correct) {
         setTimeout(() => {
-          // Use revealIdx from puzzle data if present, else middle letter
-          const revIdx = round.revealIdx !== undefined ? round.revealIdx : Math.floor(round.answer.length / 2);
-          const completedRound = { ...round, solved:true, revealIdx: revIdx }; // preserves array or single
-          setDone(d => [...d, completedRound]);
-          setAttempts([]);
-          setInput("");
-          setRevealed({});
-          setHintsUsed(0);
-          setAnimating(false);
-          revealFired.current = false;
-          if (roundIdx >= puzzle.rounds.length-1) { setPhase("anagram"); }
-          else { setRoundIdx(r => r+1); }
+          const completedRound = { ...round, solved:true, revealIdx:round.revealIdx };
+          setDone(d=>[...d, completedRound]);
+          setAttempts([]); setInput(""); setRevealed({});
+          setAnimating(false); revealFired.current = false;
+          if (roundIdx >= puzzle.rounds.length-1) setPhase("anagram");
+          else setRoundIdx(r=>r+1);
         }, 700);
       } else {
-        // Wrong answer - unlock input after typewriter finishes
         setAnimating(false);
-        setTimeout(() => setInput(""), 100);
+        setTimeout(()=>setInput(""), 100);
       }
       return prev;
     });
   }, []);
 
-  const takeHint = () => {
-    if (!canInput) return;
-    const unrevealed = [];
-    for (let i=0; i<alen; i++) { if (!revealed[i]) unrevealed.push(i); }
-    if (!unrevealed.length) return;
-    const idx = unrevealed[Math.floor(Math.random()*unrevealed.length)];
-    setRevealed(prev => ({ ...prev, [idx]:round.answer[idx] }));
-    setInput("");
-    setHintsUsed(h => h+1);
-    setTimeLeft(t => Math.max(0,t-HINT_PENALTY));
-    setPenalty("-10s");
-    setTimeout(()=>setPenalty(null),1200);
-  };
-
   useEffect(() => {
     const onDown = (e) => {
-      if (!canInput) return; // also blocks during anagram phase since canInput=false
+      if (!canInput) return;
       if (["Backspace"," "].includes(e.key)||/^[a-zA-Z]$/.test(e.key)) e.preventDefault();
       const k=e.key.toUpperCase();
       if (k==="BACKSPACE") setInput(s=>s.slice(0,-1));
-      else if (/^[A-Z]$/.test(k) && input.length < freeCount) setInput(s => s + k);
+      else if (/^[A-Z]$/.test(k)&&input.length<freeCount) setInput(s=>s+k);
     };
-    const onUp = (e) => {
-      if (e.key!=="Enter") return;
-      // Only preventDefault during playing phase — let anagram input handle its own Enter
-      if (canInput) { e.preventDefault(); submit(); }
-    };
-    window.addEventListener("keydown", onDown);
-    window.addEventListener("keyup", onUp);
-    return () => { window.removeEventListener("keydown",onDown); window.removeEventListener("keyup",onUp); };
+    const onUp = (e) => { if (e.key!=="Enter") return; e.preventDefault(); if (canInput) submit(); };
+    window.addEventListener("keydown",onDown); window.addEventListener("keyup",onUp);
+    return ()=>{ window.removeEventListener("keydown",onDown); window.removeEventListener("keyup",onUp); };
   }, [canInput, input, freeCount, submit]);
 
   const pressKey = (k) => {
     if (!canInput) return;
     if (k==="ENTER") submit();
     else if (k==="DEL") setInput(s=>s.slice(0,-1));
-    else if (input.length < freeCount) setInput(s => s + k);
-  };
-
-  const submitAnagram = () => {
-    const guess = anSlots.join("").toUpperCase();
-    if (guess === puzzle.anagram.answer) {
-      setAnagramSolved(true);
-      const newStreak = saveStreak(true);
-      setStreak(newStreak);
-      setTimeout(()=>setPhase("win"),800);
-    } else {
-      setAnWrong(true); setAnShake(true);
-      setTimeout(()=>{ setAnShake(false); setAnWrong(false); }, 700);
-    }
+    else if (input.length<freeCount) setInput(s=>s+k);
   };
 
   const tapAnagramLetter = (letter, tileIdx) => {
-    if (anUsed.includes(tileIdx)) return; // already used
-    if (anSlots.length >= puzzle.anagram.answer.length) return; // slots full
-    setAnSlots(prev => [...prev, letter]);
-    setAnUsed(prev => [...prev, tileIdx]);
+    if (anUsed.includes(tileIdx)||anSlots.length>=puzzle.anagram.answer.length) return;
+    setAnSlots(prev=>[...prev,letter]); setAnUsed(prev=>[...prev,tileIdx]);
   };
-
   const clearAnagramSlot = (slotIdx) => {
-    // Find which tile was used for this slot and free it
-    const usedIdx = anUsed[slotIdx];
-    setAnSlots(prev => prev.filter((_, i) => i !== slotIdx));
-    setAnUsed(prev => prev.filter((_, i) => i !== slotIdx));
+    setAnSlots(prev=>prev.filter((_,i)=>i!==slotIdx));
+    setAnUsed(prev=>prev.filter((_,i)=>i!==slotIdx));
   };
+  const clearAllAnagram = () => { setAnSlots([]); setAnUsed([]); setAnWrong(false); };
 
-  const clearAllAnagram = () => {
-    setAnSlots([]);
-    setAnUsed([]);
-    setAnWrong(false);
-  };
-
-  const handleShare = () => {
-    const text = buildShareText(done, timeLeft, anagramSolved, streak);
-    const waUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
-    // Try WhatsApp first on mobile, fallback to clipboard
-    const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
-    if (isMobile) {
-      window.open(waUrl, "_blank");
+  const submitAnagram = () => {
+    const guess = anSlots.join("").toUpperCase();
+    if (guess===puzzle.anagram.answer) {
+      setAnagramSolved(true);
+      const newStreak = saveStreak(true); setStreak(newStreak);
+      setTimeout(()=>setPhase("win"),800);
     } else {
-      navigator.clipboard.writeText(text).then(() => {
-        setShared(true);
-        setTimeout(()=>setShared(false), 2500);
-      });
+      setAnWrong(true); setAnShake(true);
+      setTimeout(()=>{ setAnShake(false); setAnWrong(false); },700);
     }
   };
 
-  const Header = ({ label, showTimer=false }) => (
-    <div style={{ width:"100%", maxWidth:580, display:"flex", alignItems:"center", justifyContent:"space-between", padding:"16px 0 12px", borderBottom:"1px solid #e0e0e0", marginBottom:14 }}>
-      <div style={{ fontSize:20, letterSpacing:1, color:"#666666", minWidth:60, fontWeight:800 }}>{label}</div>
-      <h1 style={{ fontSize:40, letterSpacing:8, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", animation:"flicker 8s infinite", lineHeight:1 }}>5 TO 9</h1>
-      {showTimer
-        ? <div style={{ fontSize:20, fontWeight:700, fontFamily:"'Courier New',monospace", color:timerColor, minWidth:60, textAlign:"right", animation:timeLeft<=10?"blink 0.5s step-end infinite":"none", transition:"color 0.5s" }}>{formatTime(timeLeft)}</div>
-        : <div style={{ minWidth:60 }}></div>
-      }
-    </div>
-  );
+  const handleShare = () => {
+    const taken = TOTAL_SECONDS - timeLeft;
+    const mins=Math.floor(taken/60), secs=taken%60;
+    const today = new Date().toLocaleDateString("en-GB",{day:"numeric",month:"short"});
+    const boxes = done.map(r=>r.solved?"✅":"❌").join(" ");
+    const anBox = anagramSolved?"🔤✅":"🔤❌";
+    const title = getTitle(timeLeft).title;
+    const streakLine = streak&&streak.current>0?`\n👑 ${streak.current} day streak`:"";
+    const text = `5 TO 9 · ${today}\n🎓 ${title}\n${boxes} ${anBox}\n⏱ ${mins}m ${secs}s remaining${streakLine}\nfive-to-nine.vercel.app`;
+    const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+    if (isMobile) window.open(`https://wa.me/?text=${encodeURIComponent(text)}`,"_blank");
+    else navigator.clipboard.writeText(text).then(()=>{ setShared(true); setTimeout(()=>setShared(false),2500); });
+  };
 
   const ShareButton = () => (
-    <button onClick={handleShare} style={{ background:"#ffffff", border:"1px solid #25D366", color:"#25D366", borderRadius:4, padding:"11px 28px", fontSize:11, letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace", display:"flex", alignItems:"center", gap:8, margin:"0 auto" }}>
-      {shared ? "✓ COPIED!" : "📤 SHARE RESULT"}
+    <button onClick={handleShare} style={{ display:"flex", alignItems:"center", justifyContent:"center", gap:10, width:"100%", height:56, background:shared?"rgba(37,211,102,0.2)":"#25D366", border:"none", borderRadius:10, color:"#000", fontSize:14, fontWeight:800, letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace", boxSizing:"border-box" }}>
+      <span style={{ fontSize:20 }}>{shared?"✓":"📤"}</span>
+      <span>{shared?"COPIED!":"SHARE RESULT"}</span>
     </button>
   );
 
-  // ── LANDING PAGE ──────────────────────────────────────────────────────────
-  if (!started) return (
+  const QuoteDisplay = () => (
+    <div style={{ maxWidth:440, border:"1px solid #e0e0e0", borderRadius:10, padding:"22px 26px", animation:"fadeUp 0.8s ease", textAlign:"left", marginBottom:16, width:"100%", background:"#ffffff" }}>
+      <div style={{ fontSize:13, letterSpacing:3, color:"#c4941f", marginBottom:14, fontWeight:700 }}>BEFORE YOU GO...</div>
+      <p style={{ fontSize:13, lineHeight:1.9, color:"#333333", fontStyle:"italic", margin:0, whiteSpace:"pre-wrap" }}>
+        {puzzle.quote.split(puzzle.anagram.answer).map((part,i,arr) => {
+          const urlRegex = /(https?:\/\/[^\s]+)/g;
+          const withLinks = part.split(urlRegex).map((chunk,j) =>
+            urlRegex.test(chunk)
+              ? <a key={j} href={chunk} target="_blank" rel="noopener noreferrer" style={{ color:"#c4941f", fontStyle:"normal", wordBreak:"break-all" }}>{chunk}</a>
+              : chunk
+          );
+          return <span key={i}>{withLinks}{i<arr.length-1&&<span style={{ color:"#c4941f", fontWeight:"bold", fontStyle:"normal", letterSpacing:1 }}>{puzzle.anagram.answer}</span>}</span>;
+        })}
+      </p>
+    </div>
+  );
+
+  const ReviewAnswers = () => (
+    <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}>
+      <button onClick={()=>setShowAnswers(s=>!s)} style={{ width:"100%", background:"transparent", border:"1px solid #e0e0e0", borderRadius:8, padding:"10px", fontSize:11, color:"#666666", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>
+        {showAnswers?"▲ HIDE ANSWERS":"▼ REVIEW TODAY'S ANSWERS"}
+      </button>
+      {showAnswers && (
+        <div style={{ marginTop:8 }}>
+          {puzzle.rounds.map((r,i) => {
+            const highlights = Array.isArray(r.revealIdx)?r.revealIdx:[r.revealIdx];
+            const solved = done[i]?.solved;
+            return (
+              <div key={i} style={{ padding:"10px 14px", background:"rgba(0,0,0,0.02)", border:"1px solid #e0e0e0", borderRadius:8, marginBottom:6 }}>
+                <div style={{ fontSize:10, color:"#666666", marginBottom:6 }}>{r.clue}</div>
+                <div style={{ display:"flex", gap:4, flexWrap:"wrap" }}>
+                  {r.answer.split("").map((ch,ci) => {
+                    const hl = highlights.includes(ci);
+                    return <div key={ci} style={{ width:26, height:26, borderRadius:3, border:`1px solid ${hl?"#c4941f":"#cccccc"}`, background:hl?"#c4941f":"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:700, color:hl?"#000000":solved?"#2e7d32":"#888888", fontFamily:"'Courier New',monospace" }}>{ch}</div>;
+                  })}
+                </div>
+              </div>
+            );
+          })}
+          <div style={{ padding:"10px 14px", background:"rgba(196,148,31,0.05)", border:"1px solid rgba(196,148,31,0.2)", borderRadius:8 }}>
+            <div style={{ fontSize:10, color:"#c4941f", marginBottom:6 }}>ANAGRAM · {puzzle.anagram.clue}</div>
+            <div style={{ fontSize:18, letterSpacing:6, fontWeight:700, color:"#2e7d32", fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+
+  const ScoringGuide = () => (
+    <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}>
+      <button onClick={()=>setShowScoring(s=>!s)} style={{ width:"100%", background:"transparent", border:"1px solid #e0e0e0", borderRadius:8, padding:"10px", fontSize:11, color:"#666666", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>
+        {showScoring?"▲ HIDE SCORING GUIDE":"▼ SCORING GUIDE"}
+      </button>
+      {showScoring && (
+        <div style={{ marginTop:6 }}>
+          {[
+            { title:"CEO",      time:"2:00+", color:"#c4941f" },
+            { title:"DIRECTOR", time:"1:30+", color:"#888888" },
+            { title:"MANAGER",  time:"1:00+", color:"#cd7f32" },
+            { title:"INTERN",   time:"0:30+", color:"#5b8db8" },
+            { title:"MAILROOM", time:"0:00+", color:"#aaaaaa" },
+          ].map(({ title, time, color }) => {
+            const isCurrent = getTitle(timeLeft).title===title;
+            return (
+              <div key={title} style={{ display:"flex", alignItems:"center", justifyContent:"space-between", padding:"7px 14px", borderRadius:6, background:isCurrent?"rgba(0,0,0,0.03)":"transparent", border:isCurrent?`1px solid ${color}`:"1px solid transparent", marginBottom:3 }}>
+                <span style={{ fontSize:13, fontWeight:isCurrent?800:400, color:isCurrent?color:"#666666", letterSpacing:1, fontFamily:"'Bebas Neue',sans-serif" }}>{isCurrent?"★ ":""}{title}</span>
+                <span style={{ fontSize:11, color:isCurrent?color:"#888888" }}>{time}</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+
+  // ── LANDING ───────────────────────────────────────────────────────────────
+  if (phase === "landing") return (
     <div style={{ minHeight:"100vh", background:"#fafaf8", fontFamily:"'Courier New',monospace", color:"#111111", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:"24px 20px" }}>
       <style>{CSS}</style>
-      <div style={{ width:"100%", maxWidth:480, textAlign:"center" }}>
-        {/* Title */}
-        <h1 style={{ fontSize:72, letterSpacing:12, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", animation:"flicker 8s infinite", lineHeight:1, marginBottom:8 }}>5 TO 9</h1>
-        <p style={{ fontSize:11, letterSpacing:4, color:"#111111", marginBottom:40, textTransform:"uppercase" }}>Daily General Knowledge</p>
-
-        {/* How to play */}
-        <div style={{ border:"1px solid #2a2a5e", borderRadius:12, padding:"24px 20px", marginBottom:32, textAlign:"left" }}>
-          <div style={{ fontSize:14, letterSpacing:3, color:"#c4941f", marginBottom:18, fontWeight:700, textTransform:"uppercase" }}>How to Play</div>
-          <div style={{ display:"flex", flexDirection:"column", gap:14 }}>
-            {[
-              ["🧠", "5 questions — answers grow from 5 to 9 letters"],
-              ["💡", "Stuck? Use the HINT button — it reveals a letter, but costs 10 seconds"],
-              ["🔤", "Spot the gold letters · Crack the ANAGRAM · See what's waiting Before You Go..."],
-              ["⏱️", "3 minutes on the clock — good luck!"],
-            ].map(([icon, text], i) => (
-              <div key={i} style={{ display:"flex", alignItems:"flex-start", gap:12 }}>
-                <span style={{ fontSize:18, flexShrink:0 }}>{icon}</span>
-                <span style={{ fontSize:13, color:"#111111", lineHeight:1.5 }}>{text}</span>
-              </div>
-            ))}
+      <h1 style={{ fontSize:72, letterSpacing:12, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", animation:"flicker 8s infinite", lineHeight:1, marginBottom:4 }}>5 TO 9</h1>
+      <p style={{ fontSize:11, letterSpacing:4, color:"#888888", marginBottom:40, textTransform:"uppercase" }}>Daily General Knowledge</p>
+      <div style={{ width:"100%", maxWidth:480, border:"1px solid #e0e0e0", borderRadius:12, padding:"20px 24px", marginBottom:16, background:"#ffffff" }}>
+        <div style={{ fontSize:14, letterSpacing:3, color:"#c4941f", marginBottom:18, fontWeight:700 }}>HOW TO PLAY</div>
+        {[
+          ["🧠","5 questions — answers grow from 5 to 9 letters"],
+          ["💡","Stuck? Use the HINT button — it reveals a letter, but costs 10 seconds"],
+          ["🔤","Spot the gold letters · Crack the ANAGRAM · See what's waiting Before You Go..."],
+          ["⏱️","3 minutes on the clock — good luck!"],
+        ].map(([icon,text],i) => (
+          <div key={i} style={{ display:"flex", gap:12, alignItems:"flex-start", marginBottom:14 }}>
+            <span style={{ fontSize:18, flexShrink:0 }}>{icon}</span>
+            <span style={{ fontSize:13, color:"#111111", lineHeight:1.5 }}>{text}</span>
           </div>
-        </div>
-
-        {/* Colour guide */}
-        <div style={{ border:"1px solid #2a2a5e", borderRadius:12, padding:"18px 20px", marginBottom:36, textAlign:"left" }}>
-          <div style={{ fontSize:13, letterSpacing:3, color:"#c4941f", marginBottom:14, fontWeight:700, textTransform:"uppercase" }}>Letter Colours</div>
-          <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
-            {[
-              ["#2e7d32", "Correct letter, correct position"],
-              ["#e65100", "Correct letter, wrong position"],
-              ["#c62828", "Letter not in the answer"],
-            ].map(([color, label]) => (
-              <div key={color} style={{ display:"flex", alignItems:"center", gap:12 }}>
-                <div style={{ width:28, height:28, border:`2px solid ${color}`, borderRadius:4, background:`${color}20`, flexShrink:0 }} />
-                <span style={{ fontSize:12, color:"#666666" }}>{label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Start button */}
-        <button
-          onClick={() => setStarted(true)}
-          style={{ width:"100%", height:58, background:"linear-gradient(135deg,#8b6914,#b8860b)", border:"none", borderRadius:8, fontSize:16, fontWeight:700, letterSpacing:4, cursor:"pointer", color:"#111111", fontFamily:"'Bebas Neue',sans-serif" }}
-        >
-          START THE CLOCK
-        </button>
-        <p style={{ color:"#b0b0b0", marginTop:20, fontSize:9, letterSpacing:2 }}>NEW PUZZLE EVERY DAY</p>
+        ))}
       </div>
+      <div style={{ width:"100%", maxWidth:480, border:"1px solid #e0e0e0", borderRadius:12, padding:"20px 24px", marginBottom:28, background:"#ffffff" }}>
+        <div style={{ fontSize:14, letterSpacing:3, color:"#c4941f", marginBottom:16, fontWeight:700 }}>LETTER COLOURS</div>
+        {[
+          { color:"#2e7d32", bg:"rgba(46,125,50,0.08)", border:"rgba(46,125,50,0.4)", label:"Correct letter, correct position" },
+          { color:"#e65100", bg:"rgba(230,81,0,0.08)",  border:"rgba(230,81,0,0.4)",  label:"Correct letter, wrong position" },
+          { color:"#c62828", bg:"rgba(198,40,40,0.08)", border:"rgba(198,40,40,0.4)", label:"Letter not in the answer" },
+        ].map(({ color, bg, border, label },i) => (
+          <div key={i} style={{ display:"flex", alignItems:"center", gap:14, marginBottom:12 }}>
+            <div style={{ width:28, height:28, borderRadius:4, background:bg, border:`2px solid ${border}`, flexShrink:0 }} />
+            <span style={{ fontSize:12, color:"#444444" }}>{label}</span>
+          </div>
+        ))}
+      </div>
+      {streak.current > 0 && (
+        <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:20 }}>
+          <span style={{ fontSize:24 }}>👑</span>
+          <span style={{ fontSize:20, fontWeight:800, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:2 }}>{streak.current} DAY STREAK</span>
+          {streak.best>1&&<span style={{ fontSize:11, color:"#888888" }}>BEST: {streak.best}</span>}
+        </div>
+      )}
+      <button onClick={()=>{ setStarted(true); setPhase("playing"); }} style={{ width:"100%", maxWidth:480, padding:"18px", background:"linear-gradient(135deg,#b8860b,#c4941f)", border:"none", borderRadius:10, color:"#ffffff", fontSize:16, fontWeight:800, letterSpacing:3, cursor:"pointer", fontFamily:"'Courier New',monospace", boxShadow:"0 4px 16px rgba(196,148,31,0.4)" }}>
+        START THE CLOCK
+      </button>
+      {!streak.current&&<p style={{ color:"#888888", marginTop:20, fontSize:10, letterSpacing:2 }}>NEW PUZZLE EVERY DAY</p>}
     </div>
   );
 
   // ── TIMEOUT ───────────────────────────────────────────────────────────────
-  if (phase === "timeout") {
-    return (
-      <div style={{ minHeight:"100vh", background:"#fafaf8", fontFamily:"'Courier New',monospace", color:"#111111", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 48px" }}>
-        <style>{CSS}</style>
-        <div style={{ width:"100%", maxWidth:580, display:"flex", alignItems:"center", justifyContent:"space-between", padding:"18px 0 14px", borderBottom:"1px solid #1e1e1e", marginBottom:20 }}>
-          <div style={{ fontSize:10, letterSpacing:3, color:"#222222" }}>TIME UP</div>
-          <h1 style={{ fontSize:40, letterSpacing:8, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif" }}>5 TO 9</h1>
-          <div style={{ fontSize:10, color:"#222222" }}>0:00</div>
-        </div>
-        <div style={{ textAlign:"center", marginBottom:24, padding:"0 20px" }}>
-          <p style={{ fontSize:18, color:"#111111", lineHeight:1.7, fontStyle:"italic" }}>"The questions just didn't suit you today"</p>
-          {streak.current === 0 && streak.best > 0 && (
-            <div style={{ marginTop:12 }}>
-              <div style={{ fontSize:18, color:"#c62828", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:2 }}>STREAK LOST</div>
-              <div style={{ fontSize:10, color:"#222222", letterSpacing:2, marginTop:4 }}>YOUR BEST WAS {streak.best} DAYS</div>
-            </div>
-          )}
-        </div>
-        {/* Before you go */}
-        <div style={{ maxWidth:440, border:"1px solid #1a1a2e", borderRadius:10, padding:"18px 22px", marginBottom:16, width:"100%", textAlign:"left" }}>
-          <div style={{ fontSize:13, letterSpacing:3, color:"#c4941f", marginBottom:12, fontWeight:700 }}>BEFORE YOU GO...</div>
-          <p style={{ fontSize:13, lineHeight:1.9, color:"#111111", fontStyle:"italic", margin:0, whiteSpace:"pre-wrap" }}>
-            {puzzle.quote.split(puzzle.anagram.answer).map((part, i, arr) => {
-              const urlRegex = /(https?:\/\/[^\s]+)/g;
-              const withLinks = part.split(urlRegex).map((chunk, j) =>
-                urlRegex.test(chunk)
-                  ? <a key={j} href={chunk} target="_blank" rel="noopener noreferrer" style={{ color:"#c4941f", fontStyle:"normal", wordBreak:"break-all" }}>{chunk}</a>
-                  : chunk
-              );
-              return <span key={i}>{withLinks}{i < arr.length-1 && <span style={{ color:"#c4941f", fontWeight:"bold", fontStyle:"normal", letterSpacing:1 }}>{puzzle.anagram.answer}</span>}</span>;
-            })}
-          </p>
-        </div>
-        <div style={{ width:"100%", maxWidth:440, display:"flex", flexDirection:"column", gap:8, marginBottom:16 }}>
-          <ShareButton />
-        </div>
-        {/* Collapsible review answers */}
-        <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}>
-          <button onClick={() => setShowAnswers(s => !s)} style={{ width:"100%", background:"transparent", border:"1px solid #2a2a5e", borderRadius:8, padding:"10px", fontSize:11, color:"#111111", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>
-            {showAnswers ? "▲ HIDE ANSWERS" : "▼ REVIEW TODAY'S ANSWERS"}
-          </button>
-          {showAnswers && (
-            <div style={{ marginTop:8 }}>
-              {puzzle.rounds.map((r, i) => {
-                const highlights = Array.isArray(r.revealIdx) ? r.revealIdx : [r.revealIdx];
-                const solved = done[i]?.solved;
-                return (
-                  <div key={i} style={{ padding:"10px 14px", background:"rgba(255,255,255,0.02)", border:"1px solid #1a1a2e", borderRadius:8, marginBottom:6 }}>
-                    <div style={{ fontSize:10, color:"#222222", marginBottom:6 }}>{r.clue}</div>
-                    <div style={{ display:"flex", gap:4, flexWrap:"wrap" }}>
-                      {r.answer.split("").map((ch, ci) => {
-                        const hl = highlights.includes(ci);
-                        return <div key={ci} style={{ width:26, height:26, borderRadius:3, border:`1px solid ${hl?"#c4941f":"#111111"}`, background:hl?"rgba(196,148,31,0.15)":"transparent", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:700, color:hl?"#c4941f":solved?"#2e7d32":"#222222", fontFamily:"'Courier New',monospace" }}>{ch}</div>;
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
-              <div style={{ padding:"10px 14px", background:"rgba(212,168,67,0.05)", border:"1px solid rgba(196,148,31,0.2)", borderRadius:8 }}>
-                <div style={{ fontSize:10, color:"#c4941f", marginBottom:6 }}>ANAGRAM · {puzzle.anagram.clue}</div>
-                <div style={{ fontSize:18, letterSpacing:6, fontWeight:700, color:"#2e7d32", fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
-              </div>
-            </div>
-          )}
-        </div>
-        <p style={{ color:"#222222", marginTop:16, fontSize:10, letterSpacing:3, textAlign:"center" }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
+  if (phase === "timeout") return (
+    <div style={{ minHeight:"100vh", background:"#fafaf8", fontFamily:"'Courier New',monospace", color:"#111111", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 48px" }}>
+      <style>{CSS}</style>
+      <div style={{ width:"100%", maxWidth:580, display:"flex", alignItems:"center", justifyContent:"space-between", padding:"18px 0 14px", borderBottom:"1px solid #e0e0e0", marginBottom:20 }}>
+        <div style={{ fontSize:10, letterSpacing:3, color:"#888888" }}>TIME UP</div>
+        <h1 style={{ fontSize:40, letterSpacing:8, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif" }}>5 TO 9</h1>
+        <div style={{ fontSize:10, color:"#888888" }}>0:00</div>
       </div>
-    );
-  }
+      <div style={{ textAlign:"center", marginBottom:20, padding:"0 20px" }}>
+        <p style={{ fontSize:18, color:"#333333", lineHeight:1.7, fontStyle:"italic" }}>"The questions just didn't suit you today"</p>
+        {streak.current===0&&streak.best>0&&(
+          <div style={{ marginTop:12 }}>
+            <div style={{ fontSize:18, color:"#c62828", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:2 }}>STREAK LOST</div>
+            <div style={{ fontSize:10, color:"#888888", letterSpacing:2, marginTop:4 }}>YOUR BEST WAS {streak.best} DAYS</div>
+          </div>
+        )}
+      </div>
+      <QuoteDisplay />
+      <div style={{ width:"100%", maxWidth:440, marginBottom:16 }}><ShareButton /></div>
+      <ReviewAnswers />
+      <p style={{ color:"#888888", marginTop:16, fontSize:10, letterSpacing:3, textAlign:"center" }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
+    </div>
+  );
 
   // ── WIN ───────────────────────────────────────────────────────────────────
   if (phase === "win") {
-    const taken = TOTAL_SECONDS - timeLeft;
+    const t = getTitle(timeLeft);
     return (
       <div style={{ minHeight:"100vh", background:"#fafaf8", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", fontFamily:"'Courier New',monospace", color:"#111111", padding:"24px 20px", textAlign:"center" }}>
         <style>{CSS}</style>
         <div style={{ fontSize:56, animation:"float 2s ease-in-out infinite" }}>🏆</div>
-        {(() => { const t = getTitle(timeLeft); return (
-          <div style={{ display:"flex", flexDirection:"column", alignItems:"center", marginBottom:8 }}>
-            <h2 style={{ fontSize:52, letterSpacing:6, color:t.color, fontFamily:"'Bebas Neue',sans-serif", margin:"16px 0 4px", textShadow:`0 0 20px ${t.color}` }}>{t.title}</h2>
-            <p style={{ color:"#222222", fontSize:11, letterSpacing:2, marginBottom:4 }}>⏱ {Math.floor(timeLeft/60)}m {timeLeft%60}s remaining</p>
-            {streak.current > 0 && (
-              <div style={{ display:"flex", alignItems:"center", gap:6, marginTop:4 }}>
-                <span style={{ fontSize:16 }}>👑</span>
-                <span style={{ fontSize:14, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:2 }}>{streak.current} DAY STREAK {streak.current===streak.best&&streak.current>1?"🏆":""}</span>
-              </div>
-            )}
+        <h2 style={{ fontSize:52, letterSpacing:6, color:t.color, fontFamily:"'Bebas Neue',sans-serif", margin:"16px 0 4px", textShadow:`0 0 20px ${t.color}` }}>{t.title}</h2>
+        <p style={{ color:"#888888", fontSize:11, letterSpacing:2, marginBottom:4 }}>⏱ {Math.floor(timeLeft/60)}m {timeLeft%60}s remaining</p>
+        {streak.current>0&&(
+          <div style={{ display:"flex", alignItems:"center", gap:6, marginBottom:12 }}>
+            <span style={{ fontSize:16 }}>👑</span>
+            <span style={{ fontSize:14, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:2 }}>{streak.current} DAY STREAK {streak.current===streak.best&&streak.current>1?"🏆":""}</span>
           </div>
-        ); })()}
-        <div style={{ fontSize:26, letterSpacing:10, fontWeight:700, color:"#2e7d32", border:"1px solid rgba(0,150,70,0.4)", borderRadius:6, padding:"14px 28px", marginBottom:16, fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
-        <div style={{ maxWidth:440, border:"1px solid #1a1a1a", borderRadius:10, padding:"22px 26px", animation:"fadeUp 0.8s ease", textAlign:"left", marginBottom:16, width:"100%" }}>
-          <div style={{ fontSize:13, letterSpacing:3, color:"#c4941f", marginBottom:14, fontWeight:700 }}>BEFORE YOU GO...</div>
-          <p style={{ fontSize:13, lineHeight:1.9, color:"#111111", fontStyle:"italic", margin:0, whiteSpace:"pre-wrap" }}>
-            {puzzle.quote.split(puzzle.anagram.answer).map((part, i, arr) => {
-              const urlRegex = /(https?:\/\/[^\s]+)/g;
-              const withLinks = part.split(urlRegex).map((chunk, j) =>
-                urlRegex.test(chunk)
-                  ? <a key={j} href={chunk} target="_blank" rel="noopener noreferrer" style={{ color:"#c4941f", fontStyle:"normal", wordBreak:"break-all" }}>{chunk}</a>
-                  : chunk
-              );
-              return <span key={i}>{withLinks}{i < arr.length-1 && <span style={{ color:"#c4941f", fontWeight:"bold", fontStyle:"normal", letterSpacing:1 }}>{puzzle.anagram.answer}</span>}</span>;
-            })}
-          </p>
-        </div>
-        {/* Share button - full width */}
-        <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}>
-          <ShareButton />
-        </div>
-        {/* Collapsible scoring guide */}
-        <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}>
-          <button onClick={() => setShowAnswers(s => !s)} style={{ width:"100%", background:"transparent", border:"1px solid #2a2a5e", borderRadius:8, padding:"10px", fontSize:11, color:"#111111", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>
-            {showAnswers ? "▲ HIDE SCORING GUIDE" : "▼ SCORING GUIDE"}
-          </button>
-          {showAnswers && (
-            <div style={{ marginTop:6 }}>
-              {[
-                { title:"CEO",      time:"2:00+", color:"#c4941f" },
-                { title:"DIRECTOR", time:"1:30+", color:"#c0c0c0" },
-                { title:"MANAGER",  time:"1:00+", color:"#cd7f32" },
-                { title:"INTERN",   time:"0:30+", color:"#7ec8e3" },
-                { title:"MAILROOM", time:"0:00+", color:"#222222"    },
-              ].map(({ title, time, color }) => {
-                const isCurrent = getTitle(timeLeft).title === title;
-                return (
-                  <div key={title} style={{ display:"flex", alignItems:"center", justifyContent:"space-between", padding:"7px 14px", borderRadius:6, background:isCurrent?"rgba(255,255,255,0.05)":"transparent", border:isCurrent?`1px solid ${color}`:"1px solid transparent", marginBottom:3 }}>
-                    <span style={{ fontSize:13, fontWeight:isCurrent?800:400, color:isCurrent?color:"#222222", letterSpacing:1, fontFamily:"'Bebas Neue',sans-serif" }}>{isCurrent?"★ ":""}{title}</span>
-                    <span style={{ fontSize:11, color:isCurrent?color:"#222222" }}>{time}</span>
-                  </div>
-                );
-              })}
-            </div>
-          )}
-        </div>
-        {/* Collapsible review answers */}
-        <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}>
-          <button onClick={() => setShowAnswers(s => !s)} style={{ width:"100%", background:"transparent", border:"1px solid #2a2a5e", borderRadius:8, padding:"10px", fontSize:11, color:"#111111", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>
-            {showAnswers ? "▲ HIDE ANSWERS" : "▼ REVIEW TODAY'S ANSWERS"}
-          </button>
-          {showAnswers && (
-            <div style={{ marginTop:8 }}>
-              {puzzle.rounds.map((r, i) => {
-                const highlights = Array.isArray(r.revealIdx) ? r.revealIdx : [r.revealIdx];
-                const solved = done[i]?.solved;
-                return (
-                  <div key={i} style={{ padding:"10px 14px", background:"rgba(255,255,255,0.02)", border:"1px solid #1a1a2e", borderRadius:8, marginBottom:6 }}>
-                    <div style={{ fontSize:10, color:"#222222", marginBottom:6 }}>{r.clue}</div>
-                    <div style={{ display:"flex", gap:4, flexWrap:"wrap" }}>
-                      {r.answer.split("").map((ch, ci) => {
-                        const hl = highlights.includes(ci);
-                        return <div key={ci} style={{ width:26, height:26, borderRadius:3, border:`1px solid ${hl?"#c4941f":"#111111"}`, background:hl?"rgba(196,148,31,0.15)":"transparent", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:700, color:hl?"#c4941f":solved?"#2e7d32":"#222222", fontFamily:"'Courier New',monospace" }}>{ch}</div>;
-                      })}
-                    </div>
-                  </div>
-                );
-              })}
-              <div style={{ padding:"10px 14px", background:"rgba(212,168,67,0.05)", border:"1px solid rgba(196,148,31,0.2)", borderRadius:8 }}>
-                <div style={{ fontSize:10, color:"#c4941f", marginBottom:6 }}>ANAGRAM · {puzzle.anagram.clue}</div>
-                <div style={{ fontSize:18, letterSpacing:6, fontWeight:700, color:"#2e7d32", fontFamily:"'Courier New',monospace" }}>{puzzle.anagram.answer}</div>
-              </div>
-            </div>
-          )}
-        </div>
-        <p style={{ color:"#222222", fontSize:10, letterSpacing:3, marginTop:8 }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
+        )}
+        <div style={{ fontSize:26, letterSpacing:10, fontWeight:700, color:"#2e7d32", border:"1px solid rgba(46,125,50,0.4)", borderRadius:6, padding:"14px 28px", marginBottom:16, fontFamily:"'Courier New',monospace", background:"#ffffff" }}>{puzzle.anagram.answer}</div>
+        <QuoteDisplay />
+        <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}><ShareButton /></div>
+        <ScoringGuide />
+        <ReviewAnswers />
+        <p style={{ color:"#888888", fontSize:9, letterSpacing:3, marginTop:8 }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
       </div>
     );
   }
@@ -1067,98 +565,105 @@ export default function FiveToNine() {
   // ── ANAGRAM ───────────────────────────────────────────────────────────────
   if (phase === "anagram") {
     const ansLen = puzzle.anagram.answer.length;
-    const count = puzzle.anagram.letters.length;
-    const tileSz = Math.min(52, Math.floor((Math.min(window.innerWidth - 48, 500) - (count-1)*8) / count));
-    const tileFs = Math.max(13, Math.floor(tileSz * 0.44));
-    const slotSz = Math.min(52, Math.floor((Math.min(window.innerWidth - 48, 500) - (ansLen-1)*8) / ansLen));
-    const slotFs = Math.max(13, Math.floor(slotSz * 0.44));
-    const isComplete = anSlots.length === ansLen;
+    const count  = puzzle.anagram.letters.length;
+    const tileSz = Math.min(52, Math.floor((Math.min(window.innerWidth-48,500)-(count-1)*8)/count));
+    const tileFs = Math.max(13, Math.floor(tileSz*0.44));
+    const slotSz = Math.min(52, Math.floor((Math.min(window.innerWidth-48,500)-(ansLen-1)*8)/ansLen));
+    const slotFs = Math.max(13, Math.floor(slotSz*0.44));
+    const isComplete = anSlots.length===ansLen;
     return (
       <div style={{ minHeight:"100vh", background:"#fafaf8", fontFamily:"'Courier New',monospace", color:"#111111", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 48px" }}>
         <style>{CSS}</style>
-        <Header label="FINAL" showTimer={true} />
+        <div style={{ width:"100%", maxWidth:580, display:"flex", alignItems:"center", justifyContent:"space-between", padding:"16px 0 12px", borderBottom:"1px solid #e0e0e0", marginBottom:14 }}>
+          <div style={{ fontSize:20, letterSpacing:1, color:"#666666", minWidth:60, fontWeight:800 }}>FINAL</div>
+          <h1 style={{ fontSize:40, letterSpacing:8, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", animation:"flicker 8s infinite", lineHeight:1 }}>5 TO 9</h1>
+          <div style={{ fontSize:20, fontWeight:700, fontFamily:"'Courier New',monospace", color:timerColor, minWidth:60, textAlign:"right", animation:timeLeft<=10?"blink 0.5s step-end infinite":"none", transition:"color 0.5s" }}>{formatTime(timeLeft)}</div>
+        </div>
         <div style={{ width:"100%", maxWidth:580, marginBottom:16 }}>{done.map((r,i)=><RoundSummary key={i} r={r} i={i}/>)}</div>
-        <div style={{ fontSize:18, letterSpacing:4, color:"#c4941f", marginBottom:8, textAlign:"center", fontWeight:700 }}>ANAGRAM</div>
-        <div style={{ fontSize:16, color:"#333333", fontStyle:"italic", marginBottom:16, textAlign:"center", maxWidth:400, lineHeight:1.7 }}>{puzzle.anagram.clue}</div>
+        <div style={{ fontSize:18, letterSpacing:4, color:"#c4941f", marginBottom:6, textAlign:"center", fontWeight:700 }}>ANAGRAM</div>
+        <div style={{ fontSize:16, color:"#333333", fontStyle:"italic", marginBottom:16, textAlign:"center", maxWidth:400, lineHeight:1.6 }}>{puzzle.anagram.clue}</div>
         <div style={{ fontSize:11, color:"#c4941f", letterSpacing:2, marginBottom:16, textAlign:"center", fontWeight:700 }}>↓ TAP A LETTER TO PLACE IT</div>
-        {/* Tappable letter pool */}
         <div style={{ display:"flex", gap:8, justifyContent:"center", marginBottom:8, flexWrap:"nowrap", width:"100%", maxWidth:500 }}>
-          {puzzle.anagram.letters.map((l, i) => {
+          {puzzle.anagram.letters.map((l,i) => {
             const used = anUsed.includes(i);
             return (
-              <div key={i} onClick={() => tapAnagramLetter(l, i)} style={{ width:tileSz, height:tileSz, border:`2px solid ${used?"#dddddd":"#c4941f"}`, borderRadius:6, display:"flex", alignItems:"center", justifyContent:"center", fontSize:tileFs, fontWeight:700, color:used?"#cccccc":"#c4941f", fontFamily:"'Courier New',monospace", background:used?"#f0f0f0":"#fffbf0", cursor:used?"default":"pointer", transition:"all 0.15s", flexShrink:0, animation:used?"":`tileGlow 2s ease-in-out ${i*0.15}s infinite` }}>
-                {used ? "" : l}
+              <div key={i} onClick={()=>tapAnagramLetter(l,i)} style={{ width:tileSz, height:tileSz, border:`2px solid ${used?"#dddddd":"#c4941f"}`, borderRadius:6, display:"flex", alignItems:"center", justifyContent:"center", fontSize:tileFs, fontWeight:700, color:used?"#cccccc":"#c4941f", fontFamily:"'Courier New',monospace", background:used?"#f0f0f0":"#fffbf0", cursor:used?"default":"pointer", transition:"all 0.15s", flexShrink:0, animation:used?"":`tileGlow 2s ease-in-out ${i*0.15}s infinite` }}>
+                {used?"":l}
               </div>
             );
           })}
         </div>
-        <div style={{ fontSize:11, color:"#111111", letterSpacing:2, marginBottom:8, textAlign:"center" }}>↑ TAP A FILLED SLOT TO REMOVE IT</div>
-        {/* Answer slots */}
+        <div style={{ fontSize:11, color:"#888888", letterSpacing:2, marginBottom:8, textAlign:"center" }}>↑ TAP A FILLED SLOT TO REMOVE IT</div>
         <div style={{ animation:anShake?"shake 0.4s ease":"none", marginBottom:16 }}>
           <div style={{ display:"flex", gap:8, justifyContent:"center", flexWrap:"nowrap" }}>
-            {Array(ansLen).fill(0).map((_, i) => {
-              const letter = anSlots[i] || "";
-              const filled = !!letter;
+            {Array(ansLen).fill(0).map((_,i) => {
+              const letter=anSlots[i]||""; const filled=!!letter;
               return (
-                <div key={i} onClick={() => filled && clearAnagramSlot(i)} style={{ width:slotSz, height:slotSz, border:`2px solid ${anWrong?"#c62828":filled?"#c4941f":"#111111"}`, borderRadius:6, display:"flex", alignItems:"center", justifyContent:"center", fontSize:slotFs, fontWeight:700, color:filled?"#c4941f":"transparent", fontFamily:"'Courier New',monospace", background:"#ffffff", cursor:filled?"pointer":"default", transition:"all 0.15s", flexShrink:0 }}>
-                  {filled ? letter : ""}
+                <div key={i} onClick={()=>filled&&clearAnagramSlot(i)} style={{ width:slotSz, height:slotSz, border:`2px solid ${anWrong?"#c62828":filled?"#c4941f":"#cccccc"}`, borderRadius:6, display:"flex", alignItems:"center", justifyContent:"center", fontSize:slotFs, fontWeight:700, color:filled?"#c4941f":"transparent", fontFamily:"'Courier New',monospace", background:"#ffffff", cursor:filled?"pointer":"default", transition:"all 0.15s", flexShrink:0 }}>
+                  {filled?letter:""}
                 </div>
               );
             })}
           </div>
-          {anWrong && <div style={{ color:"#c62828", fontSize:11, letterSpacing:1, textAlign:"center", marginTop:10 }}>NOT QUITE — TAP A LETTER TO REMOVE IT</div>}
+          {anWrong&&<div style={{ color:"#c62828", fontSize:11, letterSpacing:1, textAlign:"center", marginTop:10 }}>NOT QUITE — TAP A LETTER TO REMOVE IT</div>}
         </div>
-        {/* Buttons */}
         <div style={{ display:"flex", gap:10 }}>
-          <button onClick={clearAllAnagram} style={{ background:"transparent", border:"1px solid #444", color:"#111111", borderRadius:6, padding:"10px 20px", fontSize:11, fontWeight:700, letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>CLEAR</button>
-          <button onClick={submitAnagram} disabled={!isComplete} style={{ background:isComplete?"rgba(196,148,31,0.15)":"transparent", border:`2px solid ${isComplete?"#c4941f":"#111111"}`, color:isComplete?"#c4941f":"#222222", borderRadius:6, padding:"10px 28px", fontSize:11, fontWeight:700, letterSpacing:3, cursor:isComplete?"pointer":"default", fontFamily:"'Courier New',monospace", transition:"all 0.2s" }}>CONFIRM</button>
+          <button onClick={clearAllAnagram} style={{ background:"transparent", border:"1px solid #cccccc", color:"#888888", borderRadius:6, padding:"10px 20px", fontSize:11, fontWeight:700, letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>CLEAR</button>
+          <button onClick={submitAnagram} disabled={!isComplete} style={{ background:isComplete?"rgba(196,148,31,0.15)":"transparent", border:`2px solid ${isComplete?"#c4941f":"#cccccc"}`, color:isComplete?"#c4941f":"#888888", borderRadius:6, padding:"10px 28px", fontSize:11, fontWeight:700, letterSpacing:3, cursor:isComplete?"pointer":"default", fontFamily:"'Courier New',monospace", transition:"all 0.2s" }}>CONFIRM</button>
         </div>
       </div>
     );
   }
 
-
   // ── PLAYING ───────────────────────────────────────────────────────────────
   const latestIdx = attempts.length-1;
   return (
-    <div style={{ minHeight:"100vh", background:"#fafaf8", fontFamily:"'Courier New',monospace", color:"#111111", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 40px" }}>
+    <div style={{ minHeight:"100vh", background:"#fafaf8", fontFamily:"'Courier New',monospace", color:"#111111", display:"flex", flexDirection:"column", alignItems:"center", padding:"0 16px 40px", overflowX:"hidden" }}>
       <style>{CSS}</style>
-      <div style={{ position:"fixed", inset:0, backgroundImage:"none", pointerEvents:"none", zIndex:10 }} />
-      <Header label={`Q${roundIdx+1}/5`} />
-      <div style={{ display:"flex", gap:6, marginBottom:16, alignItems:"center" }}>
-        {puzzle.rounds.map((_,i)=><div key={i} style={{ height:3, borderRadius:2, transition:"all 0.4s ease", width:i<roundIdx?32:i===roundIdx?24:16, background:i<roundIdx?"#2e7d32":i===roundIdx?"#c4941f":"#111111" }} />)}
-        <div style={{ width:12, height:3, background:"#0d0d2e", border:"1px solid #1a1a3a", borderRadius:2, marginLeft:4 }} />
+      <div style={{ width:"100%", maxWidth:580, display:"flex", alignItems:"center", justifyContent:"space-between", padding:"16px 0 12px", borderBottom:"1px solid #e0e0e0", marginBottom:14 }}>
+        <div style={{ fontSize:20, letterSpacing:1, color:"#666666", minWidth:60, fontWeight:800 }}>Q{roundIdx+1}/5</div>
+        <h1 style={{ fontSize:40, letterSpacing:8, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", animation:"flicker 8s infinite", lineHeight:1 }}>5 TO 9</h1>
+        <div style={{ minWidth:60 }}></div>
       </div>
+
+      <div style={{ display:"flex", gap:6, marginBottom:16, alignItems:"center" }}>
+        {puzzle.rounds.map((_,i)=><div key={i} style={{ height:3, borderRadius:2, transition:"all 0.4s ease", width:i<roundIdx?32:i===roundIdx?24:16, background:i<roundIdx?"#2e7d32":i===roundIdx?"#c4941f":"#e0e0e0" }} />)}
+      </div>
+
       <div style={{ width:"100%", maxWidth:580 }}>
-        {done.length>0 && <div style={{ marginBottom:12 }}>{done.map((r,i)=><RoundSummary key={i} r={r} i={i}/>)}</div>}
-        <div style={{ border:"1px solid #2a2a5e", borderRadius:8, padding:"14px 18px", marginBottom:16, background:"#ffffff" }}>
+        {done.length>0&&<div style={{ marginBottom:12 }}>{done.map((r,i)=><RoundSummary key={i} r={r} i={i}/>)}</div>}
+
+        <div style={{ border:"1px solid #e0e0e0", borderRadius:8, padding:"14px 18px", marginBottom:16, background:"#ffffff" }}>
           <div style={{ fontSize:13, letterSpacing:2, color:"#c4941f", marginBottom:8, fontWeight:700 }}>QUESTION {roundIdx+1} · {alen} LETTERS</div>
-          <div style={{ fontSize:17, color:"#111111", fontWeight:600, lineHeight:1.5 }}>{round.clue}</div>
+          <div style={{ fontSize:17, color:"#111111", lineHeight:1.5 }}>{round.clue}</div>
         </div>
+
         <div style={{ marginBottom:8 }}>
           {attempts.map((a,i)=>(
             <TypewriterRow key={`r${roundIdx}-a${i}`} word={a.word} answer={round.answer} correct={a.correct} animate={i===latestIdx&&animating} onDone={i===latestIdx?onRevealDone:undefined} />
           ))}
         </div>
-        {canInput && <div style={{ marginBottom:12 }}><AnswerDisplay length={alen} revealed={revealed} input={input} shake={shake} /></div>}
+
+        {canInput&&<div style={{ marginBottom:12 }}><AnswerDisplay length={alen} revealed={revealed} input={input} shake={shake} /></div>}
+
         <div style={{ display:"flex", justifyContent:"center", marginBottom:20, gap:24, alignItems:"center" }}>
-          <button onClick={takeHint} disabled={!canInput} style={{ background:canInput?"rgba(212,168,67,0.1)":"transparent", border:`2px solid ${canInput?"#c4941f":"#111111"}`, color:canInput?"#c4941f":"#222222", borderRadius:6, padding:"10px 24px", fontSize:11, fontWeight:700, letterSpacing:2, cursor:canInput?"pointer":"default", fontFamily:"'Courier New',monospace", position:"relative" }}>
+          <button onClick={takeHint} disabled={!canInput} style={{ background:canInput?"rgba(196,148,31,0.1)":"transparent", border:`2px solid ${canInput?"#c4941f":"#e0e0e0"}`, color:canInput?"#c4941f":"#cccccc", borderRadius:6, padding:"10px 24px", fontSize:11, fontWeight:700, letterSpacing:2, cursor:canInput?"pointer":"default", fontFamily:"'Courier New',monospace", position:"relative" }}>
             HINT −{HINT_PENALTY}s
-            {penalty && <span style={{ position:"absolute", top:-20, left:"50%", transform:"translateX(-50%)", fontSize:13, color:"#c62828", fontWeight:700, animation:"penalty 1.2s ease forwards", whiteSpace:"nowrap" }}>{penalty}</span>}
+            {penalty&&<span style={{ position:"absolute", top:-20, left:"50%", transform:"translateX(-50%)", fontSize:13, color:"#c62828", fontWeight:700, animation:"penalty 1.2s ease forwards", whiteSpace:"nowrap" }}>{penalty}</span>}
           </button>
-          <div style={{ fontSize:26, fontWeight:800, fontFamily:"'Courier New',monospace", color:timerColor, animation:timeLeft<=10?"blink 0.5s step-end infinite":"none", transition:"color 0.5s", minWidth:60 }}>
+          <div style={{ fontSize:22, fontWeight:800, fontFamily:"'Courier New',monospace", color:timerColor, animation:timeLeft<=10?"blink 0.5s step-end infinite":"none", transition:"color 0.5s", minWidth:60 }}>
             {formatTime(timeLeft)}
           </div>
         </div>
-        {/* Unified responsive keyboard — works on all devices */}
+
         <div style={{ display:"flex", flexDirection:"column", gap:5, alignItems:"center" }}>
           {["QWERTYUIOP","ASDFGHJKL","ZXCVBNM"].map((row,ri)=>(
-            <div key={ri} style={{ display:"flex", gap:4, width:"100%" , justifyContent:"center" }}>
-              {ri===2 && <button onClick={submit} style={{ flex:"0 0 auto", minWidth:68, height:50, border:"2px solid #9a7000", borderRadius:8, background:"#b8860b", color:"#ffffff", fontSize:12, fontWeight:800, letterSpacing:1, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation", boxShadow:"0 4px 16px rgba(184,134,11,0.5)" }}>ENTER</button>}
+            <div key={ri} style={{ display:"flex", gap:4, width:"100%", justifyContent:"center" }}>
+              {ri===2&&<button onClick={submit} style={{ flex:"0 0 auto", minWidth:68, height:50, border:"2px solid #9a7000", borderRadius:8, background:"#b8860b", color:"#ffffff", fontSize:12, fontWeight:800, letterSpacing:1, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation", boxShadow:"0 4px 16px rgba(184,134,11,0.5)" }}>ENTER</button>}
               {row.split("").map(k=>(
-                <button key={k} onClick={()=>pressKey(k)} style={{ flex:"1 1 0", maxWidth:38, minWidth:28, height:50, borderRadius:6, border:"1px solid #888", background:"#e8e8e8", color:"#111111", fontSize:15, fontWeight:800, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation" }}>{k}</button>
+                <button key={k} onClick={()=>pressKey(k)} style={{ flex:"1 1 0", maxWidth:38, minWidth:28, height:50, borderRadius:6, border:"2px solid #c0b896", background:"#e8e2d6", color:"#111111", fontSize:15, fontWeight:700, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation" }}>{k}</button>
               ))}
-              {ri===2 && <button onClick={()=>pressKey("DEL")} style={{ flex:"0 0 auto", minWidth:56, height:50, border:"1px solid #2a4a8a", borderRadius:6, background:"#e8e8e8", color:"#111111", fontSize:18, cursor:"pointer", touchAction:"manipulation" }}>⌫</button>}
+              {ri===2&&<button onClick={()=>pressKey("DEL")} style={{ flex:"0 0 auto", minWidth:68, height:50, border:"2px solid #c0b896", borderRadius:8, background:"#e8e2d6", color:"#111111", fontSize:18, cursor:"pointer", touchAction:"manipulation" }}>⌫</button>}
             </div>
           ))}
         </div>
