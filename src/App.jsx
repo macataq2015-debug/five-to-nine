@@ -1,79 +1,8 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 
 // ─── DAILY PUZZLES ────────────────────────────────────────────────────────────
-const PUZZLES = [
-  {
-    rounds: [
-      { clue: "Cambridge graduate",                             answer: "RONAN",     revealIdx: 0 },
-      { clue: "Tea Party location from 1773",                   answer: "BOSTON",    revealIdx: [0,2] },
-      { clue: "Cillian and Conall's garden?",                  answer: "WICKLOW",   revealIdx: 4 },
-      { clue: "Fermanagh's nickname where Maeve and Maia play", answer: "LAKELAND",  revealIdx: 3 },
-      { clue: "Fiadh's oil refinery town",                     answer: "WHITEGATE", revealIdx: 4 },
-    ],
-    anagram: { letters:["S","R","E","B","L","E"], answer:"REBELS", clue:"Lunatic Cork supporters shout this at the hurling!" },
-    quote: `"Here's to the crazy ones, the misfits, the REBELS — the ones who see things differently." — Steve Jobs`,
-  },
-  {
-    rounds: [
-      { clue: "Golfing Tiger",                                 answer: "WOODS",     revealIdx: 1 },
-      { clue: "Capital of Colombia",                           answer: "BOGOTA",    revealIdx: 0 },
-      { clue: "IT Valley in California",                       answer: "SILICON",   revealIdx: 5 },
-      { clue: "Country of Mount Kilimanjaro",                  answer: "TANZANIA",  revealIdx: 0 },
-      { clue: "Third US President, surname",                   answer: "JEFFERSON", revealIdx: 6 },
-    ],
-    anagram: { letters:["O","T","B","O","S"], answer:"BOOST", clue:"noun · a push upward; something that increases power, confidence or success" },
-    quote: `"Small daily improvements are the BOOST that compounds into extraordinary results." — James Clear`,
-  },
-  {
-    rounds: [
-      { clue: "Brian Cowen's nickname!",                       answer: "BIFFO",     revealIdx: 4 },
-      { clue: "Kurt of Nirvana",                               answer: "COBAIN",    revealIdx: [0,3] },
-      { clue: "CR7",                                           answer: "RONALDO",   revealIdx: [0,5] },
-      { clue: "*",                                             answer: "ASTERISK",  revealIdx: [1,6] },
-      { clue: "It's a long way to last year's hurling winners", answer: "TIPPERARY", revealIdx: [2,0] },
-    ],
-    anagram: { letters:["S","O","T","C","P","A","R","D","S"], answer:"POSTCARDS", clue:"One page picture letters mailed while on holidays perhaps" },
-    quote: `Going Places
-
-It doesn't happen often. Stuck in my room, say,
-Looking at rain or for a book, seeing that the floor may
-Need hoovering, hungover possibly,
-Re-arranging the POSTCARDS on the wall:
-                                        At times like this
-I begin to remember childhood afternoons,
-Sitting in the backseats of cars, going places,
-Telephone wires on either side, like fences
-For giant invisible horses.
-
-— John McAuliffe`,
-  },
-  {
-    rounds: [
-      { clue: "The Kingdom!",                                  answer: "KERRY",     revealIdx: 1 },
-      { clue: "Where is Sarajevo?",                            answer: "BOSNIA",    revealIdx: 2 },
-      { clue: "Farthest planet from the Sun",                  answer: "NEPTUNE",   revealIdx: 4 },
-      { clue: "Old Man Utd venue!",                            answer: "TRAFFORD",  revealIdx: 5 },
-      { clue: "Winner of last year's British Open",            answer: "SCHEFFLER", revealIdx: [0,2] },
-    ],
-    anagram: { letters:["U","S","H","E","O","S"], answer:"HOUSES", clue:"noun · plural of home; where people live" },
-    quote: `"Out of that £100,000, I run a home in Dublin, Castlebar and Brussels. I want to tell you something, try it sometime when you have a couple of cars and three HOUSES and three homes and a few housekeepers." — Padraig Flynn, 1999
-
-🎬 https://youtu.be/UB0mdecbW8w`,
-  },
-  {
-    rounds: [
-      { clue: "What is the name for molten rock?",              answer: "MAGMA",     revealIdx: 1 },         // A
-      { clue: "What's a group of geese called?",               answer: "GAGGLE",    revealIdx: 5 },         // E
-      { clue: "China's capital?",                               answer: "BEIJING",   revealIdx: 0 },         // B
-      { clue: "What is the main gas in Earth's atmosphere?",    answer: "NITROGEN",  revealIdx: [0,3,7] },   // N, R, N
-      { clue: "Group combined to promote a common interest",    answer: "SYNDICATE", revealIdx: [0,4,7] },   // S, I, T
-    ],
-    anagram: { letters:["N","B","I","A","T","N","E","R","S"], answer:"BANNISTER", clue:"First sub four minute miler" },
-    quote: `"The man who can drive himself further once the effort gets painful is the man who will win." — Roger BANNISTER
-
-🔗 https://www.guinnessworldrecords.com/records/hall-of-fame/first-sub-four-minute-mile`,
-  },
-  {
+const PUZZLES = {
+  "2026-05-05": {
     rounds: [
       { clue: "A group of Lions",                              answer: "PRIDE",     revealIdx: 1 },
       { clue: "Austrian capital",                              answer: "VIENNA",    revealIdx: [5,0] },
@@ -91,7 +20,20 @@ Oh, oh, I wish I was back home in Derry
 — Bobby Sands
 🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
   },
-];
+  "2026-05-06": {
+    rounds: [
+      { clue: "What is the name for molten rock?",             answer: "MAGMA",     revealIdx: 1 },
+      { clue: "What's a group of geese called?",              answer: "GAGGLE",    revealIdx: 5 },
+      { clue: "China's capital?",                              answer: "BEIJING",   revealIdx: 0 },
+      { clue: "What is the main gas in Earth's atmosphere?",   answer: "NITROGEN",  revealIdx: [0,3,7] },
+      { clue: "Group combined to promote a common interest",   answer: "SYNDICATE", revealIdx: [0,4,7] },
+    ],
+    anagram: { letters:["N","B","I","A","T","N","E","R","S"], answer:"BANNISTER", clue:"First sub four minute miler" },
+    quote: `"The man who can drive himself further once the effort gets painful is the man who will win." — Roger BANNISTER
+
+🔗 https://www.guinnessworldrecords.com/records/hall-of-fame/first-sub-four-minute-mile`,
+  },
+};
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
 function getToday() {
@@ -100,7 +42,7 @@ function getToday() {
 }
 function getStreak() {
   try { return JSON.parse(localStorage.getItem("ftn_streak") || "{}"); }
-  catch { return {}; }
+  catch(e) { return {}; }
 }
 function saveStreak(won) {
   try {
@@ -112,7 +54,14 @@ function saveStreak(won) {
     const newData = { current:newStreak, best:Math.max(newStreak,data.best||0), lastPlayed:today, lastWon:won };
     localStorage.setItem("ftn_streak", JSON.stringify(newData));
     return newData;
-  } catch { return { current:0, best:0 }; }
+  } catch(e) { return { current:0, best:0 }; }
+}
+
+// ─── PUZZLE LOOKUP ────────────────────────────────────────────────────────────
+function getDailyPuzzle() {
+  const today = new Date();
+  const key = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,"0")}-${String(today.getDate()).padStart(2,"0")}`;
+  return PUZZLES[key] || PUZZLES[Object.keys(PUZZLES).sort().pop()];
 }
 
 // ─── SCORING ─────────────────────────────────────────────────────────────────
@@ -127,12 +76,6 @@ function getTitle(timeLeft) {
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
 const HINT_PENALTY  = 10;
 const TOTAL_SECONDS = 3 * 60;
-
-function getDailyPuzzle() {
-  const today  = new Date();
-  const dayNum = Math.floor((today - new Date("2026-05-01")) / 86400000);
-  return PUZZLES[dayNum % PUZZLES.length];
-}
 
 function formatTime(s) {
   if (s <= 0) return "0:00";
