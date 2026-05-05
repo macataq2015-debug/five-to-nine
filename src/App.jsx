@@ -134,7 +134,7 @@ function TypewriterRow({ word, answer, correct, animate, onDone }) {
         if (flipped) {
           const ev = evaluation[i];
           if (ev==="correct")      { color="#2e7d32"; border="#2e7d32"; }
-          else if (ev==="present") { color="#e65100"; border="#e65100"; }
+          else if (ev==="present") { color="#1565c0"; border="#1565c0"; }
           else                     { color="#c62828"; border="#c62828"; }
           content = ch;
         } else if (!shown) { border="#cccccc"; color="transparent"; }
@@ -326,8 +326,7 @@ export default function FiveToNine() {
   };
 
   const handleShare = () => {
-    const taken = TOTAL_SECONDS - timeLeft;
-    const mins=Math.floor(taken/60), secs=taken%60;
+    const mins=Math.floor(timeLeft/60), secs=timeLeft%60;
     const today = new Date().toLocaleDateString("en-GB",{day:"numeric",month:"short"});
     const boxes = done.map(r=>r.solved?"✅":"❌").join(" ");
     const anBox = anagramSolved?"🔤✅":"🔤❌";
@@ -445,7 +444,7 @@ export default function FiveToNine() {
         <div style={{ fontSize:14, letterSpacing:3, color:"#c4941f", marginBottom:16, fontWeight:700 }}>LETTER COLOURS</div>
         {[
           { color:"#2e7d32", bg:"rgba(46,125,50,0.08)", border:"rgba(46,125,50,0.4)", label:"Correct letter, correct position" },
-          { color:"#e65100", bg:"rgba(230,81,0,0.08)",  border:"rgba(230,81,0,0.4)",  label:"Correct letter, wrong position" },
+          { color:"#1565c0", bg:"rgba(21,101,192,0.08)", border:"rgba(21,101,192,0.4)", label:"Correct letter, wrong position" },
           { color:"#c62828", bg:"rgba(198,40,40,0.08)", border:"rgba(198,40,40,0.4)", label:"Letter not in the answer" },
         ].map(({ color, bg, border, label },i) => (
           <div key={i} style={{ display:"flex", alignItems:"center", gap:14, marginBottom:12 }}>
