@@ -211,6 +211,14 @@ export default function FiveToNine() {
   const [streak,    setStreak]    = useState(() => getStreak());
   const [showAnswers,  setShowAnswers]  = useState(false);
   const [showScoring,  setShowScoring]  = useState(false);
+  const [alreadyPlayed, setAlreadyPlayed] = useState(() => {
+    try {
+      const data = JSON.parse(localStorage.getItem("ftn_streak") || "{}");
+      const today = new Date();
+      const key = `${today.getFullYear()}-${today.getMonth()+1}-${today.getDate()}`;
+      return data.lastPlayed === key;
+    } catch(e) { return false; }
+  });
 
   const round    = puzzle.rounds[roundIdx];
   const alen     = round?.answer.length ?? 0;
@@ -420,12 +428,37 @@ export default function FiveToNine() {
     </div>
   );
 
+  // ── ALREADY PLAYED ────────────────────────────────────────────────────────
+  if (phase === "landing" && alreadyPlayed) return (
+    <div style={{ minHeight:"100vh", background:"#fafaf8", fontFamily:"'Courier New',monospace", color:"#111111", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:"24px 20px", textAlign:"center" }}>
+      <style>{CSS}</style>
+      <h1 style={{ fontSize:72, letterSpacing:12, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", animation:"flicker 8s infinite", lineHeight:1, marginBottom:4 }}>5 TO 9</h1>
+      <p style={{ fontSize:13, letterSpacing:2, color:"#c4941f", marginBottom:40, fontWeight:600 }}>
+        {new Date().toLocaleDateString("en-GB", { weekday:"long", day:"numeric", month:"long", year:"numeric" })}
+      </p>
+      <div style={{ fontSize:48, marginBottom:16 }}>👑</div>
+      <h2 style={{ fontSize:28, color:"#333333", marginBottom:12, fontFamily:"'Bebas Neue',sans-serif", letterSpacing:4 }}>YOU'VE PLAYED TODAY!</h2>
+      <p style={{ fontSize:14, color:"#666666", marginBottom:8, lineHeight:1.6 }}>Come back tomorrow for a new puzzle</p>
+      {streak.current > 0 && (
+        <div style={{ display:"flex", alignItems:"center", gap:8, margin:"20px 0" }}>
+          <span style={{ fontSize:24 }}>👑</span>
+          <span style={{ fontSize:22, fontWeight:800, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", letterSpacing:2 }}>{streak.current} DAY STREAK</span>
+          {streak.best > 1 && <span style={{ fontSize:11, color:"#888888" }}>BEST: {streak.best}</span>}
+        </div>
+      )}
+      <div style={{ width:"100%", maxWidth:440, marginTop:8 }}><ShareButton /></div>
+    </div>
+  );
+
   // ── LANDING ───────────────────────────────────────────────────────────────
   if (phase === "landing") return (
     <div style={{ minHeight:"100vh", background:"#fafaf8", fontFamily:"'Courier New',monospace", color:"#111111", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:"24px 20px" }}>
       <style>{CSS}</style>
       <h1 style={{ fontSize:72, letterSpacing:12, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", animation:"flicker 8s infinite", lineHeight:1, marginBottom:4 }}>5 TO 9</h1>
-      <p style={{ fontSize:11, letterSpacing:4, color:"#888888", marginBottom:40, textTransform:"uppercase" }}>Daily General Knowledge</p>
+      <p style={{ fontSize:11, letterSpacing:4, color:"#888888", marginBottom:4, textTransform:"uppercase" }}>Daily General Knowledge</p>
+      <p style={{ fontSize:13, letterSpacing:2, color:"#c4941f", marginBottom:40, fontWeight:600 }}>
+        {new Date().toLocaleDateString("en-GB", { weekday:"long", day:"numeric", month:"long", year:"numeric" })}
+      </p>
       <div style={{ width:"100%", maxWidth:480, border:"1px solid #e0e0e0", borderRadius:12, padding:"20px 24px", marginBottom:16, background:"#ffffff" }}>
         <div style={{ fontSize:14, letterSpacing:3, color:"#c4941f", marginBottom:18, fontWeight:700 }}>HOW TO PLAY</div>
         {[
