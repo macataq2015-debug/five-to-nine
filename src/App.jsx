@@ -20,6 +20,19 @@ Oh, oh, I wish I was back home in Derry
 — Bobby Sands
 🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
   },
+  "2026-05-08": {
+    rounds: [
+      { clue: "Which organ pumps blood around the body?",          answer: "HEART",     revealIdx: [3,4] },   // R, T
+      { clue: "What is the capital of Cuba?",                      answer: "HAVANA",    revealIdx: 2 },       // V
+      { clue: "Tennessee _ _ _ _ _ _ _ in the jar",               answer: "WHISKEY",   revealIdx: [2,6] },   // I, Y
+      { clue: "What is the study of heredity?",                    answer: "GENETICS",  revealIdx: 6 },       // C
+      { clue: "Aware of and responding to one's surroundings",     answer: "CONSCIOUS", revealIdx: 1 },       // O
+    ],
+    anagram: { letters:["V","I","C","T","O","R","Y"], answer:"VICTORY", clue:"noun · success in a struggle or contest" },
+    quote: `VICTORY in Europe Day celebrates the formal surrender of Nazi Germany on 8 May 1945 — 80 years ago today. The day the world breathed again.
+
+🔗 https://en.wikipedia.org/wiki/Victory_in_Europe_Day`,
+  },
   "2026-05-07": {
     rounds: [
       { clue: "What city are last year's Champions League winners from?", answer: "PARIS",     revealIdx: 1 },       // A
@@ -144,13 +157,13 @@ function TypewriterRow({ word, answer, correct, animate, onDone }) {
         let color="#111111", border="#cccccc", content=shown?ch:"";
         if (flipped) {
           const ev = evaluation[i];
-          if (ev==="correct")      { color="#2e7d32"; border="#2e7d32"; }
-          else if (ev==="present") { color="#1565c0"; border="#1565c0"; }
-          else                     { color="#c62828"; border="#c62828"; }
+          if (ev==="correct")      { color="#2e7d32"; border="#2e7d32"; bg="#e8f5e9"; }
+          else if (ev==="present") { color="#1565c0"; border="#1565c0"; bg="#e3f2fd"; }
+          else                     { color="#c62828"; border="#c62828"; bg="#ffebee"; }
           content = ch;
         } else if (!shown) { border="#cccccc"; color="transparent"; }
         return (
-          <div key={i} style={{ width:sz, height:sz, border:`2px solid ${border}`, borderRadius:4, background:"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:fs, fontWeight:700, color: flipped?color:shown?"#111111":"#cccccc", fontFamily:"'Courier New',monospace", transition:flipped?`border-color 0.15s ${i*0.04}s,color 0.15s ${i*0.04}s`:"none", position:"relative" }}>
+          <div key={i} style={{ width:sz, height:sz, border:`3px solid ${border}`, borderRadius:4, background:"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:fs, fontWeight:700, color: flipped?color:shown?"#111111":"#cccccc", fontFamily:"'Courier New',monospace", transition:flipped?`border-color 0.15s ${i*0.04}s,color 0.15s ${i*0.04}s`:"none", position:"relative" }}>
             {content}
             {animate && !flipped && i===count && <div style={{ position:"absolute", right:3, top:7, bottom:7, width:2, background:"#c4941f", animation:"blink 0.6s step-end infinite" }} />}
           </div>
@@ -471,7 +484,7 @@ export default function FiveToNine() {
     <div style={{ minHeight:"100vh", background:"#fafaf8", fontFamily:"'Courier New',monospace", color:"#111111", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", padding:"24px 20px" }}>
       <style>{CSS}</style>
       <h1 style={{ fontSize:72, letterSpacing:12, color:"#c4941f", fontFamily:"'Bebas Neue',sans-serif", animation:"flicker 8s infinite", lineHeight:1, marginBottom:4 }}>5 TO 9</h1>
-      <p style={{ fontSize:15, letterSpacing:4, color:"#555555", marginBottom:4, textTransform:"uppercase", fontWeight:700 }}>Daily General Knowledge</p>
+      <p style={{ fontSize:15, letterSpacing:4, color:"#555555", marginBottom:4, textTransform:"uppercase", fontWeight:700 }}>Daily Quiz</p>
       <p style={{ fontSize:15, letterSpacing:2, color:"#c4941f", marginBottom:40, fontWeight:700 }}>
         {new Date().toLocaleDateString("en-GB", { weekday:"long", day:"numeric", month:"long", year:"numeric" })}
       </p>
