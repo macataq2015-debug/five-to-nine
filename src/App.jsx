@@ -154,7 +154,7 @@ function TypewriterRow({ word, answer, correct, animate, onDone }) {
     <div style={{ display:"flex", gap:5, justifyContent:"center", marginBottom:6 }}>
       {word.split("").map((ch,i) => {
         const shown = i < count;
-        let color="#111111", border="#cccccc", content=shown?ch:"";
+        let color="#111111", border="#cccccc", bg="#ffffff", content=shown?ch:"";
         if (flipped) {
           const ev = evaluation[i];
           if (ev==="correct")      { color="#2e7d32"; border="#2e7d32"; bg="#e8f5e9"; }
@@ -163,7 +163,7 @@ function TypewriterRow({ word, answer, correct, animate, onDone }) {
           content = ch;
         } else if (!shown) { border="#cccccc"; color="transparent"; }
         return (
-          <div key={i} style={{ width:sz, height:sz, border:`3px solid ${border}`, borderRadius:4, background:"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:fs, fontWeight:700, color: flipped?color:shown?"#111111":"#cccccc", fontFamily:"'Courier New',monospace", transition:flipped?`border-color 0.15s ${i*0.04}s,color 0.15s ${i*0.04}s`:"none", position:"relative" }}>
+          <div key={i} style={{ width:sz, height:sz, border:`3px solid ${border}`, borderRadius:4, background:bg, display:"flex", alignItems:"center", justifyContent:"center", fontSize:fs, fontWeight:700, color: flipped?color:shown?"#111111":"#cccccc", fontFamily:"'Courier New',monospace", transition:flipped?`border-color 0.15s ${i*0.04}s,color 0.15s ${i*0.04}s`:"none", position:"relative" }}>
             {content}
             {animate && !flipped && i===count && <div style={{ position:"absolute", right:3, top:7, bottom:7, width:2, background:"#c4941f", animation:"blink 0.6s step-end infinite" }} />}
           </div>
