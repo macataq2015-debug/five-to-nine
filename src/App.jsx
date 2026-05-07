@@ -24,11 +24,11 @@ Oh, oh, I wish I was back home in Derry
     rounds: [
       { clue: "Which organ pumps blood around the body?",          answer: "HEART",     revealIdx: [3,4] },   // R, T
       { clue: "What is the capital of Cuba?",                      answer: "HAVANA",    revealIdx: 2 },       // V
-      { clue: "Tennessee _ _ _ _ _ _ _ in the jar",               answer: "WHISKEY",   revealIdx: [2,6] },   // I, Y
+      { clue: "Tennessee → _ _ _ _ _ _ _ ← in the jar",               answer: "WHISKEY",   revealIdx: [2,6] },   // I, Y
       { clue: "What is the study of heredity?",                    answer: "GENETICS",  revealIdx: 6 },       // C
       { clue: "Aware of and responding to one's surroundings",     answer: "CONSCIOUS", revealIdx: 1 },       // O
     ],
-    anagram: { letters:["V","I","C","T","O","R","Y"], answer:"VICTORY", clue:"noun · success in a struggle or contest" },
+    anagram: { letters:["T","R","O","V","Y","C","I"], answer:"VICTORY", clue:"noun · success in a struggle or contest" },
     quote: `VICTORY in Europe Day celebrates the formal surrender of Nazi Germany on 8 May 1945 — 80 years ago today. The day the world breathed again.
 
 🔗 https://en.wikipedia.org/wiki/Victory_in_Europe_Day`,
