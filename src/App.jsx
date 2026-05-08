@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // ─── DAILY PUZZLES ────────────────────────────────────────────────────────────
 const PUZZLES = {
@@ -19,6 +20,20 @@ Neither wind nor rain care for BRAVERY
 Oh, oh, I wish I was back home in Derry
 — Bobby Sands
 🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
+  },
+  "2026-05-09": {
+    rounds: [
+      { clue: "A fruit for cider",                            answer: "APPLE",     revealIdx: 4 },       // E
+      { clue: "A large area filled with trees",               answer: "FOREST",    revealIdx: 0 },       // F
+      { clue: "Lithuania's capital",                          answer: "VILNIUS",   revealIdx: [5,6] },   // U, S
+      { clue: "First name of the singer who sang Happy",      answer: "PHARRELL",  revealIdx: 3 },       // R
+      { clue: "London Hotspurs",                              answer: "TOTTENHAM", revealIdx: 4 },       // E
+    ],
+    anagram: { letters:["F","U","S","E","R","E"], answer:"REFUSE", clue:"verb · to indicate you are not willing to do something" },
+    quote: `"But maybe that's just the price you pay for the chains you REFUSE
+
+— Bees Wing, Richard Thompson
+🎬 https://youtu.be/unu79PP2Klo?si=k-wVZNKo2j0kSPQL`,
   },
   "2026-05-08": {
     rounds: [
@@ -686,5 +701,6 @@ export default function FiveToNine() {
         </div>
       </div>
     </div>
+    <Analytics />
   );
 }
