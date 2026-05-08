@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback, useRef } from "react";
-import { Analytics } from "@vercel/analytics/react";
 
 // ─── DAILY PUZZLES ────────────────────────────────────────────────────────────
 const PUZZLES = {
@@ -701,6 +700,5 @@ export default function FiveToNine() {
         </div>
       </div>
     </div>
-    <Analytics />
   );
 }
