@@ -20,6 +20,17 @@ Oh, oh, I wish I was back home in Derry
 — Bobby Sands
 🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
   },
+  "2026-05-10": {
+    rounds: [
+      { clue: "A space under the roof of a house",         answer: "ATTIC",     revealIdx: [1,2,3] },
+      { clue: "Secret → _ _ _ _ _ _ ← Gnome",             answer: "GARDEN",    revealIdx: 4 },
+      { clue: "Iraq's capital",                            answer: "BAGHDAD",   revealIdx: 4 },
+      { clue: "Who discovered America in 1492?",           answer: "COLUMBUS",  revealIdx: 3 },
+      { clue: "Which gland regulates hormone production?", answer: "PITUITARY", revealIdx: [6,2] },
+    ],
+    anagram: { letters:["D","I","T","U","T","A","T","E"], answer:"ATTITUDE", clue:"noun · a settled way of thinking or feeling about something" },
+    quote: `"Everything can be taken from a man but one thing: the last of the human freedoms — to choose one's ATTITUDE in any given set of circumstances." — Viktor Frankl, Man's Search for Meaning`,
+  },
   "2026-05-09": {
     rounds: [
       { clue: "A fruit for cider",                            answer: "APPLE",     revealIdx: 4 },       // E
@@ -97,6 +108,11 @@ function saveStreak(won) {
 
 // ─── PUZZLE LOOKUP ────────────────────────────────────────────────────────────
 function getDailyPuzzle() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const dateParam = params.get("date");
+    if (dateParam && PUZZLES[dateParam]) return PUZZLES[dateParam];
+  } catch(e) {}
   const today = new Date();
   const key = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,"0")}-${String(today.getDate()).padStart(2,"0")}`;
   return PUZZLES[key] || PUZZLES[Object.keys(PUZZLES).sort().pop()];
@@ -251,6 +267,8 @@ export default function FiveToNine() {
   const [showScoring,  setShowScoring]  = useState(false);
   const [alreadyPlayed, setAlreadyPlayed] = useState(() => {
     try {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("date")) return false;
       const data = JSON.parse(localStorage.getItem("ftn_streak") || "{}");
       const today = new Date();
       const key = `${today.getFullYear()}-${today.getMonth()+1}-${today.getDate()}`;
