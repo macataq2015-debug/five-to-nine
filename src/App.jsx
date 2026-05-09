@@ -156,7 +156,7 @@ function evaluateGuess(guess, answer) {
 
 // ─── CSS ─────────────────────────────────────────────────────────────────────
 const CSS = `
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@700;800;900&display=swap');
   @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-8px)}75%{transform:translateX(8px)}}
   @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
   @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
@@ -414,7 +414,7 @@ export default function FiveToNine() {
   const QuoteDisplay = () => (
     <div style={{ maxWidth:440, border:"1px solid #e0e0e0", borderRadius:10, padding:"22px 26px", animation:"fadeUp 0.8s ease", textAlign:"left", marginBottom:16, width:"100%", background:"#ffffff" }}>
       <div style={{ fontSize:13, letterSpacing:3, color:"#c4941f", marginBottom:14, fontWeight:700 }}>BEFORE YOU GO...</div>
-      <p style={{ fontSize:17, lineHeight:2.0, color:"#000000", fontStyle:"italic", fontWeight:800, margin:0, whiteSpace:"pre-wrap" }}>
+      <p style={{ fontSize:17, lineHeight:2.0, color:"#000000", fontStyle:"italic", fontWeight:800, fontFamily:"'Nunito',sans-serif", margin:0, whiteSpace:"pre-wrap" }}>
         {puzzle.quote.split(puzzle.anagram.answer).map((part,i,arr) => {
           const urlRegex = /(https?:\/\/[^\s]+)/g;
           const withLinks = part.split(urlRegex).map((chunk,j) =>
@@ -521,7 +521,7 @@ export default function FiveToNine() {
         {new Date().toLocaleDateString("en-GB", { weekday:"long", day:"numeric", month:"long", year:"numeric" })}
       </p>
       <div style={{ width:"100%", maxWidth:480, border:"1px solid #e0e0e0", borderRadius:12, padding:"20px 24px", marginBottom:16, background:"#ffffff" }}>
-        <div style={{ fontSize:16, letterSpacing:3, color:"#c4941f", marginBottom:18, fontWeight:800 }}>HOW TO PLAY</div>
+        <div style={{ fontSize:16, letterSpacing:3, color:"#c4941f", marginBottom:18, fontWeight:900, fontFamily:"'Nunito',sans-serif" }}>HOW TO PLAY</div>
         {[
           ["🧠","5 questions — answers grow from 5 to 9 letters"],
           ["💡","Stuck? Use the HINT button — it reveals a letter, but costs 10 seconds"],
@@ -530,12 +530,12 @@ export default function FiveToNine() {
         ].map(([icon,text],i) => (
           <div key={i} style={{ display:"flex", gap:12, alignItems:"flex-start", marginBottom:14 }}>
             <span style={{ fontSize:18, flexShrink:0 }}>{icon}</span>
-            <span style={{ fontSize:16, color:"#000000", lineHeight:1.7, fontWeight:700 }}>{text}</span>
+            <span style={{ fontSize:16, color:"#000000", lineHeight:1.7, fontWeight:800, fontFamily:"'Nunito',sans-serif" }}>{text}</span>
           </div>
         ))}
       </div>
       <div style={{ width:"100%", maxWidth:480, border:"1px solid #e0e0e0", borderRadius:12, padding:"20px 24px", marginBottom:28, background:"#ffffff" }}>
-        <div style={{ fontSize:16, letterSpacing:3, color:"#c4941f", marginBottom:16, fontWeight:800 }}>LETTER COLOURS</div>
+        <div style={{ fontSize:16, letterSpacing:3, color:"#c4941f", marginBottom:16, fontWeight:900, fontFamily:"'Nunito',sans-serif" }}>LETTER COLOURS</div>
         {[
           { color:"#2e7d32", bg:"rgba(46,125,50,0.08)", border:"rgba(46,125,50,0.4)", label:"Correct letter, correct position" },
           { color:"#1565c0", bg:"rgba(21,101,192,0.08)", border:"rgba(21,101,192,0.4)", label:"Correct letter, wrong position" },
@@ -543,7 +543,7 @@ export default function FiveToNine() {
         ].map(({ color, bg, border, label },i) => (
           <div key={i} style={{ display:"flex", alignItems:"center", gap:14, marginBottom:12 }}>
             <div style={{ width:28, height:28, borderRadius:4, background:bg, border:`2px solid ${border}`, flexShrink:0 }} />
-            <span style={{ fontSize:16, color:"#000000", fontWeight:700 }}>{label}</span>
+            <span style={{ fontSize:16, color:"#000000", fontWeight:800, fontFamily:"'Nunito',sans-serif" }}>{label}</span>
           </div>
         ))}
       </div>
@@ -630,7 +630,7 @@ export default function FiveToNine() {
         </div>
         <div style={{ width:"100%", maxWidth:580, marginBottom:16 }}>{done.map((r,i)=><RoundSummary key={i} r={r} i={i}/>)}</div>
         <div style={{ fontSize:18, letterSpacing:4, color:"#c4941f", marginBottom:6, textAlign:"center", fontWeight:700 }}>ANAGRAM</div>
-        <div style={{ fontSize:18, color:"#000000", fontStyle:"italic", marginBottom:16, textAlign:"center", maxWidth:400, lineHeight:1.6, fontWeight:700 }}>{puzzle.anagram.clue}</div>
+        <div style={{ fontSize:18, color:"#000000", fontStyle:"italic", marginBottom:16, textAlign:"center", maxWidth:400, lineHeight:1.6, fontWeight:800, fontFamily:"'Nunito',sans-serif" }}>{puzzle.anagram.clue}</div>
         <div style={{ fontSize:11, color:"#c4941f", letterSpacing:2, marginBottom:16, textAlign:"center", fontWeight:700 }}>↓ TAP A LETTER TO PLACE IT</div>
         <div style={{ display:"flex", gap:8, justifyContent:"center", marginBottom:8, flexWrap:"nowrap", width:"100%", maxWidth:500 }}>
           {puzzle.anagram.letters.map((l,i) => {
@@ -683,8 +683,8 @@ export default function FiveToNine() {
         {done.length>0&&<div style={{ marginBottom:12 }}>{done.map((r,i)=><RoundSummary key={i} r={r} i={i}/>)}</div>}
 
         <div style={{ border:"1px solid #e0e0e0", borderRadius:8, padding:"14px 18px", marginBottom:16, background:"#ffffff" }}>
-          <div style={{ fontSize:15, letterSpacing:2, color:"#c4941f", marginBottom:10, fontWeight:800 }}>QUESTION {roundIdx+1} · {alen} LETTERS</div>
-          <div style={{ fontSize:22, color:"#000000", lineHeight:1.5, fontWeight:700 }}>{round.clue}</div>
+          <div style={{ fontSize:15, letterSpacing:2, color:"#c4941f", marginBottom:10, fontWeight:900, fontFamily:"'Nunito',sans-serif" }}>QUESTION {roundIdx+1} · {alen} LETTERS</div>
+          <div style={{ fontSize:22, color:"#000000", lineHeight:1.5, fontWeight:900, fontFamily:"'Nunito',sans-serif" }}>{round.clue}</div>
         </div>
 
         <div style={{ marginBottom:8 }}>
