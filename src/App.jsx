@@ -20,6 +20,56 @@ Oh, oh, I wish I was back home in Derry
 — Bobby Sands
 🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
   },
+  "2026-05-14": {
+    rounds: [
+      { clue: "Which bone is the longest in the human body?",             answer: "FEMUR",     revealIdx: 0 },
+      { clue: "What word comes after Bob and before And Me?",            answer: "MARLEY",    revealIdx: 4 },
+      { clue: "A powerful rotating storm",                               answer: "TORNADO",   revealIdx: [4,0] },
+      { clue: "A very large animal with a trunk",                        answer: "ELEPHANT",  revealIdx: [4,0] },
+      { clue: "A group of classical musicians",                          answer: "ORCHESTRA", revealIdx: [1,5] },
+    ],
+    anagram: { letters:["T","E","A","H","F","R","S","E"], answer:"FEATHERS", clue:"What birds are covered in" },
+    quote: `"Hope" is the thing with FEATHERS —
+That perches in the soul —
+And sings the tune without the words —
+And never stops — at all —
+
+— Emily Dickinson
+Emily Dickinson died on this day, May 14th 1886 🕊️
+🔗 https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314`,
+  },
+  "2026-05-13": {
+    rounds: [
+      { clue: "What word comes after Bruce and before Rooney?",          answer: "WAYNE",     revealIdx: 0 },
+      { clue: "What you get when you mix red and blue",                  answer: "PURPLE",    revealIdx: 2 },
+      { clue: "A perfect example or embodiment of a quality or type",    answer: "EPITOME",   revealIdx: [2,3] },
+      { clue: "A person who writes novels",                              answer: "NOVELIST",  revealIdx: [5,0] },
+      { clue: "A flash of bright light from an electrical storm",        answer: "LIGHTNING", revealIdx: 2 },
+    ],
+    anagram: { letters:["R","I","W","G","T","I","N"], answer:"WRITING", clue:"What's on the wall?" },
+    quote: `"Very superstitious, WRITING's on the wall
+Very superstitious, ladders 'bout to fall"
+
+— Superstition, Stevie Wonder
+Stevie Wonder was born on this day, May 13th 1950 🎹
+🎬 https://youtu.be/97hwNY3ni10?si=VUBjC0fQkZfZbedD`,
+  },
+  "2026-05-12": {
+    rounds: [
+      { clue: "US President before Trump",                               answer: "OBAMA",     revealIdx: 3 },
+      { clue: "A narrow water passage connecting two seas",              answer: "STRAIT",    revealIdx: 4 },
+      { clue: "A person who travels for pleasure",                       answer: "TOURIST",   revealIdx: 5 },
+      { clue: "Not joined or touching; to move apart",                   answer: "SEPARATE",  revealIdx: 1 },
+      { clue: "Which gland regulates hormone production?",               answer: "PITUITARY", revealIdx: [7,8] },
+    ],
+    anagram: { letters:["S","M","I","E","R","Y"], answer:"MISERY", clue:"Am I happy or in ___?" },
+    quote: `"Am I happy or in MISERY?
+Whatever it is, that girl put a spell on me"
+
+— Purple Haze, Jimi Hendrix
+"Are You Experienced" was released on this day in 1967 🎸
+🎬 https://youtu.be/cJunCsrhJjg?si=TBhRrwnVOdv0QQgi`,
+  },
   "2026-05-11": {
     rounds: [
       { clue: "What is the surname of Walter in Breaking Bad?",          answer: "WHITE",     revealIdx: 0 },       // W  (Music Film TV)
@@ -33,7 +83,7 @@ Oh, oh, I wish I was back home in Derry
 You make me feel like a sweepstake WINNER"
 
 — Satisfy My Soul, Bob Marley
-Bob Marley died on this day, May 11th 1981. Legend. 🌿
+Bob Marley died on this day, May 11th 1981. Gone but never forgotten. 🌿
 🎬 https://youtu.be/2NUd5yrb3cM?si=sjZBqHAItnoBD0qM`,
   },
   "2026-05-10": {
