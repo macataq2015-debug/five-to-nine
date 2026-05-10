@@ -20,6 +20,22 @@ Oh, oh, I wish I was back home in Derry
 — Bobby Sands
 🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
   },
+  "2026-05-11": {
+    rounds: [
+      { clue: "What is the surname of Walter in Breaking Bad?",          answer: "WHITE",     revealIdx: 0 },       // W  (Music Film TV)
+      { clue: "What is the capital of Albania?",                         answer: "TIRANA",    revealIdx: 1 },       // I  (Countries & Capitals)
+      { clue: "Which scientist discovered penicillin?",                  answer: "FLEMING",   revealIdx: 5 },       // N  (Generic)
+      { clue: "Which Norwegian explorer reached the South Pole first?",  answer: "AMUNDSEN",  revealIdx: 3 },       // N  (World History)
+      { clue: "To cause someone to feel awkward or self-conscious",      answer: "EMBARRASS", revealIdx: [0,4] },   // E, R  (Difficult Spell)
+    ],
+    anagram: { letters:["N","W","I","E","R","N"], answer:"WINNER", clue:"Not a loser" },
+    quote: `"When I meet you around the corner
+You make me feel like a sweepstake WINNER"
+
+— Satisfy My Soul, Bob Marley
+Bob Marley died on this day, May 11th 1981. Legend. 🌿
+🎬 https://youtu.be/2NUd5yrb3cM?si=sjZBqHAItnoBD0qM`,
+  },
   "2026-05-10": {
     rounds: [
       { clue: "A space under the roof of a house",         answer: "ATTIC",     revealIdx: [1,2,3] },
@@ -710,9 +726,9 @@ export default function FiveToNine() {
             <div key={ri} style={{ display:"flex", gap:4, width:"100%", justifyContent:"center" }}>
               {ri===2&&<button onClick={submit} style={{ flex:"0 0 auto", minWidth:68, height:50, border:"2px solid #9a7000", borderRadius:8, background:"#b8860b", color:"#ffffff", fontSize:12, fontWeight:800, letterSpacing:1, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation", boxShadow:"0 4px 16px rgba(184,134,11,0.5)" }}>ENTER</button>}
               {row.split("").map(k=>(
-                <button key={k} onClick={()=>pressKey(k)} style={{ flex:"1 1 0", maxWidth:38, minWidth:28, height:50, borderRadius:6, border:"2px solid #c0b896", background:"#e8e2d6", color:"#111111", fontSize:15, fontWeight:700, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation" }}>{k}</button>
+                <button key={k} onClick={()=>pressKey(k)} style={{ flex:"1 1 0", maxWidth:38, minWidth:28, height:50, borderRadius:6, border:"2px solid #c0b896", background:"#e8e2d6", color:"#000000", fontSize:16, fontWeight:900, cursor:"pointer", fontFamily:"'Courier New',monospace", touchAction:"manipulation" }}>{k}</button>
               ))}
-              {ri===2&&<button onClick={()=>pressKey("DEL")} style={{ flex:"0 0 auto", minWidth:68, height:50, border:"2px solid #c0b896", borderRadius:8, background:"#e8e2d6", color:"#111111", fontSize:18, cursor:"pointer", touchAction:"manipulation" }}>⌫</button>}
+              {ri===2&&<button onClick={()=>pressKey("DEL")} style={{ flex:"0 0 auto", minWidth:68, height:50, border:"2px solid #c0b896", borderRadius:8, background:"#e8e2d6", color:"#000000", fontSize:18, cursor:"pointer", touchAction:"manipulation" }}>⌫</button>}
             </div>
           ))}
         </div>
