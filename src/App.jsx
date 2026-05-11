@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 // ─── DAILY PUZZLES ────────────────────────────────────────────────────────────
 const PUZZLES = {
@@ -695,6 +696,7 @@ export default function FiveToNine() {
       <button onClick={()=>setAlreadyPlayed(false)} style={{ background:"transparent", border:"none", color:"#cccccc", fontSize:11, marginTop:24, cursor:"pointer", fontFamily:"'Courier New',monospace", letterSpacing:2 }}>
         play again
       </button>
+      <Analytics />
     </div>
   );
 
@@ -745,6 +747,7 @@ export default function FiveToNine() {
         START THE CLOCK
       </button>
       {!streak.current&&<p style={{ color:"#888888", marginTop:20, fontSize:10, letterSpacing:2 }}>NEW PUZZLE EVERY DAY</p>}
+      <Analytics />
     </div>
   );
 
@@ -770,6 +773,7 @@ export default function FiveToNine() {
       <div style={{ width:"100%", maxWidth:440, marginBottom:16 }}><ShareButton /></div>
       <ReviewAnswers />
       <p style={{ color:"#888888", marginTop:16, fontSize:10, letterSpacing:3, textAlign:"center" }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
+      <Analytics />
     </div>
   );
 
@@ -794,6 +798,7 @@ export default function FiveToNine() {
         <ScoringGuide />
         <ReviewAnswers />
         <p style={{ color:"#888888", fontSize:9, letterSpacing:3, marginTop:8 }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
+        <Analytics />
       </div>
     );
   }
@@ -847,6 +852,7 @@ export default function FiveToNine() {
           <button onClick={clearAllAnagram} style={{ background:"transparent", border:"1px solid #cccccc", color:"#888888", borderRadius:6, padding:"10px 20px", fontSize:11, fontWeight:700, letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>CLEAR</button>
           <button onClick={submitAnagram} disabled={!isComplete} style={{ background:isComplete?"rgba(196,148,31,0.15)":"transparent", border:`2px solid ${isComplete?"#c4941f":"#cccccc"}`, color:isComplete?"#c4941f":"#888888", borderRadius:6, padding:"10px 28px", fontSize:11, fontWeight:700, letterSpacing:3, cursor:isComplete?"pointer":"default", fontFamily:"'Courier New',monospace", transition:"all 0.2s" }}>CONFIRM</button>
         </div>
+        <Analytics />
       </div>
     );
   }
@@ -904,6 +910,7 @@ export default function FiveToNine() {
           ))}
         </div>
       </div>
+      <Analytics />
     </div>
   );
 }
