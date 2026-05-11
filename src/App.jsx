@@ -20,22 +20,143 @@ Oh, oh, I wish I was back home in Derry
 — Bobby Sands
 🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
   },
+  "2026-05-22": {
+    rounds: [
+      { clue: "What word comes after 'Sweet' and before 'Ache'?",     answer: "TOOTH",     revealIdx: 4 },
+      { clue: "A strip of tarmac for aircraft to take off and land",  answer: "RUNWAY",    revealIdx: 1 },
+      { clue: "A room used for sleeping",                             answer: "BEDROOM",   revealIdx: 6 },
+      { clue: "The right to vote in political elections",             answer: "SUFFRAGE",  revealIdx: 5 },
+      { clue: "The long tube in the digestive system where food is broken down and absorbed", answer: "INTESTINE", revealIdx: 1 },
+    ],
+    anagram: { letters:["H","N","U","A","M"], answer:"HUMAN", clue:"noun · a member of the species Homo sapiens" },
+    quote: `"I am HUMAN and I need to be loved
+Just like everybody else does"
+
+— How Soon Is Now?, The Smiths
+Morrissey was born on this day, May 22nd 1959 🌹
+🎬 https://youtu.be/hnpILIIo9ek?si=jAn0oSWuqRNKrDyO`,
+  },
+  "2026-05-21": {
+    rounds: [
+      { clue: "What word comes after 'Bedtime' and before 'Board'?",  answer: "STORY",     revealIdx: 0 },
+      { clue: "Thick mucus in the respiratory passages",              answer: "PHLEGM",    revealIdx: 0 },
+      { clue: "A mythical horse with one horn",                       answer: "UNICORN",   revealIdx: 2 },
+      { clue: "The mathematical operation using the − symbol",        answer: "SUBTRACT",  revealIdx: 4 },
+      { clue: "The elected head of state",                            answer: "PRESIDENT", revealIdx: [4,8] },
+    ],
+    anagram: { letters:["I","P","R","S","T","I"], answer:"SPIRIT", clue:"noun · the non-physical part of a person; their soul or inner force" },
+    quote: `"On May 21st 1927, Charles Lindbergh landed in Paris having crossed the Atlantic solo in 33 hours. His plane — The SPIRIT of St. Louis — changed aviation forever. ✈️
+
+🎬 https://youtu.be/7hMBJyNbpBs?si=ivAX40_UiJ_e_kTg`,
+  },
+  "2026-05-20": {
+    rounds: [
+      { clue: "What word comes after 'Posh' and before 'Bag'?",       answer: "SPICE",     revealIdx: 3 },
+      { clue: "A person who works on ships",                          answer: "SAILOR",    revealIdx: 4 },
+      { clue: "Extremely hard, transparent crystal used in jewellery and cutting tools", answer: "DIAMOND", revealIdx: 3 },
+      { clue: "To assign responsibility or tasks to another person",  answer: "DELEGATE",  revealIdx: [1,0] },
+      { clue: "The study of stars",                                   answer: "ASTRONOMY", revealIdx: 8 },
+    ],
+    anagram: { letters:["M","E","C","Y","D","O"], answer:"COMEDY", clue:"noun · something that makes you laugh" },
+    quote: `"David Letterman hosted The Late Show for 22 years, redefining late night COMEDY in America. He hosted his final show on May 20th 2015. 📺"
+
+🎬 https://youtu.be/OctbREjW0jw?si=aPvl0H6N6dgY2tU7`,
+  },
+  "2026-05-19": {
+    rounds: [
+      { clue: "What word comes after 'Doll' and before 'Party'?",     answer: "HOUSE",     revealIdx: 3 },
+      { clue: "A strong regular repeated pattern of sound or movement", answer: "RHYTHM",   revealIdx: 3 },
+      { clue: "A tool used for direction",                            answer: "COMPASS",   revealIdx: 4 },
+      { clue: "A political system ruled by a king or queen",          answer: "MONARCHY",  revealIdx: 2 },
+      { clue: "The name for the & symbol",                            answer: "AMPERSAND", revealIdx: 8 },
+    ],
+    anagram: { letters:["S","N","T","D","A"], answer:"STAND", clue:"noun · an attitude or position taken on an issue" },
+    quote: `"A man who STANDS for nothing will fall for anything."
+
+— Malcolm X
+Malcolm X was born on this day, May 19th 1925 ✊
+🔗 https://www.malcolmx.com/quotes/`,
+  },
+  "2026-05-18": {
+    rounds: [
+      { clue: "What word comes after 'Sun' and before 'House'?",      answer: "LIGHT",     revealIdx: 0 },
+      { clue: "A surprise attack from hiding",                        answer: "AMBUSH",    revealIdx: 0 },
+      { clue: "A small insect that glows at night",                   answer: "FIREFLY",   revealIdx: 6 },
+      { clue: "The name for the ( ) symbols",                         answer: "BRACKETS",  revealIdx: [5,1] },
+      { clue: "Surname of the 3rd US President",                      answer: "JEFFERSON", revealIdx: 6 },
+    ],
+    anagram: { letters:["L","Y","A","E","S","R"], answer:"LAYERS", clue:"Ogres are like onions — they have ___" },
+    quote: `"Ogres are like onions. LAYERS. Onions have layers. Ogres have layers. We both have layers."
+
+— Shrek, 2001
+Shrek premiered at the Cannes Film Festival on this day in 2001 🧅
+🎬 https://youtu.be/CwXOrWvPBPk?si=_cu4W5-Wryfir7JD`,
+  },
+  "2026-05-17": {
+    rounds: [
+      { clue: "What word comes after 'Mobile' and before 'Booth'?",   answer: "PHONE",     revealIdx: 3 },
+      { clue: "A mischievous creature from folklore",                 answer: "GOBLIN",    revealIdx: 1 },
+      { clue: "The line where the earth or sea appears to meet the sky", answer: "HORIZON", revealIdx: 2 },
+      { clue: "Mathematical operation using the + symbol",            answer: "ADDITION",  revealIdx: [1,3] },
+      { clue: "UK Prime Minister during WWII, surname",               answer: "CHURCHILL", revealIdx: 0 },
+    ],
+    anagram: { letters:["N","D","R","I","O","C"], answer:"NORDIC", clue:"Relating to Scandinavia, Finland and Iceland" },
+    quote: `"Norway's Constitution was signed at Eidsvoll on May 17th 1814 — today is Syttende Mai, Norway's national day! A great NORDIC nation celebrates its independence. 🇳🇴
+
+🔗 https://geographyworlds.com/blog/facts-about-norway/"`,
+  },
+  "2026-05-16": {
+    rounds: [
+      { clue: "What word comes after 'Business' and before 'Action'?", answer: "CLASS",     revealIdx: 0 },
+      { clue: "A respiratory condition causing difficulty breathing",   answer: "ASTHMA",    revealIdx: 0 },
+      { clue: "Site with runways and terminals for air travel",         answer: "AIRPORT",   revealIdx: 3 },
+      { clue: "The name for the * symbol",                             answer: "ASTERISK",  revealIdx: [2,0] },
+      { clue: "A person seeking elected office",                       answer: "CANDIDATE", revealIdx: [4,2] },
+    ],
+    anagram: { letters:["C","T","P","I","A","A","N"], answer:"CAPTAIN", clue:"Highest‑ranking officer on a ship or plane" },
+    quote: `"So hoist up the John B's sail
+See how the main sail sets
+Call for the CAPTAIN ashore
+Let me go home"
+
+— Sloop John B, The Beach Boys
+Pet Sounds was released on this day, May 16th 1966 🏄
+🎬 https://youtu.be/nSAoEf1Ib58?si=zDfLMU9tqCFKVWM3`,
+  },
   "2026-05-14": {
     rounds: [
+      { clue: "Largest species of cat",                               answer: "TIGER",     revealIdx: 1 },
+      { clue: "To go after or come behind something or someone",      answer: "FOLLOW",    revealIdx: [2,3] },
+      { clue: "Which ship sank in 1912?",                             answer: "TITANIC",   revealIdx: 0 },
+      { clue: "First female UK Prime Minister, surname",              answer: "THATCHER",  revealIdx: 1 },
+      { clue: "A person who travels to space",                        answer: "ASTRONAUT", revealIdx: 3 },
+    ],
+    anagram: { letters:["I","L","R","H","T","L"], answer:"THRILL", clue:"To cause someone to feel delight or exhilaration" },
+    quote: `"The THRILL is gone, baby
+The thrill is gone away
+Someday I know I'll be over it all, baby
+Just like I know a man should"
+
+— The Thrill is Gone, BB King
+BB King died on this day, May 14th 2015 🎸
+🎬 https://youtu.be/SgXSomPE_FY?si=M5h9_Xft4mzkXzZC`,
+  },
+  "2026-05-15": {
+    rounds: [
       { clue: "Which bone is the longest in the human body?",             answer: "FEMUR",     revealIdx: 0 },
-      { clue: "What word comes after Bob and before And Me?",            answer: "MARLEY",    revealIdx: 4 },
+      { clue: "What word comes after 'Bob' and before 'And Me'?",        answer: "MARLEY",    revealIdx: 4 },
       { clue: "A powerful rotating storm",                               answer: "TORNADO",   revealIdx: [4,0] },
-      { clue: "A very large animal with a trunk",                        answer: "ELEPHANT",  revealIdx: [4,0] },
+      { clue: "First name of fictional detective at 221B Baker Street",  answer: "SHERLOCK",  revealIdx: [1,2] },
       { clue: "A group of classical musicians",                          answer: "ORCHESTRA", revealIdx: [1,5] },
     ],
-    anagram: { letters:["T","E","A","H","F","R","S","E"], answer:"FEATHERS", clue:"What birds are covered in" },
+    anagram: { letters:["F","E","T","A","S","H","R","E"], answer:"FEATHERS", clue:"What birds are covered in" },
     quote: `"Hope" is the thing with FEATHERS —
 That perches in the soul —
 And sings the tune without the words —
 And never stops — at all —
 
 — Emily Dickinson
-Emily Dickinson died on this day, May 14th 1886 🕊️
+Emily Dickinson died on this day, May 15th 1886 🕊️
 🔗 https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314`,
   },
   "2026-05-13": {
@@ -43,10 +164,10 @@ Emily Dickinson died on this day, May 14th 1886 🕊️
       { clue: "What word comes after Bruce and before Rooney?",          answer: "WAYNE",     revealIdx: 0 },
       { clue: "What you get when you mix red and blue",                  answer: "PURPLE",    revealIdx: 2 },
       { clue: "A perfect example or embodiment of a quality or type",    answer: "EPITOME",   revealIdx: [2,3] },
-      { clue: "A person who writes novels",                              answer: "NOVELIST",  revealIdx: [5,0] },
+      { clue: "Dickens, Orwell and Hemingway's job title",              answer: "NOVELIST",  revealIdx: [5,0] },
       { clue: "A flash of bright light from an electrical storm",        answer: "LIGHTNING", revealIdx: 2 },
     ],
-    anagram: { letters:["R","I","W","G","T","I","N"], answer:"WRITING", clue:"What's on the wall?" },
+    anagram: { letters:["R","I","W","G","T","I","N"], answer:"WRITING", clue:"noun · the activity of putting words on paper" },
     quote: `"Very superstitious, WRITING's on the wall
 Very superstitious, ladders 'bout to fall"
 
@@ -62,7 +183,7 @@ Stevie Wonder was born on this day, May 13th 1950 🎹
       { clue: "Not joined or touching; to move apart",                   answer: "SEPARATE",  revealIdx: 1 },
       { clue: "Which gland regulates hormone production?",               answer: "PITUITARY", revealIdx: [7,8] },
     ],
-    anagram: { letters:["S","M","I","E","R","Y"], answer:"MISERY", clue:"Am I happy or in ___?" },
+    anagram: { letters:["S","M","I","E","R","Y"], answer:"MISERY", clue:"noun · a state of great distress or discomfort" },
     quote: `"Am I happy or in MISERY?
 Whatever it is, that girl put a spell on me"
 
