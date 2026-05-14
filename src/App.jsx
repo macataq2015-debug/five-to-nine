@@ -55,9 +55,9 @@ Widely considered one of the greatest albums ever made.
       { clue: "The physical world and its living things",                answer: "NATURE",    revealIdx: [5,4],   connection: "Dickinson found God and deep meaning in the natural world" },
       { clue: "Achievement of a desired aim",                            answer: "SUCCESS",   revealIdx: 0,       connection: '"Success is counted sweetest" — one of her most famous poems' },
       { clue: "The state of being alone",                                answer: "SOLITUDE",  revealIdx: 4,       connection: "Dickinson lived as a recluse, rarely leaving her home" },
-      { clue: "Difficult to interpret or understand",                    answer: "ENIGMATIC", revealIdx: 0,       connection: "Her life and poetry remain deeply mysterious to this day" },
+      { clue: "Something that is mysterious, puzzling, or difficult to understand", answer: "ENIGMATIC", revealIdx: 0, connection: "Her life and poetry remain deeply mysterious to this day" },
     ],
-    anagram: { letters:["F","E","A","T","H","S","E","R"], answer:"FEATHERS", clue:"What birds are covered in — and what Emily Dickinson wrote about" },
+    anagram: { letters:["F","E","A","T","H","S","E","R"], answer:"FEATHERS", clue:"Soft, lightweight structures forming the outer covering of birds" },
     quote: `On This Day, Emily Dickinson died, May 15th 1886 🕊️
 
 "Hope" is the thing with FEATHERS —
