@@ -57,7 +57,7 @@ Widely considered one of the greatest albums ever made.
       { clue: "The state of being alone",                                answer: "SOLITUDE",  revealIdx: 4,       connection: "Dickinson lived as a recluse, rarely leaving her home" },
       { clue: "Something that is mysterious, puzzling, or difficult to understand", answer: "ENIGMATIC", revealIdx: 0, connection: "Her life and poetry remain deeply mysterious to this day" },
     ],
-    anagram: { letters:["F","E","A","T","H","S","E","R"], answer:"FEATHERS", clue:"Soft, lightweight structures forming the outer covering of birds" },
+    anagram: { letters:["H","E","S","F","R","T","A","E"], answer:"FEATHERS", clue:"Soft, lightweight structures forming the outer covering of birds" },
     quote: `On This Day, Emily Dickinson died, May 15th 1886 🕊️
 
 "Hope" is the thing with FEATHERS —
