@@ -20,108 +20,53 @@ Oh, oh, I wish I was back home in Derry
 — Bobby Sands
 🎬 https://youtu.be/c5_wZmTHfo8?si=7Q1lzn9HKFDJ26cD`,
   },
-  "2026-05-22": {
-    rounds: [
-      { clue: "What word comes after 'Sweet' and before 'Ache'?",     answer: "TOOTH",     revealIdx: 4 },
-      { clue: "A strip of tarmac for aircraft to take off and land",  answer: "RUNWAY",    revealIdx: 1 },
-      { clue: "A room used for sleeping",                             answer: "BEDROOM",   revealIdx: 6 },
-      { clue: "The right to vote in political elections",             answer: "SUFFRAGE",  revealIdx: 5 },
-      { clue: "The long tube in the digestive system where food is broken down and absorbed", answer: "INTESTINE", revealIdx: 1 },
-    ],
-    anagram: { letters:["H","N","U","A","M"], answer:"HUMAN", clue:"noun · a member of the species Homo sapiens" },
-    quote: `"I am HUMAN and I need to be loved
-Just like everybody else does"
-
-— How Soon Is Now?, The Smiths
-Morrissey was born on this day, May 22nd 1959 🌹
-🎬 https://youtu.be/hnpILIIo9ek?si=jAn0oSWuqRNKrDyO`,
-  },
-  "2026-05-21": {
-    rounds: [
-      { clue: "What word comes after 'Bedtime' and before 'Board'?",  answer: "STORY",     revealIdx: 0 },
-      { clue: "Thick mucus in the respiratory passages",              answer: "PHLEGM",    revealIdx: 0 },
-      { clue: "A mythical horse with one horn",                       answer: "UNICORN",   revealIdx: 2 },
-      { clue: "The mathematical operation using the − symbol",        answer: "SUBTRACT",  revealIdx: 4 },
-      { clue: "The elected head of state",                            answer: "PRESIDENT", revealIdx: [4,8] },
-    ],
-    anagram: { letters:["I","P","R","S","T","I"], answer:"SPIRIT", clue:"noun · the non-physical part of a person; their soul or inner force" },
-    quote: `"On May 21st 1927, Charles Lindbergh landed in Paris having crossed the Atlantic solo in 33 hours. His plane — The SPIRIT of St. Louis — changed aviation forever. ✈️
-
-🎬 https://youtu.be/7hMBJyNbpBs?si=ivAX40_UiJ_e_kTg`,
-  },
-  "2026-05-20": {
-    rounds: [
-      { clue: "What word comes after 'Posh' and before 'Bag'?",       answer: "SPICE",     revealIdx: 3 },
-      { clue: "A person who works on ships",                          answer: "SAILOR",    revealIdx: 4 },
-      { clue: "Extremely hard, transparent crystal used in jewellery and cutting tools", answer: "DIAMOND", revealIdx: 3 },
-      { clue: "To assign responsibility or tasks to another person",  answer: "DELEGATE",  revealIdx: [1,0] },
-      { clue: "The study of stars",                                   answer: "ASTRONOMY", revealIdx: 8 },
-    ],
-    anagram: { letters:["M","E","C","Y","D","O"], answer:"COMEDY", clue:"noun · something that makes you laugh" },
-    quote: `"David Letterman hosted The Late Show for 22 years, redefining late night COMEDY in America. He hosted his final show on May 20th 2015. 📺"
-
-🎬 https://youtu.be/OctbREjW0jw?si=aPvl0H6N6dgY2tU7`,
-  },
-  "2026-05-19": {
-    rounds: [
-      { clue: "What word comes after 'Doll' and before 'Party'?",     answer: "HOUSE",     revealIdx: 3 },
-      { clue: "A strong regular repeated pattern of sound or movement", answer: "RHYTHM",   revealIdx: 3 },
-      { clue: "A tool used for direction",                            answer: "COMPASS",   revealIdx: 4 },
-      { clue: "A political system ruled by a king or queen",          answer: "MONARCHY",  revealIdx: 2 },
-      { clue: "The name for the & symbol",                            answer: "AMPERSAND", revealIdx: 8 },
-    ],
-    anagram: { letters:["S","N","T","D","A"], answer:"STAND", clue:"noun · an attitude or position taken on an issue" },
-    quote: `"A man who STANDS for nothing will fall for anything."
-
-— Malcolm X
-Malcolm X was born on this day, May 19th 1925 ✊
-🔗 https://www.malcolmx.com/quotes/`,
-  },
-  "2026-05-18": {
-    rounds: [
-      { clue: "What word comes after 'Sun' and before 'House'?",      answer: "LIGHT",     revealIdx: 0 },
-      { clue: "A surprise attack from hiding",                        answer: "AMBUSH",    revealIdx: 0 },
-      { clue: "A small insect that glows at night",                   answer: "FIREFLY",   revealIdx: 6 },
-      { clue: "The name for the ( ) symbols",                         answer: "BRACKETS",  revealIdx: [5,1] },
-      { clue: "Surname of the 3rd US President",                      answer: "JEFFERSON", revealIdx: 6 },
-    ],
-    anagram: { letters:["L","Y","A","E","S","R"], answer:"LAYERS", clue:"Ogres are like onions — they have ___" },
-    quote: `"Ogres are like onions. LAYERS. Onions have layers. Ogres have layers. We both have layers."
-
-— Shrek, 2001
-Shrek premiered at the Cannes Film Festival on this day in 2001 🧅
-🎬 https://youtu.be/CwXOrWvPBPk?si=_cu4W5-Wryfir7JD`,
-  },
   "2026-05-17": {
     rounds: [
-      { clue: "What word comes after 'Mobile' and before 'Booth'?",   answer: "PHONE",     revealIdx: 3 },
-      { clue: "A mischievous creature from folklore",                 answer: "GOBLIN",    revealIdx: 1 },
-      { clue: "The line where the earth or sea appears to meet the sky", answer: "HORIZON", revealIdx: 2 },
-      { clue: "Mathematical operation using the + symbol",            answer: "ADDITION",  revealIdx: [1,3] },
-      { clue: "UK Prime Minister during WWII, surname",               answer: "CHURCHILL", revealIdx: 0 },
+      { clue: "Long, deep inlet with steep sides formed by glacial erosion", answer: "FJORD",     revealIdx: [0,4], connection: "Norway has over 1,000 fjords — the longest stretches 204km inland" },
+      { clue: "Title of a famous expressionist painting by Munch",           answer: "SCREAM",    revealIdx: [3,5], connection: "Edvard Munch was Norwegian — The Scream is one of the most recognised paintings ever" },
+      { clue: "Surname of a modern world chess champion",                    answer: "CARLSEN",   revealIdx: 2,     connection: "Magnus Carlsen from Norway became world chess champion aged just 22" },
+      { clue: "Word that comes before 'lights' in a famous sky display",     answer: "NORTHERN",  revealIdx: 1,     connection: "The Northern Lights are best seen in Norway — a natural wonder" },
+      { clue: "Natural resource refined into fuels and plastics",            answer: "PETROLEUM", revealIdx: 1,     connection: "Norway is one of the world's largest oil exporters — a very wealthy nation" },
     ],
-    anagram: { letters:["N","D","R","I","O","C"], answer:"NORDIC", clue:"Relating to Scandinavia, Finland and Iceland" },
-    quote: `"Norway's Constitution was signed at Eidsvoll on May 17th 1814 — today is Syttende Mai, Norway's national day! A great NORDIC nation celebrates its independence. 🇳🇴
+    anagram: { letters:["F","E","R","O","D","M","E"], answer:"FREEDOM", clue:"noun · the power to act, speak or think without restraint" },
+    quote: `"Norway's Constitution was signed at Eidsvoll on May 17th 1814 — today is Syttende Mai, Norway's national day, when a great nation can celebrate its independence and FREEDOM. 🇳🇴
 
 🔗 https://geographyworlds.com/blog/facts-about-norway/"`,
   },
   "2026-05-16": {
     rounds: [
-      { clue: "What word comes after 'Business' and before 'Action'?", answer: "CLASS",     revealIdx: 0 },
-      { clue: "A respiratory condition causing difficulty breathing",   answer: "ASTHMA",    revealIdx: 0 },
-      { clue: "Site with runways and terminals for air travel",         answer: "AIRPORT",   revealIdx: 3 },
-      { clue: "The name for the * symbol",                             answer: "ASTERISK",  revealIdx: [2,0] },
-      { clue: "A person seeking elected office",                       answer: "CANDIDATE", revealIdx: [4,2] },
+      { clue: "What word comes after 'Palm' and before 'Body'?",       answer: "BEACH",     revealIdx: 2,    connection: "The Beach Boys — named after the California beach culture they embodied" },
+      { clue: "What is the volleyball called in Cast Away?",           answer: "WILSON",    revealIdx: [0,5],connection: "Brian Wilson — the genius who wrote and produced Pet Sounds" },
+      { clue: "Male family member",                                    answer: "BROTHER",   revealIdx: 1,    connection: "Brother Records — the label the Beach Boys founded in 1966, the same year as Pet Sounds" },
+      { clue: "Vocal music performed without instruments",             answer: "CAPPELLA",  revealIdx: 4,    connection: "The Beach Boys were famous for their extraordinary a cappella harmonies" },
+      { clue: "Long buoyant board used to stand on and catch a wave",  answer: "SURFBOARD", revealIdx: 0,    connection: "Surfing was the heart of the early Beach Boys sound and image" },
     ],
-    anagram: { letters:["C","T","P","I","A","A","N"], answer:"CAPTAIN", clue:"Highest‑ranking officer on a ship or plane" },
-    quote: `"So hoist up the John B's sail
-See how the main sail sets
-Call for the CAPTAIN ashore
-Let me go home"
+    anagram: { letters:["A","W","N","R","E","S"], answer:"ANSWER", clue:"I Know There's An _______ — Pet Sounds, 1966" },
+    quote: `"I Know There's An ANSWER — but I have to find it myself."
 
-— Sloop John B, The Beach Boys
+— I Know There's An Answer, The Beach Boys
 Pet Sounds was released on this day, May 16th 1966 🏄
+Widely considered one of the greatest albums ever made.
 🎬 https://youtu.be/nSAoEf1Ib58?si=zDfLMU9tqCFKVWM3`,
+  },
+  "2026-05-15": {
+    rounds: [
+      { clue: "Belief held without proof",                               answer: "FAITH",     revealIdx: [0,1,4], connection: "A recurring theme throughout Dickinson's poetry" },
+      { clue: "The physical world and its living things",                answer: "NATURE",    revealIdx: [5,4],   connection: "Dickinson found God and deep meaning in the natural world" },
+      { clue: "Achievement of a desired aim",                            answer: "SUCCESS",   revealIdx: 0,       connection: '"Success is counted sweetest" — one of her most famous poems' },
+      { clue: "The state of being alone",                                answer: "SOLITUDE",  revealIdx: 4,       connection: "Dickinson lived as a recluse, rarely leaving her home" },
+      { clue: "Difficult to interpret or understand",                    answer: "ENIGMATIC", revealIdx: 0,       connection: "Her life and poetry remain deeply mysterious to this day" },
+    ],
+    anagram: { letters:["F","E","A","T","H","S","E","R"], answer:"FEATHERS", clue:"What birds are covered in — and what Emily Dickinson wrote about" },
+    quote: `On This Day, Emily Dickinson died, May 15th 1886 🕊️
+
+"Hope" is the thing with FEATHERS —
+That perches in the soul —
+And sings the tune without the words —
+And never stops — at all —
+
+— Emily Dickinson
+🔗 https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314`,
   },
   "2026-05-14": {
     rounds: [
@@ -141,30 +86,12 @@ Just like I know a man should"
 BB King died on this day, May 14th 2015 🎸
 🎬 https://youtu.be/SgXSomPE_FY?si=M5h9_Xft4mzkXzZC`,
   },
-  "2026-05-15": {
-    rounds: [
-      { clue: "Which bone is the longest in the human body?",             answer: "FEMUR",     revealIdx: 0 },
-      { clue: "What word comes after 'Bob' and before 'And Me'?",        answer: "MARLEY",    revealIdx: 4 },
-      { clue: "A powerful rotating storm",                               answer: "TORNADO",   revealIdx: [4,0] },
-      { clue: "First name of fictional detective at 221B Baker Street",  answer: "SHERLOCK",  revealIdx: [1,2] },
-      { clue: "A group of classical musicians",                          answer: "ORCHESTRA", revealIdx: [1,5] },
-    ],
-    anagram: { letters:["F","E","T","A","S","H","R","E"], answer:"FEATHERS", clue:"What birds are covered in" },
-    quote: `"Hope" is the thing with FEATHERS —
-That perches in the soul —
-And sings the tune without the words —
-And never stops — at all —
-
-— Emily Dickinson
-Emily Dickinson died on this day, May 15th 1886 🕊️
-🔗 https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314`,
-  },
   "2026-05-13": {
     rounds: [
-      { clue: "What word comes after Bruce and before Rooney?",          answer: "WAYNE",     revealIdx: 0 },
-      { clue: "What you get when you mix red and blue",                  answer: "PURPLE",    revealIdx: 2 },
+      { clue: "What word comes after 'Bruce' and before 'Rooney'?",       answer: "WAYNE",     revealIdx: 0 },
+      { clue: "What you get when you mix red and blue",                   answer: "PURPLE",    revealIdx: 2 },
+      { clue: "Dickens, Orwell and Hemingway's job title",               answer: "NOVELIST",  revealIdx: [5,0] },
       { clue: "A perfect example or embodiment of a quality or type",    answer: "EPITOME",   revealIdx: [2,3] },
-      { clue: "Dickens, Orwell and Hemingway's job title",              answer: "NOVELIST",  revealIdx: [5,0] },
       { clue: "A flash of bright light from an electrical storm",        answer: "LIGHTNING", revealIdx: 2 },
     ],
     anagram: { letters:["R","I","W","G","T","I","N"], answer:"WRITING", clue:"noun · the activity of putting words on paper" },
@@ -193,11 +120,11 @@ Whatever it is, that girl put a spell on me"
   },
   "2026-05-11": {
     rounds: [
-      { clue: "What is the surname of Walter in Breaking Bad?",          answer: "WHITE",     revealIdx: 0 },       // W  (Music Film TV)
-      { clue: "What is the capital of Albania?",                         answer: "TIRANA",    revealIdx: 1 },       // I  (Countries & Capitals)
-      { clue: "Which scientist discovered penicillin?",                  answer: "FLEMING",   revealIdx: 5 },       // N  (Generic)
-      { clue: "Which Norwegian explorer reached the South Pole first?",  answer: "AMUNDSEN",  revealIdx: 3 },       // N  (World History)
-      { clue: "To cause someone to feel awkward or self-conscious",      answer: "EMBARRASS", revealIdx: [0,4] },   // E, R  (Difficult Spell)
+      { clue: "What is the surname of Walter in Breaking Bad?",          answer: "WHITE",     revealIdx: 0 },
+      { clue: "What is the capital of Albania?",                         answer: "TIRANA",    revealIdx: 1 },
+      { clue: "Which scientist discovered penicillin?",                  answer: "FLEMING",   revealIdx: 5 },
+      { clue: "Which Norwegian explorer reached the South Pole first?",  answer: "AMUNDSEN",  revealIdx: 3 },
+      { clue: "To cause someone to feel awkward or self-conscious",      answer: "EMBARRASS", revealIdx: [0,4] },
     ],
     anagram: { letters:["N","W","I","E","R","N"], answer:"WINNER", clue:"Not a loser" },
     quote: `"When I meet you around the corner
@@ -209,22 +136,22 @@ Bob Marley died on this day, May 11th 1981. Gone but never forgotten. 🌿
   },
   "2026-05-10": {
     rounds: [
-      { clue: "A space under the roof of a house",         answer: "ATTIC",     revealIdx: [1,2,3] },
-      { clue: "Secret → _ _ _ _ _ _ ← Gnome",             answer: "GARDEN",    revealIdx: 4 },
-      { clue: "Iraq's capital",                            answer: "BAGHDAD",   revealIdx: 4 },
-      { clue: "Who discovered America in 1492?",           answer: "COLUMBUS",  revealIdx: 3 },
-      { clue: "Which gland regulates hormone production?", answer: "PITUITARY", revealIdx: [6,2] },
+      { clue: "A space under the roof of a house",                      answer: "ATTIC",     revealIdx: [1,2,3] },
+      { clue: "Secret → _ _ _ _ _ _ ← Gnome",                          answer: "GARDEN",    revealIdx: 4 },
+      { clue: "Iraq's capital",                                          answer: "BAGHDAD",   revealIdx: 4 },
+      { clue: "Who discovered America in 1492?",                         answer: "COLUMBUS",  revealIdx: 3 },
+      { clue: "Which gland regulates hormone production?",               answer: "PITUITARY", revealIdx: [6,2] },
     ],
     anagram: { letters:["D","I","T","U","T","A","T","E"], answer:"ATTITUDE", clue:"noun · a settled way of thinking or feeling about something" },
     quote: `"Everything can be taken from a man but one thing: the last of the human freedoms — to choose one's ATTITUDE in any given set of circumstances." — Viktor Frankl, Man's Search for Meaning`,
   },
   "2026-05-09": {
     rounds: [
-      { clue: "A fruit for cider",                            answer: "APPLE",     revealIdx: 4 },       // E
-      { clue: "A large area filled with trees",               answer: "FOREST",    revealIdx: 0 },       // F
-      { clue: "Lithuania's capital",                          answer: "VILNIUS",   revealIdx: [5,6] },   // U, S
-      { clue: "First name of the singer who sang Happy",      answer: "PHARRELL",  revealIdx: 3 },       // R
-      { clue: "London Hotspurs",                              answer: "TOTTENHAM", revealIdx: 4 },       // E
+      { clue: "A fruit for cider",                                       answer: "APPLE",     revealIdx: 4 },
+      { clue: "A large area filled with trees",                          answer: "FOREST",    revealIdx: 0 },
+      { clue: "Lithuania's capital",                                     answer: "VILNIUS",   revealIdx: [5,6] },
+      { clue: "First name of the singer who sang Happy",                 answer: "PHARRELL",  revealIdx: 3 },
+      { clue: "London Hotspurs",                                         answer: "TOTTENHAM", revealIdx: 4 },
     ],
     anagram: { letters:["F","U","S","E","R","E"], answer:"REFUSE", clue:"verb · to indicate you are not willing to do something" },
     quote: `"But maybe that's just the price you pay for the chains you REFUSE
@@ -234,35 +161,35 @@ Bob Marley died on this day, May 11th 1981. Gone but never forgotten. 🌿
   },
   "2026-05-08": {
     rounds: [
-      { clue: "Which organ pumps blood around the body?",          answer: "HEART",     revealIdx: [3,4] },   // R, T
-      { clue: "What is the capital of Cuba?",                      answer: "HAVANA",    revealIdx: 2 },       // V
-      { clue: "Tennessee → _ _ _ _ _ _ _ ← in the jar",               answer: "WHISKEY",   revealIdx: [2,6] },   // I, Y
-      { clue: "What is the study of heredity?",                    answer: "GENETICS",  revealIdx: 6 },       // C
-      { clue: "Aware of and responding to one's surroundings",     answer: "CONSCIOUS", revealIdx: 1 },       // O
+      { clue: "Which organ pumps blood around the body?",               answer: "HEART",     revealIdx: [3,4] },
+      { clue: "What is the capital of Cuba?",                            answer: "HAVANA",    revealIdx: 2 },
+      { clue: "Tennessee → _ _ _ _ _ _ _ ← in the jar",                answer: "WHISKEY",   revealIdx: [2,6] },
+      { clue: "What is the study of heredity?",                          answer: "GENETICS",  revealIdx: 6 },
+      { clue: "Aware of and responding to one's surroundings",           answer: "CONSCIOUS", revealIdx: 1 },
     ],
     anagram: { letters:["T","R","O","V","Y","C","I"], answer:"VICTORY", clue:"noun · success in a struggle or contest" },
-    quote: `VICTORY in Europe Day celebrates the formal surrender of Nazi Germany on 8 May 1945 — 80 years ago today. The day the world breathed again.
+    quote: `"VICTORY in Europe Day celebrates the formal surrender of Nazi Germany on 8 May 1945 — 80 years ago today. The day the world breathed again.
 
 🔗 https://en.wikipedia.org/wiki/Victory_in_Europe_Day`,
   },
   "2026-05-07": {
     rounds: [
-      { clue: "What city are last year's Champions League winners from?", answer: "PARIS",     revealIdx: 1 },       // A
-      { clue: "Which planet has the most visible rings?",                answer: "SATURN",    revealIdx: [4,3] },   // R, U
-      { clue: "Silent Chaplin",                                          answer: "CHARLIE",   revealIdx: 0 },       // C
-      { clue: "Proud, insolent, overbearing, disdainful",               answer: "ARROGANT",  revealIdx: [3,4] },   // O, G
-      { clue: "What is the capital of Iceland?",                         answer: "REYKJAVIK", revealIdx: 1 },       // E
+      { clue: "What city are last year's Champions League winners from?", answer: "PARIS",     revealIdx: 1 },
+      { clue: "Which planet has the most visible rings?",                answer: "SATURN",    revealIdx: [4,3] },
+      { clue: "Silent Chaplin",                                          answer: "CHARLIE",   revealIdx: 0 },
+      { clue: "Proud, insolent, overbearing, disdainful",               answer: "ARROGANT",  revealIdx: [3,4] },
+      { clue: "What is the capital of Iceland?",                         answer: "REYKJAVIK", revealIdx: 1 },
     ],
     anagram: { letters:["U","C","O","A","G","R","E"], answer:"COURAGE", clue:"noun · the ability to do something that frightens you" },
     quote: `"Courage doesn't always roar. Sometimes COURAGE is the little voice at the end of the day that says I'll try again tomorrow." — Mary Anne Radmacher`,
   },
   "2026-05-06": {
     rounds: [
-      { clue: "What is the name for molten rock?",             answer: "MAGMA",     revealIdx: 1 },
-      { clue: "What's a group of geese called?",              answer: "GAGGLE",    revealIdx: 5 },
-      { clue: "China's capital?",                              answer: "BEIJING",   revealIdx: 0 },
-      { clue: "What is the main gas in Earth's atmosphere?",   answer: "NITROGEN",  revealIdx: [0,3,7] },
-      { clue: "Group combined to promote a common interest",   answer: "SYNDICATE", revealIdx: [0,4,7] },
+      { clue: "What is the name for molten rock?",                      answer: "MAGMA",     revealIdx: 1 },
+      { clue: "What's a group of geese called?",                        answer: "GAGGLE",    revealIdx: 5 },
+      { clue: "China's capital?",                                        answer: "BEIJING",   revealIdx: 0 },
+      { clue: "What is the main gas in Earth's atmosphere?",            answer: "NITROGEN",  revealIdx: [0,3,7] },
+      { clue: "Group combined to promote a common interest",            answer: "SYNDICATE", revealIdx: [0,4,7] },
     ],
     anagram: { letters:["N","B","I","A","T","N","E","R","S"], answer:"BANNISTER", clue:"First sub four minute miler" },
     quote: `"The man who can drive himself further once the effort gets painful is the man who will win." — Roger BANNISTER
@@ -270,6 +197,7 @@ Bob Marley died on this day, May 11th 1981. Gone but never forgotten. 🌿
 🔗 https://www.guinnessworldrecords.com/records/hall-of-fame/first-sub-four-minute-mile`,
   },
 };
+
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
 function getToday() {
@@ -307,16 +235,16 @@ function getDailyPuzzle() {
 
 // ─── SCORING ─────────────────────────────────────────────────────────────────
 function getTitle(timeLeft) {
-  if (timeLeft >= 120) return { title:"CEO",      color:"#c4941f" };
-  if (timeLeft >= 90)  return { title:"DIRECTOR", color:"#888888" };
-  if (timeLeft >= 60)  return { title:"MANAGER",  color:"#cd7f32" };
-  if (timeLeft >= 30)  return { title:"INTERN",   color:"#5b8db8" };
+  if (timeLeft >= 240) return { title:"CEO",      color:"#c4941f" };
+  if (timeLeft >= 180) return { title:"DIRECTOR", color:"#888888" };
+  if (timeLeft >= 120) return { title:"MANAGER",  color:"#cd7f32" };
+  if (timeLeft >= 60)  return { title:"INTERN",   color:"#5b8db8" };
   return                      { title:"MAILROOM", color:"#aaaaaa" };
 }
 
 // ─── CONSTANTS ────────────────────────────────────────────────────────────────
-const HINT_PENALTY  = 10;
-const TOTAL_SECONDS = 3 * 60;
+const HINT_PENALTY  = 15;
+const TOTAL_SECONDS = 5 * 60;
 
 function formatTime(s) {
   if (s <= 0) return "0:00";
@@ -485,7 +413,7 @@ export default function FiveToNine() {
     const idx = unrevealed[Math.floor(Math.random()*unrevealed.length)];
     setRevealed(prev=>({ ...prev, [idx]:round.answer[idx] }));
     setInput(""); setTimeLeft(t=>Math.max(0,t-HINT_PENALTY));
-    setPenalty("-10s"); setTimeout(()=>setPenalty(null),1200);
+    setPenalty(`-${HINT_PENALTY}s`); setTimeout(()=>setPenalty(null),1200);
   };
 
   const buildGuess = useCallback(() => {
@@ -600,7 +528,7 @@ export default function FiveToNine() {
 
   const QuoteDisplay = () => (
     <div style={{ maxWidth:440, border:"1px solid #e0e0e0", borderRadius:10, padding:"22px 26px", animation:"fadeUp 0.8s ease", textAlign:"left", marginBottom:16, width:"100%", background:"#ffffff" }}>
-      <div style={{ fontSize:13, letterSpacing:3, color:"#c4941f", marginBottom:14, fontWeight:700 }}>BEFORE YOU GO...</div>
+      <div style={{ fontSize:13, letterSpacing:3, color:"#c4941f", marginBottom:14, fontWeight:700 }}>ON THIS DAY...</div>
       <p style={{ fontSize:17, lineHeight:2.0, color:"#000000", fontStyle:"italic", fontWeight:800, fontFamily:"'Nunito',sans-serif", margin:0, whiteSpace:"pre-wrap" }}>
         {puzzle.quote.split(puzzle.anagram.answer).map((part,i,arr) => {
           const urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -615,10 +543,12 @@ export default function FiveToNine() {
     </div>
   );
 
-  const ReviewAnswers = () => (
+  const ReviewAnswers = () => {
+    const hasConnections = puzzle.rounds.some(r => r.connection);
+    return (
     <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}>
-      <button onClick={()=>setShowAnswers(s=>!s)} style={{ width:"100%", background:"transparent", border:"1px solid #e0e0e0", borderRadius:8, padding:"10px", fontSize:11, color:"#666666", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace" }}>
-        {showAnswers?"▲ HIDE ANSWERS":"▼ REVIEW TODAY'S ANSWERS"}
+      <button onClick={()=>setShowAnswers(s=>!s)} style={{ width:"100%", background:hasConnections?"rgba(196,148,31,0.1)":"transparent", border:`2px solid ${hasConnections?"#c4941f":"#e0e0e0"}`, borderRadius:8, padding:"12px", fontSize:12, color:hasConnections?"#c4941f":"#666666", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace", fontWeight:hasConnections?800:400 }}>
+        {showAnswers?"▲ HIDE":`▼ ${hasConnections?"SPOT THE CONNECTION?":"REVIEW TODAY'S ANSWERS"}`}
       </button>
       {showAnswers && (
         <div style={{ marginTop:8 }}>
@@ -628,12 +558,13 @@ export default function FiveToNine() {
             return (
               <div key={i} style={{ padding:"10px 14px", background:"rgba(0,0,0,0.02)", border:"1px solid #e0e0e0", borderRadius:8, marginBottom:6 }}>
                 <div style={{ fontSize:12, color:"#444444", marginBottom:6 }}>{r.clue}</div>
-                <div style={{ display:"flex", gap:4, flexWrap:"wrap" }}>
+                <div style={{ display:"flex", gap:4, flexWrap:"wrap", marginBottom:r.connection?8:0 }}>
                   {r.answer.split("").map((ch,ci) => {
                     const hl = highlights.includes(ci);
                     return <div key={ci} style={{ width:26, height:26, borderRadius:3, border:`1px solid ${hl?"#c4941f":"#cccccc"}`, background:hl?"#c4941f":"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:700, color:hl?"#000000":solved?"#2e7d32":"#888888", fontFamily:"'Courier New',monospace" }}>{ch}</div>;
                   })}
                 </div>
+                {r.connection && <div style={{ fontSize:14, color:"#000000", fontStyle:"italic", fontWeight:700 }}>🔗 {r.connection}</div>}
               </div>
             );
           })}
@@ -644,7 +575,8 @@ export default function FiveToNine() {
         </div>
       )}
     </div>
-  );
+    );
+  };
 
   const ScoringGuide = () => (
     <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}>
@@ -654,10 +586,10 @@ export default function FiveToNine() {
       {showScoring && (
         <div style={{ marginTop:6 }}>
           {[
-            { title:"CEO",      time:"2:00+", color:"#c4941f" },
-            { title:"DIRECTOR", time:"1:30+", color:"#888888" },
-            { title:"MANAGER",  time:"1:00+", color:"#cd7f32" },
-            { title:"INTERN",   time:"0:30+", color:"#5b8db8" },
+            { title:"CEO",      time:"4:00+", color:"#c4941f" },
+            { title:"DIRECTOR", time:"3:00+", color:"#888888" },
+            { title:"MANAGER",  time:"2:00+", color:"#cd7f32" },
+            { title:"INTERN",   time:"1:00+", color:"#5b8db8" },
             { title:"MAILROOM", time:"0:00+", color:"#aaaaaa" },
           ].map(({ title, time, color }) => {
             const isCurrent = getTitle(timeLeft).title===title;
@@ -692,9 +624,7 @@ export default function FiveToNine() {
         </div>
       )}
       <div style={{ width:"100%", maxWidth:440, marginTop:8 }}><ShareButton /></div>
-      <button onClick={()=>setAlreadyPlayed(false)} style={{ background:"transparent", border:"none", color:"#cccccc", fontSize:11, marginTop:24, cursor:"pointer", fontFamily:"'Courier New',monospace", letterSpacing:2 }}>
-        play again
-      </button>
+
     </div>
   );
 
@@ -710,10 +640,8 @@ export default function FiveToNine() {
       <div style={{ width:"100%", maxWidth:480, border:"1px solid #e0e0e0", borderRadius:12, padding:"20px 24px", marginBottom:16, background:"#ffffff" }}>
         <div style={{ fontSize:16, letterSpacing:3, color:"#c4941f", marginBottom:18, fontWeight:900, fontFamily:"'Nunito',sans-serif" }}>HOW TO PLAY</div>
         {[
-          ["🧠","5 questions — answers grow from 5 to 9 letters"],
-          ["💡","Stuck? Use the HINT button — it reveals a letter, but costs 10 seconds"],
-          ["🔤","Spot the gold letters · Crack the ANAGRAM · See what's waiting Before You Go..."],
-          ["⏱️","3 minutes on the clock — good luck!"],
+          ["🧠","5 questions in 5 minutes — answers grow from 5 to 9 letters and are all somehow connected. Crack the ANAGRAM to reveal the On This Day..."],
+          ["💡","Stuck? Use the HINT button — it reveals a letter, but costs 15 seconds"],
         ].map(([icon,text],i) => (
           <div key={i} style={{ display:"flex", gap:12, alignItems:"flex-start", marginBottom:14 }}>
             <span style={{ fontSize:18, flexShrink:0 }}>{icon}</span>
@@ -791,8 +719,8 @@ export default function FiveToNine() {
         <div style={{ fontSize:26, letterSpacing:10, fontWeight:700, color:"#2e7d32", border:"1px solid rgba(46,125,50,0.4)", borderRadius:6, padding:"14px 28px", marginBottom:16, fontFamily:"'Courier New',monospace", background:"#ffffff" }}>{puzzle.anagram.answer}</div>
         <QuoteDisplay />
         <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}><ShareButton /></div>
-        <ScoringGuide />
         <ReviewAnswers />
+        <ScoringGuide />
         <p style={{ color:"#888888", fontSize:9, letterSpacing:3, marginTop:8 }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
       </div>
     );
@@ -883,7 +811,7 @@ export default function FiveToNine() {
         {canInput&&<div style={{ marginBottom:12 }}><AnswerDisplay length={alen} revealed={revealed} input={input} shake={shake} /></div>}
 
         <div style={{ display:"flex", justifyContent:"center", marginBottom:20, gap:24, alignItems:"center" }}>
-          <button onClick={takeHint} disabled={!canInput} style={{ background:canInput?"rgba(196,148,31,0.1)":"transparent", border:`2px solid ${canInput?"#c4941f":"#e0e0e0"}`, color:canInput?"#c4941f":"#cccccc", borderRadius:6, padding:"10px 24px", fontSize:11, fontWeight:700, letterSpacing:2, cursor:canInput?"pointer":"default", fontFamily:"'Courier New',monospace", position:"relative" }}>
+          <button onClick={takeHint} disabled={!canInput} style={{ background:canInput?"#c4941f":"#e0e0e0", border:`2px solid ${canInput?"#9a7000":"#cccccc"}`, color:canInput?"#ffffff":"#aaaaaa", borderRadius:8, padding:"12px 28px", fontSize:13, fontWeight:800, letterSpacing:2, cursor:canInput?"pointer":"default", fontFamily:"'Courier New',monospace", position:"relative", boxShadow:canInput?"0 4px 12px rgba(196,148,31,0.4)":"none" }}>
             HINT −{HINT_PENALTY}s
             {penalty&&<span style={{ position:"absolute", top:-20, left:"50%", transform:"translateX(-50%)", fontSize:13, color:"#c62828", fontWeight:700, animation:"penalty 1.2s ease forwards", whiteSpace:"nowrap" }}>{penalty}</span>}
           </button>
