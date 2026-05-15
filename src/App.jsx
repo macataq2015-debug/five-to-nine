@@ -36,16 +36,15 @@ Oh, oh, I wish I was back home in Derry
   "2026-05-16": {
     rounds: [
       { clue: "What word comes after 'Palm' and before 'Body'?",       answer: "BEACH",     revealIdx: 2,    connection: "The Beach Boys — named after the California beach culture they embodied" },
-      { clue: "What is the volleyball called in Cast Away?",           answer: "WILSON",    revealIdx: [0,5],connection: "Brian Wilson — the genius who wrote and produced Pet Sounds" },
+      { clue: "What is the volleyball called in the movie Cast Away?", answer: "WILSON",    revealIdx: [0,5],connection: "Brian Wilson — the genius who wrote and produced Pet Sounds" },
       { clue: "Male family member",                                    answer: "BROTHER",   revealIdx: 1,    connection: "Brother Records — the label the Beach Boys founded in 1966, the same year as Pet Sounds" },
-      { clue: "Vocal music performed without instruments",             answer: "CAPPELLA",  revealIdx: 4,    connection: "The Beach Boys were famous for their extraordinary a cappella harmonies" },
-      { clue: "Long buoyant board used to stand on and catch a wave",  answer: "SURFBOARD", revealIdx: 0,    connection: "Surfing was the heart of the early Beach Boys sound and image" },
+      { clue: "Vocal music performed without instruments is called a...?", answer: "CAPPELLA", revealIdx: 4, connection: "The Beach Boys were famous for their extraordinary a cappella harmonies" },
+      { clue: "Long buoyant fiberglass craft ridden on ocean waves",   answer: "SURFBOARD", revealIdx: 0,    connection: "Surfing was the heart of the early Beach Boys sound and image" },
     ],
-    anagram: { letters:["A","W","N","R","E","S"], answer:"ANSWER", clue:"I Know There's An _______ — Pet Sounds, 1966" },
+    anagram: { letters:["A","W","N","R","E","S"], answer:"ANSWER", clue:"noun · a response given in reaction to a question or problem" },
     quote: `"I Know There's An ANSWER — but I have to find it myself."
 
-— I Know There's An Answer, The Beach Boys
-Pet Sounds was released on this day, May 16th 1966 🏄
+'I Know There's An Answer' is a song from The Beach Boys' Pet Sounds, released on this day, May 16th 1966 🏄
 Widely considered one of the greatest albums ever made.
 🎬 https://youtu.be/nSAoEf1Ib58?si=zDfLMU9tqCFKVWM3`,
   },
@@ -547,7 +546,7 @@ export default function FiveToNine() {
     const hasConnections = puzzle.rounds.some(r => r.connection);
     return (
     <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}>
-      <button onClick={()=>setShowAnswers(s=>!s)} style={{ width:"100%", background:hasConnections?"rgba(196,148,31,0.1)":"transparent", border:`2px solid ${hasConnections?"#c4941f":"#e0e0e0"}`, borderRadius:8, padding:"12px", fontSize:12, color:hasConnections?"#c4941f":"#666666", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace", fontWeight:hasConnections?800:400 }}>
+      <button onClick={()=>setShowAnswers(s=>!s)} style={{ width:"100%", background:hasConnections?"#c4941f":"transparent", border:`2px solid ${hasConnections?"#c4941f":"#e0e0e0"}`, borderRadius:8, padding:"14px", fontSize:13, color:hasConnections?"#ffffff":"#666666", letterSpacing:2, cursor:"pointer", fontFamily:"'Courier New',monospace", fontWeight:800, boxShadow:hasConnections?"0 4px 12px rgba(196,148,31,0.4)":"none" }}>
         {showAnswers?"▲ HIDE":`▼ ${hasConnections?"SPOT THE CONNECTION?":"REVIEW TODAY'S ANSWERS"}`}
       </button>
       {showAnswers && (
@@ -718,8 +717,8 @@ export default function FiveToNine() {
         )}
         <div style={{ fontSize:26, letterSpacing:10, fontWeight:700, color:"#2e7d32", border:"1px solid rgba(46,125,50,0.4)", borderRadius:6, padding:"14px 28px", marginBottom:16, fontFamily:"'Courier New',monospace", background:"#ffffff" }}>{puzzle.anagram.answer}</div>
         <QuoteDisplay />
-        <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}><ShareButton /></div>
         <ReviewAnswers />
+        <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}><ShareButton /></div>
         <ScoringGuide />
         <p style={{ color:"#888888", fontSize:9, letterSpacing:3, marginTop:8 }}>COME BACK TOMORROW FOR A NEW PUZZLE</p>
       </div>
