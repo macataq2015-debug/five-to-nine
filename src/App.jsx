@@ -23,10 +23,10 @@ Oh, oh, I wish I was back home in Derry
   "2026-05-17": {
     rounds: [
       { clue: "Long, deep inlet with steep sides formed by glacial erosion", answer: "FJORD",     revealIdx: [0,4], connection: "Norway has over 1,000 fjords — the longest stretches 204km inland" },
-      { clue: "Title of a famous expressionist painting by Munch",           answer: "SCREAM",    revealIdx: [3,5], connection: "Edvard Munch was Norwegian — The Scream is one of the most recognised paintings ever" },
-      { clue: "Surname of a modern world chess champion",                    answer: "CARLSEN",   revealIdx: 2,     connection: "Magnus Carlsen from Norway became world chess champion aged just 22" },
+      { clue: "Title of a famous expressionist painting by Munch is 'The ......'", answer: "SCREAM", revealIdx: [3,5], connection: "Edvard Munch was Norwegian — The Scream is one of the most recognised paintings ever" },
+      { clue: "Surname of a modern Norwegian world chess champion",          answer: "CARLSEN",   revealIdx: 2,     connection: "Magnus Carlsen from Norway became world chess champion aged just 22" },
       { clue: "Word that comes before 'lights' in a famous sky display",     answer: "NORTHERN",  revealIdx: 1,     connection: "The Northern Lights are best seen in Norway — a natural wonder" },
-      { clue: "Natural resource refined into fuels and plastics",            answer: "PETROLEUM", revealIdx: 1,     connection: "Norway is one of the world's largest oil exporters — a very wealthy nation" },
+      { clue: "Natural resource refined into fuels and plastics",            answer: "PETROLEUM", revealIdx: 1,     connection: "Norway is one of the world's largest oil exporters" },
     ],
     anagram: { letters:["F","E","R","O","D","M","E"], answer:"FREEDOM", clue:"noun · the power to act, speak or think without restraint" },
     quote: `"Norway's Constitution was signed at Eidsvoll on May 17th 1814 — today is Syttende Mai, Norway's national day, when a great nation can celebrate its independence and FREEDOM. 🇳🇴
