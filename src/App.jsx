@@ -201,7 +201,7 @@ Bob Marley died on this day, May 11th 1981. Gone but never forgotten. 🌿
       { clue: "A vegetable made of layers, often used in cooking",      answer: "ONION",     revealIdx: [0,1],    connection: "Shrek famously says ogres are like onions — they have layers" },
       { clue: "A hoofed animal known for its braying call",             answer: "DONKEY",    revealIdx: 4,        connection: "Donkey is Shrek's fast-talking, loveable companion" },
       { clue: "Surname of the director who made Titanic",               answer: "CAMERON",   revealIdx: [4,2,1,0],connection: "Cameron Diaz voiced Princess Fiona in Shrek" },
-      { clue: "A female royal title",      answer: "PRINCESS",  revealIdx: [4,7],    connection: "Princess Fiona — the film's feisty heroine" },
+      { clue: "A royal title for the child of a king or queen",      answer: "PRINCESS",  revealIdx: [4,7],    connection: "Princess Fiona — the film's feisty heroine" },
       { clue: "Technique creating movement from drawn or digital images",answer: "ANIMATION", revealIdx: [6,0],   connection: "Shrek was a landmark in computer animation history" },
     ],
     anagram: { letters:["R","O","M","A","N","C","E"], answer:"ROMANCE", clue:"A love story — at the heart of every fairytale" },
@@ -389,7 +389,7 @@ A patron saint of France, honored as a defender of the French nation.
 — Clint Eastwood, born on this day, May 31st 1930 🤠
 Hollywood's greatest FRONTIER man.
 🎬 https://youtu.be/WCN5JJY_wiA?si=kkcOzLIpyWZDT48M`,
-  },}
+  },
 };
 
 
