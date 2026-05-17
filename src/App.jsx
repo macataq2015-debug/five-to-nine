@@ -204,7 +204,7 @@ Bob Marley died on this day, May 11th 1981. Gone but never forgotten. 🌿
       { clue: "A royal title for the child of a king or queen",      answer: "PRINCESS",  revealIdx: [4,7],    connection: "Princess Fiona — the film's feisty heroine" },
       { clue: "Technique creating movement from drawn or digital images",answer: "ANIMATION", revealIdx: [6,0],   connection: "Shrek was a landmark in computer animation history" },
     ],
-    anagram: { letters:["R","O","M","A","N","C","E"], answer:"ROMANCE", clue:"A love story — at the heart of every fairytale" },
+    anagram: { letters:["A","C","O","M","E","N","R"], answer:"ROMANCE", clue:"A love story — at the heart of every fairytale" },
     quote: `"Behind the onions, dragons and donkeys lies a story of ROMANCE.
 
 Shrek premiered at the Cannes Film Festival on this day in 2001 🧅
@@ -218,7 +218,7 @@ Shrek premiered at the Cannes Film Festival on this day in 2001 🧅
       { clue: "US state and title of a Bruce Springsteen album",         answer: "NEBRASKA",  revealIdx: 3,        connection: "Malcolm X was born in Omaha, Nebraska in 1925" },
       { clue: "Killers who target prominent figures for political reasons",answer: "ASSASSINS",revealIdx: [6,4],   connection: "He was shot by assassins at the Audubon Ballroom in 1965" },
     ],
-    anagram: { letters:["C","R","I","T","I","C","S"], answer:"CRITICS", clue:"Those who judge or find fault" },
+    anagram: { letters:["T","I","R","C","C","I","S"], answer:"CRITICS", clue:"Those who judge or find fault" },
     quote: `"If you have no CRITICS you'll likely have no success."
 
 — Malcolm X
@@ -233,7 +233,7 @@ Malcolm X was born on this day, May 19th 1925 ✊
       { clue: "1997 mega hit by Foo Fighters",                          answer: "EVERLONG",  revealIdx: 5,        connection: "Foo Fighters played Everlong on his final Late Show — an iconic moment" },
       { clue: "Performers who specialise in making people laugh",        answer: "COMEDIANS", revealIdx: [4,2],    connection: "Letterman launched and supported countless comedy careers" },
     ],
-    anagram: { letters:["I","R","O","N","Y"], answer:"IRONY", clue:"A situation where the outcome is the opposite of what is expected" },
+    anagram: { letters:["N","O","R","Y","I"], answer:"IRONY", clue:"A situation where the outcome is the opposite of what is expected" },
     quote: `"David Letterman — who redefined American talk shows with his unconventional humour, IRONY and innovative segments — stepped down as host of the Late Show on this day, May 20th 2015. 📺
 
 🎬 https://youtu.be/ss8OsSzdgiE?si=WH8OEsmb19mIwG9w`,
@@ -246,7 +246,7 @@ Malcolm X was born on this day, May 19th 1925 ✊
       { clue: "Ocean separating Europe from the Americas",              answer: "ATLANTIC",  revealIdx: [6,0],    connection: "He was the first to fly solo nonstop across the Atlantic" },
       { clue: "A person who introduces new ideas or methods",           answer: "INNOVATOR", revealIdx: [5,3],    connection: "He was a pioneer in early aviation and later became a writer" },
     ],
-    anagram: { letters:["P","I","L","O","T"], answer:"PILOT", clue:"A person who flies an aircraft" },
+    anagram: { letters:["T","I","P","O","L"], answer:"PILOT", clue:"A person who flies an aircraft" },
     quote: `"Charles Lindbergh — PILOT, adventurer, legend — completed the first nonstop solo transatlantic flight on this day, May 21st 1927. ✈️
 
 New York to Paris. 33 hours. Alone.
@@ -260,7 +260,7 @@ New York to Paris. 33 hours. Alone.
       { clue: "Pleasant or attractive in manner",                       answer: "CHARMING",  revealIdx: [5,6],    connection: "This Charming Man — one of The Smiths' most beloved songs" },
       { clue: "Very unhappy or uncomfortable",                          answer: "MISERABLE", revealIdx: [4,8],    connection: "Heaven Knows I'm Miserable Now — a classic Smiths anthem" },
     ],
-    anagram: { letters:["H","A","R","M","O","N","I","C"], answer:"HARMONIC", clue:"Relating to musical harmony — The Smiths were masters of it" },
+    anagram: { letters:["O","M","I","H","N","R","A","C"], answer:"HARMONIC", clue:"Relating to musical harmony — The Smiths were masters of it" },
     quote: `"You shut your mouth, how can you say
 I go about things the wrong way?
 I am HARMONIC and I need to be loved
@@ -278,7 +278,7 @@ Morrissey was born on this day, May 22nd 1959 🌹
       { clue: "Well known for a bad reason",                            answer: "INFAMOUS",  revealIdx: [4,0],    connection: "Their violent robberies made them infamous across the nation" },
       { clue: "First name of the actress who played Bonnie in 1967",    answer: "ELIZABETH", revealIdx: [1,4],    connection: "Faye Dunaway — born Elizabeth — played Bonnie Parker" },
     ],
-    anagram: { letters:["L","A","W","L","E","S","S"], answer:"LAWLESS", clue:"Operating without regard for the law" },
+    anagram: { letters:["S","L","E","W","A","L","S"], answer:"LAWLESS", clue:"Operating without regard for the law" },
     quote: `"They're young, they're in love, and they kill people."
 
 Bonnie Parker and Clyde Barrow — America's most LAWLESS couple — were ambushed and killed on this day, May 23rd 1934 🔫
@@ -292,7 +292,7 @@ Bonnie Parker and Clyde Barrow — America's most LAWLESS couple — were ambush
       { clue: "ABBA song that won Eurovision in 1974",                  answer: "WATERLOO",  revealIdx: 5,        connection: "Waterloo launched ABBA to global superstardom" },
       { clue: "Highly detailed and intricate in design",                answer: "ELABORATE",  revealIdx: 3,       connection: "Eurovision is famous for its elaborate costumes and staging" },
     ],
-    anagram: { letters:["B","A","L","L","A","D"], answer:"BALLAD", clue:"A slow, emotional song — a Eurovision staple" },
+    anagram: { letters:["D","L","A","B","L","A"], answer:"BALLAD", clue:"A slow, emotional song — a Eurovision staple" },
     quote: `"The first Eurovision Song Contest was held in Lugano, Switzerland in 1956. It became the world's most watched live event — a spectacular celebration of music, drama and BALLAD. 🎤
 
 Making stars out of ABBA in 1974.
@@ -306,7 +306,7 @@ Making stars out of ABBA in 1974.
       { clue: "A person who rejects all moral principles",              answer: "NIHILIST",  revealIdx: [3,4],    connection: "The Nihilists are the bumbling villains of the story" },
       { clue: "A cocktail made with vodka and tomato juice",            answer: "CAUCASIAN", revealIdx: [4,7],    connection: "The White Russian — The Dude's drink of choice" },
     ],
-    anagram: { letters:["A","B","I","D","E","S"], answer:"ABIDES", clue:"The Dude _______ — the most famous line in the film" },
+    anagram: { letters:["D","A","B","I","S","E"], answer:"ABIDES", clue:"The Dude _______ — the most famous line in the film" },
     quote: `"Smokey, this is not Vietnam. This is bowling. There are rules."
 
 The Big Lebowski was released on this day in 1998 🎳
@@ -321,7 +321,7 @@ The Dude ABIDES.
       { clue: "Bogotá is the capital of this country",                  answer: "COLUMBIA",  revealIdx: [1,2],    connection: "Columbia Records released many of his landmark albums" },
       { clue: "Prestigious performing arts conservatory in New York",   answer: "JUILLIARD", revealIdx: [3,4],    connection: "He briefly attended Juilliard before joining the jazz scene" },
     ],
-    anagram: { letters:["M","O","D","A","L"], answer:"MODAL", clue:"Miles Davis pioneered _______ jazz — a whole new way of playing" },
+    anagram: { letters:["L","A","D","O","M"], answer:"MODAL", clue:"Miles Davis pioneered _______ jazz — a whole new way of playing" },
     quote: `"I'm always thinking about creating. My future starts when I wake up every morning."
 
 Miles Dewey Davis III — trumpeter, bandleader, MODAL jazz pioneer — born on this day, May 26th 1926 🎺
@@ -335,7 +335,7 @@ Miles Dewey Davis III — trumpeter, bandleader, MODAL jazz pioneer — born on 
       { clue: "A person who campaigns for social change",               answer: "ACTIVIST",  revealIdx: [4,0],    connection: "She marched alongside Martin Luther King and Malcolm X" },
       { clue: "Someone who is unable to sleep",                         answer: "INSOMNIAC", revealIdx: 4,        connection: "She often wrote through the night — her best work done in silence" },
     ],
-    anagram: { letters:["W","I","S","D","O","M"], answer:"WISDOM", clue:"The quality of having good judgement gained through experience" },
+    anagram: { letters:["O","D","W","I","M","S"], answer:"WISDOM", clue:"The quality of having good judgement gained through experience" },
     quote: `"You may write me down in history
 With your bitter, twisted lies,
 You may tread me in the very dirt
@@ -353,7 +353,7 @@ A poet of WISDOM, courage and grace — died on this day, May 28th 2014 ✊
       { clue: "A large natural elevation of Earth's surface",           answer: "MOUNTAIN",  revealIdx: [4,1,3],  connection: "At 8,849 metres, Everest is Earth's highest mountain" },
       { clue: "Mountain range containing the world's highest peaks",    answer: "HIMALAYAS", revealIdx: 8,        connection: "The Himalayas span five countries including Nepal and Tibet" },
     ],
-    anagram: { letters:["I","S","O","L","A","T","I","O","N"], answer:"ISOLATION", clue:"The feeling of being cut off from the world — like the summit of Everest" },
+    anagram: { letters:["O","N","I","S","A","L","T","I","O"], answer:"ISOLATION", clue:"The feeling of being cut off from the world — like the summit of Everest" },
     quote: `"We did not climb Everest to prove anything. We climbed it because it was there."
 
 Edmund Hillary and Tenzing Norgay reached the summit of Mount Everest on this day, May 29th 1953 🏔️
@@ -368,7 +368,7 @@ The greatest feat of human ISOLATION and endurance.
       { clue: "Branch of Christianity led by the Pope",                 answer: "CATHOLIC",  revealIdx: [4,7],    connection: "Her deep Catholic faith drove everything she did" },
       { clue: "Carrying out a death sentence",                          answer: "EXECUTION", revealIdx: [7,4],    connection: "She was burned at the stake in Rouen on May 30th 1431" },
     ],
-    anagram: { letters:["H","E","R","O","I","N","E"], answer:"HEROINE", clue:"A woman admired for her courage and noble qualities" },
+    anagram: { letters:["O","I","H","R","E","N","E"], answer:"HEROINE", clue:"A woman admired for her courage and noble qualities" },
     quote: `"I am not afraid. I was born to do this."
 
 Joan of Arc — the ultimate HEROINE — was executed in Rouen on this day, May 30th 1431. ⚔️
@@ -383,7 +383,7 @@ A patron saint of France, honored as a defender of the French nation.
       { clue: "Not pardoned or excused",                                answer: "UNFORGIVEN",revealIdx: [2,1],    connection: "Unforgiven — his Oscar-winning Western masterpiece" },
       { clue: "Life or existence beyond death",                         answer: "HEREAFTER", revealIdx: [3,4],    connection: "Hereafter — another film he directed" },
     ],
-    anagram: { letters:["F","R","O","N","T","I","E","R"], answer:"FRONTIER", clue:"The wild, lawless edge of civilisation" },
+    anagram: { letters:["N","R","I","F","T","E","R","O"], answer:"FRONTIER", clue:"The wild, lawless edge of civilisation" },
     quote: `"There's a rebel lying deep in my soul. Anytime anybody tells me the trend is such and such, I go the opposite direction."
 
 — Clint Eastwood, born on this day, May 31st 1930 🤠
