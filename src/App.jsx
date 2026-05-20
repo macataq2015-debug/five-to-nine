@@ -642,7 +642,7 @@ export default function FiveToNine() {
     if (guess.includes(" ")) { setShake(true); setTimeout(()=>setShake(false),500); return; }
     const correct = guess === round.answer;
     setAttempts(prev=>[...prev, { word:guess, correct }]);
-    setInput(""); setAnimating(true); revealFired.current = false;
+    setInput(""); setAnimating(true);
   }, [canInput, buildGuess, round]);
 
   const onRevealDone = useCallback(() => {
@@ -657,7 +657,7 @@ export default function FiveToNine() {
           const completedRound = { ...round, solved:true, revealIdx:round.revealIdx };
           setDone(d=>[...d, completedRound]);
           setAttempts([]); setInput(""); setRevealed({});
-          setAnimating(false); revealFired.current = false;
+          setAnimating(false); revealFired.current = false; // reset AFTER round complete
           if (roundIdx >= puzzle.rounds.length-1) setPhase("anagram");
           else setRoundIdx(r=>r+1);
         }, 700);
