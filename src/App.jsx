@@ -201,7 +201,7 @@ Bob Marley died on this day, May 11th 1981. Gone but never forgotten. 🌿
       { clue: "A vegetable made of layers, often used in cooking",      answer: "ONION",     revealIdx: [0,1],    connection: "Shrek famously says ogres are like onions — they have layers" },
       { clue: "A hoofed animal known for its braying call",             answer: "DONKEY",    revealIdx: 4,        connection: "Donkey is Shrek's fast-talking, loveable companion" },
       { clue: "Surname of the director who made Titanic",               answer: "CAMERON",   revealIdx: [4,2,1,0],connection: "Cameron Diaz voiced Princess Fiona in Shrek" },
-      { clue: "A royal title for the child of a king or queen",      answer: "PRINCESS",  revealIdx: [4,7],    connection: "Princess Fiona — the film's feisty heroine" },
+      { clue: "A royal title for the daughter of a king or queen",      answer: "PRINCESS",  revealIdx: [4,7],    connection: "Princess Fiona — the film's feisty heroine" },
       { clue: "Technique creating movement from drawn or digital images",answer: "ANIMATION", revealIdx: [6,0],   connection: "Shrek was a landmark in computer animation history" },
     ],
     anagram: { letters:["A","C","O","M","E","N","R"], answer:"ROMANCE", clue:"A love story — at the heart of every fairytale" },
@@ -240,11 +240,11 @@ Malcolm X was born on this day, May 19th 1925 ✊
   },
   "2026-05-21": {
     rounds: [
-      { clue: "A common male name given to French kings",                answer: "LOUIS",     revealIdx: [3,0,1],  connection: "The Spirit of St Louis was the name of Lindbergh's plane" },
+      { clue: "A common male name given to French kings",                answer: "LOUIS",     revealIdx: 3,  connection: "The Spirit of St Louis was the name of Lindbergh's plane" },
       { clue: "To take someone away illegally",                         answer: "KIDNAP",    revealIdx: 5,        connection: "The Lindbergh baby kidnapping in 1932 shocked the world" },
       { clue: "The study of past events",                               answer: "HISTORY",   revealIdx: 3,        connection: "His solo Atlantic flight became aviation history" },
-      { clue: "Ocean separating Europe from the Americas",              answer: "ATLANTIC",  revealIdx: [6,0],    connection: "He was the first to fly solo nonstop across the Atlantic" },
-      { clue: "A person who introduces new ideas or methods",           answer: "INNOVATOR", revealIdx: [5,3],    connection: "He was a pioneer in early aviation and later became a writer" },
+      { clue: "Ocean separating Europe from the Americas",              answer: "ATLANTIC",  revealIdx: 2,    connection: "He was the first to fly solo nonstop across the Atlantic" },
+      { clue: "A person who introduces new ideas or methods",           answer: "INNOVATOR", revealIdx: 3,    connection: "He was a pioneer in early aviation and later became a writer" },
     ],
     anagram: { letters:["T","I","P","O","L"], answer:"PILOT", clue:"A person who flies an aircraft" },
     quote: `"Charles Lindbergh — PILOT, adventurer, legend — completed the first nonstop solo transatlantic flight on this day, May 21st 1927. ✈️
@@ -254,29 +254,29 @@ New York to Paris. 33 hours. Alone.
   },
   "2026-05-22": {
     rounds: [
-      { clue: "What word comes after 'Blacksmith' and before 'Corona'?", answer: "SMITH",    revealIdx: [4,1,2],  connection: "The Smiths — the iconic Manchester band Morrissey fronted" },
-      { clue: "Instantly recognisable and widely celebrated",           answer: "ICONIC",    revealIdx: [2,3,1],  connection: "Morrissey became one of Britain's most iconic and controversial figures" },
-      { clue: "Ireland's patron saint, first name",                     answer: "PATRICK",   revealIdx: [1,3],    connection: "Morrissey was born to Irish parents in Manchester" },
-      { clue: "Pleasant or attractive in manner",                       answer: "CHARMING",  revealIdx: [5,6],    connection: "This Charming Man — one of The Smiths' most beloved songs" },
-      { clue: "Very unhappy or uncomfortable",                          answer: "MISERABLE", revealIdx: [4,8],    connection: "Heaven Knows I'm Miserable Now — a classic Smiths anthem" },
+      { clue: "A craftsperson who shapes metal by heating, hammering, and forging it into tools, objects, or art", answer: "SMITH",    revealIdx: 0,  connection: "The Smiths — the iconic Manchester band Morrissey fronted" },
+      { clue: "Instantly recognisable and widely celebrated",           answer: "ICONIC",    revealIdx: 3,  connection: "Morrissey became one of Britain's most iconic and controversial figures" },
+      { clue: "Ireland's patron saint",                                 answer: "PATRICK",   revealIdx: 2,    connection: "Steven Patrick Morrissey — Patrick is his middle name!" },
+      { clue: "Pleasant or attractive in manner",                       answer: "CHARMING",  revealIdx: 7,    connection: "This Charming Man — one of The Smiths' most beloved songs" },
+      { clue: "Very unhappy or uncomfortable",                          answer: "MISERABLE", revealIdx: 5,    connection: "Heaven Knows I'm Miserable Now — a classic Smiths anthem" },
     ],
-    anagram: { letters:["O","M","I","H","N","R","A","C"], answer:"HARMONIC", clue:"Relating to musical harmony — The Smiths were masters of it" },
+    anagram: { letters:["G","T","A","N","S"], answer:"ANGST", clue:"A deep, anxious feeling of dread or worry, often about life, identity, or the future" },
     quote: `"You shut your mouth, how can you say
 I go about things the wrong way?
-I am HARMONIC and I need to be loved
+I am human and I need to be loved
 Just like everybody else does"
 
 — How Soon Is Now?, The Smiths
-Morrissey was born on this day, May 22nd 1959 🌹
+The music of The Smiths was filled with ANGST, longing and dark humour. Morrissey was born on this day, May 22nd 1959 🌹
 🎬 https://youtu.be/hnpILIIo9ek?si=jAn0oSWuqRNKrDyO`,
   },
   "2026-05-23": {
     rounds: [
-      { clue: "US state known for oil and cowboy culture",              answer: "TEXAS",     revealIdx: [3,1,4],  connection: "Bonnie and Clyde carried out many of their robberies across Texas" },
-      { clue: "Surname of the actor who played Clyde in the 1967 film", answer: "WARREN",    revealIdx: 0,        connection: "Warren Beatty played Clyde Barrow in the classic 1967 film" },
-      { clue: "People who operate outside the law",                     answer: "OUTLAWS",   revealIdx: [3,6],    connection: "Bonnie and Clyde were America's most notorious outlaws" },
-      { clue: "Well known for a bad reason",                            answer: "INFAMOUS",  revealIdx: [4,0],    connection: "Their violent robberies made them infamous across the nation" },
-      { clue: "First name of the actress who played Bonnie in 1967",    answer: "ELIZABETH", revealIdx: [1,4],    connection: "Faye Dunaway — born Elizabeth — played Bonnie Parker" },
+      { clue: "US state known for oil and cowboy culture",              answer: "TEXAS",     revealIdx: 3,  connection: "Bonnie and Clyde carried out many of their robberies across Texas" },
+      { clue: "A network of interconnected tunnels built by rabbits",    answer: "WARREN",    revealIdx: 0,        connection: "Warren Beatty played Clyde Barrow in the classic 1967 film" },
+      { clue: "Rebels or rule-breakers who reject authority",           answer: "OUTLAWS",   revealIdx: [3,6],    connection: "Bonnie and Clyde were America's most notorious outlaws" },
+      { clue: "Well known for a bad reason",                            answer: "INFAMOUS",  revealIdx: 7,    connection: "Their violent robberies made them infamous across the nation" },
+      { clue: "What word comes after 'Queen' and before 'Hurley'?",  answer: "ELIZABETH", revealIdx: [0,1],    connection: "Bonnie Elizabeth Parker was Bonnie's full name" },
     ],
     anagram: { letters:["S","L","E","W","A","L","S"], answer:"LAWLESS", clue:"Operating without regard for the law" },
     quote: `"They're young, they're in love, and they kill people."
@@ -286,25 +286,25 @@ Bonnie Parker and Clyde Barrow — America's most LAWLESS couple — were ambush
   },
   "2026-05-24": {
     rounds: [
-      { clue: "Surname of the British singer who came 2nd in Eurovision 1968", answer: "CLIFF",  revealIdx: 1,   connection: "Cliff Richard finished second for the UK with Congratulations" },
+      { clue: "Mailman from Cheers, or a steep face of rock",            answer: "CLIFF",     revealIdx: 1,    connection: "Cliff Richard finished second for the UK with Congratulations" },
       { clue: "Scandinavian country that has won Eurovision the most",  answer: "SWEDEN",    revealIdx: 3,        connection: "Sweden has won Eurovision more times than any other country" },
-      { clue: "Pop superstar who performed at Eurovision 2019",         answer: "MADONNA",   revealIdx: [1,6],    connection: "Madonna performed at the Tel Aviv Eurovision in 2019" },
-      { clue: "ABBA song that won Eurovision in 1974",                  answer: "WATERLOO",  revealIdx: 5,        connection: "Waterloo launched ABBA to global superstardom" },
+      { clue: "Virgin Mary or Vogue pop star?",                         answer: "MADONNA",   revealIdx: [1,6],    connection: "Madonna performed at the Tel Aviv Eurovision in 2019" },
+      { clue: "Which battle ended Napoleon's rule?",                    answer: "WATERLOO",  revealIdx: 5,        connection: "Waterloo launched ABBA to global superstardom" },
       { clue: "Highly detailed and intricate in design",                answer: "ELABORATE",  revealIdx: 3,       connection: "Eurovision is famous for its elaborate costumes and staging" },
     ],
     anagram: { letters:["D","L","A","B","L","A"], answer:"BALLAD", clue:"A slow, emotional song — a Eurovision staple" },
     quote: `"The first Eurovision Song Contest was held in Lugano, Switzerland in 1956. It became the world's most watched live event — a spectacular celebration of music, drama and BALLAD. 🎤
 
-Making stars out of ABBA in 1974.
+Making stars out of ABBA on this day in 1974.
 🎬 https://youtu.be/Sj_9CiNkkn4`,
   },
   "2026-05-25": {
     rounds: [
       { clue: "A small rabbit",                                         answer: "BUNNY",     revealIdx: 0,        connection: "Bunny is the kidnapped trophy wife at the centre of the plot" },
-      { clue: "To take someone away illegally",                         answer: "KIDNAP",    revealIdx: [4,1,2],  connection: "The Dude gets entangled in a fake kidnapping scheme" },
-      { clue: "What word comes after 'Jeff' and before 'Of Madison County'?", answer: "BRIDGES", revealIdx: [5,6], connection: "Jeff Bridges plays Jeffrey Lebowski — The Dude" },
-      { clue: "A person who rejects all moral principles",              answer: "NIHILIST",  revealIdx: [3,4],    connection: "The Nihilists are the bumbling villains of the story" },
-      { clue: "A cocktail made with vodka and tomato juice",            answer: "CAUCASIAN", revealIdx: [4,7],    connection: "The White Russian — The Dude's drink of choice" },
+      { clue: "Seize and carry off a person by force",                  answer: "KIDNAP",    revealIdx: 4,        connection: "The Dude gets entangled in a fake kidnapping scheme" },
+      { clue: "What word comes after 'Jeff' and before 'Of Madison County'?", answer: "BRIDGES", revealIdx: [5,3], connection: "Jeff Bridges plays Jeffrey Lebowski — The Dude" },
+      { clue: "A person who rejects all moral principles",              answer: "NIHILIST",  revealIdx: 1,        connection: "The Nihilists are three absurd, fake-kidnapper crooks — Uli, Dieter, and Franz — who 'believe in nothing'" },
+      { clue: "Person of European or broadly white ethnic background",  answer: "CAUCASIAN", revealIdx: 5,        connection: "The White Russian is the same cocktail as a Caucasian — The Dude's drink of choice" },
     ],
     anagram: { letters:["D","A","B","I","S","E"], answer:"ABIDES", clue:"The Dude _______ — the most famous line in the film" },
     quote: `"Smokey, this is not Vietnam. This is bowling. There are rules."
@@ -315,17 +315,30 @@ The Dude ABIDES.
   },
   "2026-05-26": {
     rounds: [
-      { clue: "What word comes after 'Jazz' and before 'Free'?",        answer: "HANDS",     revealIdx: [3,1],    connection: "Jazz Hands — a playful nod to his extraordinary improvisational style" },
-      { clue: "Surname of bebop saxophonist nicknamed Bird",            answer: "PARKER",    revealIdx: [4,2],    connection: "Charlie Parker was Miles Davis's collaborator and bebop pioneer" },
-      { clue: "Brass instrument played with three valves",              answer: "TRUMPET",   revealIdx: [3,4],    connection: "The trumpet was Miles Davis's signature instrument" },
-      { clue: "Bogotá is the capital of this country",                  answer: "COLUMBIA",  revealIdx: [1,2],    connection: "Columbia Records released many of his landmark albums" },
-      { clue: "Prestigious performing arts conservatory in New York",   answer: "JUILLIARD", revealIdx: [3,4],    connection: "He briefly attended Juilliard before joining the jazz scene" },
+      { clue: "What word comes after 'Jazz' and before 'Free'?",        answer: "HANDS",     revealIdx: 3,    connection: "Jazz Hands — a playful nod to his extraordinary improvisational style" },
+      { clue: "Surname of bebop saxophonist nicknamed Bird",            answer: "PARKER",    revealIdx: 1,    connection: "Charlie Parker was Miles Davis's collaborator and bebop pioneer" },
+      { clue: "Brass instrument played with three valves",              answer: "TRUMPET",   revealIdx: 3,    connection: "The trumpet was Miles Davis's signature instrument" },
+      { clue: "Bogotá is the capital of this country",                  answer: "COLUMBIA",  revealIdx: 1,    connection: "Columbia Records released many of his landmark albums" },
+      { clue: "Prestigious performing arts conservatory in New York",   answer: "JUILLIARD", revealIdx: 3,    connection: "He briefly attended Juilliard before joining the jazz scene" },
     ],
-    anagram: { letters:["L","A","D","O","M"], answer:"MODAL", clue:"Miles Davis pioneered _______ jazz — a whole new way of playing" },
+    anagram: { letters:["L","A","D","O","M"], answer:"MODAL", clue:"A type of auxiliary verb used to express ability, possibility, permission, obligation, or necessity" },
     quote: `"I'm always thinking about creating. My future starts when I wake up every morning."
 
 Miles Dewey Davis III — trumpeter, bandleader, MODAL jazz pioneer — born on this day, May 26th 1926 🎺
 🎬 https://youtu.be/zqNTltOGh5c?si=1GYES5e4LofrBnGh`,
+  },
+  "2026-05-27": {
+    rounds: [
+      { clue: "Weather condition with low visibility",                   answer: "FOGGY",     revealIdx: 1,    connection: "The bridge is famously shrouded in fog — a breathtaking sight" },
+      { clue: "Colour between red and yellow",                          answer: "ORANGE",    revealIdx: 3,    connection: "Its official colour is International Orange — chosen to be visible in the fog" },
+      { clue: "The flow of vehicles on a road",                         answer: "TRAFFIC",   revealIdx: 5,    connection: "The bridge carries over 100,000 vehicles every single day" },
+      { clue: "Island prison in San Francisco Bay",                     answer: "ALCATRAZ",  revealIdx: 2,    connection: "Alcatraz is clearly visible from the bridge" },
+      { clue: "The edge where land meets the sea",                      answer: "COASTLINE", revealIdx: [6,0],connection: "The Golden Gate frames coastal cliffs, ocean mouth, shoreline views and tidal waters" },
+    ],
+    anagram: { letters:["O","N","I","C","I","C"], answer:"ICONIC", clue:"Instantly recognisable and widely admired" },
+    quote: `"The Golden Gate Bridge opened on this day, May 27th 1937 — one of the most ICONIC structures ever built. 🌉
+
+🔗 https://en.wikipedia.org/wiki/Golden_Gate_Bridge`,
   },
   "2026-05-28": {
     rounds: [
@@ -377,13 +390,13 @@ A patron saint of France, honored as a defender of the French nation.
   },
   "2026-05-31": {
     rounds: [
-      { clue: "Not clean",                                              answer: "DIRTY",     revealIdx: [2,3,1],  connection: "Dirty Harry — one of Eastwood's most iconic roles" },
-      { clue: "Basic unit of currency in Australia",                    answer: "DOLLAR",    revealIdx: [1,5],    connection: "A Fistful of Dollars — his breakthrough Spaghetti Western" },
-      { clue: "Written characters forming words",                       answer: "LETTERS",   revealIdx: 1,        connection: "Letters from Iwo Jima — a film he directed" },
-      { clue: "Not pardoned or excused",                                answer: "UNFORGIVEN",revealIdx: [2,1],    connection: "Unforgiven — his Oscar-winning Western masterpiece" },
-      { clue: "Life or existence beyond death",                         answer: "HEREAFTER", revealIdx: [3,4],    connection: "Hereafter — another film he directed" },
+      { clue: "Not clean",                                              answer: "DIRTY",     revealIdx: [1,3],    connection: "Dirty Harry — one of Eastwood's most iconic roles" },
+      { clue: "Basic unit of currency in Australia",                    answer: "DOLLAR",    revealIdx: 1,        connection: "A Fistful of Dollars — his breakthrough Spaghetti Western" },
+      { clue: "Written characters forming words",                       answer: "LETTERS",   revealIdx: 5,        connection: "Letters from Iwo Jima — a film he directed" },
+      { clue: "Someone who rejects tradition and acts independently, often in a rebellious way", answer: "RENEGADE", revealIdx: 2, connection: "Unforgiven — his Oscar-winning Western about outlaws and renegades" },
+      { clue: "Life or existence beyond death",                         answer: "HEREAFTER", revealIdx: [5,1,2],  connection: "Hereafter — another film he directed" },
     ],
-    anagram: { letters:["N","R","I","F","T","E","R","O"], answer:"FRONTIER", clue:"The wild, lawless edge of civilisation" },
+    anagram: { letters:["T","R","O","F","I","N","E","R"], answer:"FRONTIER", clue:"The wild, lawless edge of civilisation" },
     quote: `"There's a rebel lying deep in my soul. Anytime anybody tells me the trend is such and such, I go the opposite direction."
 
 — Clint Eastwood, born on this day, May 31st 1930 🤠
@@ -606,7 +619,7 @@ export default function FiveToNine() {
     if (!unrevealed.length) return;
     const idx = unrevealed[Math.floor(Math.random()*unrevealed.length)];
     setRevealed(prev=>({ ...prev, [idx]:round.answer[idx] }));
-    setInput(""); setTimeLeft(t=>Math.max(0,t-HINT_PENALTY));
+    setInput(""); setHintsUsed(h=>h+1); setTimeLeft(t=>Math.max(0,t-HINT_PENALTY));
     setPenalty(`-${HINT_PENALTY}s`); setTimeout(()=>setPenalty(null),1200);
   };
 
@@ -817,6 +830,7 @@ export default function FiveToNine() {
           {streak.best > 1 && <span style={{ fontSize:11, color:"#888888" }}>BEST: {streak.best}</span>}
         </div>
       )}
+      <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}><ReviewAnswers /></div>
       <div style={{ width:"100%", maxWidth:440, marginTop:8 }}><ShareButton /></div>
 
     </div>
