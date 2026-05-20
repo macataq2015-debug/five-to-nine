@@ -329,13 +329,13 @@ Miles Dewey Davis III — trumpeter, bandleader, MODAL jazz pioneer — born on 
   },
   "2026-05-27": {
     rounds: [
-      { clue: "Weather condition with low visibility",                   answer: "FOGGY",     revealIdx: 1,    connection: "The bridge is famously shrouded in fog — a breathtaking sight" },
-      { clue: "Colour between red and yellow",                          answer: "ORANGE",    revealIdx: 3,    connection: "Its official colour is International Orange — chosen to be visible in the fog" },
+      { clue: "A thick wire or rope used to support a bridge",          answer: "CABLE",     revealIdx: 0,    connection: "The Golden Gate is a suspension bridge — its cables are 7,650 feet long" },
+      { clue: "What word comes after 'San' and before 'Sinatra'?",      answer: "FRANCIS",   revealIdx: [3,5],connection: "San Francisco — the city at the foot of the Golden Gate Bridge" },
       { clue: "The flow of vehicles on a road",                         answer: "TRAFFIC",   revealIdx: 5,    connection: "The bridge carries over 100,000 vehicles every single day" },
-      { clue: "Island prison in San Francisco Bay",                     answer: "ALCATRAZ",  revealIdx: 2,    connection: "Alcatraz is clearly visible from the bridge" },
-      { clue: "The edge where land meets the sea",                      answer: "COASTLINE", revealIdx: [6,0],connection: "The Golden Gate frames coastal cliffs, ocean mouth, shoreline views and tidal waters" },
+      { clue: "Island prison visible from the Golden Gate Bridge",      answer: "ALCATRAZ",  revealIdx: 2,    connection: "Alcatraz Island sits just 1.5 miles from the bridge" },
+      { clue: "American film industry district in Los Angeles",         answer: "HOLLYWOOD", revealIdx: 1,    connection: "The bridge has appeared in countless Hollywood films" },
     ],
-    anagram: { letters:["O","N","I","C","I","C"], answer:"ICONIC", clue:"Instantly recognisable and widely admired" },
+    anagram: { letters:["T","R","O","F","I","N","E","R"], answer:"FRONTIER", clue:"The wild, lawless edge of civilisation" },
     quote: `"The Golden Gate Bridge opened on this day, May 27th 1937 — one of the most ICONIC structures ever built. 🌉
 
 🔗 https://en.wikipedia.org/wiki/Golden_Gate_Bridge`,
@@ -498,7 +498,7 @@ function TypewriterRow({ word, answer, correct, animate, onDone }) {
     if (!animate) return;
     if (count < word.length) { const t=setTimeout(()=>setCount(c=>c+1),100); return ()=>clearTimeout(t); }
     else { const t=setTimeout(()=>{ setFlipped(true); onDone?.(); },300); return ()=>clearTimeout(t); }
-  }, [count, word.length, animate]); // onDone excluded to prevent double-fire
+  }, [count, word.length, animate, onDone]);
   const sz = tileSize(word.length);
   const fs = Math.max(13, Math.min(20, Math.floor(sz*0.44)));
   const evaluation = correct ? Array(word.length).fill("correct") : evaluateGuess(word, answer);
@@ -642,7 +642,7 @@ export default function FiveToNine() {
     if (guess.includes(" ")) { setShake(true); setTimeout(()=>setShake(false),500); return; }
     const correct = guess === round.answer;
     setAttempts(prev=>[...prev, { word:guess, correct }]);
-    setInput(""); setAnimating(true);
+    setInput(""); setAnimating(true); revealFired.current = false;
   }, [canInput, buildGuess, round]);
 
   const onRevealDone = useCallback(() => {
@@ -657,7 +657,7 @@ export default function FiveToNine() {
           const completedRound = { ...round, solved:true, revealIdx:round.revealIdx };
           setDone(d=>[...d, completedRound]);
           setAttempts([]); setInput(""); setRevealed({});
-          setAnimating(false); revealFired.current = false; // reset AFTER round complete
+          setAnimating(false); revealFired.current = false;
           if (roundIdx >= puzzle.rounds.length-1) setPhase("anagram");
           else setRoundIdx(r=>r+1);
         }, 700);
@@ -750,7 +750,7 @@ export default function FiveToNine() {
     </div>
   );
 
-  const ReviewAnswers = useCallback(() => {
+  const ReviewAnswers = () => {
     const hasConnections = puzzle.rounds.some(r => r.connection);
     return (
     <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}>
@@ -783,7 +783,7 @@ export default function FiveToNine() {
       )}
     </div>
     );
-  }, [puzzle, done, showAnswers, setShowAnswers]);
+  };
 
   const ScoringGuide = () => (
     <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}>
