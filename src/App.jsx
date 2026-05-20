@@ -498,7 +498,7 @@ function TypewriterRow({ word, answer, correct, animate, onDone }) {
     if (!animate) return;
     if (count < word.length) { const t=setTimeout(()=>setCount(c=>c+1),100); return ()=>clearTimeout(t); }
     else { const t=setTimeout(()=>{ setFlipped(true); onDone?.(); },300); return ()=>clearTimeout(t); }
-  }, [count, word.length, animate, onDone]);
+  }, [count, word.length, animate]); // onDone excluded to prevent double-fire
   const sz = tileSize(word.length);
   const fs = Math.max(13, Math.min(20, Math.floor(sz*0.44)));
   const evaluation = correct ? Array(word.length).fill("correct") : evaluateGuess(word, answer);
@@ -750,7 +750,7 @@ export default function FiveToNine() {
     </div>
   );
 
-  const ReviewAnswers = () => {
+  const ReviewAnswers = useCallback(() => {
     const hasConnections = puzzle.rounds.some(r => r.connection);
     return (
     <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}>
@@ -783,7 +783,7 @@ export default function FiveToNine() {
       )}
     </div>
     );
-  };
+  }, [puzzle, done, showAnswers, setShowAnswers]);
 
   const ScoringGuide = () => (
     <div style={{ width:"100%", maxWidth:440, marginBottom:8 }}>
@@ -830,7 +830,6 @@ export default function FiveToNine() {
           {streak.best > 1 && <span style={{ fontSize:11, color:"#888888" }}>BEST: {streak.best}</span>}
         </div>
       )}
-      <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}><ReviewAnswers /></div>
       <div style={{ width:"100%", maxWidth:440, marginTop:8 }}><ShareButton /></div>
 
     </div>
