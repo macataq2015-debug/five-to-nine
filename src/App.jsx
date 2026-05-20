@@ -655,9 +655,13 @@ export default function FiveToNine() {
       if (latest.correct) {
         setTimeout(() => {
           const completedRound = { ...round, solved:true, revealIdx:round.revealIdx };
-          setDone(d => d.some(r => r.answer === round.answer) ? d : [...d, completedRound]);
+          setDone(d => {
+            if (d.length > roundIdx) return d; // already added this round
+            return [...d, completedRound];
+          });
           setAttempts([]); setInput(""); setRevealed({});
-          setAnimating(false); revealFired.current = false;
+          setAnimating(false);
+          setTimeout(() => { revealFired.current = false; }, 100);
           if (roundIdx >= puzzle.rounds.length-1) setPhase("anagram");
           else setRoundIdx(r=>r+1);
         }, 700);
