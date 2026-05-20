@@ -619,7 +619,7 @@ export default function FiveToNine() {
     if (!unrevealed.length) return;
     const idx = unrevealed[Math.floor(Math.random()*unrevealed.length)];
     setRevealed(prev=>({ ...prev, [idx]:round.answer[idx] }));
-    setInput(""); setHintsUsed(h=>h+1); setTimeLeft(t=>Math.max(0,t-HINT_PENALTY));
+    setInput(""); setTimeLeft(t=>Math.max(0,t-HINT_PENALTY));
     setPenalty(`-${HINT_PENALTY}s`); setTimeout(()=>setPenalty(null),1200);
   };
 
