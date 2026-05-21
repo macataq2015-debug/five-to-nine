@@ -287,12 +287,12 @@ Bonnie Parker and Clyde Barrow — America's most LAWLESS couple — were ambush
   "2026-05-24": {
     rounds: [
       { clue: "Mailman from Cheers, or a steep face of rock",            answer: "CLIFF",     revealIdx: 1,    connection: "Cliff Richard finished second for the UK with Congratulations" },
-      { clue: "Scandinavian country that has won Eurovision the most",  answer: "SWEDEN",    revealIdx: 3,        connection: "Sweden has won Eurovision more times than any other country" },
+      { clue: "Scandinavian nation famous for IKEA",                    answer: "SWEDEN",    revealIdx: 3,        connection: "Sweden has won Eurovision more times than any other country" },
       { clue: "Virgin Mary or Vogue pop star?",                         answer: "MADONNA",   revealIdx: [1,6],    connection: "Madonna performed at the Tel Aviv Eurovision in 2019" },
       { clue: "Which battle ended Napoleon's rule?",                    answer: "WATERLOO",  revealIdx: 5,        connection: "Waterloo launched ABBA to global superstardom" },
       { clue: "Highly detailed and intricate in design",                answer: "ELABORATE",  revealIdx: 3,       connection: "Eurovision is famous for its elaborate costumes and staging" },
     ],
-    anagram: { letters:["D","L","A","B","L","A"], answer:"BALLAD", clue:"A slow, emotional song — a Eurovision staple" },
+    anagram: { letters:["D","L","A","B","L","A"], answer:"BALLAD", clue:"A narrative poem or song that tells a story in simple, rhythmic language" },
     quote: `"The first Eurovision Song Contest was held in Lugano, Switzerland in 1956. It became the world's most watched live event — a spectacular celebration of music, drama and BALLAD. 🎤
 
 Making stars out of ABBA on this day in 1974.
@@ -306,7 +306,7 @@ Making stars out of ABBA on this day in 1974.
       { clue: "A person who rejects all moral principles",              answer: "NIHILIST",  revealIdx: 1,        connection: "The Nihilists are three absurd, fake-kidnapper crooks — Uli, Dieter, and Franz — who 'believe in nothing'" },
       { clue: "Person of European or broadly white ethnic background",  answer: "CAUCASIAN", revealIdx: 5,        connection: "The White Russian is the same cocktail as a Caucasian — The Dude's drink of choice" },
     ],
-    anagram: { letters:["D","A","B","I","S","E"], answer:"ABIDES", clue:"The Dude _______ — the most famous line in the film" },
+    anagram: { letters:["D","A","B","I","S","E"], answer:"ABIDES", clue:"Endures, continues, or remains in place or in a state." },
     quote: `"Smokey, this is not Vietnam. This is bowling. There are rules."
 
 The Big Lebowski was released on this day in 1998 🎳
@@ -342,7 +342,7 @@ Miles Dewey Davis III — trumpeter, bandleader, MODAL jazz pioneer — born on 
   "2026-05-28": {
     rounds: [
       { clue: "Confined or kept in",                                    answer: "CAGED",     revealIdx: 4,        connection: "I Know Why the Caged Bird Sings — her most famous autobiography" },
-      { clue: "A person who composes text",                             answer: "WRITER",    revealIdx: [0,2],    connection: "She was one of America's greatest writers and poets" },
+      { clue: "Word that comes after 'Paperback' and before 'in residence'",                             answer: "WRITER",    revealIdx: [0,2],    connection: "She was one of America's greatest writers and poets" },
       { clue: "Caribbean music style with rhythmic vocals",             answer: "CALYPSO",   revealIdx: [5,6],    connection: "She recorded a calypso album early in her extraordinary career" },
       { clue: "A person who campaigns for social change",               answer: "ACTIVIST",  revealIdx: [4,0],    connection: "She marched alongside Martin Luther King and Malcolm X" },
       { clue: "Someone who is unable to sleep",                         answer: "INSOMNIAC", revealIdx: 4,        connection: "She often wrote through the night — her best work done in silence" },
@@ -362,7 +362,7 @@ A poet of WISDOM, courage and grace — died on this day, May 28th 2014 ✊
       { clue: "To move upward using hands and feet",                    answer: "CLIMB",     revealIdx: [2,1],    connection: "The first successful climb of Everest — May 29th 1953" },
       { clue: "What word comes after 'Boy' and before 'Best'?",        answer: "GEORGE",    revealIdx: 2,        connection: "Mount Everest is named after Sir George Everest, a British geographer" },
       { clue: "Bill Clinton's wife, first name",                        answer: "HILLARY",   revealIdx: [4,1],    connection: "Edmund Hillary — the New Zealander who first reached the summit" },
-      { clue: "A large natural elevation of Earth's surface",           answer: "MOUNTAIN",  revealIdx: [4,1,3],  connection: "At 8,849 metres, Everest is Earth's highest mountain" },
+      { clue: "Range feature found in amount in disarray",           answer: "MOUNTAIN",  revealIdx: [4,1,3],  connection: "At 8,849 metres, Everest is Earth's highest mountain" },
       { clue: "Mountain range containing the world's highest peaks",    answer: "HIMALAYAS", revealIdx: 8,        connection: "The Himalayas span five countries including Nepal and Tibet" },
     ],
     anagram: { letters:["O","N","I","S","A","L","T","I","O"], answer:"ISOLATION", clue:"The feeling of being cut off from the world — like the summit of Everest" },
@@ -374,10 +374,10 @@ The greatest feat of human ISOLATION and endurance.
   },
   "2026-05-30": {
     rounds: [
-      { clue: "A canonised holy figure",                                answer: "SAINT",     revealIdx: [2,3],    connection: "Joan of Arc was canonised as a saint in 1920" },
+      { clue: "What the S stands for in PSG",                             answer: "SAINT",     revealIdx: [2,3],    connection: "Joan of Arc was canonised as a saint in 1920" },
       { clue: "What word comes after 'Pardon My' and before 'Fries'?", answer: "FRENCH",    revealIdx: [5,2,1],  connection: "Joan of Arc was French — a peasant girl who became a national hero" },
       { clue: "French city whose name precedes 'New' across the Atlantic", answer: "ORLEANS", revealIdx: [0,3],  connection: "The Siege of Orleans was her greatest military victory" },
-      { clue: "Branch of Christianity led by the Pope",                 answer: "CATHOLIC",  revealIdx: [4,7],    connection: "Her deep Catholic faith drove everything she did" },
+      { clue: "Adherent of the church led by the Pope",                 answer: "CATHOLIC",  revealIdx: [4,7],    connection: "Her deep Catholic faith drove everything she did" },
       { clue: "Carrying out a death sentence",                          answer: "EXECUTION", revealIdx: [7,4],    connection: "She was burned at the stake in Rouen on May 30th 1431" },
     ],
     anagram: { letters:["O","I","H","R","E","N","E"], answer:"HEROINE", clue:"A woman admired for her courage and noble qualities" },
@@ -391,7 +391,7 @@ A patron saint of France, honored as a defender of the French nation.
     rounds: [
       { clue: "Not clean",                                              answer: "DIRTY",     revealIdx: [1,3],    connection: "Dirty Harry — one of Eastwood's most iconic roles" },
       { clue: "Basic unit of currency in Australia",                    answer: "DOLLAR",    revealIdx: 1,        connection: "A Fistful of Dollars — his breakthrough Spaghetti Western" },
-      { clue: "Written characters forming words",                       answer: "LETTERS",   revealIdx: 5,        connection: "Letters from Iwo Jima — a film he directed" },
+      { clue: "Characters in the post",                                 answer: "LETTERS",   revealIdx: 5,        connection: "Letters from Iwo Jima — a film he directed" },
       { clue: "Someone who rejects tradition and acts independently, often in a rebellious way", answer: "RENEGADE", revealIdx: 2, connection: "Unforgiven — his Oscar-winning Western about outlaws and renegades" },
       { clue: "Life or existence beyond death",                         answer: "HEREAFTER", revealIdx: [5,1,2],  connection: "Hereafter — another film he directed" },
     ],
