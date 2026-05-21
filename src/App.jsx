@@ -295,7 +295,7 @@ Bonnie Parker and Clyde Barrow — America's most LAWLESS couple — were ambush
     anagram: { letters:["D","L","A","B","L","A"], answer:"BALLAD", clue:"A narrative poem or song that tells a story in simple, rhythmic language" },
     quote: `"The first Eurovision Song Contest was held in Lugano, Switzerland in 1956. It became the world's most watched live event — a spectacular celebration of music, drama and BALLAD. 🎤
 
-Making stars out of ABBA on this day in 1974.
+Making stars out of ABBA in 1974.
 🎬 https://youtu.be/Sj_9CiNkkn4`,
   },
   "2026-05-25": {
@@ -321,7 +321,7 @@ The Dude ABIDES.
       { clue: "Bogotá is the capital of this country",                  answer: "COLUMBIA",  revealIdx: 1,    connection: "Columbia Records released many of his landmark albums" },
       { clue: "Prestigious performing arts conservatory in New York",   answer: "JUILLIARD", revealIdx: 3,    connection: "He briefly attended Juilliard before joining the jazz scene" },
     ],
-    anagram: { letters:["L","A","D","O","M"], answer:"MODAL", clue:"A type of auxiliary verb used to express ability, possibility, permission, obligation, or necessity" },
+    anagram: { letters:["L","A","M","O","D"], answer:"MODAL", clue:"A type of auxiliary verb used to express ability, possibility, permission, obligation, or necessity" },
     quote: `"I'm always thinking about creating. My future starts when I wake up every morning."
 
 Miles Dewey Davis III — trumpeter, bandleader, MODAL jazz pioneer — born on this day, May 26th 1926 🎺
@@ -342,9 +342,9 @@ Miles Dewey Davis III — trumpeter, bandleader, MODAL jazz pioneer — born on 
   "2026-05-28": {
     rounds: [
       { clue: "Confined or kept in",                                    answer: "CAGED",     revealIdx: 4,        connection: "I Know Why the Caged Bird Sings — her most famous autobiography" },
-      { clue: "Word that comes after 'Paperback' and before 'in residence'",                             answer: "WRITER",    revealIdx: [0,2],    connection: "She was one of America's greatest writers and poets" },
-      { clue: "Caribbean music style with rhythmic vocals",             answer: "CALYPSO",   revealIdx: [5,6],    connection: "She recorded a calypso album early in her extraordinary career" },
-      { clue: "A person who campaigns for social change",               answer: "ACTIVIST",  revealIdx: [4,0],    connection: "She marched alongside Martin Luther King and Malcolm X" },
+      { clue: "Word that comes after 'Paperback' and before 'in residence'",                             answer: "WRITER",    revealIdx: 0,        connection: "She was one of America's greatest writers and poets" },
+      { clue: "Caribbean music style with rhythmic vocals",             answer: "CALYPSO",   revealIdx: 6,        connection: "She recorded a calypso album early in her extraordinary career" },
+      { clue: "A person who campaigns for social change",               answer: "ACTIVIST",  revealIdx: 3,        connection: "She marched alongside Martin Luther King and Malcolm X" },
       { clue: "Someone who is unable to sleep",                         answer: "INSOMNIAC", revealIdx: 4,        connection: "She often wrote through the night — her best work done in silence" },
     ],
     anagram: { letters:["O","D","W","I","M","S"], answer:"WISDOM", clue:"The quality of having good judgement gained through experience" },
@@ -362,7 +362,7 @@ A poet of WISDOM, courage and grace — died on this day, May 28th 2014 ✊
       { clue: "To move upward using hands and feet",                    answer: "CLIMB",     revealIdx: [2,1],    connection: "The first successful climb of Everest — May 29th 1953" },
       { clue: "What word comes after 'Boy' and before 'Best'?",        answer: "GEORGE",    revealIdx: 2,        connection: "Mount Everest is named after Sir George Everest, a British geographer" },
       { clue: "Bill Clinton's wife, first name",                        answer: "HILLARY",   revealIdx: [4,1],    connection: "Edmund Hillary — the New Zealander who first reached the summit" },
-      { clue: "Range feature found in amount in disarray",           answer: "MOUNTAIN",  revealIdx: [4,1,3],  connection: "At 8,849 metres, Everest is Earth's highest mountain" },
+      { clue: "Range feature found in amount in disarray",           answer: "MOUNTAIN",  revealIdx: [4,7],    connection: "At 8,849 metres, Everest is Earth's highest mountain" },
       { clue: "Mountain range containing the world's highest peaks",    answer: "HIMALAYAS", revealIdx: 8,        connection: "The Himalayas span five countries including Nepal and Tibet" },
     ],
     anagram: { letters:["O","N","I","S","A","L","T","I","O"], answer:"ISOLATION", clue:"The feeling of being cut off from the world — like the summit of Everest" },
@@ -374,11 +374,11 @@ The greatest feat of human ISOLATION and endurance.
   },
   "2026-05-30": {
     rounds: [
-      { clue: "What the S stands for in PSG",                             answer: "SAINT",     revealIdx: [2,3],    connection: "Joan of Arc was canonised as a saint in 1920" },
-      { clue: "What word comes after 'Pardon My' and before 'Fries'?", answer: "FRENCH",    revealIdx: [5,2,1],  connection: "Joan of Arc was French — a peasant girl who became a national hero" },
-      { clue: "French city whose name precedes 'New' across the Atlantic", answer: "ORLEANS", revealIdx: [0,3],  connection: "The Siege of Orleans was her greatest military victory" },
-      { clue: "Adherent of the church led by the Pope",                 answer: "CATHOLIC",  revealIdx: [4,7],    connection: "Her deep Catholic faith drove everything she did" },
-      { clue: "Carrying out a death sentence",                          answer: "EXECUTION", revealIdx: [7,4],    connection: "She was burned at the stake in Rouen on May 30th 1431" },
+      { clue: "What the S stands for in PSG",                             answer: "SAINT",     revealIdx: 2,           connection: "Joan of Arc was canonised as a saint in 1920" },
+      { clue: "What word comes after 'Pardon My' and before 'Fries'?", answer: "FRENCH",    revealIdx: 5,         connection: "Joan of Arc was French — a peasant girl who became a national hero" },
+      { clue: "French city whose name comes after ‘New’ across the Atlantic", answer: "ORLEANS", revealIdx: [1,3],  connection: "The Siege of Orleans was her greatest military victory" },
+      { clue: "Adherent of the church led by the Pope",                 answer: "CATHOLIC",  revealIdx: [4,6],    connection: "Her deep Catholic faith drove everything she did" },
+      { clue: "Carrying out a death sentence",                          answer: "EXECUTION", revealIdx: [8,0],    connection: "She was burned at the stake in Rouen on May 30th 1431" },
     ],
     anagram: { letters:["O","I","H","R","E","N","E"], answer:"HEROINE", clue:"A woman admired for her courage and noble qualities" },
     quote: `"I am not afraid. I was born to do this."
