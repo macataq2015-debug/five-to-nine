@@ -329,15 +329,14 @@ Miles Dewey Davis III — trumpeter, bandleader, MODAL jazz pioneer — born on 
   },
   "2026-05-27": {
     rounds: [
-      { clue: "A thick wire or rope used to support a bridge",          answer: "CABLE",     revealIdx: 0,    connection: "The Golden Gate is a suspension bridge — its cables are 7,650 feet long" },
-      { clue: "What word comes after 'San' and before 'Sinatra'?",      answer: "FRANCIS",   revealIdx: [3,5],connection: "San Francisco — the city at the foot of the Golden Gate Bridge" },
+      { clue: "Weather condition with low visibility",                   answer: "FOGGY",     revealIdx: 1,    connection: "The bridge is famously shrouded in fog — a breathtaking sight" },
+      { clue: "Colour between red and yellow",                          answer: "ORANGE",    revealIdx: 3,    connection: "Its official colour is International Orange — chosen to be visible in the fog" },
       { clue: "The flow of vehicles on a road",                         answer: "TRAFFIC",   revealIdx: 5,    connection: "The bridge carries over 100,000 vehicles every single day" },
-      { clue: "Island prison visible from the Golden Gate Bridge",      answer: "ALCATRAZ",  revealIdx: 2,    connection: "Alcatraz Island sits just 1.5 miles from the bridge" },
-      { clue: "American film industry district in Los Angeles",         answer: "HOLLYWOOD", revealIdx: 1,    connection: "The bridge has appeared in countless Hollywood films" },
+      { clue: "Island prison in San Francisco Bay",                     answer: "ALCATRAZ",  revealIdx: 2,    connection: "Alcatraz is clearly visible from the bridge" },
+      { clue: "The edge where land meets the sea",                      answer: "COASTLINE", revealIdx: [6,0],connection: "The Golden Gate frames coastal cliffs, ocean mouth, shoreline views and tidal waters" },
     ],
-    anagram: { letters:["T","R","O","F","I","N","E","R"], answer:"FRONTIER", clue:"The wild, lawless edge of civilisation" },
+    anagram: { letters:["O","N","I","C","I","C"], answer:"ICONIC", clue:"Instantly recognisable and widely admired" },
     quote: `"The Golden Gate Bridge opened on this day, May 27th 1937 — one of the most ICONIC structures ever built. 🌉
-
 🔗 https://en.wikipedia.org/wiki/Golden_Gate_Bridge`,
   },
   "2026-05-28": {
