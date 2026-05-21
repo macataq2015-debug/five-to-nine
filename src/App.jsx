@@ -494,11 +494,14 @@ const CSS = `
 function TypewriterRow({ word, answer, correct, animate, onDone }) {
   const [count,   setCount]   = useState(animate ? 0 : word.length);
   const [flipped, setFlipped] = useState(!animate);
+  const onDoneRef = useRef(onDone);
+  onDoneRef.current = onDone;
+  const doneFired = useRef(false);
   useEffect(() => {
     if (!animate) return;
     if (count < word.length) { const t=setTimeout(()=>setCount(c=>c+1),100); return ()=>clearTimeout(t); }
-    else { const t=setTimeout(()=>{ setFlipped(true); onDone?.(); },300); return ()=>clearTimeout(t); }
-  }, [count, word.length, animate, onDone]);
+    else { const t=setTimeout(()=>{ setFlipped(true); if (!doneFired.current) { doneFired.current=true; onDoneRef.current?.(); } },300); return ()=>clearTimeout(t); }
+  }, [count, word.length, animate]);
   const sz = tileSize(word.length);
   const fs = Math.max(13, Math.min(20, Math.floor(sz*0.44)));
   const evaluation = correct ? Array(word.length).fill("correct") : evaluateGuess(word, answer);
