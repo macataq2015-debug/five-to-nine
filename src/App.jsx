@@ -636,43 +636,37 @@ export default function FiveToNine() {
   }, [alen, revealed, input]);
 
   const stateRef = useRef({});
-  stateRef.current = { round, roundIdx, done, puzzle };
+  stateRef.current = { round, roundIdx, done, puzzle, attempts };
   const revealFired = useRef(false);
-  const submitting = useRef(false);
 
   const submit = useCallback(() => {
-    if (!canInput || submitting.current) return;
-    submitting.current = true;
-    revealFired.current = false;
+    if (!canInput) return;
     const guess = buildGuess();
-    if (guess.includes(" ")) { setShake(true); setTimeout(()=>setShake(false),500); submitting.current = false; revealFired.current = true; return; }
+    if (guess.includes(" ")) { setShake(true); setTimeout(()=>setShake(false),500); return; }
     const correct = guess === round.answer;
     setAttempts(prev=>[...prev, { word:guess, correct }]);
-    setInput(""); setAnimating(true);
+    setInput(""); setAnimating(true); revealFired.current = false;
   }, [canInput, buildGuess, round]);
 
   const onRevealDone = useCallback(() => {
     if (revealFired.current) return;
     revealFired.current = true;
-    const { round, roundIdx, puzzle } = stateRef.current;
-    setAttempts(prev => {
-      const latest = prev[prev.length-1];
-      if (!latest) return prev;
-      if (latest.correct) {
-        setTimeout(() => {
-          const completedRound = { ...round, solved:true, revealIdx:round.revealIdx };
-          setDone(d=>[...d, completedRound]);
-          setAttempts([]); setInput(""); setRevealed({});
-          setAnimating(false); submitting.current = false;
-          if (roundIdx >= puzzle.rounds.length-1) setPhase("anagram");
-          else setRoundIdx(r=>r+1);
-        }, 700);
-      } else {
-        setAnimating(false); submitting.current = false;
-        setTimeout(()=>setInput(""), 100);
-      }
-      return prev;
-    });
+    const { round, roundIdx, puzzle, attempts } = stateRef.current;
+    const latest = attempts[attempts.length - 1];
+    if (!latest) return;
+    if (latest.correct) {
+      setTimeout(() => {
+        const completedRound = { ...round, solved:true, revealIdx:round.revealIdx };
+        setDone(d=>[...d, completedRound]);
+        setAttempts([]); setInput(""); setRevealed({});
+        setAnimating(false);
+        if (roundIdx >= puzzle.rounds.length-1) setPhase("anagram");
+        else setRoundIdx(r=>r+1);
+      }, 700);
+    } else {
+      setAnimating(false);
+      setTimeout(()=>setInput(""), 100);
+    }
   }, []);
 
   useEffect(() => {
