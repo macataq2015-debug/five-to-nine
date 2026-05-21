@@ -830,7 +830,8 @@ export default function FiveToNine() {
           {streak.best > 1 && <span style={{ fontSize:11, color:"#888888" }}>BEST: {streak.best}</span>}
         </div>
       )}
-      <div style={{ width:"100%", maxWidth:440, marginTop:8 }}><ShareButton /></div>
+      <div style={{ width:"100%", maxWidth:440, marginTop:8, marginBottom:8 }}><ShareButton /></div>
+      <ReviewAnswers />
 
     </div>
   );
