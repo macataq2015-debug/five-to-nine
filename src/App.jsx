@@ -643,17 +643,18 @@ export default function FiveToNine() {
   const submit = useCallback(() => {
     if (!canInput || submitting.current) return;
     submitting.current = true;
+    revealFired.current = false;
     const guess = buildGuess();
-    if (guess.includes(" ")) { setShake(true); setTimeout(()=>setShake(false),500); submitting.current = false; return; }
+    if (guess.includes(" ")) { setShake(true); setTimeout(()=>setShake(false),500); submitting.current = false; revealFired.current = true; return; }
     const correct = guess === round.answer;
     setAttempts(prev=>[...prev, { word:guess, correct }]);
-    setInput(""); setAnimating(true); revealFired.current = false;
+    setInput(""); setAnimating(true);
   }, [canInput, buildGuess, round]);
 
   const onRevealDone = useCallback(() => {
     if (revealFired.current) return;
     revealFired.current = true;
-    const { round, roundIdx, done, puzzle } = stateRef.current;
+    const { round, roundIdx, puzzle } = stateRef.current;
     setAttempts(prev => {
       const latest = prev[prev.length-1];
       if (!latest) return prev;
@@ -662,7 +663,7 @@ export default function FiveToNine() {
           const completedRound = { ...round, solved:true, revealIdx:round.revealIdx };
           setDone(d=>[...d, completedRound]);
           setAttempts([]); setInput(""); setRevealed({});
-          setAnimating(false); revealFired.current = false; submitting.current = false;
+          setAnimating(false); submitting.current = false;
           if (roundIdx >= puzzle.rounds.length-1) setPhase("anagram");
           else setRoundIdx(r=>r+1);
         }, 700);
