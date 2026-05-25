@@ -4,13 +4,13 @@ import { useState, useEffect, useCallback, useRef } from "react";
 const PUZZLES = {
   "2026-05-05": {
     rounds: [
-      { clue: "A group of Lions",                              answer: "PRIDE",     revealIdx: 1 },
-      { clue: "Austrian capital",                              answer: "VIENNA",    revealIdx: [5,0] },
-      { clue: "Which metal is liquid at room temperature?",    answer: "MERCURY",   revealIdx: 6 },
-      { clue: "Which organ produces insulin?",                 answer: "PANCREAS",  revealIdx: [5,4] },
-      { clue: "When an animal sleeps for the winter they..",   answer: "HIBERNATE", revealIdx: 2 },
+      { clue: "A group of Lions",                              answer: "PRIDE" },
+      { clue: "Austrian capital",                              answer: "VIENNA" },
+      { clue: "Which metal is liquid at room temperature?",    answer: "MERCURY" },
+      { clue: "Which organ produces insulin?",                 answer: "PANCREAS" },
+      { clue: "When an animal sleeps for the winter they..",   answer: "HIBERNATE" },
     ],
-    anagram: { letters:["R","V","E","A","B","Y","R"], answer:"BRAVERY", clue:"noun · great courage in the face of danger or difficulty" },
+    anagram: { letters:["A","Y","R","V","E","R","B"], answer:"BRAVERY", clue:"noun · great courage in the face of danger or difficulty" },
     quote: `Van Diemen's land is a hell for a man
 To end out his whole life in slavery
 Where the climate is raw and the gun makes the law
@@ -22,26 +22,26 @@ Oh, oh, I wish I was back home in Derry
   },
   "2026-05-17": {
     rounds: [
-      { clue: "Long, deep inlet with steep sides formed by glacial erosion", answer: "FJORD",     revealIdx: [0,4], connection: "Norway has over 1,000 fjords — the longest stretches 204km inland" },
-      { clue: "Title of a famous expressionist painting by Munch is 'The ......'", answer: "SCREAM", revealIdx: [3,5], connection: "Edvard Munch was Norwegian — The Scream is one of the most recognised paintings ever" },
-      { clue: "Surname of a modern Norwegian world chess champion",          answer: "CARLSEN",   revealIdx: 2,     connection: "Magnus Carlsen from Norway became world chess champion aged just 22" },
-      { clue: "Word that comes before 'lights' in a famous sky display",     answer: "NORTHERN",  revealIdx: 1,     connection: "The Northern Lights are best seen in Norway — a natural wonder" },
-      { clue: "Natural resource refined into fuels and plastics",            answer: "PETROLEUM", revealIdx: 1,     connection: "Norway is one of the world's largest oil exporters" },
+      { clue: "Long, deep inlet with steep sides formed by glacial erosion", answer: "FJORD", connection: "Norway has over 1,000 fjords — the longest stretches 204km inland" },
+      { clue: "Title of a famous expressionist painting by Munch is 'The ......'", answer: "SCREAM", connection: "Edvard Munch was Norwegian — The Scream is one of the most recognised paintings ever" },
+      { clue: "Surname of a modern Norwegian world chess champion",          answer: "CARLSEN",     connection: "Magnus Carlsen from Norway became world chess champion aged just 22" },
+      { clue: "Word that comes before 'lights' in a famous sky display",     answer: "NORTHERN",     connection: "The Northern Lights are best seen in Norway — a natural wonder" },
+      { clue: "Natural resource refined into fuels and plastics",            answer: "PETROLEUM",     connection: "Norway is one of the world's largest oil exporters" },
     ],
-    anagram: { letters:["F","E","R","O","D","M","E"], answer:"FREEDOM", clue:"noun · the power to act, speak or think without restraint" },
+    anagram: { letters:["D","R","M","E","E","F","O"], answer:"FREEDOM", clue:"noun · the power to act, speak or think without restraint" },
     quote: `"Norway's Constitution was signed at Eidsvoll on May 17th 1814 — today is Syttende Mai, Norway's national day, when a great nation can celebrate its independence and FREEDOM. 🇳🇴
 
 🔗 https://geographyworlds.com/blog/facts-about-norway/"`,
   },
   "2026-05-16": {
     rounds: [
-      { clue: "What word comes after 'Palm' and before 'Body'?",       answer: "BEACH",     revealIdx: 2,    connection: "The Beach Boys — named after the California beach culture they embodied" },
-      { clue: "What is the volleyball called in the movie Cast Away?", answer: "WILSON",    revealIdx: [0,5],connection: "Brian Wilson — the genius who wrote and produced Pet Sounds" },
-      { clue: "Male family member",                                    answer: "BROTHER",   revealIdx: 1,    connection: "Brother Records — the label the Beach Boys founded in 1966, the same year as Pet Sounds" },
-      { clue: "Vocal music performed without instruments is called a...?", answer: "CAPPELLA", revealIdx: 4, connection: "The Beach Boys were famous for their extraordinary a cappella harmonies" },
-      { clue: "Long buoyant fiberglass craft ridden on ocean waves",   answer: "SURFBOARD", revealIdx: 0,    connection: "Surfing was the heart of the early Beach Boys sound and image" },
+      { clue: "What word comes after 'Palm' and before 'Body'?",       answer: "BEACH",    connection: "The Beach Boys — named after the California beach culture they embodied" },
+      { clue: "What is the volleyball called in the movie Cast Away?", answer: "WILSON",connection: "Brian Wilson — the genius who wrote and produced Pet Sounds" },
+      { clue: "Male family member",                                    answer: "BROTHER",    connection: "Brother Records — the label the Beach Boys founded in 1966, the same year as Pet Sounds" },
+      { clue: "Vocal music performed without instruments is called a...?", answer: "CAPPELLA", connection: "The Beach Boys were famous for their extraordinary a cappella harmonies" },
+      { clue: "Long buoyant fiberglass craft ridden on ocean waves",   answer: "SURFBOARD",    connection: "Surfing was the heart of the early Beach Boys sound and image" },
     ],
-    anagram: { letters:["A","W","N","R","E","S"], answer:"ANSWER", clue:"noun · a response given in reaction to a question or problem" },
+    anagram: { letters:["A","N","W","S","E","R"], answer:"ANSWER", clue:"noun · a response given in reaction to a question or problem" },
     quote: `"I Know There's An ANSWER — but I have to find it myself."
 
 'I Know There's An Answer' is a song from The Beach Boys' Pet Sounds, released on this day, May 16th 1966 🏄
@@ -50,13 +50,13 @@ Widely considered one of the greatest albums ever made.
   },
   "2026-05-15": {
     rounds: [
-      { clue: "Belief held without proof",                               answer: "FAITH",     revealIdx: [0,1,4], connection: "A recurring theme throughout Dickinson's poetry" },
-      { clue: "The physical world and its living things",                answer: "NATURE",    revealIdx: [5,4],   connection: "Dickinson found God and deep meaning in the natural world" },
-      { clue: "Achievement of a desired aim",                            answer: "SUCCESS",   revealIdx: 0,       connection: '"Success is counted sweetest" — one of her most famous poems' },
-      { clue: "The state of being alone",                                answer: "SOLITUDE",  revealIdx: 4,       connection: "Dickinson lived as a recluse, rarely leaving her home" },
-      { clue: "Something that is mysterious, puzzling, or difficult to understand", answer: "ENIGMATIC", revealIdx: 0, connection: "Her life and poetry remain deeply mysterious to this day" },
+      { clue: "Belief held without proof",                               answer: "FAITH", connection: "A recurring theme throughout Dickinson's poetry" },
+      { clue: "The physical world and its living things",                answer: "NATURE",   connection: "Dickinson found God and deep meaning in the natural world" },
+      { clue: "Achievement of a desired aim",                            answer: "SUCCESS",       connection: '"Success is counted sweetest" — one of her most famous poems' },
+      { clue: "The state of being alone",                                answer: "SOLITUDE",       connection: "Dickinson lived as a recluse, rarely leaving her home" },
+      { clue: "Something that is mysterious, puzzling, or difficult to understand", answer: "ENIGMATIC", connection: "Her life and poetry remain deeply mysterious to this day" },
     ],
-    anagram: { letters:["H","E","S","F","R","T","A","E"], answer:"FEATHERS", clue:"Soft, lightweight structures forming the outer covering of birds" },
+    anagram: { letters:["H","E","T","F","E","A","R","S"], answer:"FEATHERS", clue:"Soft, lightweight structures forming the outer covering of birds" },
     quote: `On This Day, Emily Dickinson died, May 15th 1886 🕊️
 
 "Hope" is the thing with FEATHERS —
@@ -69,13 +69,13 @@ And never stops — at all —
   },
   "2026-05-14": {
     rounds: [
-      { clue: "Largest species of cat",                               answer: "TIGER",     revealIdx: 1 },
-      { clue: "To go after or come behind something or someone",      answer: "FOLLOW",    revealIdx: [2,3] },
-      { clue: "Which ship sank in 1912?",                             answer: "TITANIC",   revealIdx: 0 },
-      { clue: "First female UK Prime Minister, surname",              answer: "THATCHER",  revealIdx: 1 },
-      { clue: "A person who travels to space",                        answer: "ASTRONAUT", revealIdx: 3 },
+      { clue: "Largest species of cat",                               answer: "TIGER" },
+      { clue: "To go after or come behind something or someone",      answer: "FOLLOW" },
+      { clue: "Which ship sank in 1912?",                             answer: "TITANIC" },
+      { clue: "First female UK Prime Minister, surname",              answer: "THATCHER" },
+      { clue: "A person who travels to space",                        answer: "ASTRONAUT" },
     ],
-    anagram: { letters:["I","L","R","H","T","L"], answer:"THRILL", clue:"To cause someone to feel delight or exhilaration" },
+    anagram: { letters:["H","I","L","L","R","T"], answer:"THRILL", clue:"To cause someone to feel delight or exhilaration" },
     quote: `"The THRILL is gone, baby
 The thrill is gone away
 Someday I know I'll be over it all, baby
@@ -87,13 +87,13 @@ BB King died on this day, May 14th 2015 🎸
   },
   "2026-05-13": {
     rounds: [
-      { clue: "What word comes after 'Bruce' and before 'Rooney'?",       answer: "WAYNE",     revealIdx: 0 },
-      { clue: "What you get when you mix red and blue",                   answer: "PURPLE",    revealIdx: 2 },
-      { clue: "Dickens, Orwell and Hemingway's job title",               answer: "NOVELIST",  revealIdx: [5,0] },
-      { clue: "A perfect example or embodiment of a quality or type",    answer: "EPITOME",   revealIdx: [2,3] },
-      { clue: "A flash of bright light from an electrical storm",        answer: "LIGHTNING", revealIdx: 2 },
+      { clue: "What word comes after 'Bruce' and before 'Rooney'?",       answer: "WAYNE" },
+      { clue: "What you get when you mix red and blue",                   answer: "PURPLE" },
+      { clue: "Dickens, Orwell and Hemingway's job title",               answer: "NOVELIST" },
+      { clue: "A perfect example or embodiment of a quality or type",    answer: "EPITOME" },
+      { clue: "A flash of bright light from an electrical storm",        answer: "LIGHTNING" },
     ],
-    anagram: { letters:["R","I","W","G","T","I","N"], answer:"WRITING", clue:"noun · the activity of putting words on paper" },
+    anagram: { letters:["N","I","T","I","G","W","R"], answer:"WRITING", clue:"noun · the activity of putting words on paper" },
     quote: `"Very superstitious, WRITING's on the wall
 Very superstitious, ladders 'bout to fall"
 
@@ -103,13 +103,13 @@ Stevie Wonder was born on this day, May 13th 1950 🎹
   },
   "2026-05-12": {
     rounds: [
-      { clue: "US President before Trump",                               answer: "OBAMA",     revealIdx: 3 },
-      { clue: "A narrow water passage connecting two seas",              answer: "STRAIT",    revealIdx: 4 },
-      { clue: "A person who travels for pleasure",                       answer: "TOURIST",   revealIdx: 5 },
-      { clue: "Not joined or touching; to move apart",                   answer: "SEPARATE",  revealIdx: 1 },
-      { clue: "Which gland regulates hormone production?",               answer: "PITUITARY", revealIdx: [7,8] },
+      { clue: "US President before Trump",                               answer: "OBAMA" },
+      { clue: "A narrow water passage connecting two seas",              answer: "STRAIT" },
+      { clue: "A person who travels for pleasure",                       answer: "TOURIST" },
+      { clue: "Not joined or touching; to move apart",                   answer: "SEPARATE" },
+      { clue: "Which gland regulates hormone production?",               answer: "PITUITARY" },
     ],
-    anagram: { letters:["S","M","I","E","R","Y"], answer:"MISERY", clue:"noun · a state of great distress or discomfort" },
+    anagram: { letters:["S","R","I","M","Y","E"], answer:"MISERY", clue:"noun · a state of great distress or discomfort" },
     quote: `"Am I happy or in MISERY?
 Whatever it is, that girl put a spell on me"
 
@@ -119,13 +119,13 @@ Whatever it is, that girl put a spell on me"
   },
   "2026-05-11": {
     rounds: [
-      { clue: "What is the surname of Walter in Breaking Bad?",          answer: "WHITE",     revealIdx: 0 },
-      { clue: "What is the capital of Albania?",                         answer: "TIRANA",    revealIdx: 1 },
-      { clue: "Which scientist discovered penicillin?",                  answer: "FLEMING",   revealIdx: 5 },
-      { clue: "Which Norwegian explorer reached the South Pole first?",  answer: "AMUNDSEN",  revealIdx: 3 },
-      { clue: "To cause someone to feel awkward or self-conscious",      answer: "EMBARRASS", revealIdx: [0,4] },
+      { clue: "What is the surname of Walter in Breaking Bad?",          answer: "WHITE" },
+      { clue: "What is the capital of Albania?",                         answer: "TIRANA" },
+      { clue: "Which scientist discovered penicillin?",                  answer: "FLEMING" },
+      { clue: "Which Norwegian explorer reached the South Pole first?",  answer: "AMUNDSEN" },
+      { clue: "To cause someone to feel awkward or self-conscious",      answer: "EMBARRASS" },
     ],
-    anagram: { letters:["N","W","I","E","R","N"], answer:"WINNER", clue:"Not a loser" },
+    anagram: { letters:["N","W","R","I","N","E"], answer:"WINNER", clue:"Not a loser" },
     quote: `"When I meet you around the corner
 You make me feel like a sweepstake WINNER"
 
@@ -135,24 +135,24 @@ Bob Marley died on this day, May 11th 1981. Gone but never forgotten. 🌿
   },
   "2026-05-10": {
     rounds: [
-      { clue: "A space under the roof of a house",                      answer: "ATTIC",     revealIdx: [1,2,3] },
-      { clue: "Secret → _ _ _ _ _ _ ← Gnome",                          answer: "GARDEN",    revealIdx: 4 },
-      { clue: "Iraq's capital",                                          answer: "BAGHDAD",   revealIdx: 4 },
-      { clue: "Who discovered America in 1492?",                         answer: "COLUMBUS",  revealIdx: 3 },
-      { clue: "Which gland regulates hormone production?",               answer: "PITUITARY", revealIdx: [6,2] },
+      { clue: "A space under the roof of a house",                      answer: "ATTIC" },
+      { clue: "Secret → _ _ _ _ _ _ ← Gnome",                          answer: "GARDEN" },
+      { clue: "Iraq's capital",                                          answer: "BAGHDAD" },
+      { clue: "Who discovered America in 1492?",                         answer: "COLUMBUS" },
+      { clue: "Which gland regulates hormone production?",               answer: "PITUITARY" },
     ],
-    anagram: { letters:["D","I","T","U","T","A","T","E"], answer:"ATTITUDE", clue:"noun · a settled way of thinking or feeling about something" },
+    anagram: { letters:["T","A","U","D","T","E","T","I"], answer:"ATTITUDE", clue:"noun · a settled way of thinking or feeling about something" },
     quote: `"Everything can be taken from a man but one thing: the last of the human freedoms — to choose one's ATTITUDE in any given set of circumstances." — Viktor Frankl, Man's Search for Meaning`,
   },
   "2026-05-09": {
     rounds: [
-      { clue: "A fruit for cider",                                       answer: "APPLE",     revealIdx: 4 },
-      { clue: "A large area filled with trees",                          answer: "FOREST",    revealIdx: 0 },
-      { clue: "Lithuania's capital",                                     answer: "VILNIUS",   revealIdx: [5,6] },
-      { clue: "First name of the singer who sang Happy",                 answer: "PHARRELL",  revealIdx: 3 },
-      { clue: "London Hotspurs",                                         answer: "TOTTENHAM", revealIdx: 4 },
+      { clue: "A fruit for cider",                                       answer: "APPLE" },
+      { clue: "A large area filled with trees",                          answer: "FOREST" },
+      { clue: "Lithuania's capital",                                     answer: "VILNIUS" },
+      { clue: "First name of the singer who sang Happy",                 answer: "PHARRELL" },
+      { clue: "London Hotspurs",                                         answer: "TOTTENHAM" },
     ],
-    anagram: { letters:["F","U","S","E","R","E"], answer:"REFUSE", clue:"verb · to indicate you are not willing to do something" },
+    anagram: { letters:["R","S","E","U","F","E"], answer:"REFUSE", clue:"verb · to indicate you are not willing to do something" },
     quote: `"But maybe that's just the price you pay for the chains you REFUSE
 
 — Bees Wing, Richard Thompson
@@ -160,37 +160,37 @@ Bob Marley died on this day, May 11th 1981. Gone but never forgotten. 🌿
   },
   "2026-05-08": {
     rounds: [
-      { clue: "Which organ pumps blood around the body?",               answer: "HEART",     revealIdx: [3,4] },
-      { clue: "What is the capital of Cuba?",                            answer: "HAVANA",    revealIdx: 2 },
-      { clue: "Tennessee → _ _ _ _ _ _ _ ← in the jar",                answer: "WHISKEY",   revealIdx: [2,6] },
-      { clue: "What is the study of heredity?",                          answer: "GENETICS",  revealIdx: 6 },
-      { clue: "Aware of and responding to one's surroundings",           answer: "CONSCIOUS", revealIdx: 1 },
+      { clue: "Which organ pumps blood around the body?",               answer: "HEART" },
+      { clue: "What is the capital of Cuba?",                            answer: "HAVANA" },
+      { clue: "Tennessee → _ _ _ _ _ _ _ ← in the jar",                answer: "WHISKEY" },
+      { clue: "What is the study of heredity?",                          answer: "GENETICS" },
+      { clue: "Aware of and responding to one's surroundings",           answer: "CONSCIOUS" },
     ],
-    anagram: { letters:["T","R","O","V","Y","C","I"], answer:"VICTORY", clue:"noun · success in a struggle or contest" },
+    anagram: { letters:["V","O","T","Y","R","I","C"], answer:"VICTORY", clue:"noun · success in a struggle or contest" },
     quote: `"VICTORY in Europe Day celebrates the formal surrender of Nazi Germany on 8 May 1945 — 80 years ago today. The day the world breathed again.
 
 🔗 https://en.wikipedia.org/wiki/Victory_in_Europe_Day`,
   },
   "2026-05-07": {
     rounds: [
-      { clue: "What city are last year's Champions League winners from?", answer: "PARIS",     revealIdx: 1 },
-      { clue: "Which planet has the most visible rings?",                answer: "SATURN",    revealIdx: [4,3] },
-      { clue: "Silent Chaplin",                                          answer: "CHARLIE",   revealIdx: 0 },
-      { clue: "Proud, insolent, overbearing, disdainful",               answer: "ARROGANT",  revealIdx: [3,4] },
-      { clue: "What is the capital of Iceland?",                         answer: "REYKJAVIK", revealIdx: 1 },
+      { clue: "What city are last year's Champions League winners from?", answer: "PARIS" },
+      { clue: "Which planet has the most visible rings?",                answer: "SATURN" },
+      { clue: "Silent Chaplin",                                          answer: "CHARLIE" },
+      { clue: "Proud, insolent, overbearing, disdainful",               answer: "ARROGANT" },
+      { clue: "What is the capital of Iceland?",                         answer: "REYKJAVIK" },
     ],
-    anagram: { letters:["U","C","O","A","G","R","E"], answer:"COURAGE", clue:"noun · the ability to do something that frightens you" },
+    anagram: { letters:["R","O","A","E","C","G","U"], answer:"COURAGE", clue:"noun · the ability to do something that frightens you" },
     quote: `"Courage doesn't always roar. Sometimes COURAGE is the little voice at the end of the day that says I'll try again tomorrow." — Mary Anne Radmacher`,
   },
   "2026-05-06": {
     rounds: [
-      { clue: "What is the name for molten rock?",                      answer: "MAGMA",     revealIdx: 1 },
-      { clue: "What's a group of geese called?",                        answer: "GAGGLE",    revealIdx: 5 },
-      { clue: "China's capital?",                                        answer: "BEIJING",   revealIdx: 0 },
-      { clue: "What is the main gas in Earth's atmosphere?",            answer: "NITROGEN",  revealIdx: [0,3,7] },
-      { clue: "Group combined to promote a common interest",            answer: "SYNDICATE", revealIdx: [0,4,7] },
+      { clue: "What is the name for molten rock?",                      answer: "MAGMA" },
+      { clue: "What's a group of geese called?",                        answer: "GAGGLE" },
+      { clue: "China's capital?",                                        answer: "BEIJING" },
+      { clue: "What is the main gas in Earth's atmosphere?",            answer: "NITROGEN" },
+      { clue: "Group combined to promote a common interest",            answer: "SYNDICATE" },
     ],
-    anagram: { letters:["N","B","I","A","T","N","E","R","S"], answer:"BANNISTER", clue:"First sub four minute miler" },
+    anagram: { letters:["I","S","R","A","N","T","E","N","B"], answer:"BANNISTER", clue:"First sub four minute miler" },
     quote: `"The man who can drive himself further once the effort gets painful is the man who will win." — Roger BANNISTER
 
 🔗 https://www.guinnessworldrecords.com/records/hall-of-fame/first-sub-four-minute-mile`,
@@ -198,13 +198,13 @@ Bob Marley died on this day, May 11th 1981. Gone but never forgotten. 🌿
 
   "2026-05-18": {
     rounds: [
-      { clue: "A vegetable made of layers, often used in cooking",      answer: "ONION",     revealIdx: [0,1],    connection: "Shrek famously says ogres are like onions — they have layers" },
-      { clue: "A hoofed animal known for its braying call",             answer: "DONKEY",    revealIdx: 4,        connection: "Donkey is Shrek's fast-talking, loveable companion" },
-      { clue: "Surname of the director who made Titanic",               answer: "CAMERON",   revealIdx: [4,2,1,0],connection: "Cameron Diaz voiced Princess Fiona in Shrek" },
-      { clue: "A royal title for the daughter of a king or queen",      answer: "PRINCESS",  revealIdx: [4,7],    connection: "Princess Fiona — the film's feisty heroine" },
-      { clue: "Technique creating movement from drawn or digital images",answer: "ANIMATION", revealIdx: [6,0],   connection: "Shrek was a landmark in computer animation history" },
+      { clue: "A vegetable made of layers, often used in cooking",      answer: "ONION",    connection: "Shrek famously says ogres are like onions — they have layers" },
+      { clue: "A hoofed animal known for its braying call",             answer: "DONKEY",        connection: "Donkey is Shrek's fast-talking, loveable companion" },
+      { clue: "Surname of the director who made Titanic",               answer: "CAMERON",connection: "Cameron Diaz voiced Princess Fiona in Shrek" },
+      { clue: "A royal title for the daughter of a king or queen",      answer: "PRINCESS",    connection: "Princess Fiona — the film's feisty heroine" },
+      { clue: "Technique creating movement from drawn or digital images",answer: "ANIMATION",   connection: "Shrek was a landmark in computer animation history" },
     ],
-    anagram: { letters:["A","C","O","M","E","N","R"], answer:"ROMANCE", clue:"A love story — at the heart of every fairytale" },
+    anagram: { letters:["A","O","R","N","C","M","E"], answer:"ROMANCE", clue:"A love story — at the heart of every fairytale" },
     quote: `"Behind the onions, dragons and donkeys lies a story of ROMANCE.
 
 Shrek premiered at the Cannes Film Festival on this day in 2001 🧅
@@ -212,13 +212,13 @@ Shrek premiered at the Cannes Film Festival on this day in 2001 🧅
   },
   "2026-05-19": {
     rounds: [
-      { clue: "Holy city in Saudi Arabia that Muslims face during prayer", answer: "MECCA",    revealIdx: [2,3],  connection: "His transformative Hajj pilgrimage to Mecca changed his worldview" },
-      { clue: "What word comes after 'Stuart' and before 'League'?",    answer: "LITTLE",    revealIdx: [1,2],    connection: "Little was his birth surname — before he replaced it with X" },
-      { clue: "Concept of fair treatment and lawful judgment",           answer: "JUSTICE",   revealIdx: [4,2],    connection: "Justice for Black Americans was his life's mission" },
-      { clue: "US state and title of a Bruce Springsteen album",         answer: "NEBRASKA",  revealIdx: 3,        connection: "Malcolm X was born in Omaha, Nebraska in 1925" },
-      { clue: "Killers who target prominent figures for political reasons",answer: "ASSASSINS",revealIdx: [6,4],   connection: "He was shot by assassins at the Audubon Ballroom in 1965" },
+      { clue: "Holy city in Saudi Arabia that Muslims face during prayer", answer: "MECCA",  connection: "His transformative Hajj pilgrimage to Mecca changed his worldview" },
+      { clue: "What word comes after 'Stuart' and before 'League'?",    answer: "LITTLE",    connection: "Little was his birth surname — before he replaced it with X" },
+      { clue: "Concept of fair treatment and lawful judgment",           answer: "JUSTICE",    connection: "Justice for Black Americans was his life's mission" },
+      { clue: "US state and title of a Bruce Springsteen album",         answer: "NEBRASKA",        connection: "Malcolm X was born in Omaha, Nebraska in 1925" },
+      { clue: "Killers who target prominent figures for political reasons",answer: "ASSASSINS",   connection: "He was shot by assassins at the Audubon Ballroom in 1965" },
     ],
-    anagram: { letters:["T","I","R","C","C","I","S"], answer:"CRITICS", clue:"Those who judge or find fault" },
+    anagram: { letters:["T","I","R","C","S","C","I"], answer:"CRITICS", clue:"Those who judge or find fault" },
     quote: `"If you have no CRITICS you'll likely have no success."
 
 — Malcolm X
@@ -227,26 +227,26 @@ Malcolm X was born on this day, May 19th 1925 ✊
   },
   "2026-05-20": {
     rounds: [
-      { clue: "Facial hair grown on the chin and cheeks",               answer: "BEARD",     revealIdx: 3,        connection: "Letterman's trademark beard after he retired from the Late Show" },
-      { clue: "Surname of the Ace Ventura actor",                       answer: "CARREY",    revealIdx: 5,        connection: "Jim Carrey made memorable appearances on Letterman's show" },
-      { clue: "What word comes after 'Eerie' and before 'Jones'?",      answer: "INDIANA",   revealIdx: [0,1],    connection: "Letterman was born and raised in Indiana" },
-      { clue: "1997 mega hit by Foo Fighters",                          answer: "EVERLONG",  revealIdx: 5,        connection: "Foo Fighters played Everlong on his final Late Show — an iconic moment" },
-      { clue: "Performers who specialise in making people laugh",        answer: "COMEDIANS", revealIdx: [4,2],    connection: "Letterman launched and supported countless comedy careers" },
+      { clue: "Facial hair grown on the chin and cheeks",               answer: "BEARD",        connection: "Letterman's trademark beard after he retired from the Late Show" },
+      { clue: "Surname of the Ace Ventura actor",                       answer: "CARREY",        connection: "Jim Carrey made memorable appearances on Letterman's show" },
+      { clue: "What word comes after 'Eerie' and before 'Jones'?",      answer: "INDIANA",    connection: "Letterman was born and raised in Indiana" },
+      { clue: "1997 mega hit by Foo Fighters",                          answer: "EVERLONG",        connection: "Foo Fighters played Everlong on his final Late Show — an iconic moment" },
+      { clue: "Performers who specialise in making people laugh",        answer: "COMEDIANS",    connection: "Letterman launched and supported countless comedy careers" },
     ],
-    anagram: { letters:["N","O","R","Y","I"], answer:"IRONY", clue:"A situation where the outcome is the opposite of what is expected" },
+    anagram: { letters:["O","I","N","Y","R"], answer:"IRONY", clue:"A situation where the outcome is the opposite of what is expected" },
     quote: `"David Letterman — who redefined American talk shows with his unconventional humour, IRONY and innovative segments — stepped down as host of the Late Show on this day, May 20th 2015. 📺
 
 🎬 https://youtu.be/ss8OsSzdgiE?si=WH8OEsmb19mIwG9w`,
   },
   "2026-05-21": {
     rounds: [
-      { clue: "A common male name given to French kings",                answer: "LOUIS",     revealIdx: 3,  connection: "The Spirit of St Louis was the name of Lindbergh's plane" },
-      { clue: "To take someone away illegally",                         answer: "KIDNAP",    revealIdx: 5,        connection: "The Lindbergh baby kidnapping in 1932 shocked the world" },
-      { clue: "The study of past events",                               answer: "HISTORY",   revealIdx: 3,        connection: "His solo Atlantic flight became aviation history" },
-      { clue: "Ocean separating Europe from the Americas",              answer: "ATLANTIC",  revealIdx: 2,    connection: "He was the first to fly solo nonstop across the Atlantic" },
-      { clue: "A person who introduces new ideas or methods",           answer: "INNOVATOR", revealIdx: 3,    connection: "He was a pioneer in early aviation and later became a writer" },
+      { clue: "A common male name given to French kings",                answer: "LOUIS",  connection: "The Spirit of St Louis was the name of Lindbergh's plane" },
+      { clue: "To take someone away illegally",                         answer: "KIDNAP",        connection: "The Lindbergh baby kidnapping in 1932 shocked the world" },
+      { clue: "The study of past events",                               answer: "HISTORY",        connection: "His solo Atlantic flight became aviation history" },
+      { clue: "Ocean separating Europe from the Americas",              answer: "ATLANTIC",    connection: "He was the first to fly solo nonstop across the Atlantic" },
+      { clue: "A person who introduces new ideas or methods",           answer: "INNOVATOR",    connection: "He was a pioneer in early aviation and later became a writer" },
     ],
-    anagram: { letters:["T","I","P","O","L"], answer:"PILOT", clue:"A person who flies an aircraft" },
+    anagram: { letters:["I","O","P","T","L"], answer:"PILOT", clue:"A person who flies an aircraft" },
     quote: `"Charles Lindbergh — PILOT, adventurer, legend — completed the first nonstop solo transatlantic flight on this day, May 21st 1927. ✈️
 
 New York to Paris. 33 hours. Alone.
@@ -254,13 +254,13 @@ New York to Paris. 33 hours. Alone.
   },
   "2026-05-22": {
     rounds: [
-      { clue: "A craftsperson who shapes metal by heating, hammering, and forging it into tools, objects, or art", answer: "SMITH",    revealIdx: 0,  connection: "The Smiths — the iconic Manchester band Morrissey fronted" },
-      { clue: "Instantly recognisable and widely celebrated",           answer: "ICONIC",    revealIdx: 3,  connection: "Morrissey became one of Britain's most iconic and controversial figures" },
-      { clue: "Ireland's patron saint",                                 answer: "PATRICK",   revealIdx: 2,    connection: "Steven Patrick Morrissey — Patrick is his middle name!" },
-      { clue: "Pleasant or attractive in manner",                       answer: "CHARMING",  revealIdx: 7,    connection: "This Charming Man — one of The Smiths' most beloved songs" },
-      { clue: "Very unhappy or uncomfortable",                          answer: "MISERABLE", revealIdx: 5,    connection: "Heaven Knows I'm Miserable Now — a classic Smiths anthem" },
+      { clue: "A craftsperson who shapes metal by heating, hammering, and forging it into tools, objects, or art", answer: "SMITH",  connection: "The Smiths — the iconic Manchester band Morrissey fronted" },
+      { clue: "Instantly recognisable and widely celebrated",           answer: "ICONIC",  connection: "Morrissey became one of Britain's most iconic and controversial figures" },
+      { clue: "Ireland's patron saint",                                 answer: "PATRICK",    connection: "Steven Patrick Morrissey — Patrick is his middle name!" },
+      { clue: "Pleasant or attractive in manner",                       answer: "CHARMING",    connection: "This Charming Man — one of The Smiths' most beloved songs" },
+      { clue: "Very unhappy or uncomfortable",                          answer: "MISERABLE",    connection: "Heaven Knows I'm Miserable Now — a classic Smiths anthem" },
     ],
-    anagram: { letters:["G","T","A","N","S"], answer:"ANGST", clue:"A deep, anxious feeling of dread or worry, often about life, identity, or the future" },
+    anagram: { letters:["A","N","T","G","S"], answer:"ANGST", clue:"A deep, anxious feeling of dread or worry, often about life, identity, or the future" },
     quote: `"You shut your mouth, how can you say
 I go about things the wrong way?
 I am human and I need to be loved
@@ -272,13 +272,13 @@ The music of The Smiths was filled with ANGST, longing and dark humour. Morrisse
   },
   "2026-05-23": {
     rounds: [
-      { clue: "US state known for oil and cowboy culture",              answer: "TEXAS",     revealIdx: 3,  connection: "Bonnie and Clyde carried out many of their robberies across Texas" },
-      { clue: "A network of interconnected tunnels built by rabbits",    answer: "WARREN",    revealIdx: 0,        connection: "Warren Beatty played Clyde Barrow in the classic 1967 film" },
-      { clue: "Rebels or rule-breakers who reject authority",           answer: "OUTLAWS",   revealIdx: [3,6],    connection: "Bonnie and Clyde were America's most notorious outlaws" },
-      { clue: "Well known for a bad reason",                            answer: "INFAMOUS",  revealIdx: 7,    connection: "Their violent robberies made them infamous across the nation" },
-      { clue: "What word comes after 'Queen' and before 'Hurley'?",  answer: "ELIZABETH", revealIdx: [0,1],    connection: "Bonnie Elizabeth Parker was Bonnie's full name" },
+      { clue: "US state known for oil and cowboy culture",              answer: "TEXAS",  connection: "Bonnie and Clyde carried out many of their robberies across Texas" },
+      { clue: "A network of interconnected tunnels built by rabbits",    answer: "WARREN",        connection: "Warren Beatty played Clyde Barrow in the classic 1967 film" },
+      { clue: "Rebels or rule-breakers who reject authority",           answer: "OUTLAWS",    connection: "Bonnie and Clyde were America's most notorious outlaws" },
+      { clue: "Well known for a bad reason",                            answer: "INFAMOUS",    connection: "Their violent robberies made them infamous across the nation" },
+      { clue: "What word comes after 'Queen' and before 'Hurley'?",  answer: "ELIZABETH",    connection: "Bonnie Elizabeth Parker was Bonnie's full name" },
     ],
-    anagram: { letters:["S","L","E","W","A","L","S"], answer:"LAWLESS", clue:"Operating without regard for the law" },
+    anagram: { letters:["A","S","S","W","L","L","E"], answer:"LAWLESS", clue:"Operating without regard for the law" },
     quote: `"They're young, they're in love, and they kill people."
 
 Bonnie Parker and Clyde Barrow — America's most LAWLESS couple — were ambushed and killed on this day, May 23rd 1934 🔫
@@ -286,13 +286,13 @@ Bonnie Parker and Clyde Barrow — America's most LAWLESS couple — were ambush
   },
   "2026-05-24": {
     rounds: [
-      { clue: "Mailman from Cheers, or a steep face of rock",            answer: "CLIFF",     revealIdx: 1,    connection: "Cliff Richard finished second for the UK with Congratulations" },
-      { clue: "Scandinavian nation famous for IKEA",                    answer: "SWEDEN",    revealIdx: 3,        connection: "Sweden has won Eurovision more times than any other country" },
-      { clue: "Virgin Mary or Vogue pop star?",                         answer: "MADONNA",   revealIdx: [1,6],    connection: "Madonna performed at the Tel Aviv Eurovision in 2019" },
-      { clue: "Which battle ended Napoleon's rule?",                    answer: "WATERLOO",  revealIdx: 5,        connection: "Waterloo launched ABBA to global superstardom" },
-      { clue: "Highly detailed and intricate in design",                answer: "ELABORATE",  revealIdx: 3,       connection: "Eurovision is famous for its elaborate costumes and staging" },
+      { clue: "Mailman from Cheers, or a steep face of rock",            answer: "CLIFF",    connection: "Cliff Richard finished second for the UK with Congratulations" },
+      { clue: "Scandinavian nation famous for IKEA",                    answer: "SWEDEN",        connection: "Sweden has won Eurovision more times than any other country" },
+      { clue: "Virgin Mary or Vogue pop star?",                         answer: "MADONNA",    connection: "Madonna performed at the Tel Aviv Eurovision in 2019" },
+      { clue: "Which battle ended Napoleon's rule?",                    answer: "WATERLOO",        connection: "Waterloo launched ABBA to global superstardom" },
+      { clue: "Highly detailed and intricate in design",                answer: "ELABORATE",       connection: "Eurovision is famous for its elaborate costumes and staging" },
     ],
-    anagram: { letters:["D","L","A","B","L","A"], answer:"BALLAD", clue:"A narrative poem or song that tells a story in simple, rhythmic language" },
+    anagram: { letters:["D","B","A","L","L","A"], answer:"BALLAD", clue:"A narrative poem or song that tells a story in simple, rhythmic language" },
     quote: `"The first Eurovision Song Contest was held in Lugano, Switzerland in 1956. It became the world's most watched live event — a spectacular celebration of music, drama and BALLAD. 🎤
 
 Making stars out of ABBA in 1974.
@@ -300,13 +300,13 @@ Making stars out of ABBA in 1974.
   },
   "2026-05-25": {
     rounds: [
-      { clue: "A small rabbit",                                         answer: "BUNNY",     revealIdx: 0,        connection: "Bunny is the kidnapped trophy wife at the centre of the plot" },
-      { clue: "Seize and carry off a person by force",                  answer: "KIDNAP",    revealIdx: 4,        connection: "The Dude gets entangled in a fake kidnapping scheme" },
-      { clue: "What word comes after 'Jeff' and before 'Of Madison County'?", answer: "BRIDGES", revealIdx: [5,3], connection: "Jeff Bridges plays Jeffrey Lebowski — The Dude" },
-      { clue: "A person who rejects all moral principles",              answer: "NIHILIST",  revealIdx: 1,        connection: "The Nihilists are three absurd, fake-kidnapper crooks — Uli, Dieter, and Franz — who 'believe in nothing'" },
-      { clue: "Person of European or broadly white ethnic background",  answer: "CAUCASIAN", revealIdx: 5,        connection: "The White Russian is the same cocktail as a Caucasian — The Dude's drink of choice" },
+      { clue: "A small rabbit",                                         answer: "BUNNY",        connection: "Bunny is the kidnapped trophy wife at the centre of the plot" },
+      { clue: "Seize and carry off a person by force",                  answer: "KIDNAP",        connection: "The Dude gets entangled in a fake kidnapping scheme" },
+      { clue: "What word comes after 'Jeff' and before 'Of Madison County'?", answer: "BRIDGES", connection: "Jeff Bridges plays Jeffrey Lebowski — The Dude" },
+      { clue: "A person who rejects all moral principles",              answer: "NIHILIST",        connection: "The Nihilists are three absurd, fake-kidnapper crooks — Uli, Dieter, and Franz — who 'believe in nothing'" },
+      { clue: "Person of European or broadly white ethnic background",  answer: "CAUCASIAN",        connection: "The White Russian is the same cocktail as a Caucasian — The Dude's drink of choice" },
     ],
-    anagram: { letters:["D","A","B","I","S","E"], answer:"ABIDES", clue:"Endures, continues, or remains in place or in a state." },
+    anagram: { letters:["A","D","E","S","B","I"], answer:"ABIDES", clue:"Endures, continues, or remains in place or in a state." },
     quote: `"Smokey, this is not Vietnam. This is bowling. There are rules."
 
 The Big Lebowski was released on this day in 1998 🎳
@@ -315,13 +315,13 @@ The Dude ABIDES.
   },
   "2026-05-26": {
     rounds: [
-      { clue: "What word comes after 'Jazz' and before 'Free'?",        answer: "HANDS",     revealIdx: 3,    connection: "Jazz Hands — a playful nod to his extraordinary improvisational style" },
-      { clue: "Surname of bebop saxophonist nicknamed Bird",            answer: "PARKER",    revealIdx: 1,    connection: "Charlie Parker was Miles Davis's collaborator and bebop pioneer" },
-      { clue: "Brass instrument played with three valves",              answer: "TRUMPET",   revealIdx: 3,    connection: "The trumpet was Miles Davis's signature instrument" },
-      { clue: "Bogotá is the capital of this country",                  answer: "COLUMBIA",  revealIdx: 1,    connection: "Columbia Records released many of his landmark albums" },
-      { clue: "Prestigious performing arts conservatory in New York",   answer: "JUILLIARD", revealIdx: 3,    connection: "He briefly attended Juilliard before joining the jazz scene" },
+      { clue: "What word comes after 'Jazz' and before 'Free'?",        answer: "HANDS",    connection: "Jazz Hands — a playful nod to his extraordinary improvisational style" },
+      { clue: "Surname of bebop saxophonist nicknamed Bird",            answer: "PARKER",    connection: "Charlie Parker was Miles Davis's collaborator and bebop pioneer" },
+      { clue: "Brass instrument played with three valves",              answer: "TRUMPET",    connection: "The trumpet was Miles Davis's signature instrument" },
+      { clue: "Bogotá is the capital of this country",                  answer: "COLUMBIA",    connection: "Columbia Records released many of his landmark albums" },
+      { clue: "Prestigious performing arts conservatory in New York",   answer: "JUILLIARD",    connection: "He briefly attended Juilliard before joining the jazz scene" },
     ],
-    anagram: { letters:["L","A","M","O","D"], answer:"MODAL", clue:"A type of auxiliary verb used to express ability, possibility, permission, obligation, or necessity" },
+    anagram: { letters:["M","O","L","D","A"], answer:"MODAL", clue:"A type of auxiliary verb used to express ability, possibility, permission, obligation, or necessity" },
     quote: `"I'm always thinking about creating. My future starts when I wake up every morning."
 
 Miles Dewey Davis III — trumpeter, bandleader, MODAL jazz pioneer — born on this day, May 26th 1926 🎺
@@ -329,25 +329,25 @@ Miles Dewey Davis III — trumpeter, bandleader, MODAL jazz pioneer — born on 
   },
   "2026-05-27": {
     rounds: [
-      { clue: "Weather condition with low visibility",                   answer: "FOGGY",     revealIdx: 1,    connection: "The bridge is famously shrouded in fog — a breathtaking sight" },
-      { clue: "Colour between red and yellow",                          answer: "ORANGE",    revealIdx: 3,    connection: "Its official colour is International Orange — chosen to be visible in the fog" },
-      { clue: "The flow of vehicles on a road",                         answer: "TRAFFIC",   revealIdx: 5,    connection: "The bridge carries over 100,000 vehicles every single day" },
-      { clue: "Island prison in San Francisco Bay",                     answer: "ALCATRAZ",  revealIdx: 2,    connection: "Alcatraz is clearly visible from the bridge" },
-      { clue: "The edge where land meets the sea",                      answer: "COASTLINE", revealIdx: [6,0],connection: "The Golden Gate frames coastal cliffs, ocean mouth, shoreline views and tidal waters" },
+      { clue: "Weather condition with low visibility",                   answer: "FOGGY",    connection: "The bridge is famously shrouded in fog — a breathtaking sight" },
+      { clue: "Colour between red and yellow",                          answer: "ORANGE",    connection: "Its official colour is International Orange — chosen to be visible in the fog" },
+      { clue: "The flow of vehicles on a road",                         answer: "TRAFFIC",    connection: "The bridge carries over 100,000 vehicles every single day" },
+      { clue: "Island prison in San Francisco Bay",                     answer: "ALCATRAZ",    connection: "Alcatraz is clearly visible from the bridge" },
+      { clue: "The edge where land meets the sea",                      answer: "COASTLINE",connection: "The Golden Gate frames coastal cliffs, ocean mouth, shoreline views and tidal waters" },
     ],
-    anagram: { letters:["O","N","I","C","I","C"], answer:"ICONIC", clue:"Instantly recognisable and widely admired" },
+    anagram: { letters:["I","C","N","I","O","C"], answer:"ICONIC", clue:"Instantly recognisable and widely admired" },
     quote: `"The Golden Gate Bridge opened on this day, May 27th 1937 — one of the most ICONIC structures ever built. 🌉
 🔗 https://en.wikipedia.org/wiki/Golden_Gate_Bridge`,
   },
   "2026-05-28": {
     rounds: [
-      { clue: "Confined or kept in",                                    answer: "CAGED",     revealIdx: 4,        connection: "I Know Why the Caged Bird Sings — her most famous autobiography" },
-      { clue: "Word that comes after 'Paperback' and before 'in residence'",                             answer: "WRITER",    revealIdx: 0,        connection: "She was one of America's greatest writers and poets" },
-      { clue: "Caribbean music style with rhythmic vocals",             answer: "CALYPSO",   revealIdx: 6,        connection: "She recorded a calypso album early in her extraordinary career" },
-      { clue: "A person who campaigns for social change",               answer: "ACTIVIST",  revealIdx: 3,        connection: "She marched alongside Martin Luther King and Malcolm X" },
-      { clue: "Someone who is unable to sleep",                         answer: "INSOMNIAC", revealIdx: 4,        connection: "She often wrote through the night — her best work done in silence" },
+      { clue: "Confined or kept in",                                    answer: "CAGED",        connection: "I Know Why the Caged Bird Sings — her most famous autobiography" },
+      { clue: "Word that comes after 'Paperback' and before 'in residence'",                             answer: "WRITER",        connection: "She was one of America's greatest writers and poets" },
+      { clue: "Caribbean music style with rhythmic vocals",             answer: "CALYPSO",        connection: "She recorded a calypso album early in her extraordinary career" },
+      { clue: "A person who campaigns for social change",               answer: "ACTIVIST",        connection: "She marched alongside Martin Luther King and Malcolm X" },
+      { clue: "Someone who is unable to sleep",                         answer: "INSOMNIAC",        connection: "She often wrote through the night — her best work done in silence" },
     ],
-    anagram: { letters:["O","D","W","I","M","S"], answer:"WISDOM", clue:"The quality of having good judgement gained through experience" },
+    anagram: { letters:["M","I","O","S","W","D"], answer:"WISDOM", clue:"The quality of having good judgement gained through experience" },
     quote: `"You may write me down in history
 With your bitter, twisted lies,
 You may tread me in the very dirt
@@ -359,13 +359,13 @@ A poet of WISDOM, courage and grace — died on this day, May 28th 2014 ✊
   },
   "2026-05-29": {
     rounds: [
-      { clue: "To move upward using hands and feet",                    answer: "CLIMB",     revealIdx: [2,1],    connection: "The first successful climb of Everest — May 29th 1953" },
-      { clue: "What word comes after 'Boy' and before 'Best'?",        answer: "GEORGE",    revealIdx: 2,        connection: "Mount Everest is named after Sir George Everest, a British geographer" },
-      { clue: "Bill Clinton's wife, first name",                        answer: "HILLARY",   revealIdx: [4,1],    connection: "Edmund Hillary — the New Zealander who first reached the summit" },
-      { clue: "Range feature found in amount in disarray",           answer: "MOUNTAIN",  revealIdx: [4,7],    connection: "At 8,849 metres, Everest is Earth's highest mountain" },
-      { clue: "Mountain range containing the world's highest peaks",    answer: "HIMALAYAS", revealIdx: 8,        connection: "The Himalayas span five countries including Nepal and Tibet" },
+      { clue: "To move upward using hands and feet",                    answer: "CLIMB",    connection: "The first successful climb of Everest — May 29th 1953" },
+      { clue: "What word comes after 'Boy' and before 'Best'?",        answer: "GEORGE",        connection: "Mount Everest is named after Sir George Everest, a British geographer" },
+      { clue: "Bill Clinton's wife, first name",                        answer: "HILLARY",    connection: "Edmund Hillary — the New Zealander who first reached the summit" },
+      { clue: "Range feature found in amount in disarray",           answer: "MOUNTAIN",    connection: "At 8,849 metres, Everest is Earth's highest mountain" },
+      { clue: "Mountain range containing the world's highest peaks",    answer: "HIMALAYAS",        connection: "The Himalayas span five countries including Nepal and Tibet" },
     ],
-    anagram: { letters:["O","N","I","S","A","L","T","I","O"], answer:"ISOLATION", clue:"The feeling of being cut off from the world — like the summit of Everest" },
+    anagram: { letters:["I","O","S","A","L","N","T","O","I"], answer:"ISOLATION", clue:"The feeling of being cut off from the world — like the summit of Everest" },
     quote: `"We did not climb Everest to prove anything. We climbed it because it was there."
 
 Edmund Hillary and Tenzing Norgay reached the summit of Mount Everest on this day, May 29th 1953 🏔️
@@ -374,13 +374,13 @@ The greatest feat of human ISOLATION and endurance.
   },
   "2026-05-30": {
     rounds: [
-      { clue: "What the S stands for in PSG",                             answer: "SAINT",     revealIdx: 2,           connection: "Joan of Arc was canonised as a saint in 1920" },
-      { clue: "What word comes after 'Pardon My' and before 'Fries'?", answer: "FRENCH",    revealIdx: 5,         connection: "Joan of Arc was French — a peasant girl who became a national hero" },
-      { clue: "French city whose name comes after ‘New’ across the Atlantic", answer: "ORLEANS", revealIdx: [1,3],  connection: "The Siege of Orleans was her greatest military victory" },
-      { clue: "Adherent of the church led by the Pope",                 answer: "CATHOLIC",  revealIdx: [4,6],    connection: "Her deep Catholic faith drove everything she did" },
-      { clue: "Carrying out a death sentence",                          answer: "EXECUTION", revealIdx: [8,0],    connection: "She was burned at the stake in Rouen on May 30th 1431" },
+      { clue: "What the S stands for in PSG",                             answer: "SAINT",           connection: "Joan of Arc was canonised as a saint in 1920" },
+      { clue: "What word comes after 'Pardon My' and before 'Fries'?", answer: "FRENCH",         connection: "Joan of Arc was French — a peasant girl who became a national hero" },
+      { clue: "French city whose name comes after ‘New’ across the Atlantic", answer: "ORLEANS",  connection: "The Siege of Orleans was her greatest military victory" },
+      { clue: "Adherent of the church led by the Pope",                 answer: "CATHOLIC",    connection: "Her deep Catholic faith drove everything she did" },
+      { clue: "Carrying out a death sentence",                          answer: "EXECUTION",    connection: "She was burned at the stake in Rouen on May 30th 1431" },
     ],
-    anagram: { letters:["O","I","H","R","E","N","E"], answer:"HEROINE", clue:"A woman admired for her courage and noble qualities" },
+    anagram: { letters:["E","H","N","I","R","E","O"], answer:"HEROINE", clue:"A woman admired for her courage and noble qualities" },
     quote: `"I am not afraid. I was born to do this."
 
 Joan of Arc — the ultimate HEROINE — was executed in Rouen on this day, May 30th 1431. ⚔️
@@ -389,21 +389,815 @@ A patron saint of France, honored as a defender of the French nation.
   },
   "2026-05-31": {
     rounds: [
-      { clue: "Not clean",                                              answer: "DIRTY",     revealIdx: [1,3],    connection: "Dirty Harry — one of Eastwood's most iconic roles" },
-      { clue: "Basic unit of currency in Australia",                    answer: "DOLLAR",    revealIdx: 1,        connection: "A Fistful of Dollars — his breakthrough Spaghetti Western" },
-      { clue: "Characters in the post",                                 answer: "LETTERS",   revealIdx: 5,        connection: "Letters from Iwo Jima — a film he directed" },
-      { clue: "Someone who rejects tradition and acts independently, often in a rebellious way", answer: "RENEGADE", revealIdx: 2, connection: "Unforgiven — his Oscar-winning Western about outlaws and renegades" },
-      { clue: "Life or existence beyond death",                         answer: "HEREAFTER", revealIdx: [5,1,2],  connection: "Hereafter — another film he directed" },
+      { clue: "Not clean",                                              answer: "DIRTY",    connection: "Dirty Harry — one of Eastwood's most iconic roles" },
+      { clue: "Basic unit of currency in Australia",                    answer: "DOLLAR",        connection: "A Fistful of Dollars — his breakthrough Spaghetti Western" },
+      { clue: "Characters in the post",                                 answer: "LETTERS",        connection: "Letters from Iwo Jima — a film he directed" },
+      { clue: "Someone who rejects tradition and acts independently, often in a rebellious way", answer: "RENEGADE", connection: "Unforgiven — his Oscar-winning Western about outlaws and renegades" },
+      { clue: "Life or existence beyond death",                         answer: "HEREAFTER",  connection: "Hereafter — another film he directed" },
     ],
-    anagram: { letters:["T","R","O","F","I","N","E","R"], answer:"FRONTIER", clue:"The wild, lawless edge of civilisation" },
+    anagram: { letters:["I","F","R","T","E","O","R","N"], answer:"FRONTIER", clue:"The wild, lawless edge of civilisation" },
     quote: `"There's a rebel lying deep in my soul. Anytime anybody tells me the trend is such and such, I go the opposite direction."
 
 — Clint Eastwood, born on this day, May 31st 1930 🤠
 Hollywood's greatest FRONTIER man.
 🎬 https://youtu.be/WCN5JJY_wiA?si=kkcOzLIpyWZDT48M`,
   },
-};
 
+  "2026-06-01": {
+    rounds: [
+      { clue: "Sweet crystalline substance",                            answer: "SUGAR",      connection: "SUGAR — Her character in Some Like It Hot" },
+      { clue: "Light-coloured hair",                                    answer: "BLONDE",     connection: "BLONDE — Her signature look" },
+      { clue: "Black mixture used for paving roads",                    answer: "ASPHALT",    connection: "ASPHALT — Early film appearance in The Asphalt Jungle (1950)" },
+      { clue: "Surname of Legendary New York Yankees center fielder",              answer: "DIMAGGIO",   connection: "DIMAGGIO — Her husband" },
+      { clue: "Polite term for males — perhaps on a toilet door",       answer: "GENTLEMEN",  connection: "GENTLEMEN — Gentlemen Prefer Blondes" },
+    ],
+    anagram: { letters:["G","A","M","L","O","R","U"], answer:"GLAMOUR", clue:"An attractive, captivating quality that makes someone seem fascinating or alluring" },
+    quote: `Marilyn Monroe, born in 1926, became a symbol of Hollywood GLAMOUR and later the superstar of Some Like It Hot 🌟
+🎬 https://youtu.be/97TYs2YXbJw?si=q9LHBs_1kLr6nSjB`,
+  },
+
+  "2026-06-02": {
+    rounds: [
+      { clue: "Informal term for someone who pries",                    answer: "SNOOP",      connection: "SNOOP — Character in the series" },
+      { clue: "Small in size",                                          answer: "LITTLE",     connection: "LITTLE — Omar Little" },
+      { clue: "Popular Irish whiskey brand",                            answer: "JAMESON",    connection: "JAMESON — McNulty\'s drink" },
+      { clue: "Widespread outbreak of disease",                         answer: "PANDEMIC",   connection: "PANDEMIC — Codename for the drugs they were selling on the street" },
+      { clue: "Major city in Maryland, home of the Ravens",             answer: "BALTIMORE",  connection: "BALTIMORE — Setting of the series" },
+    ],
+    anagram: { letters:["D","I","R","S","L","E","O"], answer:"SOLDIER", clue:"A person who serves in an army" },
+    quote: `The Wire debuted on this day in 2002, introducing Omar Little — a street SOLDIER whose warning, "You come at the king, you best not miss," became one of television\'s most iconic lines. 📺
+🎬 https://youtu.be/w7gGsZNQRyQ?si=eo9KQYNK6Fgb2AQz`,
+  },
+
+  "2026-06-03": {
+    rounds: [
+      { clue: "Major world religion",                                   answer: "ISLAM",      connection: "ISLAM — His faith" },
+      { clue: "Loud, deep, continuous sound",                           answer: "RUMBLE",     connection: "RUMBLE — His legendary fight" },
+      { clue: "Person in charge of a building work crew",               answer: "FOREMAN",    connection: "FOREMAN — His opponent in Zaire" },
+      { clue: "U.S. state known for horse racing",                      answer: "KENTUCKY",   connection: "KENTUCKY — His birthplace" },
+      { clue: "Delicate, brightly coloured insect",                     answer: "BUTTERFLY",  connection: "BUTTERFLY — Ali\'s famous quote: Float Like a Butterfly, Sting Like a Bee" },
+    ],
+    anagram: { letters:["T","O","A","F","L"], answer:"FLOAT", clue:"To move lightly on air or water without sinking" },
+    quote: `Muhammad Ali died on this day in 2016. "Float like a butterfly, sting like a bee." 🥊
+🎬 https://youtu.be/V2EfL1j4KYE?si=mLghfIFPCIG7IseM`,
+  },
+
+  "2026-06-04": {
+    rounds: [
+      { clue: "Word that comes after Magnificent and before Dwarfs",    answer: "SEVEN",      connection: "SEVEN — His championship streak" },
+      { clue: "Practitioner of magic",                                  answer: "WIZARD",     connection: "WIZARD — His nickname" },
+      { clue: "Structure with triangular sides",                        answer: "PYRAMID",    connection: "PYRAMID — His coaching philosophy" },
+      { clue: "Starting point or reference line used in comparisons",   answer: "BASELINE",   connection: "BASELINE — Basketball term" },
+      { clue: "Distinctive moral qualities",                            answer: "CHARACTER",  connection: "CHARACTER — His core teaching" },
+    ],
+    anagram: { letters:["T","P","A","N","E","I","E","C"], answer:"PATIENCE", clue:"The ability to wait calmly without becoming frustrated" },
+    quote: `John Wooden died on this day, remembered for his PATIENCE and wisdom: "Be more concerned with your character than your reputation, because your character is what you really are." 🏀
+🔗 https://en.wikipedia.org/wiki/John_Wooden`,
+  },
+
+  "2026-06-05": {
+    rounds: [
+      { clue: "A Danish term describing a feeling of cosy comfort and contentment", answer: "HYGGE",    connection: "HYGGE — Danish cultural idea" },
+      { clue: "Cofounder of Metallica — Lars what?",                    answer: "ULRICH",     connection: "ULRICH — Danish born Metal Legend" },
+      { clue: "Mythical sea creature",                                  answer: "MERMAID",    connection: "MERMAID — Copenhagen statue" },
+      { clue: "Surname of the writer behind The Snow Queen and The Ugly Duckling", answer: "ANDERSEN", connection: "ANDERSEN — Hans Christian Andersen, Danish author" },
+      { clue: "The biggest landmass classified as both an island and a country", answer: "GREENLAND", connection: "GREENLAND — Part of the Danish realm" },
+    ],
+    anagram: { letters:["S","N","D","G","E","I"], answer:"DESIGN", clue:"To plan or create something with purpose and intention" },
+    quote: `"In Denmark, DESIGN isn\'t decoration — it\'s a quiet way of living that turns simplicity into beauty." 🇩🇰
+🔗 https://www.visitdenmark.com/denmark/things-to-do/traditions-lifestyle/fun-facts`,
+  },
+
+  "2026-06-06": {
+    rounds: [
+      { clue: "U.S. city whose name is also shared with a famous poker variant", answer: "OMAHA",     connection: "OMAHA — One of the Allied landing beaches on D-Day" },
+      { clue: "A large fleet of ships assembled for a single purpose",  answer: "ARMADA",     connection: "ARMADA — The naval force that crossed the Channel for the invasion" },
+      { clue: "Word after King\'s and before Zone",                      answer: "LANDING",    connection: "LANDING — The central action of the Normandy assault" },
+      { clue: "Describes something lifted or moving through the atmosphere", answer: "AIRBORNE",  connection: "AIRBORNE — Troops deployed behind enemy lines before the beach assaults" },
+      { clue: "The practice of misleading someone through trickery",    answer: "DECEPTION",  connection: "DECEPTION — The strategic misdirection that protected the invasion plan" },
+    ],
+    anagram: { letters:["G","M","E","A","N","R"], answer:"GERMAN", clue:"Relating to the country bordering France to the east" },
+    quote: `On this day in 1944, the Normandy landings began — the largest seaborne invasion in history. 🎖️
+🔗 https://en.wikipedia.org/wiki/Normandy_landings`,
+  },
+
+  "2026-06-07": {
+    rounds: [
+      { clue: "Describes something stylishly unconventional",           answer: "FUNKY",      connection: "FUNKY — A signature element of Prince\'s bold musical identity" },
+      { clue: "Word that can follow Deep and precede Haze",             answer: "PURPLE",     connection: "PURPLE — Forever tied to his most iconic creative era" },
+      { clue: "A performer known for flair and dramatic presentation",  answer: "SHOWMAN",    connection: "SHOWMAN — Captures his electrifying presence on every stage" },
+      { clue: "A musician with exceptional technical mastery",          answer: "VIRTUOSO",   connection: "VIRTUOSO — Reflects his mastery of countless instruments" },
+      { clue: "U.S. state known for its many lakes",                    answer: "MINNESOTA",  connection: "MINNESOTA — The state that shaped his early life" },
+    ],
+    anagram: { letters:["E","L","S","F","R","A","E","S"], answer:"FEARLESS", clue:"Showing courage by acting without being held back by fear" },
+    quote: `Prince, born in Minneapolis in 1958, became a FEARLESS innovator whose sound, style, and stage presence reshaped modern music. 🎸
+🎬 https://youtu.be/TvnYmWpD_T8`,
+  },
+
+  "2026-06-08": {
+    rounds: [
+      { clue: "Opposite of lies",                                       answer: "TRUTH",      connection: "TRUTH — Central to the novel\'s warning about manipulated reality" },
+      { clue: "Word after Boy and before Harrison",                                    answer: "GEORGE",     connection: "GEORGE — The author whose vision shaped modern dystopia" },
+      { clue: "Something that alerts of danger",                        answer: "WARNING",    connection: "WARNING — Reflects the book\'s caution about authoritarian control" },
+      { clue: "Government department responsible for a specific area of public policy",         answer: "MINISTRY",   connection: "MINISTRY — One of the powerful institutions enforcing state doctrine" },
+      { clue: "Relating to an oppressive future society",               answer: "DYSTOPIAN",  connection: "DYSTOPIAN — Defines the bleak world the story portrays" },
+    ],
+    anagram: { letters:["M","E","R","I","E","G"], answer:"REGIME", clue:"A system of rule or governance" },
+    quote: `In 1984, Winston Smith struggles under a totalitarian REGIME that controls truth, memory, and even thought itself. 📖
+🔗 https://en.wikipedia.org/wiki/Nineteen_Eighty-Four`,
+  },
+
+  "2026-06-09": {
+    rounds: [
+      { clue: "Word that comes after Down and before Armour",           answer: "UNDER",      connection: "UNDER — Appears in playful musical phrasing he often used" },
+      { clue: "Dark, malty beer known for its roasted flavour",         answer: "PORTER",     connection: "PORTER — The celebrated songwriter behind timeless standards" },
+      { clue: "Reign of another place",                                 answer: "FOREIGN",    connection: "FOREIGN — Reflects the worldly flair found in his lyrics" },
+      { clue: "A thing any way you like",                               answer: "ANYTHING",   connection: "ANYTHING — From the classic musical that defined his style" },
+      { clue: "Global symbol of the movie business",                    answer: "HOLLYWOOD",  connection: "HOLLYWOOD — A place where his music found lasting success" },
+    ],
+    anagram: { letters:["E","M","Y","L","D","O"], answer:"MELODY", clue:"A musical tune formed by a sequence of notes that create a recognisable line" },
+    quote: `Cole Porter crafted MELODY with such effortless charm that even his simplest tunes felt like polished jewels. 🎹
+🔗 https://en.wikipedia.org/wiki/Cole_Porter`,
+  },
+
+  "2026-06-10": {
+    rounds: [
+      { clue: "Number of guiding principles",                           answer: "STEPS",      connection: "STEPS — Represents the structured path members follow" },
+      { clue: "Truthful and sincere",                                   answer: "HONEST",     connection: "HONEST — A core value essential to personal recovery" },
+      { clue: "Help offered to someone in need",                        answer: "SUPPORT",    connection: "SUPPORT — The foundation of the group\'s shared mission" },
+      { clue: "Quality of being humble",                                answer: "HUMILITY",   connection: "HUMILITY — Encouraged as part of meaningful self reflection" },
+      { clue: "Remaining unnamed",                                      answer: "ANONYMOUS",  connection: "ANONYMOUS — Protects the privacy of every participant" },
+    ],
+    anagram: { letters:["O","B","R","S","E"], answer:"SOBER", clue:"Not under the influence of alcohol" },
+    quote: `"God, grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference."
+AA offers a community where people work together to remain SOBER one day at a time. 🙏
+🔗 https://www.aa.org/`,
+  },
+
+  "2026-06-11": {
+    rounds: [
+      { clue: "What word comes after Katy and before Mason",            answer: "PERRY",      connection: "PERRY — Katy Perry is performing at the opening ceremony of the World Cup" },
+      { clue: "Country known for tequila, tacos and mariachi traditions", answer: "MEXICO",   connection: "MEXICO — Co-hosts playing South Africa today" },
+      { clue: "The beginning or first part of something",               answer: "OPENING",    connection: "OPENING — Marks the beginning of global football celebration" },
+      { clue: "Soccer, elsewhere",                                      answer: "FOOTBALL",   connection: "FOOTBALL — The sport that unites nations every four years" },
+      { clue: "What city sits just north of the US border opposite Washington State", answer: "VANCOUVER", connection: "VANCOUVER — A key host city" },
+    ],
+    anagram: { letters:["E","E","F","E","R","R","E"], answer:"REFEREE", clue:"An official who enforces the rules of a sport" },
+    quote: `The 2026 FIFA World Cup opens today — the first ever co-hosted by three nations. Let the football begin! ⚽
+🔗 https://www.bbc.com/sport/football/63337456`,
+  },
+
+  "2026-06-12": {
+    rounds: [
+      { clue: "Straight talker, by name",                               answer: "FRANK",      connection: "FRANK — The name that became a symbol of resilience" },
+      { clue: "Out of sight by design",                                 answer: "HIDING",     connection: "HIDING — Describes the years she spent in secrecy" },
+      { clue: "Age stop — for the secret police",                       answer: "GESTAPO",    connection: "GESTAPO — The secret police force that hunted her relentlessly" },
+      { clue: "Tall unit with multiple shelves for storage",            answer: "BOOKCASE",   connection: "BOOKCASE — The disguised doorway that protected her family" },
+      { clue: "Capital of the Netherlands",                             answer: "AMSTERDAM",  connection: "AMSTERDAM — The city forever linked to her story" },
+    ],
+    anagram: { letters:["I","S","S","E","R","T"], answer:"SISTER", clue:"A female relation" },
+    quote: `Anne Frank, born June 12th, hid in the Secret Annex with her older SISTER Margot during the Nazi occupation of Amsterdam. 📔
+🔗 https://en.wikipedia.org/wiki/Anne_Frank`,
+  },
+
+  "2026-06-13": {
+    rounds: [
+      { clue: "Residence of a monastic brotherhood or sisterhood",      answer: "ABBEY",      connection: "ABBEY — The theatre he helped establish for Irish culture" },
+      { clue: "Seen at a legislative assembly",                         answer: "SENATE",     connection: "SENATE — Reflects his role in shaping national identity" },
+      { clue: "Widely admired people or narratives of great renown",    answer: "LEGENDS",    connection: "LEGENDS — Draws on the deep Celtic mythology he cherished" },
+      { clue: "Rider heard in a hoarse manner",                         answer: "HORSEMAN",   connection: "HORSEMAN — A lasting symbol from his famous epitaph" },
+      { clue: "Supporter of innovation over tradition",                 answer: "MODERNIST",  connection: "MODERNIST — Captures his influence on twentieth century literature" },
+    ],
+    anagram: { letters:["M","D","E","R","S","A"], answer:"DREAMS", clue:"Personal visions of what one wishes to achieve" },
+    quote: `"Tread softly because you tread on my DREAMS." — W.B. Yeats 🍀
+🔗 https://en.wikipedia.org/wiki/W._B._Yeats`,
+  },
+
+  "2026-06-14": {
+    rounds: [
+      { clue: "Elevated structure for observation or defence",          answer: "TOWER",      connection: "TOWER — A landmark structure tied to his business identity" },
+      { clue: "Ran geo with this hue",                                  answer: "ORANGE",     connection: "ORANGE — A widely referenced aspect of his public image" },
+      { clue: "Legislative building in Washington",                     answer: "CAPITOL",    connection: "CAPITOL — The central arena of American political power" },
+      { clue: "Widespread global health crisis",                        answer: "PANDEMIC",   connection: "PANDEMIC — A defining global event during his leadership" },
+      { clue: "Elected head of a republic",                             answer: "PRESIDENT",  connection: "PRESIDENT — The highest office he occupied in the nation" },
+    ],
+    anagram: { letters:["N","E","T","L","E","C","O","I"], answer:"ELECTION", clue:"A formal process in which people vote to choose leaders" },
+    quote: `Donald Trump — tower builder, ELECTION winner, 45th and 47th President of the United States. 🇺🇸
+🔗 https://en.wikipedia.org/wiki/Donald_Trump`,
+  },
+
+  "2026-06-15": {
+    rounds: [
+      { clue: "Opposite of north",                                      answer: "SOUTH",      connection: "SOUTH — Reflects the regional roots of his early career" },
+      { clue: "Word in the week after Good or before The 13th",         answer: "FRIDAY",     connection: "FRIDAY — The title of his breakout comedy film" },
+      { clue: "Lamar or Michael or Samuel L",                           answer: "JACKSON",    connection: "JACKSON — Shared by collaborators in entertainment history" },
+      { clue: "General outlook or disposition",                         answer: "ATTITUDE",   connection: "ATTITUDE — Captures the bold persona he brought to music" },
+      { clue: "Power to shape someone\'s behaviour or decisions",        answer: "INFLUENCE",  connection: "Ice Cube\'s INFLUENCE reshaped West Coast hip-hop" },
+    ],
+    anagram: { letters:["N","E","A","R","T","C","L"], answer:"CENTRAL", clue:"Located in the middle or most important position" },
+    quote: `"Today was a good day." — Ice Cube 🎤
+🎬 https://youtu.be/h4UqMyldS7Q`,
+  },
+
+  "2026-06-16": {
+    rounds: [
+      { clue: "Word that comes after Henry and before Van Der Beek",    answer: "JAMES",      connection: "JAMES — Joyce, the writer whose work inspired the celebration" },
+      { clue: "City in Ireland and Ohio",                               answer: "DUBLIN",     connection: "DUBLIN — The city where the novel is set" },
+      { clue: "Hero of a famous James Joyce novel",                                      answer: "ULYSSES",    connection: "ULYSSES — The wandering hero central to the entire story" },
+      { clue: "Artistic representation of a person, usually the face",  answer: "PORTRAIT",   connection: "PORTRAIT — A reference to A Portrait of an Artist as a Young Man" },
+      { clue: "Single speaker speech",                                  answer: "MONOLOGUE",  connection: "MONOLOGUE — Echoes the famous closing passage of the book" },
+    ],
+    anagram: { letters:["P","L","O","L","E","D","O"], answer:"LEOPOLD", clue:"A name of Germanic origin meaning bold leader or name of Bloom in Joyce classic" },
+    quote: `"Yes I said yes I will yes." — James Joyce, Ulysses 📚
+Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
+🔗 https://en.wikipedia.org/wiki/Bloomsday`,
+  },
+  "2026-06-17": {
+    rounds: [
+      { clue: "Liquid squeezed from fruit",                             answer: "JUICE",      connection: "JUICE — The nickname that followed him throughout his career" },
+      { clue: "Wild horse of the American West",                                   answer: "BRONCO",     connection: "BRONCO — The vehicle central to a historic televised pursuit" },
+      { clue: "NFL city known for its Bills",                           answer: "BUFFALO",    connection: "BUFFALO — The NFL team he represented during his prime" },
+      { clue: "Legal decision",                                         answer: "JUDGMENT",   connection: "JUDGMENT — The legal outcome that shaped public debate" },
+      { clue: "Found not guilty",                                       answer: "ACQUITTED",  connection: "ACQUITTED — The verdict that defined the trial's conclusion" },
+    ],
+    anagram: { letters:["R","D","E","C","I","V","T"], answer:"VERDICT", clue:"The decision reached by a jury at the end of a trial" },
+    quote: `"If it does not fit, you must acquit." — The trial that gripped the world. ⚖️
+🎬 https://www.youtube.com/watch?v=YLmDE_JYUNU`,
+  },
+
+  "2026-06-18": {
+    rounds: [
+      { clue: "Feathered limbs for flying",                             answer: "WINGS",      connection: "WINGS — The group he formed to continue his musical evolution" },
+      { clue: "6 stringed instrument",                                   answer: "GUITAR",     connection: "GUITAR — One of the many instruments he mastered" },
+      { clue: "Beef burger german port city",    answer: "HAMBURG",    connection: "HAMBURG — The gritty city where the Beatles found their sound" },
+      { clue: "Firearm that chambers rounds in a rotating cylinder",                   answer: "REVOLVER",   connection: "REVOLVER — A groundbreaking album that marked a new direction" },
+      { clue: "Melodious thrush found in gardens",               answer: "BLACKBIRD",  connection: "BLACKBIRD — A timeless acoustic song he composed" },
+    ],
+    anagram: { letters:["D","Y","O","L","M","E"], answer:"MELODY", clue:"A sequence of musical notes that forms a recognisable tune" },
+    quote: `"Maybe I'm amazed at the way you love me all the time." — Paul McCartney 🎸
+🎬 https://youtu.be/GBSu_ltDu1w?si=bwdSeWweMfL9b_DS`,
+  },
+
+  "2026-06-19": {
+    rounds: [
+      { clue: "Large four‑legged riding animal",                                       answer: "HORSE",      connection: "HORSE — Lou Gehrig AKA The Iron Horse" },
+      { clue: "First name of German composer van Beethoven",        answer: "LUDWIG",     connection: "LUDWIG — his middle name" },
+      { clue: "Name once used for New England colonists and now famous New Yor Team",                                   answer: "YANKEES",    connection: "YANKEES — His team that he played 2130 consecutive games for" },
+      { clue: "Having the greatest good fortune",                      answer: "LUCKIEST",   connection: "LUCKIEST — His speech where he said HE WAS The luckiest man on the face of the Earth" },
+      { clue: "Condition leaving one unable to move",                answer: "PARALYSIS",  connection: "PARALYSIS — Debilitating effect of the illness named for a famous first baseman" },
+    ],
+    anagram: { letters:["R","K","B","A","A","P","L","L"], answer:"BALLPARK", clue:"Rough estimate or approximate figure" },
+    quote: `"When you look around, wouldn't you consider it a privilege to associate yourself with such fine-looking men as are standing in uniform in this ballpark today" Lou Gehrig -American Baseball legend died on this day 1941. 🏆
+🎬 https://youtu.be/7Zx7jE5f3n0`,
+  },
+
+  "2026-06-20": {
+    rounds: [
+      { clue: "Ocean's most feared predator",                           answer: "SHARK",      connection: "SHARK — The terrifying creature that drives the entire plot" },
+      { clue: "Word after Ricky and before Scorsese",                answer: "MARTIN",     connection: "MARTIN — Chief Brody, who battles fear and responsibility" },
+      { clue: "Sandy shore or Bette Midler movie",            answer: "BEACHES",    connection: "BEACHES — The peaceful setting disrupted by danger" },
+      { clue: "Feeling of dread and nail-biting tension",               answer: "SUSPENSE",   connection: "SUSPENSE — The defining tone that made the film iconic" },
+      { clue: "Director of ET",                    answer: "SPIELBERG",  connection: "SPIELBERG — The visionary director behind the masterpiece" },
+    ],
+    anagram: { letters:["L","I","E","L","H","R","T","R"], answer:"THRILLER", clue:"A story or film designed to keep you on the edge of your seat" },
+    quote: `"You're gonna need a bigger boat." — Jaws, the film that invented the summer blockbuster. 🦈
+🎬 https://youtu.be/WKuZJjPSLXQ?si=ofVRSWUbDsMRNndH`,
+  },
+
+  "2026-06-21": {
+    rounds: [
+      { clue: "Living abroad, forced from your homeland",               answer: "EXILE",      connection: "EXILE — The status he assumed after leaving the country" },
+      { clue: "To expose something hidden from the public",             answer: "REVEAL",     connection: "REVEAL — Describes his decision to expose classified activity" },
+      { clue: "Home of the CIA in Virginia",                            answer: "LANGLEY",    connection: "LANGLEY — Whose actions sparked global debate on privacy" },
+      { clue: "Relating to the security of a country",                  answer: "NATIONAL",   connection: "NATIONAL — Relates to the security issues he highlighted" },
+      { clue: "Official papers or files",                               answer: "DOCUMENTS",  connection: "DOCUMENTS — The files that reshaped public understanding" },
+    ],
+    anagram: { letters:["C","E","E","S","S","T","R"], answer:"SECRETS", clue:"Things deliberately kept hidden from others" },
+    quote: `"Privacy is not a privilege — it's a human right." Edward Snowden went public with government SECRETS on this day in 2013. 🔐
+🔗 https://en.wikipedia.org/wiki/Edward_Snowden`,
+  },
+
+  "2026-06-22": {
+    rounds: [
+      { clue: "What comes afte San and before Maradona", answer: "DIEGO",   connection: "DIEGO — The legendary player who scored the infamous goal" },
+      { clue: "Country that is not Scotland, Wales or Northern Ireland in GB",          answer: "ENGLAND",    connection: "ENGLAND — The team stunned by the controversial moment" },
+      { clue: "Official who enforces the rules of a match",             answer: "REFEREE",    connection: "REFEREE — The official who famously missed the blatant handball" },
+      { clue: "Meaningful or deeply representative",                    answer: "SYMBOLIC",   connection: "SYMBOLIC — Represents national pride and lasting rivalry" },
+      { clue: "South Atlantic islands under British rule that saw conflict in 1982",     answer: "FALKLANDS",  connection: "FALKLANDS — The war that intensified the sporting emotions" },
+    ],
+    anagram: { letters:["A","S","O","I","N","M","F","U"], answer:"INFAMOUS", clue:"Well known for the wrong reasons" },
+    quote: `"A little with the head of Maradona and a little with the hand of God." The most INFAMOUS goal in football history. ✋⚽
+🎬 https://youtu.be/ZN3jcfJSJMY?si=GUqKGCWlsLn0H0a9`,
+  },
+
+  "2026-06-23": {
+    rounds: [
+      { clue: "Groups of families sharing a common Scottish ancestry",                                answer: "CLANS",      connection: "CLANS — Once the Scottish clans united at the Battle of Bannockburn, they were formidable" },
+      { clue: "Downey Jr, De Niro or Redford",                                         answer: "ROBERT",     connection: "ROBERT — The name carried by the nation's great leader" },
+      { clue: " Scottish hero with surname of Wallace",                        answer: "WILLIAM",    connection: "WILLIAM — The warrior whose legacy inspired generations" },
+      { clue: "Place at the top in Scotland",                answer: "HIGHLAND",   connection: "Many of Bruce’s forces at Bannockburn came from the Highlands" },
+      { clue: "Brung Hide for this capital city",                       answer: "EDINBURGH",  connection: "EDINBURGH — The historic capital tied to the struggle" },
+    ],
+    anagram: { letters:["F","O","E","R","E","D","M"], answer:"FREEDOM", clue:"The power to live without control or oppression" },
+    quote: `"FREEDOM!" The Battle of Bannockburn, June 23rd 1314 — Scotland's greatest military victory. ⚔️
+🔗 https://en.wikipedia.org/wiki/Battle_of_Bannockburn`,
+  },
+
+  "2026-06-24": {
+    rounds: [
+      { clue: "Florida city famous for its heat and nightlife",                 answer: "MIAMI",      connection: "MIAMI — The club that welcomed him to the US" },
+      { clue: "First name of singer of 'Three Times a Lady', Hello & All Night Long",                                         answer: "LIONEL",     connection: "LIONEL — The name of football's global icon" },
+      { clue: "A chemical messenger produced by glands that travels through the bloodstream to regulate body functions",      answer: "HORMONE",    connection: "HORMONE — Messi needed hormone injections to help his growth" },
+      { clue: "Objects awarded for winning",     answer: "TROPHIES",    connection: "TROPHIES — He has a record number of trophies won for Barcelona" },
+      { clue: "Spanish club where he became a legend",                  answer: "BARCELONA",  connection: "BARCELONA — The club where he spent most of his career" },
+    ],
+    anagram: { letters:["G","E","T","R","A","S","E","T"], answer:"GREATEST", clue:"Better than all others — the very best" },
+    quote: `"The GREATEST of all time." Lionel Messi — born June 24th 1987. 🐐
+🎬 https://youtu.be/nA8wHQvHPJU?si=w52n5P6vszCp794Y`,
+  },
+
+  "2026-06-25": {
+    rounds: [
+      { clue: "Korean type of soul",                                      answer: "SEOUL",      connection: "SEOUL — Capital of South Korea" },
+      { clue: "Former USSR citizen",                           answer: "SOVIET",     connection: "SOVIET — The powerful ally supporting the northern forces" },
+      { clue: "World’s countries, collectively",                 answer: "NATIONS",    connection: "NATIONS — The United Nations that authorised the response" },
+      { clue: "Side‑by‑side and never meeting",     answer: "PARALLEL",   connection: "PARALLEL — The 38th parallel—  dividing line that shaped the conflict" },
+      { clue: "Marxist believer",  answer: "COMMUNIST",  connection: "COMMUNIST — The ideology driving the northern leadership" },
+    ],
+    anagram: { letters:["V","I","D","E","D","I","D"], answer:"DIVIDED", clue:"Split into opposing sides that cannot agree" },
+    quote: `"The Forgotten War." The Korean War began on this day in 1950 — a peninsula still DIVIDED to this day. 🌏
+🔗 https://en.wikipedia.org/wiki/Korean_War`,
+  },
+
+  "2026-06-26": {
+    rounds: [
+      { clue: "Capital city of Ecuador",                                answer: "QUITO",      connection: "QUITO — The region central to his expedition" },
+      { clue: "Sum of money demanded for someone's release",            answer: "RANSOM",     connection: "RANSOM — The enormous payment demanded from Atahualpa" },
+      { clue: "To carry out a death sentence",                          answer: "EXECUTE",    connection: "EXECUTE — The grim fate that ended the Inca emperor's life" },
+      { clue: "The military campaign to seize a new territory",        answer: "CONQUEST",   connection: "CONQUEST — The campaign that reshaped an entire empire" },
+      { clue: "Word after San and before Franco",                   answer: "FRANCISCO",  connection: "FRANCISCO — The conquistador whose actions changed history" },
+    ],
+    anagram: { letters:["E","M","E","I","R","P"], answer:"EMPIRE", clue:"A group of nations or peoples under a single ruler" },
+    quote: `Francisco Pizarro conquered the Inca EMPIRE on this day. ⚔️
+🔗 https://en.wikipedia.org/wiki/Francisco_Pizarro`,
+  },
+
+  "2026-06-27": {
+    rounds: [
+      { clue: "Recorded footage that can be watched on a screen",       answer: "VIDEO",      connection: "VIDEO — His groundbreaking game series transformed skate culture" },
+      { clue: "Power that enables movement, heat, or activity in physical systems",        answer: "ENERGY",     connection: "ENERGY — Reflects the intensity he brought to extreme sports" },
+      { clue: "Foolish or stupid person or a male donkey",        answer: "JACKASS",    connection: "JACKASS — The stunt-driven series he frequently appeared in" },
+      { clue: "Perfectly upright — straight up and down",               answer: "VERTICAL",   connection: "VERTICAL — The discipline where he landed the iconic 900" },
+      { clue: "Bode I rush to for the flying creature",            answer: "BIRDHOUSE",  connection: "BIRDHOUSE — The skateboard company he built into a powerhouse" },
+    ],
+    anagram: { letters:["I","L","A","E","H","P","F","P"], answer:"HALFPIPE", clue:"“A U‑shaped ramp used in sports like skateboarding and snowboarding for performing aerial tricks" },
+    quote: `"The Birdman lands the 900." Tony Hawk — the greatest Skateboarder who ever lived. 🛹
+🎬 https://youtu.be/390gYuwFwqo?si=1tZbUKQZiuptkcLu`,
+  },
+
+  "2026-06-28": {
+    rounds: [
+      { clue: "Word that comes after Grace and before Osbourne",                 answer: "KELLY",      connection: "KELLY — The outlaw whose legend endures in Australian history" },
+      { clue: "Protective metal covering worn in battle",               answer: "ARMOUR",     connection: "ARMOUR — The homemade suit he wore in his final stand" },
+      { clue: "Uncontrolled by authority",                              answer: "LAWLESS",    connection: "LAWLESS — Describes the rebellious life he famously embraced" },
+      { clue: "The wild edge of settled civilisation",                  answer: "FRONTIER",   connection: "FRONTIER — The rugged landscape that shaped his story" },
+      { clue: "A written declaration of beliefs or intentions",         answer: "MANIFESTO",  connection: "MANIFESTO — The Jerilderie Letter revealed his defiant beliefs" },
+    ],
+    anagram: { letters:["W","T","O","L","U","A"], answer:"OUTLAW", clue:"Someone who lives outside the law and is wanted by authorities" },
+    quote: `"Such is life." — Ned Kelly, Australia's most famous OUTLAW, executed June 28th 1880. 🪖
+🔗 https://en.wikipedia.org/wiki/Ned_Kelly`,
+  },
+
+  "2026-06-29": {
+    rounds: [
+      { clue: "The decisive last match of a tournament",                answer: "FINAL",      connection: "FINAL — The match that crowned a new football dynasty" },
+      { clue: "South American nation in yellow and green",              answer: "BRAZIL",     connection: "BRAZIL — The nation that lifted its first World Cup" },
+      { clue: "Not back",                      answer: "FORWARD",    connection: "FORWARD — The position where their teenage star shone brightest" },
+      { clue: "You gents are the lowest",              answer: "YOUNGEST",   connection: "YOUNGEST — At 17, he was the youngest World Cup winner ever" },
+      { clue: "Swedish capital city",        answer: "STOCKHOLM",  connection: "STOCKHOLM — The city that hosted the historic final" },
+    ],
+    anagram: { letters:["E","E","N","D","L","G"], answer:"LEGEND", clue:"A person whose fame and achievements live on long after they are gone" },
+    quote: `"The birth of a LEGEND." Pelé, aged 17, scored twice in the 1958 World Cup Final in Stockholm. ⚽
+🎬 https://youtu.be/TYNsrKtV6Mc?si=jTygbLYXFSGVzAb6`,
+  },
+
+  "2026-06-30": {
+    rounds: [
+      { clue: "A violent political purge or cleansing",                 answer: "PURGE",      connection: "PURGE — The violent action that reshaped Nazi leadership" },
+      { clue: "A formal agreement between nations",                     answer: "TREATY",     connection: "TREATY — Symbolises the alliances broken during the upheaval" },
+      { clue: "The Nazi secret police",                                 answer: "GESTAPO",    connection: "GESTAPO — The brutal enforcement arm carrying out arrests" },
+      { clue: "Detained by force without warning",                      answer: "ARRESTED",   connection: "ARRESTED — Describes the many rivals seized overnight" },
+      { clue: "Im an elite mixed up gives something you might remove entirely",                   answer: "ELIMINATE",  connection: "ELIMINATE — The ultimate goal of the orchestrated purge" },
+    ],
+    anagram: { letters:["O","R","W","E","P"], answer:"POWER", clue:"Control and authority over others" },
+    quote: `The Night of the Long Knives — June 30th 1934. Hitler seized total POWER by eliminating his own allies. 🔱
+🔗 https://en.wikipedia.org/wiki/Night_of_the_Long_Knives`,
+  },
+
+  "2026-07-01": {
+    rounds: [
+      { clue: "The world's second largest country by land area",        answer: "CANADA",     connection: "CANADA — The nation celebrating its birthday today" },
+      { clue: "Its capital city",                                       answer: "OTTAWA",     connection: "OTTAWA — Where the national celebrations are centred" },
+      { clue: "The leaf on its national flag",                          answer: "MAPLE",      connection: "MAPLE — The enduring symbol of the nation" },
+      { clue: "Niagara, Superior and Huron are examples",               answer: "FALLS",      connection: "FALLS — Niagara Falls, one of Canada's most iconic landmarks" },
+      { clue: "National sport played on ice",                           answer: "HOCKEY",     connection: "HOCKEY — The sport that defines Canadian identity" },
+    ],
+    anagram: { letters:["I","N","O","A","N","T"], answer:"NATION", clue:"A large community of people sharing history, culture and territory" },
+    quote: `"O Canada, our home and native land." 🍁 Happy Canada Day — July 1st 1867, a NATION was born.
+🔗 https://en.wikipedia.org/wiki/Canada_Day`,
+  },
+
+  "2026-07-02": {
+    rounds: [
+      { clue: "A journey taken for spiritual reasons",                  answer: "PILGRIM",    connection: "PILGRIM — The searching spirit at the heart of his novels" },
+      { clue: "Inner calm and freedom from conflict",                   answer: "PEACE",      connection: "PEACE — A central goal in many of his stories" },
+      { clue: "A wise and trusted guide or teacher",                    answer: "MENTOR",     connection: "MENTOR — The wise figures who guide his heroes" },
+      { clue: "Deep, quiet thought about life's big questions",         answer: "REFLECT",    connection: "REFLECT — The contemplative tone that runs through his writing" },
+      { clue: "Name shared by his most famous novel and a Buddha",      answer: "SPIRITUAL",  connection: "SIDDHARTHA — His masterpiece about a young man's spiritual journey" },
+    ],
+    anagram: { letters:["O","Y","R","N","J","U","E"], answer:"JOURNEY", clue:"Travel from one place to another — or inward to oneself" },
+    quote: `"Within you, there is a stillness and a sanctuary to which you can retreat." — Hermann Hesse, born July 2nd 1877. His novels remain timeless JOURNEYS of the soul. 📖
+🔗 https://en.wikipedia.org/wiki/Hermann_Hesse`,
+  },
+
+  "2026-07-03": {
+    rounds: [
+      { clue: "Band whose name is also an entrance to a room",          answer: "DOORS",      connection: "DOORS — The band who recorded this iconic track" },
+      { clue: "Intense desire or deep enthusiasm",                      answer: "PASSION",    connection: "PASSION — The emotional heat burning through the song" },
+      { clue: "A bright blaze of burning light",                        answer: "FLAME",      connection: "FLAME — The burning imagery woven into the lyrics" },
+      { clue: "Musical instrument with keys — Ray Manzarek's weapon",   answer: "KEYBOARD",   connection: "KEYBOARD — Ray Manzarek's hypnotic opening riff defined the song" },
+      { clue: "Jim Morrison's role — lead what?",                       answer: "SINGER",     connection: "SINGER — Jim Morrison, one of rock's most iconic frontmen" },
+    ],
+    anagram: { letters:["T","I","N","E","I","G"], answer:"IGNITE", clue:"To set something on fire or spark something into life" },
+    quote: `"Come on baby, light my fire." The Doors released this classic on July 3rd 1967 — still capable of IGNITING a room. 🔥
+🎬 https://youtu.be/7IIKcQ0ZbZk`,
+  },
+
+  "2026-07-04": {
+    rounds: [
+      { clue: "Formal document declaring a nation's rights",            answer: "CHARTER",    connection: "CHARTER — The founding document behind the holiday" },
+      { clue: "A public procession through the streets",                answer: "PARADE",     connection: "PARADE — A common way the day is marked across the country" },
+      { clue: "Colourful explosive displays lighting the night sky",    answer: "FIREWORKS",  connection: "FIREWORKS — The dazzling displays on every Fourth of July" },
+      { clue: "The quality of being free from control",                 answer: "LIBERTY",    connection: "LIBERTY — The ideal at the heart of the Declaration" },
+      { clue: "The founding document signed on this day in 1776",       answer: "FOUNDING",   connection: "DECLARATION — The Declaration of Independence, birth certificate of a nation" },
+    ],
+    anagram: { letters:["M","O","R","D","F","E","E"], answer:"FREEDOM", clue:"The power to act, speak and live without oppression" },
+    quote: `"Life, liberty and the pursuit of happiness." 🇺🇸 The Declaration of Independence was signed on this day in 1776 — FREEDOM put into words.
+🔗 https://en.wikipedia.org/wiki/Independence_Day_(United_States)`,
+  },
+
+  "2026-07-05": {
+    rounds: [
+      { clue: "A group of islands scattered across the sea",            answer: "ISLANDS",    connection: "ISLANDS — Cape Verde is an archipelago of ten main islands" },
+      { clue: "Steady winds that helped sailors cross the Atlantic",    answer: "TRADES",     connection: "TRADES — The trade winds that shaped its history and climate" },
+      { clue: "The capital city of Cape Verde",                         answer: "PRAIA",      connection: "PRAIA — The coastal capital on Santiago island" },
+      { clue: "Soulful music style unique to Cape Verde",               answer: "MORNA",      connection: "MORNA — The haunting musical tradition of Cape Verde" },
+      { clue: "West African coast it lies off",                         answer: "ATLANTIC",   connection: "ATLANTIC — The ocean that surrounds this island nation" },
+    ],
+    anagram: { letters:["N","E","A","I","R","L","S","D"], answer:"ISLANDER", clue:"A person who lives on an island" },
+    quote: `Cape Verde gained independence on July 5th 1975 — a nation of ISLANDERS whose music and resilience echo across the Atlantic. 🌊
+🔗 https://en.wikipedia.org/wiki/Cape_Verde`,
+  },
+
+  "2026-07-06": {
+    rounds: [
+      { clue: "Country he fled — now ruled by China",                   answer: "TIBET",      connection: "TIBET — The homeland he has not been able to return to" },
+      { clue: "His religion — also practised by millions across Asia",  answer: "BUDDHISM",   connection: "BUDDHISM — The faith and philosophy he leads and embodies" },
+      { clue: "Indian city where he has lived in exile since 1959",     answer: "HIMALAYAS",  connection: "DHARAMSALA — The hill town in the Himalayas that became his home in exile" },
+      { clue: "His message to the world — this above all",              answer: "KINDNESS",   connection: "KINDNESS — His most famous teaching: my religion is kindness" },
+      { clue: "Nobel honour he received in 1989",                       answer: "PEACE",      connection: "PEACE — He won the Nobel Peace Prize for his nonviolent resistance" },
+    ],
+    anagram: { letters:["O","P","M","N","C","S","I","S","O","A"], answer:"COMPASSION", clue:"Deep sympathy and care for the suffering of others" },
+    quote: `"My religion is kindness." The Dalai Lama, born July 6th 1935 — a life of COMPASSION in the face of exile. 🙏
+🔗 https://en.wikipedia.org/wiki/Dalai_Lama`,
+  },
+
+  "2026-07-07": {
+    rounds: [
+      { clue: "The famous grass court tournament in London",            answer: "WIMBLEDON",  connection: "WIMBLEDON — The stage where he made history as the youngest champion" },
+      { clue: "Surface he conquered — also a type of lawn",             answer: "GRASS",      connection: "GRASS — The surface on which he announced himself to the world" },
+      { clue: "His age when he won — still a record",                   answer: "SEVENTEEN",  connection: "SEVENTEEN — The youngest men's singles champion in Wimbledon history" },
+      { clue: "His first name",                                         answer: "BORIS",      connection: "BORIS — The boy from Leimen who became a global star overnight" },
+      { clue: "Powerful delivery that was his greatest weapon",         answer: "SERVICE",    connection: "SERVICE — His booming serve was the foundation of his game" },
+    ],
+    anagram: { letters:["C","M","P","H","I","A","O","N"], answer:"CHAMPION", clue:"The winner of a competition — the very best" },
+    quote: `"I hadn't planned to win Wimbledon — I just went out and played." Boris Becker, July 7th 1985 — the youngest CHAMPION in Wimbledon history. 🎾
+🔗 https://en.wikipedia.org/wiki/Boris_Becker`,
+  },
+
+  "2026-07-08": {
+    rounds: [
+      { clue: "The industry that made his first fortune",               answer: "PETROLEUM",  connection: "PETROLEUM — The oil industry that launched the Rockefeller empire" },
+      { clue: "Famous New York plaza bearing his name",                 answer: "PLAZA",      connection: "PLAZA — Rockefeller Plaza, the heart of his Manhattan legacy" },
+      { clue: "The company he founded — Standard what?",                answer: "STANDARD",   connection: "STANDARD — Standard Oil, once the most powerful company on earth" },
+      { clue: "Extreme and extraordinary wealth",                       answer: "FORTUNE",    connection: "FORTUNE — He was the world's first billionaire" },
+      { clue: "Giving money away generously for good causes",           answer: "GENEROUS",   connection: "PHILANTHROPY — He became the most generous benefactor in history" },
+    ],
+    anagram: { letters:["T","Y","N","C","O","O"], answer:"TYCOON", clue:"A very wealthy and powerful business person" },
+    quote: `John D. Rockefeller — the world's first billionaire and greatest TYCOON. Born July 8th 1839. 💰
+🔗 https://en.wikipedia.org/wiki/John_D._Rockefeller`,
+  },
+
+  "2026-07-09": {
+    rounds: [
+      { clue: "What Zidane used — not his foot",                        answer: "HEADBUTT",   connection: "HEADBUTT — The moment that defined and ended his final match" },
+      { clue: "The host nation — boot-shaped country",                  answer: "ITALY",      connection: "ITALY — The nation that won the 2006 World Cup" },
+      { clue: "How the final was decided after a draw",                 answer: "PENALTIES",  connection: "PENALTIES — Italy won on penalties after a 1-1 draw" },
+      { clue: "Country Zidane played for",                              answer: "FRANCE",     connection: "FRANCE — The team that lost their captain to a red card" },
+      { clue: "The stadium in Berlin where it was played",              answer: "OLYMPIC",    connection: "OLYMPIC — The Olympiastadion hosted the dramatic final" },
+    ],
+    anagram: { letters:["D","C","L","A","N","A","S"], answer:"SCANDAL", clue:"An action that shocks the public and causes outrage" },
+    quote: `One head. One red card. One trophy. The 2006 World Cup Final — the greatest SCANDAL and the greatest finish. 🏆
+🔗 https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_Final`,
+  },
+
+  "2026-07-10": {
+    rounds: [
+      { clue: "Capital city of the Bahamas",                            answer: "NASSAU",     connection: "NASSAU — The capital where independence was declared" },
+      { clue: "Chain of islands in the Caribbean",                      answer: "ISLANDS",    connection: "ISLANDS — The Bahamas is an archipelago of over 700 islands" },
+      { clue: "The colonial power they gained freedom from",            answer: "BRITISH",    connection: "BRITISH — The Bahamas was a British colony until 1973" },
+      { clue: "Official language spoken there",                         answer: "ENGLISH",    connection: "ENGLISH — The official language of the Bahamas" },
+      { clue: "Famous for turquoise water and white sand",              answer: "BEACHES",    connection: "BEACHES — The beaches that make the Bahamas world famous" },
+    ],
+    anagram: { letters:["V","R","O","I","N","G","E","E","S"], answer:"SOVEREIGN", clue:"Having full power and self-governance as an independent nation" },
+    quote: `"Forward, upward, onward, together." The Bahamas became SOVEREIGN on July 10th 1973. 🌴
+🔗 https://en.wikipedia.org/wiki/Bahamas`,
+  },
+
+  "2026-07-11": {
+    rounds: [
+      { clue: "The narrator — a young girl named after a insect",       answer: "SCOUT",      connection: "SCOUT — The young narrator through whose eyes we see the story" },
+      { clue: "The lawyer father at the heart of the story",            answer: "ATTICUS",    connection: "ATTICUS — Atticus Finch, literature's great moral hero" },
+      { clue: "The reclusive neighbour the children are afraid of",     answer: "RADLEY",     connection: "RADLEY — Boo Radley, the mysterious figure next door" },
+      { clue: "Southern US state where the story is set",               answer: "ALABAMA",    connection: "ALABAMA — The setting that gives the novel its heat and tension" },
+      { clue: "The author — Harper what?",                              answer: "HARPER",     connection: "HARPER — Harper Lee, who wrote this Pulitzer Prize-winning novel" },
+    ],
+    anagram: { letters:["C","E","S","J","U","I","T"], answer:"JUSTICE", clue:"Fair treatment and the upholding of what is right" },
+    quote: `"You never really understand a person until you climb into their skin." To Kill a Mockingbird — published July 11th 1960. A story of JUSTICE, courage and childhood. 📖
+🔗 https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird`,
+  },
+
+  "2026-07-12": {
+    rounds: [
+      { clue: "The bond between the boy and the alien",                 answer: "ELLIOTT",    connection: "ELLIOTT — The boy whose friendship with E.T. is the heart of the film" },
+      { clue: "The iconic scene — bikes silhouetted against the moon",  answer: "FLYING",     connection: "FLYING — The moment the bikes lift off the ground" },
+      { clue: "What E.T. desperately wants to do",                      answer: "PHONEHOME",  connection: "PHONE HOME — The line every child knows by heart" },
+      { clue: "The director — also made Jaws and Schindler's List",     answer: "SPIELBERG",  connection: "SPIELBERG — Steven Spielberg directed this timeless classic" },
+      { clue: "The gentle visitor from another world",                  answer: "ALIEN",      connection: "ALIEN — The extraterrestrial who touched a generation" },
+    ],
+    anagram: { letters:["E","D","O","W","N","R"], answer:"WONDER", clue:"A feeling of amazement and admiration at something magical" },
+    quote: `"E.T. phone home." Released July 12th 1982 — a film full of childhood WONDER that still moves audiences to tears. 🌙
+🔗 https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial`,
+  },
+
+  "2026-07-13": {
+    rounds: [
+      { clue: "Band whose performance is considered the greatest ever live", answer: "QUEEN",  connection: "QUEEN — Their 21-minute set is considered the greatest live performance ever" },
+      { clue: "The twin venues — London and Philadelphia",               answer: "WEMBLEY",    connection: "WEMBLEY — The London stage that hosted the UK half of the concert" },
+      { clue: "The cause the concert raised money for",                  answer: "FAMINE",     connection: "FAMINE — The Ethiopian famine that inspired Bob Geldof to act" },
+      { clue: "The organiser — Bob what?",                               answer: "GELDOF",     connection: "GELDOF — Bob Geldof, the man who made it all happen" },
+      { clue: "What artists donated that day",                           answer: "TALENT",     connection: "TALENT — The greatest collection of musical talent ever assembled" },
+    ],
+    anagram: { letters:["E","T","C","O","N","R","C"], answer:"CONCERT", clue:"A live musical performance in front of an audience" },
+    quote: `"This is the world wide." Live Aid — July 13th 1985. The greatest CONCERT ever staged raised over £150 million for famine relief. 🎸
+🔗 https://en.wikipedia.org/wiki/Live_Aid`,
+  },
+
+  "2026-07-14": {
+    rounds: [
+      { clue: "The Paris prison stormed by the people",                 answer: "BASTILLE",   connection: "BASTILLE — The fortress whose fall sparked the Revolution" },
+      { clue: "The people who filled the streets that day",             answer: "MASSES",     connection: "MASSES — The ordinary people who rose up against the king" },
+      { clue: "The three words on France's motto",                      answer: "LIBERTÉ",    connection: "LIBERTÉ — Liberty, the first word of France's great motto" },
+      { clue: "The system of rule that was swept away",                 answer: "MONARCHY",   connection: "MONARCHY — The royal rule that the Revolution abolished" },
+      { clue: "The wider movement the storming ignited",                answer: "UPRISING",   connection: "UPRISING — The revolution that changed the world began here" },
+    ],
+    anagram: { letters:["F","E","M","O","D","E","R"], answer:"FREEDOM", clue:"Liberation from oppression or unjust authority" },
+    quote: `"Liberté, égalité, fraternité." Bastille Day — July 14th 1789. The day FREEDOM was seized by the people of France. ⚔️
+🔗 https://en.wikipedia.org/wiki/Bastille_Day`,
+  },
+
+  "2026-07-15": {
+    rounds: [
+      { clue: "Short messages sent on the platform",                    answer: "TWEETS",     connection: "TWEETS — The short posts that gave the platform its identity" },
+      { clue: "The small bird the logo is based on",                    answer: "ROBIN",      connection: "ROBIN — The bird that inspired the Twitter branding" },
+      { clue: "The symbol that groups topics together",                 answer: "HASHTAG",    connection: "HASHTAG — The # symbol that became part of internet culture" },
+      { clue: "What the platform allowed you to do to posts you liked", answer: "RETWEET",    connection: "RETWEET — Sharing someone else's post with your followers" },
+      { clue: "The co-founder who sent the first tweet — Jack what?",   answer: "DORSEY",     connection: "DORSEY — Jack Dorsey, who sent the very first tweet" },
+    ],
+    anagram: { letters:["R","I","L","A","V"], answer:"VIRAL", clue:"Spreading rapidly across the internet from person to person" },
+    quote: `"Just setting up my twttr." Jack Dorsey's first tweet — Twitter launched July 15th 2006. The platform that made everything go VIRAL. 🐦
+🔗 https://en.wikipedia.org/wiki/Twitter`,
+  },
+
+  "2026-07-16": {
+    rounds: [
+      { clue: "The remote New Mexico desert where it was tested",       answer: "DESERT",     connection: "DESERT — The barren landscape chosen for the test site" },
+      { clue: "The secret wartime programme behind the bomb",           answer: "MANHATTAN",  connection: "MANHATTAN — The Manhattan Project that built the first atomic bomb" },
+      { clue: "The scientist who led the project",                      answer: "SCIENTIST",  connection: "OPPENHEIMER — J. Robert Oppenheimer, the bomb's chief architect" },
+      { clue: "What splits to release enormous energy",                 answer: "FISSION",    connection: "FISSION — Nuclear fission splits the atom to release devastating force" },
+      { clue: "The era of fear the bomb ushered in",                    answer: "COLDWAR",    connection: "COLD WAR — The arms race it triggered defined the next 50 years" },
+    ],
+    anagram: { letters:["C","E","R","N","L","U","A"], answer:"NUCLEAR", clue:"Relating to the energy released when an atom is split" },
+    quote: `"Now I am become Death, the destroyer of worlds." Trinity test — July 16th 1945. The first NUCLEAR bomb changed everything. ☢️
+🔗 https://en.wikipedia.org/wiki/Trinity_(nuclear_test)`,
+  },
+
+  "2026-07-17": {
+    rounds: [
+      { clue: "A small picture used to express emotion in a message",   answer: "EMOJI",      connection: "EMOJI — The tiny images celebrated on this day" },
+      { clue: "The feeling expressed by 😂",                            answer: "LAUGHTER",   connection: "LAUGHTER — The most commonly used emoji in the world" },
+      { clue: "The face that started it all — the original emoticon",   answer: "SMILEY",     connection: "SMILEY — The original symbol that inspired the emoji revolution" },
+      { clue: "The country where emoji were invented",                  answer: "JAPAN",      connection: "JAPAN — Shigetaka Kurita created the first emoji set in Japan" },
+      { clue: "The device in your pocket where emoji live",             answer: "DIGITAL",    connection: "SMARTPHONE — The digital device that put emoji in everyone's hands" },
+    ],
+    anagram: { letters:["P","X","E","R","S","E","S"], answer:"EXPRESS", clue:"To communicate a feeling or idea" },
+    quote: `😊 World Emoji Day — July 17th. Small pictures, big feelings. A whole new language to EXPRESS ourselves. 📱
+🔗 https://en.wikipedia.org/wiki/Emoji`,
+  },
+
+  "2026-07-18": {
+    rounds: [
+      { clue: "The South African island prison where he was held",      answer: "ROBBEN",     connection: "ROBBEN — Robben Island, where he spent 18 of his 27 years in prison" },
+      { clue: "His political party — the ANC",                          answer: "CONGRESS",   connection: "CONGRESS — The African National Congress he led" },
+      { clue: "The system of racial segregation he fought against",     answer: "APARTHEID",  connection: "APARTHEID — The brutal system of racial segregation he dismantled" },
+      { clue: "The process of healing a divided nation",                answer: "RECONCILE",  connection: "RECONCILE — His focus on reconciliation rather than revenge" },
+      { clue: "His first name",                                         answer: "NELSON",     connection: "NELSON — Nelson Mandela, born July 18th 1918" },
+    ],
+    anagram: { letters:["D","E","R","E","O","M","F"], answer:"FREEDOM", clue:"Liberation from oppression — the goal of a lifetime" },
+    quote: `"It always seems impossible until it is done." Nelson Mandela — born July 18th 1918. His life was the pursuit of FREEDOM. ✊
+🔗 https://en.wikipedia.org/wiki/Nelson_Mandela`,
+  },
+
+  "2026-07-19": {
+    rounds: [
+      { clue: "The band he helped make one of the greatest ever",       answer: "QUEEN",      connection: "QUEEN — The band he co-founded and has played with for over 50 years" },
+      { clue: "The guitar he built himself from a fireplace",           answer: "HANDMADE",   connection: "RED SPECIAL — The handmade guitar he has played his entire career" },
+      { clue: "His other career — a doctor of this subject",            answer: "DOCTORATE",  connection: "DOCTORATE — He completed his PhD in astrophysics in 2007" },
+      { clue: "Bodies of rock he has studied beyond Earth",             answer: "ASTEROIDS",  connection: "ASTEROIDS — He has co-authored books on the solar system" },
+      { clue: "The song he played solo on the roof of Buckingham Palace",answer: "ROOFTOP",    connection: "ROOFTOP — He played God Save The Queen on the roof of Buckingham Palace" },
+    ],
+    anagram: { letters:["G","N","S","U","I","E"], answer:"GENIUS", clue:"Exceptional and original creative or intellectual ability" },
+    quote: `"We will rock you." Brian May — born July 19th 1947. Guitarist, astrophysicist, GENIUS. 🎸
+🔗 https://en.wikipedia.org/wiki/Brian_May`,
+  },
+
+  "2026-07-20": {
+    rounds: [
+      { clue: "The most powerful piece on the board",                   answer: "QUEEN",      connection: "QUEEN — The most powerful piece in the game" },
+      { clue: "The winning move that ends the game",                    answer: "CHECKMATE",  connection: "CHECKMATE — The final move that wins the game" },
+      { clue: "The highest title a player can achieve",                 answer: "GRANDMAST",  connection: "GRANDMASTER — The highest title in competitive chess" },
+      { clue: "A planned sequence of opening moves",                    answer: "GAMBIT",     connection: "GAMBIT — A strategic opening sacrifice to gain advantage" },
+      { clue: "Russian word for this game — also used in English",      answer: "SHAHMAT",    connection: "SHAHMAT — The Persian origin of the word checkmate" },
+    ],
+    anagram: { letters:["T","A","G","S","Y","E","R","T"], answer:"STRATEGY", clue:"A plan designed to achieve a long-term goal" },
+    quote: `Chess — a game of pure STRATEGY, where every move tells a story. ♟️
+🔗 https://en.wikipedia.org/wiki/Chess`,
+  },
+
+  "2026-07-21": {
+    rounds: [
+      { clue: "Light, crispy breakfast treat Belgium is famous for",    answer: "WAFFLE",     connection: "WAFFLE — The iconic Belgian treat loved the world over" },
+      { clue: "Its capital — also headquarters of the EU and NATO",     answer: "BRUSSELS",   connection: "BRUSSELS — The city at the heart of European politics" },
+      { clue: "The country speaks three of these",                      answer: "LANGUAGES",  connection: "LANGUAGES — Dutch, French and German are all official languages" },
+      { clue: "World-famous Belgian beer style",                        answer: "TRAPPIST",   connection: "TRAPPIST — Belgium's famous monastery-brewed ales" },
+      { clue: "The comic strip character born in Belgium",              answer: "TINTIN",     connection: "TINTIN — Hergé's beloved Belgian adventurer" },
+    ],
+    anagram: { letters:["D","G","K","M","O","N","I"], answer:"KINGDOM", clue:"A country ruled by a king or queen" },
+    quote: `Belgium — small country, enormous influence. National Day July 21st 1831. A KINGDOM at the crossroads of Europe. 🇧🇪
+🔗 https://en.wikipedia.org/wiki/Belgium`,
+  },
+
+  "2026-07-22": {
+    rounds: [
+      { clue: "He flew around the world — alone",                       answer: "SOLITARY",   connection: "SOLITARY — He completed the first solo round-the-world flight alone" },
+      { clue: "The machine he used to circle the globe",                answer: "AIRCRAFT",   connection: "AIRCRAFT — The Winnie Mae, his trusty Lockheed Vega" },
+      { clue: "The aid that helped him see despite limited vision",     answer: "GOGGLES",    connection: "GOGGLES — He wore a special pressure suit and goggles to fly" },
+      { clue: "The record he set — circling the entire planet",         answer: "RECORD",     connection: "RECORD — He circled the globe in under 8 days setting a world record" },
+      { clue: "His surname — also means to be shrewd and clever",       answer: "WILEY",      connection: "WILEY — Wiley Post, the pioneering aviator" },
+    ],
+    anagram: { letters:["E","P","O","R","N","E","I"], answer:"PIONEER", clue:"A person who is among the first to explore or develop something new" },
+    quote: `Wiley Post completed the first solo round-the-world flight on July 22nd 1933 — a true PIONEER of the skies. ✈️
+🔗 https://en.wikipedia.org/wiki/Wiley_Post`,
+  },
+
+  "2026-07-23": {
+    rounds: [
+      { clue: "His most famous detective character",                    answer: "MARLOWE",    connection: "MARLOWE — Philip Marlowe, the ultimate hardboiled detective" },
+      { clue: "The city that sets the mood for all his stories",        answer: "DOWNTOWN",   connection: "LOS ANGELES — The downtown streets where Marlowe works" },
+      { clue: "The genre of crime writing he helped define",            answer: "SHADOWS",    connection: "SHADOWS — The dark noir world his detective inhabits" },
+      { clue: "His most celebrated novel — The Big what?",              answer: "SLEEP",      connection: "SLEEP — The Big Sleep, his most famous work" },
+      { clue: "Down these mean what must a man go?",                    answer: "STREETS",    connection: "STREETS — His famous quote: down these mean streets a man must go" },
+    ],
+    anagram: { letters:["R","S","M","Y","E","T","Y"], answer:"MYSTERY", clue:"Something unexplained — or a genre of crime fiction" },
+    quote: `"Down these mean streets a man must go who is not himself mean." Raymond Chandler — born July 23rd 1888. King of MYSTERY. 🕵️
+🔗 https://en.wikipedia.org/wiki/Raymond_Chandler`,
+  },
+
+  "2026-07-24": {
+    rounds: [
+      { clue: "The ancient civilisation that built it",                 answer: "EMPIRE",     connection: "EMPIRE — The Inca Empire built Machu Picchu around 1450" },
+      { clue: "The South American country it sits in",                  answer: "PERUVIAN",   connection: "PERUVIAN — Machu Picchu lies high in the Peruvian Andes" },
+      { clue: "The mountain range it sits in",                          answer: "ANDES",      connection: "ANDES — The Andes mountains cradle the site at 2,430 metres" },
+      { clue: "The American explorer who revealed it to the world",     answer: "BINGHAM",    connection: "BINGHAM — Hiram Bingham III brought it to world attention in 1911" },
+      { clue: "What the site is called — a lost what?",                 answer: "CITADEL",    connection: "CITADEL — The lost citadel above the clouds" },
+    ],
+    anagram: { letters:["I","N","A","E","C","T","N"], answer:"ANCIENT", clue:"Belonging to the very distant past" },
+    quote: `"Lost city above the clouds." Machu Picchu was revealed to the world on July 24th 1911 — one of the most breathtaking ANCIENT sites on earth. 🏔️
+🔗 https://en.wikipedia.org/wiki/Machu_Picchu`,
+  },
+
+  "2026-07-25": {
+    rounds: [
+      { clue: "The instrument he controversially plugged in",           answer: "GUITAR",     connection: "GUITAR — The electric guitar that shocked the folk purists" },
+      { clue: "His previous musical style — acoustic and storytelling", answer: "ACOUSTIC",   connection: "ACOUSTIC — The folk world he left behind when he went electric" },
+      { clue: "What the crowd famously shouted at him",                 answer: "JUDAS",      connection: "JUDAS — A fan shouted Judas, accusing him of betrayal" },
+      { clue: "The festival where it happened — in Manchester",         answer: "FREE TRADE", connection: "FREE TRADE — The Free Trade Hall in Manchester, July 1966" },
+      { clue: "His surname — also a famous Welsh poet",                 answer: "DYLAN",      connection: "DYLAN — Bob Dylan, born Robert Zimmerman, took this name from Dylan Thomas" },
+    ],
+    anagram: { letters:["B","L","R","E","E"], answer:"REBEL", clue:"Someone who resists authority or convention" },
+    quote: `"Play it loud." Bob Dylan went electric on July 25th 1965 at Newport — the greatest REBEL move in music history. ⚡
+🔗 https://en.wikipedia.org/wiki/Bob_Dylan`,
+  },
+
+  "2026-07-26": {
+    rounds: [
+      { clue: "The band he fronts — also a type of gemstone",           answer: "STONES",     connection: "STONES — The Rolling Stones, one of rock's greatest bands" },
+      { clue: "His distinctive way of moving on stage",                 answer: "STRUT",      connection: "STRUT — His iconic stage walk is instantly recognisable" },
+      { clue: "His lips are said to be his most famous feature",        answer: "SYMBOL",     connection: "SYMBOL — His lips became the symbol of the Rolling Stones' logo" },
+      { clue: "You can't always get what you this",                     answer: "DESIRE",     connection: "DESIRE — You Can't Always Get What You Want — a timeless classic" },
+      { clue: "He studied here before dropping out for rock and roll",  answer: "STUDENT",    connection: "STUDENT — He studied at the London School of Economics" },
+    ],
+    anagram: { letters:["E","E","L","D","R","N","G","Y","A"], answer:"LEGENDARY", clue:"Famous enough to be the subject of stories passed down through generations" },
+    quote: `"You can't always get what you want." Mick Jagger — born July 26th 1943. Still strutting. Still LEGENDARY. 🎤
+🔗 https://en.wikipedia.org/wiki/Mick_Jagger`,
+  },
+
+  "2026-07-27": {
+    rounds: [
+      { clue: "The crop he introduced to England from the Americas",    answer: "POTATO",     connection: "POTATO — He is credited with introducing the potato to England" },
+      { clue: "The monarch he served and charmed",                      answer: "ELIZABETH",  connection: "ELIZABETH — Queen Elizabeth I, his great patron" },
+      { clue: "The colonies he tried to establish in America",          answer: "VIRGINIA",   connection: "VIRGINIA — Named after the Virgin Queen — his American colony" },
+      { clue: "He was eventually beheaded here",                        answer: "TOWER",      connection: "TOWER — He was imprisoned and executed at the Tower of London" },
+      { clue: "His voyages made him this type of adventurer",           answer: "EXPLORER",   connection: "EXPLORER — One of the great Elizabethan explorers" },
+    ],
+    anagram: { letters:["A","E","D","N","T","V","E","U","R"], answer:"ADVENTURE", clue:"An exciting or daring journey into the unknown" },
+    quote: `"Fortune favours the bold." Sir Walter Raleigh — executed July 27th 1618. A life of ADVENTURE that changed the world. ⚓
+🔗 https://en.wikipedia.org/wiki/Walter_Raleigh`,
+  },
+
+  "2026-07-28": {
+    rounds: [
+      { clue: "The act that triggered the conflict — a killing in Sarajevo", answer: "MURDER",connection: "MURDER — The assassination of Archduke Franz Ferdinand sparked the war" },
+      { clue: "The system that dragged nation after nation in",          answer: "ALLIANCE",   connection: "ALLIANCE — The web of alliances that turned one murder into world war" },
+      { clue: "The defining feature of the Western Front",              answer: "TRENCHES",   connection: "TRENCHES — Millions lived and died in the trenches of France" },
+      { clue: "The country that issued the first declaration of war",   answer: "AUSTRIA",    connection: "AUSTRIA — Austria-Hungary declared war on Serbia on July 28th 1914" },
+      { clue: "What they called it — the war to end all what?",         answer: "ARMISTICE",  connection: "ARMISTICE — The 1918 armistice finally ended the war to end all wars" },
+    ],
+    anagram: { letters:["L","O","I","C","F","T","N","C"], answer:"CONFLICT", clue:"A prolonged struggle or war between opposing forces" },
+    quote: `July 28th 1914 — World War One began. Four years of CONFLICT that left 20 million dead and changed the world forever. 🌍
+🔗 https://en.wikipedia.org/wiki/World_War_I`,
+  },
+
+  "2026-07-29": {
+    rounds: [
+      { clue: "The swirling night sky he painted — Starry what?",       answer: "NIGHT",      connection: "NIGHT — The Starry Night, his most iconic painting" },
+      { clue: "The French town where he lived his final days",          answer: "AUVERS",     connection: "AUVERS — Auvers-sur-Oise, where he died on July 29th 1890" },
+      { clue: "The yellow flowers he painted over and over",            answer: "BLOSSOM",    connection: "SUNFLOWERS — His famous paintings of sunflowers in bloom" },
+      { clue: "The body part he famously cut off",                      answer: "SEVERED",    connection: "SEVERED — He cut off part of his ear during a mental health crisis" },
+      { clue: "His Dutch first name",                                   answer: "VINCENT",    connection: "VINCENT — Vincent van Gogh, one of the greatest artists who ever lived" },
+    ],
+    anagram: { letters:["E","S","R","E","P","I","C","T","M","E","A"], answer:"MASTERPIECE", clue:"A work of outstanding artistry and skill" },
+    quote: `"Great things are done by a series of small things brought together." Vincent van Gogh died July 29th 1890. Every painting a MASTERPIECE. 🌻
+🔗 https://en.wikipedia.org/wiki/Vincent_van_Gogh`,
+  },
+
+  "2026-07-30": {
+    rounds: [
+      { clue: "The host nation who won the first tournament",           answer: "URUGUAY",    connection: "URUGUAY — The host nation who won the very first World Cup" },
+      { clue: "The city where all the matches were played",             answer: "CAPITAL",    connection: "MONTEVIDEO — The Uruguayan capital that hosted the entire tournament" },
+      { clue: "The number of nations who took part",                    answer: "THIRTEEN",   connection: "THIRTEEN — Only 13 nations competed in the first World Cup" },
+      { clue: "The trophy awarded to the winners",                      answer: "JULES",      connection: "JULES — The Jules Rimet Trophy, named after the man who created it" },
+      { clue: "The final opponents — neighbours across the river",      answer: "ARGENTINA",  connection: "ARGENTINA — Uruguay beat Argentina 4-2 in the final" },
+    ],
+    anagram: { letters:["Y","O","S","H","T","I","R"], answer:"HISTORY", clue:"The study of past events — and the making of them" },
+    quote: `July 30th 1930 — the first World Cup Final. Uruguay beat Argentina to make HISTORY. The beautiful game was born. ⚽
+🔗 https://en.wikipedia.org/wiki/1930_FIFA_World_Cup`,
+  },
+
+  "2026-07-31": {
+    rounds: [
+      { clue: "The boy wizard she created",                             answer: "POTTER",     connection: "POTTER — Harry Potter, the boy who lived" },
+      { clue: "The school he attends",                                  answer: "HOGWARTS",   connection: "HOGWARTS — The school of witchcraft and wizardry" },
+      { clue: "The train that takes him there — Hogwarts what?",        answer: "EXPRESS",    connection: "EXPRESS — The Hogwarts Express departs from platform 9¾" },
+      { clue: "The sport played on broomsticks",                        answer: "QUIDDITCH",  connection: "QUIDDITCH — The magical sport Harry excels at" },
+      { clue: "She wrote the books while a struggling single parent",   answer: "ROWLING",    connection: "ROWLING — J.K. Rowling, born July 31st 1965" },
+    ],
+    anagram: { letters:["A","I","L","M","A","C","G"], answer:"MAGICAL", clue:"Having the quality of magic — wonderful and extraordinary" },
+    quote: `"Words are our most inexhaustible source of magic." J.K. Rowling — born July 31st 1965. A truly MAGICAL life. ⚡
+🔗 https://en.wikipedia.org/wiki/J._K._Rowling`,
+  },
+
+};
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
 function getToday() {
@@ -551,15 +1345,13 @@ function AnswerDisplay({ length, revealed, input, shake }) {
 
 // ─── ROUND SUMMARY ────────────────────────────────────────────────────────────
 function RoundSummary({ r, i }) {
-  const highlights = Array.isArray(r.revealIdx) ? r.revealIdx : [r.revealIdx];
   return (
     <div style={{ display:"flex", alignItems:"center", gap:10, padding:"7px 12px", background:r.solved?"rgba(46,125,50,0.06)":"rgba(198,40,40,0.04)", border:`1px solid ${r.solved?"rgba(46,125,50,0.3)":"rgba(198,40,40,0.2)"}`, borderRadius:8, marginBottom:5 }}>
       <div style={{ fontSize:10, color:"#666666", width:16, flexShrink:0 }}>{i+1}</div>
       <div style={{ flex:1, display:"flex", gap:3, flexWrap:"wrap" }}>
-        {r.answer.split("").map((ch,ci) => {
-          const hl = highlights.includes(ci);
-          return <div key={ci} style={{ width:20, height:20, borderRadius:3, border:`1px solid ${hl?"#c4941f":"#cccccc"}`, background:hl?"#c4941f":"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:9, fontWeight:700, color:hl?"#000000":r.solved?"#2e7d32":"#555555", fontFamily:"'Courier New',monospace" }}>{ch}</div>;
-        })}
+        {r.answer.split("").map((ch,ci) => (
+          <div key={ci} style={{ width:20, height:20, borderRadius:3, border:"1px solid #cccccc", background:"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:9, fontWeight:700, color:r.solved?"#2e7d32":"#555555", fontFamily:"'Courier New',monospace" }}>{ch}</div>
+        ))}
       </div>
       <div style={{ fontSize:10, color:r.solved?"#2e7d32":"#c62828", flexShrink:0 }}>{r.solved?"✓":"✗"}</div>
     </div>
@@ -655,7 +1447,7 @@ export default function FiveToNine() {
     if (!latest) return;
     if (latest.correct) {
       setTimeout(() => {
-        const completedRound = { ...round, solved:true, revealIdx:round.revealIdx };
+        const completedRound = { ...round, solved:true };
         setDone(d=>[...d, completedRound]);
         setAttempts([]); setInput(""); setRevealed({});
         setAnimating(false);
@@ -759,16 +1551,14 @@ export default function FiveToNine() {
       {showAnswers && (
         <div style={{ marginTop:8 }}>
           {puzzle.rounds.map((r,i) => {
-            const highlights = Array.isArray(r.revealIdx)?r.revealIdx:[r.revealIdx];
             const solved = done[i]?.solved;
             return (
               <div key={i} style={{ padding:"10px 14px", background:"rgba(0,0,0,0.02)", border:"1px solid #e0e0e0", borderRadius:8, marginBottom:6 }}>
                 <div style={{ fontSize:12, color:"#444444", marginBottom:6 }}>{r.clue}</div>
                 <div style={{ display:"flex", gap:4, flexWrap:"wrap", marginBottom:r.connection?8:0 }}>
-                  {r.answer.split("").map((ch,ci) => {
-                    const hl = highlights.includes(ci);
-                    return <div key={ci} style={{ width:26, height:26, borderRadius:3, border:`1px solid ${hl?"#c4941f":"#cccccc"}`, background:hl?"#c4941f":"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:700, color:hl?"#000000":solved?"#2e7d32":"#888888", fontFamily:"'Courier New',monospace" }}>{ch}</div>;
-                  })}
+                  {r.answer.split("").map((ch,ci) => (
+                    <div key={ci} style={{ width:26, height:26, borderRadius:3, border:"1px solid #cccccc", background:"#ffffff", display:"flex", alignItems:"center", justifyContent:"center", fontSize:12, fontWeight:700, color:solved?"#2e7d32":"#888888", fontFamily:"'Courier New',monospace" }}>{ch}</div>
+                  ))}
                 </div>
                 {r.connection && <div style={{ fontSize:14, color:"#000000", fontStyle:"italic", fontWeight:700 }}>🔗 {r.connection}</div>}
               </div>
