@@ -365,11 +365,9 @@ A poet of WISDOM, courage and grace — died on this day, May 28th 2014 ✊
       { clue: "Range feature found in amount in disarray",           answer: "MOUNTAIN",    connection: "At 8,849 metres, Everest is Earth's highest mountain" },
       { clue: "Mountain range containing the world's highest peaks",    answer: "HIMALAYAS",        connection: "The Himalayas span five countries including Nepal and Tibet" },
     ],
-    anagram: { letters:["I","O","S","A","L","N","T","O","I"], answer:"ISOLATION", clue:"The feeling of being cut off from the world — like the summit of Everest" },
+    anagram: { letters:["M","M","T","I","S","U"], answer:"SUMMIT", clue:"The top or peak of something" },
     quote: `"We did not climb Everest to prove anything. We climbed it because it was there."
-
 Edmund Hillary and Tenzing Norgay reached the summit of Mount Everest on this day, May 29th 1953 🏔️
-The greatest feat of human ISOLATION and endurance.
 🔗 https://en.wikipedia.org/wiki/Edmund_Hillary`,
   },
   "2026-05-30": {
