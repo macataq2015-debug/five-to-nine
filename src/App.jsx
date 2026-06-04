@@ -463,6 +463,8 @@ Hollywood's greatest FRONTIER man.
     ],
     anagram: { letters:["S","N","D","G","E","I"], answer:"DESIGN", clue:"To plan or create something with purpose and intention" },
     quote: `"In Denmark, DESIGN isn\'t decoration — it\'s a quiet way of living that turns simplicity into beauty." 🇩🇰
+
+🗓️ On This Day — June 5th is Denmark\'s Constitution Day (Grundlovsdag), celebrating the signing of the Danish constitution in 1849. 🇩🇰
 🔗 https://www.visitdenmark.com/denmark/things-to-do/traditions-lifestyle/fun-facts`,
   },
 
@@ -488,7 +490,7 @@ Hollywood's greatest FRONTIER man.
       { clue: "U.S. state known for its many lakes",                    answer: "MINNESOTA",  connection: "MINNESOTA — The state that shaped his early life" },
     ],
     anagram: { letters:["E","L","S","F","R","A","E","S"], answer:"FEARLESS", clue:"Showing courage by acting without being held back by fear" },
-    quote: `Prince, born in Minneapolis in 1958, became a FEARLESS innovator whose sound, style, and stage presence reshaped modern music. 🎸
+    quote: `Prince, born on this day in Minneapolis in 1958, became a FEARLESS innovator whose sound, style, and stage presence reshaped modern music. 🎸
 🎬 https://youtu.be/TvnYmWpD_T8`,
   },
 
@@ -501,7 +503,9 @@ Hollywood's greatest FRONTIER man.
       { clue: "Relating to an oppressive future society",               answer: "DYSTOPIAN",  connection: "DYSTOPIAN — Defines the bleak world the story portrays" },
     ],
     anagram: { letters:["M","E","R","I","E","G"], answer:"REGIME", clue:"A system of rule or governance" },
-    quote: `In 1984, Winston Smith struggles under a totalitarian REGIME that controls truth, memory, and even thought itself. 📖
+    quote: `In the book 1984, Winston Smith struggles under a totalitarian REGIME that controls truth, memory, and even thought itself. 📖
+
+🗓️ On This Day — George Orwell\'s Nineteen Eighty-Four was first published on June 8th, 1949.
 🔗 https://en.wikipedia.org/wiki/Nineteen_Eighty-Four`,
   },
 
@@ -515,6 +519,8 @@ Hollywood's greatest FRONTIER man.
     ],
     anagram: { letters:["E","M","Y","L","D","O"], answer:"MELODY", clue:"A musical tune formed by a sequence of notes that create a recognisable line" },
     quote: `Cole Porter crafted MELODY with such effortless charm that even his simplest tunes felt like polished jewels. 🎹
+
+🗓️ On This Day — Cole Porter was born on June 9th, 1891. 🎂
 🔗 https://en.wikipedia.org/wiki/Cole_Porter`,
   },
 
@@ -529,6 +535,8 @@ Hollywood's greatest FRONTIER man.
     anagram: { letters:["O","B","R","S","E"], answer:"SOBER", clue:"Not under the influence of alcohol" },
     quote: `"God, grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference."
 AA offers a community where people work together to remain SOBER one day at a time. 🙏
+
+🗓️ On This Day — Alcoholics Anonymous was founded on June 10th, 1935.
 🔗 https://www.aa.org/`,
   },
 
@@ -563,11 +571,14 @@ AA offers a community where people work together to remain SOBER one day at a ti
       { clue: "Residence of a monastic brotherhood or sisterhood",      answer: "ABBEY",      connection: "ABBEY — The theatre he helped establish for Irish culture" },
       { clue: "Seen at a legislative assembly",                         answer: "SENATE",     connection: "SENATE — Reflects his role in shaping national identity" },
       { clue: "Widely admired people or narratives of great renown",    answer: "LEGENDS",    connection: "LEGENDS — Draws on the deep Celtic mythology he cherished" },
-      { clue: "Rider heard in a hoarse manner",                         answer: "HORSEMAN",   connection: "HORSEMAN — A lasting symbol from his famous epitaph" },
+      { clue: "Rider seen in the Book of Revelation",                  answer: "HORSEMAN",   connection: "\'Cast a cold Eye On Life, on Death. Horseman, pass by\' — Yeats\'s famous epitaph" },
       { clue: "Supporter of innovation over tradition",                 answer: "MODERNIST",  connection: "MODERNIST — Captures his influence on twentieth century literature" },
     ],
     anagram: { letters:["M","D","E","R","S","A"], answer:"DREAMS", clue:"Personal visions of what one wishes to achieve" },
     quote: `"Tread softly because you tread on my DREAMS." — W.B. Yeats 🍀
+
+🗓️ On This Day — W.B. Yeats was born on June 13th, 1865. 🎂
+His epitaph reads: "Cast a cold Eye On Life, on Death. Horseman, pass by."
 🔗 https://en.wikipedia.org/wiki/W._B._Yeats`,
   },
 
@@ -581,6 +592,8 @@ AA offers a community where people work together to remain SOBER one day at a ti
     ],
     anagram: { letters:["N","E","T","L","E","C","O","I"], answer:"ELECTION", clue:"A formal process in which people vote to choose leaders" },
     quote: `Donald Trump — tower builder, ELECTION winner, 45th and 47th President of the United States. 🇺🇸
+
+🗓️ On This Day — Donald Trump was born on June 14th, 1946. 🎂
 🔗 https://en.wikipedia.org/wiki/Donald_Trump`,
   },
 
@@ -594,6 +607,8 @@ AA offers a community where people work together to remain SOBER one day at a ti
     ],
     anagram: { letters:["N","E","A","R","T","C","L"], answer:"CENTRAL", clue:"Located in the middle or most important position" },
     quote: `"Today was a good day." — Ice Cube 🎤
+
+🗓️ On This Day — Ice Cube was born on June 15th, 1969. 🎂
 🎬 https://youtu.be/h4UqMyldS7Q`,
   },
 
@@ -620,6 +635,8 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
     ],
     anagram: { letters:["R","D","E","C","I","V","T"], answer:"VERDICT", clue:"The decision reached by a jury at the end of a trial" },
     quote: `"If it does not fit, you must acquit." — The trial that gripped the world. ⚖️
+
+🗓️ On This Day — O.J. Simpson was arrested on June 17th, 1994, following the now-infamous slow-speed Bronco chase broadcast live on television.
 🎬 https://www.youtube.com/watch?v=YLmDE_JYUNU`,
   },
 
