@@ -489,7 +489,7 @@ Hollywood's greatest FRONTIER man.
       { clue: "A musician with exceptional technical mastery",          answer: "VIRTUOSO",   connection: "VIRTUOSO — Reflects his mastery of countless instruments" },
       { clue: "U.S. state known for its many lakes",                    answer: "MINNESOTA",  connection: "MINNESOTA — The state that shaped his early life" },
     ],
-    anagram: { letters:["E","L","S","F","R","A","E","S"], answer:"FEARLESS", clue:"Showing courage by acting without being held back by fear" },
+    anagram: { letters:["E","L","S","F","R","A","E","S"], answer:"FEARLESS", clue:"Unmoved by threat or danger" },
     quote: `Prince, born on this day in Minneapolis in 1958, became a FEARLESS innovator whose sound, style, and stage presence reshaped modern music. 🎸
 🎬 https://youtu.be/TvnYmWpD_T8`,
   },
@@ -537,7 +537,7 @@ Hollywood's greatest FRONTIER man.
 AA offers a community where people work together to remain SOBER one day at a time. 🙏
 
 🗓️ On This Day — Alcoholics Anonymous was founded on June 10th, 1935.
-🔗 https://www.aa.org/`,
+🔗 https://en.wikipedia.org/wiki/Alcoholics_Anonymous`,
   },
 
   "2026-06-11": {
