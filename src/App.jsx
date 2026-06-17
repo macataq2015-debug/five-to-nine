@@ -630,7 +630,7 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
       { clue: "Liquid squeezed from fruit",                             answer: "JUICE",      connection: "JUICE — The nickname that followed him throughout his career" },
       { clue: "Wild horse of the American West",                                   answer: "BRONCO",     connection: "BRONCO — The vehicle central to a historic televised pursuit" },
       { clue: "NFL city known for its Bills",                           answer: "BUFFALO",    connection: "BUFFALO — The NFL team he represented during his prime" },
-      { clue: "Legal decision",                                         answer: "JUDGMENT",   connection: "JUDGMENT — The legal outcome that shaped public debate" },
+      { clue: "Legal decision (American Spelling)",                      answer: "JUDGMENT",   connection: "JUDGMENT — The legal outcome that shaped public debate" },
       { clue: "Found not guilty",                                       answer: "ACQUITTED",  connection: "ACQUITTED — The verdict that defined the trial's conclusion" },
     ],
     anagram: { letters:["R","D","E","C","I","V","T"], answer:"VERDICT", clue:"The decision reached by a jury at the end of a trial" },
