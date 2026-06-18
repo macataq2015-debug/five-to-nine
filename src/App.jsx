@@ -649,7 +649,7 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
       { clue: "Melodious thrush found in gardens",               answer: "BLACKBIRD",  connection: "BLACKBIRD — A timeless acoustic song he composed" },
     ],
     anagram: { letters:["D","Y","O","L","M","E"], answer:"MELODY", clue:"A sequence of musical notes that forms a recognisable tune" },
-    quote: `"Maybe I'm amazed at the way you love me all the time." — Paul McCartney 🎸
+    quote: `"Maybe I'm amazed at the way you love me all the time." — Born on this day in 1942 - Paul McCartney 🎸
 🎬 https://youtu.be/GBSu_ltDu1w?si=bwdSeWweMfL9b_DS`,
   },
 
