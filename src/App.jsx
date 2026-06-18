@@ -663,7 +663,7 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
     ],
     anagram: { letters:["R","K","B","A","A","P","L","L"], answer:"BALLPARK", clue:"Rough estimate or approximate figure" },
     quote: `"When you look around, wouldn't you consider it a privilege to associate yourself with such fine-looking men as are standing in uniform in this ballpark today" Lou Gehrig -American Baseball legend died on this day 1941. 🏆
-🎬 https://youtu.be/7Zx7jE5f3n0`,
+🔗 https://en.wikipedia.org/wiki/Lou_Gehrig`,
   },
 
   "2026-06-20": {
