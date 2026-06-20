@@ -670,7 +670,7 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
     rounds: [
       { clue: "Ocean's most feared predator",                           answer: "SHARK",      connection: "SHARK — The terrifying creature that drives the entire plot" },
       { clue: "Word after Ricky and before Scorsese",                answer: "MARTIN",     connection: "MARTIN — Chief Brody, who battles fear and responsibility" },
-      { clue: "Sandy shore or Bette Midler movie",            answer: "BEACHES",    connection: "BEACHES — The peaceful setting disrupted by danger" },
+      { clue: "Sandy shores or Bette Midler movie",            answer: "BEACHES",    connection: "BEACHES — The peaceful setting disrupted by danger" },
       { clue: "Feeling of dread and nail-biting tension",               answer: "SUSPENSE",   connection: "SUSPENSE — The defining tone that made the film iconic" },
       { clue: "Director of ET",                    answer: "SPIELBERG",  connection: "SPIELBERG — The visionary director behind the masterpiece" },
     ],
