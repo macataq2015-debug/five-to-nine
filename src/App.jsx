@@ -681,10 +681,10 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 
   "2026-06-21": {
     rounds: [
-      { clue: "Living abroad, forced from your homeland",               answer: "EXILE",      connection: "EXILE — The status he assumed after leaving the country" },
+      { clue: "State of being forced to live away from one's home or country", answer: "EXILE",      connection: "EXILE — The status he assumed after leaving the country" },
       { clue: "To expose something hidden from the public",             answer: "REVEAL",     connection: "REVEAL — Describes his decision to expose classified activity" },
       { clue: "Home of the CIA in Virginia",                            answer: "LANGLEY",    connection: "LANGLEY — Whose actions sparked global debate on privacy" },
-      { clue: "Relating to the security of a country",                  answer: "NATIONAL",   connection: "NATIONAL — Relates to the security issues he highlighted" },
+      { clue: "Word that comes after Grand and before Anthem",          answer: "NATIONAL",   connection: "NATIONAL — Relates to the security issues he highlighted" },
       { clue: "Official papers or files",                               answer: "DOCUMENTS",  connection: "DOCUMENTS — The files that reshaped public understanding" },
     ],
     anagram: { letters:["C","E","E","S","S","T","R"], answer:"SECRETS", clue:"Things deliberately kept hidden from others" },
@@ -701,7 +701,7 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
       { clue: "South Atlantic islands under British rule that saw conflict in 1982",     answer: "FALKLANDS",  connection: "FALKLANDS — The war that intensified the sporting emotions" },
     ],
     anagram: { letters:["A","S","O","I","N","M","F","U"], answer:"INFAMOUS", clue:"Well known for the wrong reasons" },
-    quote: `"A little with the head of Maradona and a little with the hand of God." The most INFAMOUS goal in football history. ✋⚽
+    quote: `"A little with the head of Maradona and a little with the hand of God." The most INFAMOUS goal in football history scored on this day 1986. ✋⚽
 🎬 https://youtu.be/ZN3jcfJSJMY?si=GUqKGCWlsLn0H0a9`,
   },
 
@@ -724,7 +724,7 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
       { clue: "First name of singer of 'Three Times a Lady', Hello & All Night Long",                                         answer: "LIONEL",     connection: "LIONEL — The name of football's global icon" },
       { clue: "A chemical messenger produced by glands that travels through the bloodstream to regulate body functions",      answer: "HORMONE",    connection: "HORMONE — Messi needed hormone injections to help his growth" },
       { clue: "Objects awarded for winning",     answer: "TROPHIES",    connection: "TROPHIES — He has a record number of trophies won for Barcelona" },
-      { clue: "Spanish club where he became a legend",                  answer: "BARCELONA",  connection: "BARCELONA — The club where he spent most of his career" },
+      { clue: "Crab Alone in this Spanish place",                  answer: "BARCELONA",  connection: "BARCELONA — The club where he spent most of his career" },
     ],
     anagram: { letters:["G","E","T","R","A","S","E","T"], answer:"GREATEST", clue:"Better than all others — the very best" },
     quote: `"The GREATEST of all time." Lionel Messi — born June 24th 1987. 🐐
