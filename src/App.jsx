@@ -753,7 +753,7 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
       { clue: "Word after San and before Franco",                   answer: "FRANCISCO",  connection: "FRANCISCO — The conquistador whose actions changed history" },
     ],
     anagram: { letters:["E","M","E","I","R","P"], answer:"EMPIRE", clue:"A group of nations or peoples under a single ruler" },
-    quote: `Francisco Pizarro conquerer of the Inca EMPIRE died on this day. ⚔️
+    quote: `Francisco Pizarro conqueror of the Inca EMPIRE died on this day. ⚔️
 🔗 https://en.wikipedia.org/wiki/Francisco_Pizarro`,
   },
 
