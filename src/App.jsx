@@ -763,7 +763,7 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
       { clue: "Power that enables movement, heat, or activity in physical systems",        answer: "ENERGY",     connection: "ENERGY — Reflects the intensity he brought to extreme sports" },
       { clue: "Foolish or stupid person or a male donkey",        answer: "JACKASS",    connection: "JACKASS — The stunt-driven series he frequently appeared in" },
       { clue: "Perfectly upright — straight up and down",               answer: "VERTICAL",   connection: "VERTICAL — The discipline where he landed the iconic 900" },
-      { clue: "Bode I rush to for the flying creature",            answer: "BIRDHOUSE",  connection: "BIRDHOUSE — The skateboard company he built into a powerhouse" },
+      { clue: "Man made abode for a flying creature",            answer: "BIRDHOUSE",  connection: "BIRDHOUSE — The skateboard company he built into a powerhouse" },
     ],
     anagram: { letters:["I","L","A","E","H","P","F","P"], answer:"HALFPIPE", clue:"“A U‑shaped ramp used in sports like skateboarding and snowboarding for performing aerial tricks" },
     quote: `"The Birdman lands the 900." Tony Hawk — the greatest Skateboarder who ever lived. 🛹
