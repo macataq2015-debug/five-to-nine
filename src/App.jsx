@@ -798,7 +798,7 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 
   "2026-06-30": {
     rounds: [
-      { clue: "A violent political purge or cleansing",                 answer: "PURGE",      connection: "PURGE — The violent action that reshaped Nazi leadership" },
+      { clue: "A violent political cleansing",                 answer: "PURGE",      connection: "PURGE — The violent action that reshaped Nazi leadership" },
       { clue: "A formal agreement between nations",                     answer: "TREATY",     connection: "TREATY — Symbolises the alliances broken during the upheaval" },
       { clue: "The Nazi secret police",                                 answer: "GESTAPO",    connection: "GESTAPO — The brutal enforcement arm carrying out arrests" },
       { clue: "Detained by force without warning",                      answer: "ARRESTED",   connection: "ARRESTED — Describes the many rivals seized overnight" },
