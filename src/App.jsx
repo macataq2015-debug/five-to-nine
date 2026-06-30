@@ -811,405 +811,384 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 
   "2026-07-01": {
     rounds: [
-      { clue: "The world's second largest country by land area",        answer: "CANADA",     connection: "CANADA — The nation celebrating its birthday today" },
-      { clue: "Its capital city",                                       answer: "OTTAWA",     connection: "OTTAWA — Where the national celebrations are centred" },
-      { clue: "The leaf on its national flag",                          answer: "MAPLE",      connection: "MAPLE — The enduring symbol of the nation" },
-      { clue: "Niagara, Superior and Huron are examples",               answer: "FALLS",      connection: "FALLS — Niagara Falls, one of Canada's most iconic landmarks" },
-      { clue: "National sport played on ice",                           answer: "HOCKEY",     connection: "HOCKEY — The sport that defines Canadian identity" },
+      { clue: "Me Pal the tree", answer: "MAPLE", connection: "MAPLE - Symbol of Canada" },
+      { clue: "Capital city of Canada", answer: "OTTAWA", connection: "OTTAWA — Canada’s capital city" },
+      { clue: "Famous falls on the U.S.–Canada border", answer: "NIAGARA", connection: "NIAGARA-  Iconic Canada–U.S. waterfall" },
+      { clue: "Retriever bred in Newfoundland", answer: "LABRADOR", connection: "LABRADOR- region in Newfoundland" },
+      { clue: "Border formed by sea and land", answer: "COASTLINE", connection: "COASTLINE-Canada has the longest coastline in the world" },
     ],
-    anagram: { letters:["I","N","O","A","N","T"], answer:"NATION", clue:"A large community of people sharing history, culture and territory" },
-    quote: `"O Canada, our home and native land." 🍁 Happy Canada Day — July 1st 1867, a NATION was born.
+    anagram: { letters:["M","R","F","T","O","A","O","N","I"], answer:"FORMATION", clue:"Arrangement or structure" },
+    quote: `Canada Day is the national holiday of Canada, celebrated on July 1st
 🔗 https://en.wikipedia.org/wiki/Canada_Day`,
   },
 
   "2026-07-02": {
     rounds: [
-      { clue: "A journey taken for spiritual reasons",                  answer: "PILGRIM",    connection: "PILGRIM — The searching spirit at the heart of his novels" },
-      { clue: "Inner calm and freedom from conflict",                   answer: "PEACE",      connection: "PEACE — A central goal in many of his stories" },
-      { clue: "A wise and trusted guide or teacher",                    answer: "MENTOR",     connection: "MENTOR — The wise figures who guide his heroes" },
-      { clue: "Deep, quiet thought about life's big questions",         answer: "REFLECT",    connection: "REFLECT — The contemplative tone that runs through his writing" },
-      { clue: "Name shared by his most famous novel and a Buddha",      answer: "SPIRITUAL",  connection: "SIDDHARTHA — His masterpiece about a young man's spiritual journey" },
+      { clue: "State of inner calm", answer: "PEACE", connection: "PEACE — A central ideal in Hesse’s writing." },
+      { clue: "Empty space or void", answer: "VACUUM", connection: "VACUUM — His characters often confront an inner void before growth." },
+      { clue: "Traveller on a quest for meaning", answer: "PILGRIM", connection: "PILGRIM — Suggests the searching characters in his stories" },
+      { clue: "Throbbing pain of the mind or skull", answer: "HEADACHE", connection: "HEADACHE — Hesse suffered migraines for all of his life; his characters face mental strain." },
+      { clue: "Concerned with inner meaning or higher purpose", answer: "SPIRITUAL", connection: "SPIRITUAL — His novels explore spiritual development and self‑discovery." },
     ],
-    anagram: { letters:["O","Y","R","N","J","U","E"], answer:"JOURNEY", clue:"Travel from one place to another — or inward to oneself" },
-    quote: `"Within you, there is a stillness and a sanctuary to which you can retreat." — Hermann Hesse, born July 2nd 1877. His novels remain timeless JOURNEYS of the soul. 📖
+    anagram: { letters:["U","A","H","D","D","B"], answer:"BUDDHA", clue:"Founder of a major Eastern philosophy" },
+    quote: `Within you there is a stillness and a sanctuary to which you can retreat at any time. — Hermann Hesse born on this day 1877
 🔗 https://en.wikipedia.org/wiki/Hermann_Hesse`,
   },
 
   "2026-07-03": {
     rounds: [
-      { clue: "Band whose name is also an entrance to a room",          answer: "DOORS",      connection: "DOORS — The band who recorded this iconic track" },
-      { clue: "Intense desire or deep enthusiasm",                      answer: "PASSION",    connection: "PASSION — The emotional heat burning through the song" },
-      { clue: "A bright blaze of burning light",                        answer: "FLAME",      connection: "FLAME — The burning imagery woven into the lyrics" },
-      { clue: "Musical instrument with keys — Ray Manzarek's weapon",   answer: "KEYBOARD",   connection: "KEYBOARD — Ray Manzarek's hypnotic opening riff defined the song" },
-      { clue: "Jim Morrison's role — lead what?",                       answer: "SINGER",     connection: "SINGER — Jim Morrison, one of rock's most iconic frontmen" },
+      { clue: "Word for a bright blaze", answer: "LIGHT", connection: "LIGHT — Echoes “Light My Fire”, one of The Doors’ most famous songs." },
+      { clue: "Reptile often found sunning on warm rocks", answer: "LIZARD", connection: "LIZARD — Jim Morrison called himself “The Lizard King”" },
+      { clue: "Reel Hat type of clothing material", answer: "LEATHER", connection: "LEATHER — Iconic image of Morrison in leather trousers and jackets on stage" },
+      { clue: "Male voice range between bass and tenor", answer: "BARITONE", connection: "BARITONE — Refers to Morrison’s deep, baritone singing voice." },
+      { clue: "Physical material or essential quality of something", answer: "SUBSTANCE", connection: "SUBSTANCE — Alludes to the alcohol and drugs that surrounded his life and death." },
     ],
-    anagram: { letters:["T","I","N","E","I","G"], answer:"IGNITE", clue:"To set something on fire or spark something into life" },
-    quote: `"Come on baby, light my fire." The Doors released this classic on July 3rd 1967 — still capable of IGNITING a room. 🔥
-🎬 https://youtu.be/7IIKcQ0ZbZk`,
+    anagram: { letters:["L","R","I","S","C","I","Y","T"], answer:"LYRICIST", clue:"Writer of words for a song" },
+    quote: `Expose yourself to your deepest fear; after that, fear has no power, and the fear of freedom shrinks and vanishes. You are free. -Jim Morrison died on this day 1971
+🔗 https://youtu.be/BgQg3J7xU1k?si=7Zd7uZoq_BMy8sz0`,
   },
 
   "2026-07-04": {
     rounds: [
-      { clue: "Formal document declaring a nation's rights",            answer: "CHARTER",    connection: "CHARTER — The founding document behind the holiday" },
-      { clue: "A public procession through the streets",                answer: "PARADE",     connection: "PARADE — A common way the day is marked across the country" },
-      { clue: "Colourful explosive displays lighting the night sky",    answer: "FIREWORKS",  connection: "FIREWORKS — The dazzling displays on every Fourth of July" },
-      { clue: "The quality of being free from control",                 answer: "LIBERTY",    connection: "LIBERTY — The ideal at the heart of the Declaration" },
-      { clue: "The founding document signed on this day in 1776",       answer: "FOUNDING",   connection: "DECLARATION — The Declaration of Independence, birth certificate of a nation" },
+      { clue: "Word after 'Patch' and before 'Family'", answer: "ADAMS", connection: "ADAMS — John Adams, a key figure in American independence and the second U.S. president." },
+      { clue: "Outside of the medals", answer: "FOURTH", connection: "FOURTH — Independence Day is celebrated on the Fourth of July." },
+      { clue: "Relating to a system of shared national and regional government", answer: "FEDERAL", connection: "FEDERAL — The United States formed a new federal system after independence." },
+      { clue: "Unlucky for some", answer: "THIRTEEN", connection: "THIRTEEN — The original thirteen colonies that declared independence." },
+      { clue: "Explosive devices used for colourful displays", answer: "FIREWORKS", connection: "FIREWORKS — Traditional displays used to celebrate Independence Day." },
     ],
-    anagram: { letters:["M","O","R","D","F","E","E"], answer:"FREEDOM", clue:"The power to act, speak and live without oppression" },
-    quote: `"Life, liberty and the pursuit of happiness." 🇺🇸 The Declaration of Independence was signed on this day in 1776 — FREEDOM put into words.
-🔗 https://en.wikipedia.org/wiki/Independence_Day_(United_States)`,
+    anagram: { letters:["E","C","B","R","U","E","A","B"], answer:"BARBECUE", clue:"Outdoor meal cooked over an open grill" },
+    quote: `“Life, liberty, and the pursuit of happiness — America celebrates Independence Day on the Fourth of July
+🔗 https://youtu.be/sjzZh6-h9fM?si=4xRIuJ9pLeFygtfA`,
   },
 
   "2026-07-05": {
     rounds: [
-      { clue: "A group of islands scattered across the sea",            answer: "ISLANDS",    connection: "ISLANDS — Cape Verde is an archipelago of ten main islands" },
-      { clue: "Steady winds that helped sailors cross the Atlantic",    answer: "TRADES",     connection: "TRADES — The trade winds that shaped its history and climate" },
-      { clue: "The capital city of Cape Verde",                         answer: "PRAIA",      connection: "PRAIA — The coastal capital on Santiago island" },
-      { clue: "Soulful music style unique to Cape Verde",               answer: "MORNA",      connection: "MORNA — The haunting musical tradition of Cape Verde" },
-      { clue: "West African coast it lies off",                         answer: "ATLANTIC",   connection: "ATLANTIC — The ocean that surrounds this island nation" },
+      { clue: "Wide and pleasing view of a landscape", answer: "VISTA", connection: "VISTA — Cape Verde is known for its dramatic coastal vistas and volcanic landscapes" },
+      { clue: "Language formed from the blending of different tongues", answer: "CREOLE", connection: "CREOLE — Cape Verdean Creole is the country’s widely spoken language" },
+      { clue: "Land masses completely surrounded by water", answer: "ISLANDS", connection: "ISLANDS — Cape Verde is an archipelago made up of ten main islands" },
+      { clue: "Go Saint for this very common city name", answer: "SANTIAGO", connection: "SANTIAGO — The largest and most populated island in Cape Verde" },
+      { clue: "System of government in which power rests with the people", answer: "DEMOCRACY", connection: "DEMOCRACY — Cape Verde is recognised as one of Africa’s strongest democracies" },
     ],
-    anagram: { letters:["N","E","A","I","R","L","S","D"], answer:"ISLANDER", clue:"A person who lives on an island" },
-    quote: `Cape Verde gained independence on July 5th 1975 — a nation of ISLANDERS whose music and resilience echo across the Atlantic. 🌊
+    anagram: { letters:["O","U","G","A","P","T","R","L"], answer:"PORTUGAL", clue:"Lisbon is the Capital" },
+    quote: `On July 5th, Cape Verde marks the day it stepped forward as a free nation, charting its own course across the Atlantic
 🔗 https://en.wikipedia.org/wiki/Cape_Verde`,
   },
 
   "2026-07-06": {
     rounds: [
-      { clue: "Country he fled — now ruled by China",                   answer: "TIBET",      connection: "TIBET — The homeland he has not been able to return to" },
-      { clue: "His religion — also practised by millions across Asia",  answer: "BUDDHISM",   connection: "BUDDHISM — The faith and philosophy he leads and embodies" },
-      { clue: "Indian city where he has lived in exile since 1959",     answer: "HIMALAYAS",  connection: "DHARAMSALA — The hill town in the Himalayas that became his home in exile" },
-      { clue: "His message to the world — this above all",              answer: "KINDNESS",   connection: "KINDNESS — His most famous teaching: my religion is kindness" },
-      { clue: "Nobel honour he received in 1989",                       answer: "PEACE",      connection: "PEACE — He won the Nobel Peace Prize for his nonviolent resistance" },
+      { clue: "Capital of Tibet", answer: "LHASA", connection: "LHASA — Traditional spiritual and political centre of Tibetan Buddhism" },
+      { clue: "Large geographic area distinguished by shared features", answer: "REGION", connection: "REGION — Tibet is recognised as a distinct cultural and historical region" },
+      { clue: "Process of being born again or renewed", answer: "REBIRTH", connection: "REBIRTH — The Dalai Lama is believed to be the reincarnation of previous Lamas" },
+      { clue: "Quality of being sacred or spiritually pure", answer: "HOLINESS", connection: "HOLINESS — The Dalai Lama is formally addressed as His Holiness" },
+      { clue: "Concerned with the soul or inner life", answer: "SPIRITUAL", connection: "SPIRITUAL — Known worldwide as a spiritual leader advocating peace and compassion" },
     ],
-    anagram: { letters:["O","P","M","N","C","S","I","S","O","A"], answer:"COMPASSION", clue:"Deep sympathy and care for the suffering of others" },
-    quote: `"My religion is kindness." The Dalai Lama, born July 6th 1935 — a life of COMPASSION in the face of exile. 🙏
+    anagram: { letters:["H","B","A","D","U","D"], answer:"BUDDHA", clue:"Enlightened figure who founded a major spiritual tradition" },
+    quote: `On July 6th 1935, the 14th Dalai Lama was born — a life devoted to compassion and wisdom.
 🔗 https://en.wikipedia.org/wiki/Dalai_Lama`,
   },
 
   "2026-07-07": {
     rounds: [
-      { clue: "The famous grass court tournament in London",            answer: "WIMBLEDON",  connection: "WIMBLEDON — The stage where he made history as the youngest champion" },
-      { clue: "Surface he conquered — also a type of lawn",             answer: "GRASS",      connection: "GRASS — The surface on which he announced himself to the world" },
-      { clue: "His age when he won — still a record",                   answer: "SEVENTEEN",  connection: "SEVENTEEN — The youngest men's singles champion in Wimbledon history" },
-      { clue: "His first name",                                         answer: "BORIS",      connection: "BORIS — The boy from Leimen who became a global star overnight" },
-      { clue: "Powerful delivery that was his greatest weapon",         answer: "SERVICE",    connection: "SERVICE — His booming serve was the foundation of his game" },
+      { clue: "Assist or attend to somebody’s needs.", answer: "SERVE", connection: "SERVE — Becker was famous for his explosive, attacking serve as a teenager" },
+      { clue: "Shot hit before the ball touches the ground", answer: "VOLLEY", connection: "VOLLEY — His fearless diving volleys became his trademark on Centre Court" },
+      { clue: "Person trained for physical competition", answer: "ATHLETE", connection: "ATHLETE — At just 17, he became the youngest men’s singles champion in Wimbledon history" },
+      { clue: "Legally declared unable to pay debts", answer: "BANKRUPT", connection: "BANKRUPT — Later in life, Becker faced well‑publicised financial and legal troubles" },
+      { clue: "Prestigious summer sporting event held in London on grass surface", answer: "WIMBLEDON", connection: "WIMBLEDON — The tournament where he made history on July 7th, 1985" },
     ],
-    anagram: { letters:["C","M","P","H","I","A","O","N"], answer:"CHAMPION", clue:"The winner of a competition — the very best" },
-    quote: `"I hadn't planned to win Wimbledon — I just went out and played." Boris Becker, July 7th 1985 — the youngest CHAMPION in Wimbledon history. 🎾
-🔗 https://en.wikipedia.org/wiki/Boris_Becker`,
+    anagram: { letters:["U","E","Y","N","S","O","G","T"], answer:"YOUNGEST", clue:"The one born most recently." },
+    quote: `On July 7th, 1985, Boris Becker stunned the tennis world by winning Wimbledon at 17 — still the youngest men’s champion in the tournament’s history.
+🔗 https://youtu.be/Y5M1aR5pCgA?si=im64f77VtCD8qPZN`,
   },
 
   "2026-07-08": {
     rounds: [
-      { clue: "The industry that made his first fortune",               answer: "PETROLEUM",  connection: "PETROLEUM — The oil industry that launched the Rockefeller empire" },
-      { clue: "Famous New York plaza bearing his name",                 answer: "PLAZA",      connection: "PLAZA — Rockefeller Plaza, the heart of his Manhattan legacy" },
-      { clue: "The company he founded — Standard what?",                answer: "STANDARD",   connection: "STANDARD — Standard Oil, once the most powerful company on earth" },
-      { clue: "Extreme and extraordinary wealth",                       answer: "FORTUNE",    connection: "FORTUNE — He was the world's first billionaire" },
-      { clue: "Giving money away generously for good causes",           answer: "GENEROUS",   connection: "PHILANTHROPY — He became the most generous benefactor in history" },
+      { clue: "Lacking refinement or good manners.", answer: "CRUDE", connection: "CRUDE - His vast fortune began with crude oil" },
+      { clue: "Deeply committed to religious belief or practice.", answer: "DEVOUT", connection: "DEVOUT — He was raised in a deeply religious household and remained devout throughout his life" },
+      { clue: "Net Four for this large amount of wealth", answer: "FORTUNE", connection: "FORTUNE — His business success created one of the largest personal fortunes in modern history" },
+      { clue: "Widely accepted model or level of quality", answer: "STANDARD", connection: "STANDARD — Founder of Standard Oil, the company that dominated the American petroleum industry" },
+      { clue: "Theory of evolution by natural selection.", answer: "DARWINISM", connection: "DARWINISM — His era’s business world embraced “survival of the fittest,” a philosophy often linked to his monopolistic rise" },
     ],
-    anagram: { letters:["T","Y","N","C","O","O"], answer:"TYCOON", clue:"A very wealthy and powerful business person" },
-    quote: `John D. Rockefeller — the world's first billionaire and greatest TYCOON. Born July 8th 1839. 💰
+    anagram: { letters:["N","R","Y","I","R","E","E","F"], answer:"REFINERY", clue:"Place where something is purified or improved through careful processing" },
+    quote: `On July 8th, 1839, John D. Rockefeller was born — a man whose ambition, industry, and philanthropy reshaped American business and left a legacy that still defines modern capitalism
 🔗 https://en.wikipedia.org/wiki/John_D._Rockefeller`,
   },
 
   "2026-07-09": {
     rounds: [
-      { clue: "What Zidane used — not his foot",                        answer: "HEADBUTT",   connection: "HEADBUTT — The moment that defined and ended his final match" },
-      { clue: "The host nation — boot-shaped country",                  answer: "ITALY",      connection: "ITALY — The nation that won the 2006 World Cup" },
-      { clue: "How the final was decided after a draw",                 answer: "PENALTIES",  connection: "PENALTIES — Italy won on penalties after a 1-1 draw" },
-      { clue: "Country Zidane played for",                              answer: "FRANCE",     connection: "FRANCE — The team that lost their captain to a red card" },
-      { clue: "The stadium in Berlin where it was played",              answer: "OLYMPIC",    connection: "OLYMPIC — The Olympiastadion hosted the dramatic final" },
+      { clue: "Decisive match that determines a champion", answer: "FINAL", connection: "FINAL — The match was the World Cup Final, deciding the 2006 champions" },
+      { clue: "European capital known for its historic wall and reunification.", answer: "BERLIN", connection: "BERLIN — The Olympiastadion in Berlin hosted the dramatic showdown" },
+      { clue: "Kick awarded after an infringement, taken from a marked spot", answer: "PENALTY", connection: "PENALTY — Italy won the trophy after a tense penalty shootout" },
+      { clue: "Forceful strike delivered with the forehead.", answer: "HEADBUTT", connection: "HEADBUTT — Zidane’s infamous headbutt on Materazzi became the defining moment of the match" },
+      { clue: "Formal removal of a participant from a contest or event", answer: "EXPULSION", connection: "EXPULSION — Zidane was expelled with a red card in extra time, his last act in professional football" },
     ],
-    anagram: { letters:["D","C","L","A","N","A","S"], answer:"SCANDAL", clue:"An action that shocks the public and causes outrage" },
-    quote: `One head. One red card. One trophy. The 2006 World Cup Final — the greatest SCANDAL and the greatest finish. 🏆
-🔗 https://en.wikipedia.org/wiki/2006_FIFA_World_Cup_Final`,
+    anagram: { letters:["D","T","I","N","E","N","I","C"], answer:"INCIDENT", clue:"Notable event or occurrence, often unexpected" },
+    quote: `On July 9th, 2006, Italy and France met in a World Cup Final remembered as much for its drama as its football — a night of penalties, passion, and one unforgettable moment that changed the match forever.
+🔗 https://youtu.be/Nlsm0RlC8zI?si=H1ayxjX8JMFFn6FR`,
   },
 
   "2026-07-10": {
     rounds: [
-      { clue: "Capital city of the Bahamas",                            answer: "NASSAU",     connection: "NASSAU — The capital where independence was declared" },
-      { clue: "Chain of islands in the Caribbean",                      answer: "ISLANDS",    connection: "ISLANDS — The Bahamas is an archipelago of over 700 islands" },
-      { clue: "The colonial power they gained freedom from",            answer: "BRITISH",    connection: "BRITISH — The Bahamas was a British colony until 1973" },
-      { clue: "Official language spoken there",                         answer: "ENGLISH",    connection: "ENGLISH — The official language of the Bahamas" },
-      { clue: "Famous for turquoise water and white sand",              answer: "BEACHES",    connection: "BEACHES — The beaches that make the Bahamas world famous" },
+      { clue: "Territory or domain under a particular authority", answer: "REALM", connection: "REALM — After independence, the Bahamas became a sovereign realm within the Commonwealth" },
+      { clue: "Capital city of the Bahamas, also the name of a common golf wager", answer: "NASSAU", connection: "NASSAU — Nassau is the capital city where the independence ceremonies were held" },
+      { clue: "Land masses completely surrounded by water.", answer: "ISLANDS", connection: "ISLANDS — The Bahamas is an archipelago of hundreds of islands gaining self‑governance" },
+      { clue: "Situated away from the coast", answer: "OFFSHORE", connection: "OFFSHORE — The nation later became known for offshore finance and international services" },
+      { clue: "Region of tropical seas and island nations near Florida", answer: "CARIBBEAN", connection: "CARIBBEAN — The Bahamas joined the community of independent Caribbean nations" },
     ],
-    anagram: { letters:["V","R","O","I","N","G","E","E","S"], answer:"SOVEREIGN", clue:"Having full power and self-governance as an independent nation" },
-    quote: `"Forward, upward, onward, together." The Bahamas became SOVEREIGN on July 10th 1973. 🌴
+    anagram: { letters:["U","S","Q","R","E","T","O","I","U"], answer:"TURQUOISE", clue:"Colour often associated with clear tropical waters" },
+    quote: `On July 10th, 1973, the Bahamas became an independent nation — a new chapter of identity, culture, and Caribbean pride.
 🔗 https://en.wikipedia.org/wiki/Bahamas`,
   },
 
   "2026-07-11": {
     rounds: [
-      { clue: "The narrator — a young girl named after a insect",       answer: "SCOUT",      connection: "SCOUT — The young narrator through whose eyes we see the story" },
-      { clue: "The lawyer father at the heart of the story",            answer: "ATTICUS",    connection: "ATTICUS — Atticus Finch, literature's great moral hero" },
-      { clue: "The reclusive neighbour the children are afraid of",     answer: "RADLEY",     connection: "RADLEY — Boo Radley, the mysterious figure next door" },
-      { clue: "Southern US state where the story is set",               answer: "ALABAMA",    connection: "ALABAMA — The setting that gives the novel its heat and tension" },
-      { clue: "The author — Harper what?",                              answer: "HARPER",     connection: "HARPER — Harper Lee, who wrote this Pulitzer Prize-winning novel" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["C","E","S","J","U","I","T"], answer:"JUSTICE", clue:"Fair treatment and the upholding of what is right" },
-    quote: `"You never really understand a person until you climb into their skin." To Kill a Mockingbird — published July 11th 1960. A story of JUSTICE, courage and childhood. 📖
-🔗 https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-12": {
     rounds: [
-      { clue: "The bond between the boy and the alien",                 answer: "ELLIOTT",    connection: "ELLIOTT — The boy whose friendship with E.T. is the heart of the film" },
-      { clue: "The iconic scene — bikes silhouetted against the moon",  answer: "FLYING",     connection: "FLYING — The moment the bikes lift off the ground" },
-      { clue: "What E.T. desperately wants to do",                      answer: "PHONEHOME",  connection: "PHONE HOME — The line every child knows by heart" },
-      { clue: "The director — also made Jaws and Schindler's List",     answer: "SPIELBERG",  connection: "SPIELBERG — Steven Spielberg directed this timeless classic" },
-      { clue: "The gentle visitor from another world",                  answer: "ALIEN",      connection: "ALIEN — The extraterrestrial who touched a generation" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["E","D","O","W","N","R"], answer:"WONDER", clue:"A feeling of amazement and admiration at something magical" },
-    quote: `"E.T. phone home." Released July 12th 1982 — a film full of childhood WONDER that still moves audiences to tears. 🌙
-🔗 https://en.wikipedia.org/wiki/E.T._the_Extra-Terrestrial`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-13": {
     rounds: [
-      { clue: "Band whose performance is considered the greatest ever live", answer: "QUEEN",  connection: "QUEEN — Their 21-minute set is considered the greatest live performance ever" },
-      { clue: "The twin venues — London and Philadelphia",               answer: "WEMBLEY",    connection: "WEMBLEY — The London stage that hosted the UK half of the concert" },
-      { clue: "The cause the concert raised money for",                  answer: "FAMINE",     connection: "FAMINE — The Ethiopian famine that inspired Bob Geldof to act" },
-      { clue: "The organiser — Bob what?",                               answer: "GELDOF",     connection: "GELDOF — Bob Geldof, the man who made it all happen" },
-      { clue: "What artists donated that day",                           answer: "TALENT",     connection: "TALENT — The greatest collection of musical talent ever assembled" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["E","T","C","O","N","R","C"], answer:"CONCERT", clue:"A live musical performance in front of an audience" },
-    quote: `"This is the world wide." Live Aid — July 13th 1985. The greatest CONCERT ever staged raised over £150 million for famine relief. 🎸
-🔗 https://en.wikipedia.org/wiki/Live_Aid`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-14": {
     rounds: [
-      { clue: "The Paris prison stormed by the people",                 answer: "BASTILLE",   connection: "BASTILLE — The fortress whose fall sparked the Revolution" },
-      { clue: "The people who filled the streets that day",             answer: "MASSES",     connection: "MASSES — The ordinary people who rose up against the king" },
-      { clue: "The three words on France's motto",                      answer: "LIBERTÉ",    connection: "LIBERTÉ — Liberty, the first word of France's great motto" },
-      { clue: "The system of rule that was swept away",                 answer: "MONARCHY",   connection: "MONARCHY — The royal rule that the Revolution abolished" },
-      { clue: "The wider movement the storming ignited",                answer: "UPRISING",   connection: "UPRISING — The revolution that changed the world began here" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["F","E","M","O","D","E","R"], answer:"FREEDOM", clue:"Liberation from oppression or unjust authority" },
-    quote: `"Liberté, égalité, fraternité." Bastille Day — July 14th 1789. The day FREEDOM was seized by the people of France. ⚔️
-🔗 https://en.wikipedia.org/wiki/Bastille_Day`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-15": {
     rounds: [
-      { clue: "Short messages sent on the platform",                    answer: "TWEETS",     connection: "TWEETS — The short posts that gave the platform its identity" },
-      { clue: "The small bird the logo is based on",                    answer: "ROBIN",      connection: "ROBIN — The bird that inspired the Twitter branding" },
-      { clue: "The symbol that groups topics together",                 answer: "HASHTAG",    connection: "HASHTAG — The # symbol that became part of internet culture" },
-      { clue: "What the platform allowed you to do to posts you liked", answer: "RETWEET",    connection: "RETWEET — Sharing someone else's post with your followers" },
-      { clue: "The co-founder who sent the first tweet — Jack what?",   answer: "DORSEY",     connection: "DORSEY — Jack Dorsey, who sent the very first tweet" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["R","I","L","A","V"], answer:"VIRAL", clue:"Spreading rapidly across the internet from person to person" },
-    quote: `"Just setting up my twttr." Jack Dorsey's first tweet — Twitter launched July 15th 2006. The platform that made everything go VIRAL. 🐦
-🔗 https://en.wikipedia.org/wiki/Twitter`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-16": {
     rounds: [
-      { clue: "The remote New Mexico desert where it was tested",       answer: "DESERT",     connection: "DESERT — The barren landscape chosen for the test site" },
-      { clue: "The secret wartime programme behind the bomb",           answer: "MANHATTAN",  connection: "MANHATTAN — The Manhattan Project that built the first atomic bomb" },
-      { clue: "The scientist who led the project",                      answer: "SCIENTIST",  connection: "OPPENHEIMER — J. Robert Oppenheimer, the bomb's chief architect" },
-      { clue: "What splits to release enormous energy",                 answer: "FISSION",    connection: "FISSION — Nuclear fission splits the atom to release devastating force" },
-      { clue: "The era of fear the bomb ushered in",                    answer: "COLDWAR",    connection: "COLD WAR — The arms race it triggered defined the next 50 years" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["C","E","R","N","L","U","A"], answer:"NUCLEAR", clue:"Relating to the energy released when an atom is split" },
-    quote: `"Now I am become Death, the destroyer of worlds." Trinity test — July 16th 1945. The first NUCLEAR bomb changed everything. ☢️
-🔗 https://en.wikipedia.org/wiki/Trinity_(nuclear_test)`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-17": {
     rounds: [
-      { clue: "A small picture used to express emotion in a message",   answer: "EMOJI",      connection: "EMOJI — The tiny images celebrated on this day" },
-      { clue: "The feeling expressed by 😂",                            answer: "LAUGHTER",   connection: "LAUGHTER — The most commonly used emoji in the world" },
-      { clue: "The face that started it all — the original emoticon",   answer: "SMILEY",     connection: "SMILEY — The original symbol that inspired the emoji revolution" },
-      { clue: "The country where emoji were invented",                  answer: "JAPAN",      connection: "JAPAN — Shigetaka Kurita created the first emoji set in Japan" },
-      { clue: "The device in your pocket where emoji live",             answer: "DIGITAL",    connection: "SMARTPHONE — The digital device that put emoji in everyone's hands" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["P","X","E","R","S","E","S"], answer:"EXPRESS", clue:"To communicate a feeling or idea" },
-    quote: `😊 World Emoji Day — July 17th. Small pictures, big feelings. A whole new language to EXPRESS ourselves. 📱
-🔗 https://en.wikipedia.org/wiki/Emoji`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-18": {
     rounds: [
-      { clue: "The South African island prison where he was held",      answer: "ROBBEN",     connection: "ROBBEN — Robben Island, where he spent 18 of his 27 years in prison" },
-      { clue: "His political party — the ANC",                          answer: "CONGRESS",   connection: "CONGRESS — The African National Congress he led" },
-      { clue: "The system of racial segregation he fought against",     answer: "APARTHEID",  connection: "APARTHEID — The brutal system of racial segregation he dismantled" },
-      { clue: "The process of healing a divided nation",                answer: "RECONCILE",  connection: "RECONCILE — His focus on reconciliation rather than revenge" },
-      { clue: "His first name",                                         answer: "NELSON",     connection: "NELSON — Nelson Mandela, born July 18th 1918" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["D","E","R","E","O","M","F"], answer:"FREEDOM", clue:"Liberation from oppression — the goal of a lifetime" },
-    quote: `"It always seems impossible until it is done." Nelson Mandela — born July 18th 1918. His life was the pursuit of FREEDOM. ✊
-🔗 https://en.wikipedia.org/wiki/Nelson_Mandela`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-19": {
     rounds: [
-      { clue: "The band he helped make one of the greatest ever",       answer: "QUEEN",      connection: "QUEEN — The band he co-founded and has played with for over 50 years" },
-      { clue: "The guitar he built himself from a fireplace",           answer: "HANDMADE",   connection: "RED SPECIAL — The handmade guitar he has played his entire career" },
-      { clue: "His other career — a doctor of this subject",            answer: "DOCTORATE",  connection: "DOCTORATE — He completed his PhD in astrophysics in 2007" },
-      { clue: "Bodies of rock he has studied beyond Earth",             answer: "ASTEROIDS",  connection: "ASTEROIDS — He has co-authored books on the solar system" },
-      { clue: "The song he played solo on the roof of Buckingham Palace",answer: "ROOFTOP",    connection: "ROOFTOP — He played God Save The Queen on the roof of Buckingham Palace" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["G","N","S","U","I","E"], answer:"GENIUS", clue:"Exceptional and original creative or intellectual ability" },
-    quote: `"We will rock you." Brian May — born July 19th 1947. Guitarist, astrophysicist, GENIUS. 🎸
-🔗 https://en.wikipedia.org/wiki/Brian_May`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-20": {
     rounds: [
-      { clue: "The most powerful piece on the board",                   answer: "QUEEN",      connection: "QUEEN — The most powerful piece in the game" },
-      { clue: "The winning move that ends the game",                    answer: "CHECKMATE",  connection: "CHECKMATE — The final move that wins the game" },
-      { clue: "The highest title a player can achieve",                 answer: "GRANDMAST",  connection: "GRANDMASTER — The highest title in competitive chess" },
-      { clue: "A planned sequence of opening moves",                    answer: "GAMBIT",     connection: "GAMBIT — A strategic opening sacrifice to gain advantage" },
-      { clue: "Russian word for this game — also used in English",      answer: "SHAHMAT",    connection: "SHAHMAT — The Persian origin of the word checkmate" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["T","A","G","S","Y","E","R","T"], answer:"STRATEGY", clue:"A plan designed to achieve a long-term goal" },
-    quote: `Chess — a game of pure STRATEGY, where every move tells a story. ♟️
-🔗 https://en.wikipedia.org/wiki/Chess`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-21": {
     rounds: [
-      { clue: "Light, crispy breakfast treat Belgium is famous for",    answer: "WAFFLE",     connection: "WAFFLE — The iconic Belgian treat loved the world over" },
-      { clue: "Its capital — also headquarters of the EU and NATO",     answer: "BRUSSELS",   connection: "BRUSSELS — The city at the heart of European politics" },
-      { clue: "The country speaks three of these",                      answer: "LANGUAGES",  connection: "LANGUAGES — Dutch, French and German are all official languages" },
-      { clue: "World-famous Belgian beer style",                        answer: "TRAPPIST",   connection: "TRAPPIST — Belgium's famous monastery-brewed ales" },
-      { clue: "The comic strip character born in Belgium",              answer: "TINTIN",     connection: "TINTIN — Hergé's beloved Belgian adventurer" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["D","G","K","M","O","N","I"], answer:"KINGDOM", clue:"A country ruled by a king or queen" },
-    quote: `Belgium — small country, enormous influence. National Day July 21st 1831. A KINGDOM at the crossroads of Europe. 🇧🇪
-🔗 https://en.wikipedia.org/wiki/Belgium`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-22": {
     rounds: [
-      { clue: "He flew around the world — alone",                       answer: "SOLITARY",   connection: "SOLITARY — He completed the first solo round-the-world flight alone" },
-      { clue: "The machine he used to circle the globe",                answer: "AIRCRAFT",   connection: "AIRCRAFT — The Winnie Mae, his trusty Lockheed Vega" },
-      { clue: "The aid that helped him see despite limited vision",     answer: "GOGGLES",    connection: "GOGGLES — He wore a special pressure suit and goggles to fly" },
-      { clue: "The record he set — circling the entire planet",         answer: "RECORD",     connection: "RECORD — He circled the globe in under 8 days setting a world record" },
-      { clue: "His surname — also means to be shrewd and clever",       answer: "WILEY",      connection: "WILEY — Wiley Post, the pioneering aviator" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["E","P","O","R","N","E","I"], answer:"PIONEER", clue:"A person who is among the first to explore or develop something new" },
-    quote: `Wiley Post completed the first solo round-the-world flight on July 22nd 1933 — a true PIONEER of the skies. ✈️
-🔗 https://en.wikipedia.org/wiki/Wiley_Post`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-23": {
     rounds: [
-      { clue: "His most famous detective character",                    answer: "MARLOWE",    connection: "MARLOWE — Philip Marlowe, the ultimate hardboiled detective" },
-      { clue: "The city that sets the mood for all his stories",        answer: "DOWNTOWN",   connection: "LOS ANGELES — The downtown streets where Marlowe works" },
-      { clue: "The genre of crime writing he helped define",            answer: "SHADOWS",    connection: "SHADOWS — The dark noir world his detective inhabits" },
-      { clue: "His most celebrated novel — The Big what?",              answer: "SLEEP",      connection: "SLEEP — The Big Sleep, his most famous work" },
-      { clue: "Down these mean what must a man go?",                    answer: "STREETS",    connection: "STREETS — His famous quote: down these mean streets a man must go" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["R","S","M","Y","E","T","Y"], answer:"MYSTERY", clue:"Something unexplained — or a genre of crime fiction" },
-    quote: `"Down these mean streets a man must go who is not himself mean." Raymond Chandler — born July 23rd 1888. King of MYSTERY. 🕵️
-🔗 https://en.wikipedia.org/wiki/Raymond_Chandler`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-24": {
     rounds: [
-      { clue: "The ancient civilisation that built it",                 answer: "EMPIRE",     connection: "EMPIRE — The Inca Empire built Machu Picchu around 1450" },
-      { clue: "The South American country it sits in",                  answer: "PERUVIAN",   connection: "PERUVIAN — Machu Picchu lies high in the Peruvian Andes" },
-      { clue: "The mountain range it sits in",                          answer: "ANDES",      connection: "ANDES — The Andes mountains cradle the site at 2,430 metres" },
-      { clue: "The American explorer who revealed it to the world",     answer: "BINGHAM",    connection: "BINGHAM — Hiram Bingham III brought it to world attention in 1911" },
-      { clue: "What the site is called — a lost what?",                 answer: "CITADEL",    connection: "CITADEL — The lost citadel above the clouds" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["I","N","A","E","C","T","N"], answer:"ANCIENT", clue:"Belonging to the very distant past" },
-    quote: `"Lost city above the clouds." Machu Picchu was revealed to the world on July 24th 1911 — one of the most breathtaking ANCIENT sites on earth. 🏔️
-🔗 https://en.wikipedia.org/wiki/Machu_Picchu`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-25": {
     rounds: [
-      { clue: "The instrument he controversially plugged in",           answer: "GUITAR",     connection: "GUITAR — The electric guitar that shocked the folk purists" },
-      { clue: "His previous musical style — acoustic and storytelling", answer: "ACOUSTIC",   connection: "ACOUSTIC — The folk world he left behind when he went electric" },
-      { clue: "What the crowd famously shouted at him",                 answer: "JUDAS",      connection: "JUDAS — A fan shouted Judas, accusing him of betrayal" },
-      { clue: "The festival where it happened — in Manchester",         answer: "FREE TRADE", connection: "FREE TRADE — The Free Trade Hall in Manchester, July 1966" },
-      { clue: "His surname — also a famous Welsh poet",                 answer: "DYLAN",      connection: "DYLAN — Bob Dylan, born Robert Zimmerman, took this name from Dylan Thomas" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["B","L","R","E","E"], answer:"REBEL", clue:"Someone who resists authority or convention" },
-    quote: `"Play it loud." Bob Dylan went electric on July 25th 1965 at Newport — the greatest REBEL move in music history. ⚡
-🔗 https://en.wikipedia.org/wiki/Bob_Dylan`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-26": {
     rounds: [
-      { clue: "The band he fronts — also a type of gemstone",           answer: "STONES",     connection: "STONES — The Rolling Stones, one of rock's greatest bands" },
-      { clue: "His distinctive way of moving on stage",                 answer: "STRUT",      connection: "STRUT — His iconic stage walk is instantly recognisable" },
-      { clue: "His lips are said to be his most famous feature",        answer: "SYMBOL",     connection: "SYMBOL — His lips became the symbol of the Rolling Stones' logo" },
-      { clue: "You can't always get what you this",                     answer: "DESIRE",     connection: "DESIRE — You Can't Always Get What You Want — a timeless classic" },
-      { clue: "He studied here before dropping out for rock and roll",  answer: "STUDENT",    connection: "STUDENT — He studied at the London School of Economics" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["E","E","L","D","R","N","G","Y","A"], answer:"LEGENDARY", clue:"Famous enough to be the subject of stories passed down through generations" },
-    quote: `"You can't always get what you want." Mick Jagger — born July 26th 1943. Still strutting. Still LEGENDARY. 🎤
-🔗 https://en.wikipedia.org/wiki/Mick_Jagger`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-27": {
     rounds: [
-      { clue: "The crop he introduced to England from the Americas",    answer: "POTATO",     connection: "POTATO — He is credited with introducing the potato to England" },
-      { clue: "The monarch he served and charmed",                      answer: "ELIZABETH",  connection: "ELIZABETH — Queen Elizabeth I, his great patron" },
-      { clue: "The colonies he tried to establish in America",          answer: "VIRGINIA",   connection: "VIRGINIA — Named after the Virgin Queen — his American colony" },
-      { clue: "He was eventually beheaded here",                        answer: "TOWER",      connection: "TOWER — He was imprisoned and executed at the Tower of London" },
-      { clue: "His voyages made him this type of adventurer",           answer: "EXPLORER",   connection: "EXPLORER — One of the great Elizabethan explorers" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["A","E","D","N","T","V","E","U","R"], answer:"ADVENTURE", clue:"An exciting or daring journey into the unknown" },
-    quote: `"Fortune favours the bold." Sir Walter Raleigh — executed July 27th 1618. A life of ADVENTURE that changed the world. ⚓
-🔗 https://en.wikipedia.org/wiki/Walter_Raleigh`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-28": {
     rounds: [
-      { clue: "The act that triggered the conflict — a killing in Sarajevo", answer: "MURDER",connection: "MURDER — The assassination of Archduke Franz Ferdinand sparked the war" },
-      { clue: "The system that dragged nation after nation in",          answer: "ALLIANCE",   connection: "ALLIANCE — The web of alliances that turned one murder into world war" },
-      { clue: "The defining feature of the Western Front",              answer: "TRENCHES",   connection: "TRENCHES — Millions lived and died in the trenches of France" },
-      { clue: "The country that issued the first declaration of war",   answer: "AUSTRIA",    connection: "AUSTRIA — Austria-Hungary declared war on Serbia on July 28th 1914" },
-      { clue: "What they called it — the war to end all what?",         answer: "ARMISTICE",  connection: "ARMISTICE — The 1918 armistice finally ended the war to end all wars" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["L","O","I","C","F","T","N","C"], answer:"CONFLICT", clue:"A prolonged struggle or war between opposing forces" },
-    quote: `July 28th 1914 — World War One began. Four years of CONFLICT that left 20 million dead and changed the world forever. 🌍
-🔗 https://en.wikipedia.org/wiki/World_War_I`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-29": {
     rounds: [
-      { clue: "The swirling night sky he painted — Starry what?",       answer: "NIGHT",      connection: "NIGHT — The Starry Night, his most iconic painting" },
-      { clue: "The French town where he lived his final days",          answer: "AUVERS",     connection: "AUVERS — Auvers-sur-Oise, where he died on July 29th 1890" },
-      { clue: "The yellow flowers he painted over and over",            answer: "BLOSSOM",    connection: "SUNFLOWERS — His famous paintings of sunflowers in bloom" },
-      { clue: "The body part he famously cut off",                      answer: "SEVERED",    connection: "SEVERED — He cut off part of his ear during a mental health crisis" },
-      { clue: "His Dutch first name",                                   answer: "VINCENT",    connection: "VINCENT — Vincent van Gogh, one of the greatest artists who ever lived" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["E","S","R","E","P","I","C","T","M","E","A"], answer:"MASTERPIECE", clue:"A work of outstanding artistry and skill" },
-    quote: `"Great things are done by a series of small things brought together." Vincent van Gogh died July 29th 1890. Every painting a MASTERPIECE. 🌻
-🔗 https://en.wikipedia.org/wiki/Vincent_van_Gogh`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-30": {
     rounds: [
-      { clue: "The host nation who won the first tournament",           answer: "URUGUAY",    connection: "URUGUAY — The host nation who won the very first World Cup" },
-      { clue: "The city where all the matches were played",             answer: "CAPITAL",    connection: "MONTEVIDEO — The Uruguayan capital that hosted the entire tournament" },
-      { clue: "The number of nations who took part",                    answer: "THIRTEEN",   connection: "THIRTEEN — Only 13 nations competed in the first World Cup" },
-      { clue: "The trophy awarded to the winners",                      answer: "JULES",      connection: "JULES — The Jules Rimet Trophy, named after the man who created it" },
-      { clue: "The final opponents — neighbours across the river",      answer: "ARGENTINA",  connection: "ARGENTINA — Uruguay beat Argentina 4-2 in the final" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["Y","O","S","H","T","I","R"], answer:"HISTORY", clue:"The study of past events — and the making of them" },
-    quote: `July 30th 1930 — the first World Cup Final. Uruguay beat Argentina to make HISTORY. The beautiful game was born. ⚽
-🔗 https://en.wikipedia.org/wiki/1930_FIFA_World_Cup`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
   "2026-07-31": {
     rounds: [
-      { clue: "The boy wizard she created",                             answer: "POTTER",     connection: "POTTER — Harry Potter, the boy who lived" },
-      { clue: "The school he attends",                                  answer: "HOGWARTS",   connection: "HOGWARTS — The school of witchcraft and wizardry" },
-      { clue: "The train that takes him there — Hogwarts what?",        answer: "EXPRESS",    connection: "EXPRESS — The Hogwarts Express departs from platform 9¾" },
-      { clue: "The sport played on broomsticks",                        answer: "QUIDDITCH",  connection: "QUIDDITCH — The magical sport Harry excels at" },
-      { clue: "She wrote the books while a struggling single parent",   answer: "ROWLING",    connection: "ROWLING — J.K. Rowling, born July 31st 1965" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
+      { clue: "", answer: "", connection: "" },
     ],
-    anagram: { letters:["A","I","L","M","A","C","G"], answer:"MAGICAL", clue:"Having the quality of magic — wonderful and extraordinary" },
-    quote: `"Words are our most inexhaustible source of magic." J.K. Rowling — born July 31st 1965. A truly MAGICAL life. ⚡
-🔗 https://en.wikipedia.org/wiki/J._K._Rowling`,
+    anagram: { letters:[], answer:"", clue:"" },
+    quote: ``,
   },
 
 };
