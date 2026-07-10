@@ -941,26 +941,28 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 
   "2026-07-11": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Person who searches for new talent or information", answer: "SCOUT", connection: "SCOUT: Central child narrator of To Kill a Mockingbird, through whose eyes the story unfolds." },
+      { clue: "Professional who represents clients in legal matters", answer: "LAWYER", connection: "LAWYER: Atticus Finch, a small‑town lawyer, defends an innocent man against grave accusations." },
+      { clue: "U.S. state with Montgomery as its capital", answer: "ALABAMA", connection: "ALABAMA: The novel is set in the fictional town of Maycomb, located in Alabama." },
+      { clue: "Surname associated with a major prize for achievements in journalism and literature", answer: "PULITZER", connection: "PULITZER: To Kill a Mockingbird was awarded the Pulitzer Prize for Fiction in 1961." },
+      { clue: "Unfair opinion or judgement formed without proper knowledge", answer: "PREJUDICE", connection: "PREJUDICE: The book explores racial prejudice and social injustice in the American South." },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["U","J","I","T","C","S","N","E","I"], answer:"INJUSTICE", clue:"Word for unfair treatment or violation of rights" },
+    quote: `“Courage is not a man with a gun in his hand.” On July 11, 1960 To Kill a Mockingbird released
+🔗 https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird`,
   },
 
   "2026-07-12": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Something beyond the usual or expected", answer: "EXTRA", connection: "EXTRA — E.T. is literally an “extra‑terrestrial,” the central being of the film." },
+      { clue: "A dense area filled with trees and wildlife", answer: "FOREST", connection: "FOREST — E.T. is discovered in the forest where the alien ship lands." },
+      { clue: "A genre involving magical or imaginative elements", answer: "FANTASY", connection: "FANTASY — The film blends science fiction with fantasy elements and childlike wonder." },
+      { clue: "To rise or float as if defying gravity", answer: "LEVITATE", connection: "LEVITATE — E.T. uses telekinetic powers, including levitation, during key scenes." },
+      { clue: "A celebration involving costumes, pumpkins, and spooky themes", answer: "HALLOWEEN", connection: "HALLOWEEN — The iconic Halloween sequence features E.T. disguised and exploring the neighbourhood." },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["E","H","N","O","P"], answer:"PHONE", clue:"Portable tool that lets you speak with someone far away" },
+    quote: `On 12 July 1982, E.T. the Extra-Terrestrial topped the U.S. box office, becoming the highest-grossing film of its time
+🔗 https://youtu.be/qYAETtIIClk?si=TVpwSovC8bkssost`,
   },
 
   "2026-07-13": {
