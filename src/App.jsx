@@ -967,38 +967,41 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 
   "2026-07-13": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Female Royal", answer: "QUEEN", connection: "QUEEN — Delivered one of the most iconic Live Aid performances at Wembley." },
+      { clue: "Severe shortage of food causing widespread hunger", answer: "FAMINE", connection: "FAMINE — The concert was organised to raise funds for famine relief in Ethiopia." },
+      { clue: "Large outdoor venue designed for sports or major events", answer: "STADIUM", connection: "STADIUM — Live Aid took place simultaneously in Wembley Stadium and JFK Stadium." },
+      { clue: "Supersonic passenger aircraft", answer: "CONCORDE", connection: "CONCORDE — Phil Collins used the Concorde to perform at both Live Aid venues on the same day." },
+      { clue: "To transmit audio or visual content to a wide audience.", answer: "BROADCAST", connection: "BROADCAST — The event was broadcast worldwide, reaching an estimated 1.9 billion viewers." },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["A","H","E","P","O","T","I","I"], answer:"ETHIOPIA", clue:"Addis Ababa is in which country" },
+    quote: `On 13 July 1985, Live Aid united musicians and millions of viewers in a global effort to support famine relief in Ethiopia.
+🔗 https://youtu.be/FP808MiJUcM?si=kzjOT8SwBqw3YC08`,
   },
 
   "2026-07-14": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "A state of being joined together for a common purpose", answer: "UNITY", connection: "UNITY — The French Revolution emphasised unity among citizens against oppression" },
+      { clue: "Like toast in a certain breakfast dish", answer: "FRENCH", connection: "FRENCH — Bastille Day marks a defining moment in French history" },
+      { clue: "A legally recognised member of a nation", answer: "CITIZEN", connection: "CITIZEN — The storming of the Bastille was carried out by Parisian citizens demanding rights" },
+      { clue: "A sudden attempt to take something by force", answer: "STORMING", connection: "STORMING — The storming of the Bastille fortress on July 14, 1789, sparked the French Revolution" },
+      { clue: "A social system based on land ownership and obligations", answer: "FEUDALISM", connection: "FEUDALISM — The revolution sought to dismantle feudal structures and privileges" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["D","S","B","G","E","E","I","E"], answer:"BESIEGED", clue:"Condition of being surrounded or under attack" },
+    quote: `Bastille Day commemorates the storming of the Bastille on 14 July 1789, a turning point that ignited the French Revolution.
+🔗 https://en.wikipedia.org/wiki/Bastille_Day`,
   },
 
   "2026-07-15": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Brief chirping noise from a songbird", answer: "TWEET", connection: "TWEET — The core feature of Twitter, allowing users to post short messages" },
+      { clue: "Relating to interaction within online communities", answer: "SOCIAL", connection: "SOCIAL — Twitter is a major social networking service" },
+      { clue: "At a fast pace or without delay", answer: "QUICKLY", connection: "QUICKLY — Tweets spread rapidly, making Twitter known for real‑time updates" },
+      { clue: "Long, level surface where commuters stand before boarding", answer: "PLATFORM", connection: "PLATFORM — Twitter is an online platform used globally for communication and news" },
+      { clue: "Exchanging information through written or spoken communication", answer: "MESSAGING", connection: "MESSAGING — Direct messaging is a key feature of Twitter's user interaction" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["U","S","M","Y","K"], answer:"MUSKY", clue:"Possessing a heavy, lingering smell" },
+    quote: `On 15 July 2006, Twitter launched publicly, introducing a new era of fast, real‑time communication.
+🔗 https://en.wikipedia.org/wiki/Twitter`,
   },
 
   "2026-07-16": {
