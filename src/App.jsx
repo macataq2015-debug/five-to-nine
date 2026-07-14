@@ -1006,62 +1006,67 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 
   "2026-07-16": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Visible mass of condensed water vapour in the sky", answer: "CLOUD", connection: "CLOUD — The Trinity detonation produced the first nuclear mushroom cloud in history" },
+      { clue: "Relating to the energy released from splitting or fusing nuclei", answer: "ATOMIC", connection: "ATOMIC — Trinity was the world's first successful atomic bomb test" },
+      { clue: "Group of three closely connected things", answer: "TRINITY", connection: "TRINITY — The codename for the test conducted on 16 July 1945" },
+      { clue: "A notable site or feature with historical or cultural significance", answer: "LANDMARK", connection: "LANDMARK — The event is considered a landmark moment in scientific and military history" },
+      { clue: "Cocktail made with whiskey, vermouth, and bitters", answer: "MANHATTAN", connection: "MANHATTAN — The Trinity test was part of the Manhattan Project" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["A","C","N","E","U","R","L"], answer:"NUCLEAR", clue:"Involving processes at the core of atomic structure" },
+    quote: `On 16 July 1945, the Trinity test marked the world's first detonation of an atomic device, ushering in the nuclear age.
+🔗 https://en.wikipedia.org/wiki/Trinity_(nuclear_test)`,
   },
 
   "2026-07-17": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Ability to influence or control people or events", answer: "POWER", connection: "POWER — The conflict began with a military attempt to seize power from the elected government" },
+      { clue: "Yellow songbird often kept as a pet", answer: "CANARY", connection: "CANARY — The uprising started in the Canary Islands before spreading to mainland Spain" },
+      { clue: "Country in North Africa known for its Atlantic coastline", answer: "MOROCCO", connection: "MOROCCO — Spanish Morocco was a key base for the initial military revolt" },
+      { clue: "Tele coin to choose a leader", answer: "ELECTION", connection: "ELECTION — Tensions followed the 1936 election, which brought the Popular Front to power" },
+      { clue: "Punishments carried out in response to wrongdoing", answer: "REPRISALS", connection: "REPRISALS — Both sides carried out reprisals during the early stages of the conflict" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["G","R","U","I","S","P","I","N"], answer:"UPRISING", clue:"Word for a revolt or rising against authority" },
+    quote: `On 17 July 1936, a military revolt began in Spanish Morocco and the Canary Islands, igniting the Spanish Civil War.
+🔗 https://en.wikipedia.org/wiki/Spanish_Civil_War`,
   },
 
   "2026-07-18": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Harmony or absence of conflict", answer: "PEACE", connection: "PEACE — Mandela advocated reconciliation and peaceful transition after apartheid" },
+      { clue: "Admiral with a big column", answer: "NELSON", connection: "NELSON — His first name" },
+      { clue: "State of being able to act or live without restraint", answer: "FREEDOM", connection: "FREEDOM — Mandela became a global symbol of the struggle for freedom" },
+      { clue: "Large formal meeting or assembly", answer: "CONGRESS", connection: "CONGRESS — The African National Congress (ANC) was his political home" },
+      { clue: "Hide apart in racial segregation", answer: "APARTHEID", connection: "APARTHEID — Mandela fought against apartheid throughout his life" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["O","P","I","R","N","S"], answer:"PRISON", clue:"Facility used to confine offenders" },
+    quote: `I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear. Nelson Mandela born on this day 1918
+🔗 https://en.wikipedia.org/wiki/Nelson_Mandela`,
   },
 
   "2026-07-19": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "What you do when something delights you", answer: "SMILE", connection: "SMILE — Brian May's band before Queen" },
+      { clue: "Long academic paper written to earn a degree", answer: "THESIS", connection: "THESIS — He completed a PhD thesis in astrophysics" },
+      { clue: "Planet closest to the Sun", answer: "MERCURY", connection: "MERCURY — Freddie Mercury, his bandmate" },
+      { clue: "Relating to an unconventional or artistic lifestyle", answer: "BOHEMIAN", connection: "BOHEMIAN — \"Bohemian Rhapsody,\" Queen's iconic song" },
+      { clue: "Musician who plays a 6 stringed instrument", answer: "GUITARIST", connection: "GUITARIST — Brian May's role in Queen" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["U","E","Q","N","E"], answer:"QUEEN", clue:"Female royal" },
+    quote: `Brian May, born on 19 July 1947, became one of rock's most distinctive guitarists and later earned a PhD in astrophysics.
+🔗 https://en.wikipedia.org/wiki/Brian_May`,
   },
 
   "2026-07-20": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "In aid of this South Asia country", answer: "INDIA", connection: "INDIA — Often cited as the birthplace of chess" },
+      { clue: "Member of the clergy", answer: "BISHOP", connection: "BISHOP — A chess piece" },
+      { clue: "Take control of something by force", answer: "CAPTURE", connection: "CAPTURE — A core action in chess" },
+      { clue: "A plan of action designed to achieve a long-term or overall aim", answer: "STRATEGY", connection: "STRATEGY — Essential to chess" },
+      { clue: "Move that leaves an opponent with no further options", answer: "CHECKMATE", connection: "CHECKMATE — The winning move" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["L","C","S","A","E","T"], answer:"CASTLE", clue:"Fortified building or stronghold" },
+    quote: `Today is international Chess day. Choose your move carefully, in chess as in life
+🔗 https://en.wikipedia.org/wiki/Chess`,
   },
 
   "2026-07-21": {
