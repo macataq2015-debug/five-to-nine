@@ -1071,38 +1071,41 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 
   "2026-07-21": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Famous Belgian cartoonist", answer: "HERGE", connection: "HERGÉ — Belgian creator of Tintin" },
+      { clue: "2008 city that Colin Farrell and Brendan Gleeson were IN", answer: "BRUGES", connection: "BRUGES — Belgian city featured in In Bruges" },
+      { clue: "Par went in this Belgium port city", answer: "ANTWERP", connection: "ANTWERP — Major Belgian port city" },
+      { clue: "Capital of Belgium", answer: "BRUSSELS", connection: "BRUSSELS — Capital of Belgium" },
+      { clue: "A single-reed woodwind instrument with a brass body", answer: "SAXOPHONE", connection: "SAXOPHONE — Invented by Belgian instrument maker Adolphe Sax" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["O","P","I","O","T","R"], answer:"POIROT", clue:"Famous Belgian detective" },
+    quote: `"Everything we see hides another thing." - René Magritte. Belgian National Day is celebrated every year on 21 July, marking the 1831 oath of Leopold I as the first King of the Belgians.
+🔗 https://en.wikipedia.org/wiki/Belgian_National_Day`,
   },
 
   "2026-07-22": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Whole planet we live on", answer: "WORLD", connection: "WORLD — He flew around the world" },
+      { clue: "Capital city of Russia", answer: "MOSCOW", connection: "MOSCOW — One of his notable stops" },
+      { clue: "Help or assistance given to someone", answer: "SUPPORT", connection: "SUPPORT — Backing and sponsorship for the flight" },
+      { clue: "Force applied to a surface", answer: "PRESSURE", connection: "PRESSURE — Cabin‑pressure innovations associated with his flying" },
+      { clue: "City in Alaska", answer: "FAIRBANKS", connection: "FAIRBANKS — The propeller of his plane was replaced here in his solo record flight" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["H","F","I","L","T","G"], answer:"FLIGHT", clue:"Journey through the air" },
+    quote: `On July 22 1933 Wiley Post completed a pioneering solo flight around the world, becoming a symbol of aviation daring and innovation.
+🔗 https://en.wikipedia.org/wiki/Wiley_Post`,
   },
 
   "2026-07-23": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "State of rest", answer: "SLEEP", connection: "SLEEP — The Big Sleep, one of Chandler's most famous novels" },
+      { clue: "Tar gob for this famous hollywood star", answer: "BOGART", connection: "BOGART — Played Philip Marlowe in film adaptations" },
+      { clue: "Something said when leaving", answer: "GOODBYE", connection: "GOODBYE — The Long Goodbye, another Chandler classic" },
+      { clue: "US State & Bruce Springsteen album", answer: "NEBRASKA", connection: "NEBRASKA — Chandler lived there briefly as a child" },
+      { clue: "Security against loss or damage", answer: "INDEMNITY", connection: "INDEMNITY — Chandler co‑wrote the screenplay for Double Indemnity" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["L","R","F","E","W","A","E","L"], answer:"FAREWELL", clue:"A different something said when leaving" },
+    quote: `Born on July 23 1888 - Raymond Chandler became one of the greatest crime fiction authors of all time
+🔗 https://en.wikipedia.org/wiki/Raymond_Chandler`,
   },
 
   "2026-07-24": {
