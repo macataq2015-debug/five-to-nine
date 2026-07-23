@@ -1110,26 +1110,28 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 
   "2026-07-24": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Peruvian city", answer: "CUSCO", connection: "CUSCO — Gateway city for reaching Machu Picchu" },
+      { clue: "Red won for something remarkable", answer: "WONDER", connection: "WONDER — Machu Picchu is one of the New Seven Wonders of the World" },
+      { clue: "Fortified place or stronghold", answer: "CITADEL", connection: "CITADEL — The site is an ancient Incan citadel" },
+      { clue: "Cultural legacy passed down through generations", answer: "HERITAGE", connection: "HERITAGE — It is a UNESCO World Heritage Site" },
+      { clue: "Relating to the region of the world's largest rainforest", answer: "AMAZONIAN", connection: "AMAZONIAN — Located near the edge of the Amazon basin" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["E","S","C","A","D","R"], answer:"SACRED", clue:"Holy or revered" },
+    quote: `On this day in 1911, Hiram Bingham brought Machu Picchu to the world's attention, revealing one of the great wonders of human history.
+🔗 https://www.britannica.com/place/Machu-Picchu`,
   },
 
   "2026-07-25": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "A poet with the surname of Thomas who wrote 'Do Not Go Gentle into That Good Night'", answer: "DYLAN", connection: "DYLAN — Bob Dylan himself" },
+      { clue: "Word that comes after Sam and before Bender", answer: "FENDER", connection: "FENDER — He played a Fender Stratocaster at Newport" },
+      { clue: "People who insist on traditional ways", answer: "PURISTS", connection: "PURISTS — Folk purists objected to his electric set" },
+      { clue: "Wronged or let down", answer: "BETRAYED", connection: "BETRAYED — Many felt he had \"betrayed\" folk tradition" },
+      { clue: "Made louder using electronic equipment", answer: "AMPLIFIED", connection: "AMPLIFIED — His controversial electric performance" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["C","E","E","R","T","L","C","I"], answer:"ELECTRIC", clue:"Requiring a power source to function" },
+    quote: `"I got a head full of ideas that are drivin' me insane." On this day in 1965 Bob Dylan went electric at the Newport folk festival
+🔗 https://youtu.be/a6Kv0vF41Bc?si=mQwMI47BNob6VEVu`,
   },
 
   "2026-07-26": {
