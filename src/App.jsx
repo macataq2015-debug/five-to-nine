@@ -1136,74 +1136,80 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 
   "2026-07-26": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Period spent away from one's home country", answer: "EXILE", connection: "EXILE — Refers to Exile on Main St., one of the Rolling Stones' landmark albums" },
+      { clue: "Road or thoroughfare", answer: "STREET", connection: "STREET — Points to Street Fighting Man, a signature Stones track" },
+      { clue: "Formal meal or feast", answer: "BANQUET", connection: "BANQUET — Connects to Beggars Banquet, another classic album" },
+      { clue: "Feeling of compassion or understanding", answer: "SYMPATHY", connection: "SYMPATHY — Links to Sympathy for the Devil, one of their most iconic songs" },
+      { clue: "Study of how resources are produced and used", answer: "ECONOMICS", connection: "ECONOMICS — Jagger studied economics at the London School of Economics before rising to fame" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["L","O","C","D","U"], answer:"CLOUD", clue:"Floating mass of condensed water vapour" },
+    quote: `Born July 26th 1943 — Mick Jagger became one of the most iconic frontmen in rock history.
+🔗 https://youtu.be/RbmS3tQJ7Os?si=K3ujLoQIC_hDSZAu`,
   },
 
   "2026-07-27": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Capital is Tokyo", answer: "JAPAN", connection: "JAPAN — Xavier became the first Christian missionary to reach Japan" },
+      { clue: "A follower of the Society of Jesus", answer: "JESUIT", connection: "JESUIT — He was one of the founding members of the Jesuit order" },
+      { clue: "State of lacking material possessions", answer: "POVERTY", connection: "POVERTY — Jesuits take a vow of poverty, which Xavier lived out" },
+      { clue: "Study of religious belief", answer: "THEOLOGY", connection: "THEOLOGY — His work shaped early Jesuit theological teaching" },
+      { clue: "Willingness to comply with authority", answer: "OBEDIENCE", connection: "OBEDIENCE — Jesuits take a vow of obedience, central to Xavier's mission" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["E","N","L","A","U","A","G","G"], answer:"LANGUAGE", clue:"System of communication using words" },
+    quote: `First Christian missionary in Japan, Jesuit priest Francis Xavier, reaches Japan on July 27 1549 but is not permitted to enter any port until August 15
+🔗 https://en.wikipedia.org/wiki/Francis_Xavier`,
   },
 
   "2026-07-28": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Military area where opposing forces meet", answer: "FRONT", connection: "FRONT — World War I was fought across multiple fronts in Europe" },
+      { clue: "Time of intense difficulty or danger", answer: "CRISIS", connection: "CRISIS — The July Crisis triggered the escalation toward war" },
+      { clue: "Term that encompasses Albania, Bosnia, Bulgaria, Greece, Kosovo and more", answer: "BALKANS", connection: "BALKANS — Instability in this region was the political tinderbox that ignited World War One" },
+      { clue: "Capital of Bosnia and Herzegovina", answer: "SARAJEVO", connection: "SARAJEVO — The assassination in Sarajevo set events in motion" },
+      { clue: "A word that comes after Rio and before Magellan", answer: "FERDINAND", connection: "FERDINAND — Refers to Archduke Franz Ferdinand, whose assassination precipitated the conflict" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["R","E","G","T","A"], answer:"GREAT", clue:"Large or significant in size" },
+    quote: `On July 28th 1914, Austria‑Hungary blamed Serbia for the assassination of Franz Ferdinand and World War One commenced.
+🔗 https://en.wikipedia.org/wiki/World_War_I`,
   },
 
   "2026-07-29": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Time between sunset and sunrise", answer: "NIGHT", connection: "NIGHT — Refers to The Starry Night, one of Van Gogh's most iconic works" },
+      { clue: "Widely known or celebrated", answer: "FAMOUS", connection: "FAMOUS — Van Gogh became world‑famous after his death" },
+      { clue: "Plants that bloom", answer: "FLOWERS", connection: "FLOWERS — He painted numerous flower studies, including his famous sunflowers" },
+      { clue: "Deeply distressed or anguished", answer: "TORTURED", connection: "TORTURED — His life was marked by emotional turmoil and suffering" },
+      { clue: "Scalped an area of natural scenery", answer: "LANDSCAPE", connection: "LANDSCAPE — Many of his greatest works are landscapes painted outdoors" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["T","R","P","A","R","O","T","I"], answer:"PORTRAIT", clue:"Painting of a person" },
+    quote: `"The fishermen know that the sea is dangerous and the storm terrible, but they have never found these dangers sufficient reason for remaining ashore." Vincent van Gogh, born on this day in 1853, created some of the most influential works in Western art
+🔗 https://en.wikipedia.org/wiki/Vincent_van_Gogh`,
   },
 
   "2026-07-30": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Organisation representing workers", answer: "UNION", connection: "UNION — Jimmy Hoffa was president of the Teamsters union" },
+      { clue: "Claim without proof", answer: "ALLEGE", connection: "ALLEGE — Numerous allegations surrounded his disappearance" },
+      { clue: "City in Michigan", answer: "DETROIT", connection: "DETROIT — Hoffa vanished near Detroit's Machus Red Fox restaurant" },
+      { clue: "Involving unlawful activity", answer: "CRIMINAL", connection: "CRIMINAL — His disappearance has long been linked to organised crime" },
+      { clue: "Cease to be visible", answer: "DISAPPEAR", connection: "DISAPPEAR — Hoffa famously disappeared on July 30th, 1975" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["L","R","D","I","E","D"], answer:"RIDDLE", clue:"Puzzle to be solved" },
+    quote: `"The strong survive and the weak disappear. We do not intend to disappear." Jimmy Hoffa disappeared on this day in 1975
+🔗 https://en.wikipedia.org/wiki/Jimmy_Hoffa`,
   },
 
   "2026-07-31": {
     rounds: [
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
-      { clue: "", answer: "", connection: "" },
+      { clue: "Word after Prince and before KANE", answer: "HARRY", connection: "HARRY — Refers to Harry Potter, Rowling's central character" },
+      { clue: "Community built around shared enthusiasm", answer: "FANDOM", connection: "FANDOM — The Harry Potter series created one of the largest global fandoms" },
+      { clue: "Treatment intended to improve wellbeing", answer: "THERAPY", connection: "THERAPY — Rowling has spoken about therapy supporting her during difficult periods" },
+      { clue: "Raised area used for boarding trains", answer: "PLATFORM", connection: "PLATFORM — Platform 9¾ is a key location in the Harry Potter books" },
+      { clue: "Remarkable or extraordinary", answer: "FANTASTIC", connection: "FANTASTIC — Links to Fantastic Beasts, part of the Wizarding World franchise" },
     ],
-    anagram: { letters:[], answer:"", clue:"" },
-    quote: ``,
+    anagram: { letters:["S","B","P","I","U","H","L"], answer:"PUBLISH", clue:"Make available to the public" },
+    quote: `"Failure is not fun. It can be awful. But living so cautiously that you never fail is worse." J.K. Rowling was born on this day in 1965
+🔗 https://en.wikipedia.org/wiki/J._K._Rowling`,
   },
 
 };
