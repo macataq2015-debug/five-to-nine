@@ -1212,6 +1212,84 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 🔗 https://en.wikipedia.org/wiki/J._K._Rowling`,
   },
 
+  "2026-08-01": {
+    rounds: [
+      { clue: "A universal form of artistic expression involving rhythm and melody", answer: "MUSIC", connection: "MUSIC — MTV was a music‑video channel" },
+      { clue: "Brought to an end or caused to stop functioning", answer: "KILLED", connection: "KILLED — \"Video Killed the Radio Star\" was the first song played" },
+      { clue: "The state of things as they actually exist, as opposed to an idealistic or notional idea of them", answer: "REALITY", connection: "REALITY — MTV later became known for reality TV (Real World, etc.)" },
+      { clue: "Relating to shared ideas, customs, or social behaviour of a group", answer: "CULTURAL", connection: "CULTURAL — MTV became a major cultural force" },
+      { clue: "Of the highest importance or ranking within a system", answer: "PARAMOUNT", connection: "PARAMOUNT — MTV is owned by Paramount Global (formerly Viacom)" },
+    ],
+    anagram: { letters:["I","D","V","O","E"], answer:"VIDEO", clue:"A visual recording format used for entertainment or broadcasting" },
+    quote: `"Ladies and gentlemen, rock and roll" were the opening words of the launch of MTV on this day in 1981
+🔗 https://www.youtube.com/watch?v=qoH8dDaEMzo`,
+  },
+
+  "2026-08-02": {
+    rounds: [
+      { clue: "Principle or standard that distinguish right from wrong", answer: "MORAL", connection: "MORAL — The document asserts moral principles about human rights" },
+      { clue: "A large and powerful group of territories under a single authority", answer: "EMPIRE", connection: "EMPIRE — It marked a break from rule by the British Empire" },
+      { clue: "A place where documents, records, or historical materials are stored", answer: "ARCHIVE", connection: "ARCHIVE — The signed Declaration became a foundational archived record" },
+      { clue: "Unlucky for some", answer: "THIRTEEN", connection: "THIRTEEN — It was signed on behalf of the thirteen colonies" },
+      { clue: "The state of well‑being or contentment", answer: "HAPPINESS", connection: "HAPPINESS — \"Pursuit of Happiness\" appears in the Declaration's text" },
+    ],
+    anagram: { letters:["N","G","S","T","R","A","I","E","U"], answer:"SIGNATURE", clue:"A handwritten personal identifier" },
+    quote: `"We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness." On August 2nd 1776 The Declaration of Independence was formally signed
+🔗 https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence`,
+  },
+
+  "2026-08-03": {
+    rounds: [
+      { clue: "Man from the North Pole who arrives at Christmas", answer: "SANTA", connection: "SANTA — One of Columbus's ships was the Santa María" },
+      { clue: "Small yellow songbird", answer: "CANARY", connection: "CANARY — Columbus departed via the Canary Islands on his westward voyage" },
+      { clue: "Nassau is the capital of where?", answer: "BAHAMAS", connection: "BAHAMAS — His first landing in the New World was in the Bahamas" },
+      { clue: "Capital of Ohio", answer: "COLUMBUS", connection: "COLUMBUS — The voyage was led by Christopher Columbus" },
+      { clue: "An exciting or unusual experience involving exploration", answer: "ADVENTURE", connection: "ADVENTURE — The expedition marked a major maritime adventure into unknown waters" },
+    ],
+    anagram: { letters:["E","E","T","U","S","R","A","R"], answer:"TREASURE", clue:"Something valuable sought by explorers" },
+    quote: `"Life has more imagination than we carry in our dreams." Columbus set sail on August 3rd 1492
+🔗 https://www.britannica.com/biography/Christopher-Columbus/The-first-voyage`,
+  },
+
+  "2026-08-04": {
+    rounds: [
+      { clue: "Lo rap for opposites", answer: "POLAR", connection: "POLAR — The lander targeted Mars's polar region for scientific study" },
+      { clue: "A vehicle propelled into space using powerful thrust", answer: "ROCKET", connection: "ROCKET — The spacecraft was carried into space by a launch rocket" },
+      { clue: "Capital of Arizona", answer: "PHOENIX", connection: "PHOENIX — The mission's name was Phoenix" },
+      { clue: "Sent into motion or activity", answer: "LAUNCHED", connection: "LAUNCHED — The spacecraft was launched on this date" },
+      { clue: "Florida location associated with major space missions and lift‑offs", answer: "CANAVERAL", connection: "CANAVERAL — The launch took place from Cape Canaveral" },
+    ],
+    anagram: { letters:["I","B","R","T","O","C","O"], answer:"ROBOTIC", clue:"Acting in a way that seems programmed rather than natural" },
+    quote: `Phoenix Mars Lander launched on August 4th 2007, beginning its mission to study the Martian polar region.
+🔗 https://science.nasa.gov/mission/mars-phoenix/`,
+  },
+
+  "2026-08-05": {
+    rounds: [
+      { clue: "A name that appears after John but before Katona", answer: "KERRY", connection: "KERRY — The cable began at Valentia Island in County Kerry" },
+      { clue: "A gesture, action, or sound that is used to convey information or instructions", answer: "SIGNAL", connection: "SIGNAL — It carried the first telegraph signals across the ocean" },
+      { clue: "A religious term associated with unity or a group of three", answer: "TRINITY", connection: "TRINITY — The cable landed at Trinity Bay, Newfoundland" },
+      { clue: "Ocean separating Europe from North America", answer: "ATLANTIC", connection: "ATLANTIC — The cable crossed the Atlantic Ocean" },
+      { clue: "King of Mycenae who commanded the Achaeans during the Trojan War", answer: "AGAMEMNON", connection: "AGAMEMNON — HMS Agamemnon was one of the ships that laid the cable" },
+    ],
+    anagram: { letters:["G","S","M","A","E","E","S"], answer:"MESSAGE", clue:"A communication sent from one place to another" },
+    quote: `The first cable laid from Valentia Island off the west coast of Ireland to Bay of Bulls, Trinity Bay, Newfoundland was first connected on August 5th, 1858
+🔗 https://en.wikipedia.org/wiki/Transatlantic_telegraph_cable`,
+  },
+
+  "2026-08-06": {
+    rounds: [
+      { clue: "A territory or domain under a sovereign authority", answer: "REALM", connection: "REALM — Jamaica became an independent realm in 1962" },
+      { clue: "Of brownish and red colour", answer: "MAROON", connection: "MAROON — The Maroons are a historic Jamaican community central to its identity" },
+      { clue: "Originating from England, Scotland, Wales, or Northern Ireland", answer: "BRITISH", connection: "BRITISH — Independence marked Jamaica's separation from British rule" },
+      { clue: "Capital of Jamaica", answer: "KINGSTON", connection: "KINGSTON — The capital city where major independence events were centred" },
+      { clue: "Geographical zone famous for its beaches, islands, and warm climate off the coast of Florida", answer: "CARIBBEAN", connection: "CARIBBEAN — Jamaica is a key nation within the Caribbean region" },
+    ],
+    anagram: { letters:["N","C","L","O","Y","O"], answer:"COLONY", clue:"Group of ants" },
+    quote: `Jamaica officially gained independence on August 6th, 1962, marking the end of British colonial rule and the beginning of a new national era.
+🔗 https://www.youtube.com/watch?v=9ZpxaeICYyg&t=12s`,
+  },
+
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
