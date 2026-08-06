@@ -1290,6 +1290,45 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 🔗 https://www.youtube.com/watch?v=9ZpxaeICYyg&t=12s`,
   },
 
+  "2026-08-07": {
+    rounds: [
+      { clue: "A foolish or easily tricked person", answer: "CHUMP", connection: "CHUMP — Hardy often played the put‑upon \"chump\" in their routines" },
+      { clue: "an aromatic evergreen shrub related to the bay tree", answer: "LAUREL", connection: "LAUREL — Stan Laurel was Hardy's iconic comedy partner" },
+      { clue: "Tbilisi is the capital city of…", answer: "GEORGIA", connection: "GEORGIA — Hardy was born in Harlem, Georgia" },
+      { clue: "Relating to armed forces or soldiers", answer: "MILITARY", connection: "MILITARY — Hardy attended Military school" },
+      { clue: "Comedy style involving exaggerated physical humour", answer: "SLAPSTICK", connection: "SLAPSTICK — Laurel & Hardy were pioneers of slapstick comedy" },
+    ],
+    anagram: { letters:["E","O","I","L","R","V"], answer:"OLIVER", clue:"Musical based on a boy with a twist" },
+    quote: `"Well, here's another nice mess you've gotten me into!" Oliver Hardy died on this day 1957
+🔗 https://en.wikipedia.org/wiki/Oliver_Hardy`,
+  },
+
+  "2026-08-08": {
+    rounds: [
+      { clue: "Connected with a monarch", answer: "ROYAL", connection: "ROYAL — The stolen train was a Royal Mail train" },
+      { clue: "A person who breaks things or causes disruption", answer: "BUSTER", connection: "BUSTER — Buster Edwards was a member of the gang that committed the 1963 Great Train Robbery" },
+      { clue: "Gas gowl for this city in the UK", answer: "GLASGOW", connection: "GLASGOW — The train was travelling from Glasgow to London" },
+      { clue: "Items wrapped or bundled for transport", answer: "PACKAGES", connection: "PACKAGES — The stolen money was carried in mailbags and packages" },
+      { clue: "Railway worker responsible for controlling train movements", answer: "SIGNALMAN", connection: "SIGNALMAN — The gang manipulated railway signals to stop the train" },
+    ],
+    anagram: { letters:["R","B","R","E","O","Y","B"], answer:"ROBBERY", clue:"Crime involving the taking of property" },
+    quote: `On the 8th of August 1963 £2.61 million was stolen from a Royal Mail train travelling from Glasgow to London in the Great Train Robbery
+🔗 https://en.wikipedia.org/wiki/Great_Train_Robbery_(1963)`,
+  },
+
+  "2026-08-09": {
+    rounds: [
+      { clue: "Relating to the law or permitted by rules", answer: "LEGAL", connection: "LEGAL — Singapore's separation was formalised through legal documents and parliamentary acts" },
+      { clue: "A plan or arrangement for achieving a particular aim", answer: "SCHEME", connection: "SCHEME — Political schemes and disagreements led to the split between Singapore and Malaysia" },
+      { clue: "Income collected by a government", answer: "REVENUE", connection: "REVENUE — Economic tensions over revenue and taxation were central to the separation" },
+      { clue: "Kuala Lumpar is the capital of..", answer: "MALAYSIA", connection: "MALAYSIA — Singapore was expelled from Malaysia on this date" },
+      { clue: "Island city‑state in Southeast Asia", answer: "SINGAPORE", connection: "SINGAPORE — The nation became fully independent on 9 August 1965" },
+    ],
+    anagram: { letters:["E","R","A","M","N","E","G","T","E"], answer:"AGREEMENT", clue:"Formal arrangement between parties" },
+    quote: `On the 9th of August 1965 Singapore was irrevocably and unambiguously separated from Malaysia
+🔗 https://en.wikipedia.org/wiki/Independence_of_Singapore_Agreement_1965`,
+  },
+
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
