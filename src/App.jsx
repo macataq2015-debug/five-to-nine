@@ -1329,6 +1329,58 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 🔗 https://en.wikipedia.org/wiki/Independence_of_Singapore_Agreement_1965`,
   },
 
+  "2026-08-10": {
+    rounds: [
+      { clue: "See in this European river", answer: "SEINE", connection: "SEINE — The Louvre stands near the River Seine" },
+      { clue: "Large, grand residence often used by royalty", answer: "PALACE", connection: "PALACE — The Louvre was originally a royal palace before becoming a museum" },
+      { clue: "Triangular structure with sloping sides", answer: "PYRAMID", connection: "PYRAMID — The Louvre is famous for its modern glass pyramid entrance" },
+      { clue: "French general who rose to prominence during the French Revolution", answer: "NAPOLEON", connection: "NAPOLEON — Napoleon expanded the museum's collection and renamed it the Musée Napoléon" },
+      { clue: "Art created by shaping materials into three‑dimensional forms", answer: "SCULPTURE", connection: "SCULPTURE — The Louvre houses world‑famous sculptures such as the Venus de Milo" },
+    ],
+    anagram: { letters:["U","M","S","U","M","E"], answer:"MUSEUM", clue:"Place where art is displayed" },
+    quote: `The Louvre Palace officially opened in Paris as the Musée Central des Arts on August 10th 1793.
+🔗 https://en.wikipedia.org/wiki/Louvre`,
+  },
+
+  "2026-08-11": {
+    rounds: [
+      { clue: "Separate or cause to separate into pieces", answer: "BREAK", connection: "BREAK — DJ Kool Herc pioneered the \"breakbeat\" technique" },
+      { clue: "A disc used to store and play music", answer: "RECORD", connection: "RECORD — Hip hop emerged from DJs manipulating records" },
+      { clue: "People who perform rhythmic movement to music", answer: "DANCERS", connection: "DANCERS — Breakdancers formed a core part of early hip hop culture" },
+      { clue: "Mythical hero known for great strength", answer: "HERCULES", connection: "HERCULES — DJ Kool Herc's nickname was \"Herc,\" short for Hercules" },
+      { clue: "Device used by DJs to play and mix vinyl", answer: "TURNTABLE", connection: "TURNTABLE — Turntables were essential to early hip hop DJing" },
+    ],
+    anagram: { letters:["I","A","G","I","F","R","F","T"], answer:"GRAFFITI", clue:"Street art style" },
+    quote: `The birth of hip hop is traced to DJ Kool Herc's back‑to‑school party on August 11th 1973.
+🔗 https://youtu.be/mcCK99wHrk0?si=y-CPdk3Dsy3TTIo-`,
+  },
+
+  "2026-08-12": {
+    rounds: [
+      { clue: "Red or green nearly round fruit", answer: "APPLE", connection: "APPLE — IBM's PC launch intensified competition with Apple in the early computer market" },
+      { clue: "A set of connected components working together", answer: "SYSTEM", connection: "SYSTEM — The IBM PC introduced a new open system architecture" },
+      { clue: "U.S. state famous for sunshine", answer: "FLORIDA", connection: "FLORIDA — IBM developed parts of the PC in Boca Raton, Florida" },
+      { clue: "Electronic device used for processing information", answer: "COMPUTER", connection: "COMPUTER — The IBM PC became one of the most influential personal computers ever made" },
+      { clue: "Component that carries out instructions in a machine", answer: "PROCESSOR", connection: "PROCESSOR — The IBM PC used Intel's 8088 processor" },
+    ],
+    anagram: { letters:["T","O","P","T","P","O","R","E","Y"], answer:"PROTOTYPE", clue:"Early model used to test a new design" },
+    quote: `IBM released its first personal computer, the IBM PC 5150, on August 12th, 1981.
+🔗 https://en.wikipedia.org/wiki/IBM_Personal_Computer`,
+  },
+
+  "2026-08-13": {
+    rounds: [
+      { clue: "Indigenous civilisation of central Mexico", answer: "AZTEC", connection: "AZTEC — Tenochtitlan was the capital of the Aztec Empire" },
+      { clue: "Large type of firearm used in early warfare", answer: "CANNON", connection: "CANNON — Spanish forces used cannons during the siege" },
+      { clue: "Person serving in an army", answer: "SOLDIER", connection: "SOLDIER — Both Spanish soldiers and Indigenous allies fought in the conflict" },
+      { clue: "Infectious disease caused by Variola virus", answer: "SMALLPOX", connection: "SMALLPOX — The smallpox epidemic weakened the Aztec population before the fall" },
+      { clue: "Ritual offering made to a deity", answer: "SACRIFICE", connection: "SACRIFICE — Ritual sacrifice was central to Aztec religious practice" },
+    ],
+    anagram: { letters:["T","N","C","E","U","O","Q","S"], answer:"CONQUEST", clue:"Act of taking control of a place or people" },
+    quote: `The fall of Tenochtitlan on August 13th, 1521 marked the collapse of the Aztec Empire and the rise of Spanish rule in Mexico.
+🔗 https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan`,
+  },
+
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
