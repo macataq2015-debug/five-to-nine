@@ -1381,6 +1381,19 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 🔗 https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan`,
   },
 
+  "2026-08-14": {
+    rounds: [
+      { clue: "Ability to act or control decisions", answer: "POWER", connection: "POWER — Independence transferred political power from Britain to the new nation" },
+      { clue: "Leg ban for this region of South Asia", answer: "BENGAL", connection: "BENGAL — Bengal was divided during Partition, with East Bengal becoming part of Pakistan" },
+      { clue: "Genre featuring cowboys", answer: "WESTERN", connection: "WESTERN — The western part of the province of Punjab ended up part of Pakistan" },
+      { clue: "Status of a semi‑independent state within the Commonwealth", answer: "DOMINION", connection: "DOMINION — Pakistan became a dominion within the Commonwealth upon independence" },
+      { clue: "Capital of Pakistan", answer: "ISLAMABAD", connection: "ISLAMABAD — Capital city of Pakistan" },
+    ],
+    anagram: { letters:["E","O","P","N","I","R","V","C"], answer:"PROVINCE", clue:"Administrative region within a country" },
+    quote: `Pakistan gained independence on August 14th, 1947, marking the creation of a new nation following the Partition of British India.
+🔗 https://en.wikipedia.org/wiki/History_of_Pakistan_(1947%E2%80%93present)`,
+  },
+
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
