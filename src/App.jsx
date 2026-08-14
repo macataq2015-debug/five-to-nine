@@ -1394,6 +1394,58 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 🔗 https://en.wikipedia.org/wiki/History_of_Pakistan_(1947%E2%80%93present)`,
   },
 
+  "2026-08-15": {
+    rounds: [
+      { clue: "Person who travels from place to place without a fixed home", answer: "GYPSY", connection: "GYPSY — Jimi Hendrix performed with his band Gypsy Sun and Rainbows at Woodstock" },
+      { clue: "Preserved in a sealed metal container", answer: "CANNED", connection: "CANNED — Canned Heat were one of the festival's major performers" },
+      { clue: "Renewed interest or return to popularity", answer: "REVIVAL", connection: "REVIVAL — Creedence Clearwater Revival played a late‑night set at Woodstock" },
+      { clue: "Feeling or showing appreciation", answer: "GRATEFUL", connection: "GRATEFUL — The Grateful Dead performed during the festival's second day" },
+      { clue: "Surname of a U.S. president who authored the Declaration of Independence", answer: "JEFFERSON", connection: "JEFFERSON — Jefferson Airplane played an iconic Sunday morning set" },
+    ],
+    anagram: { letters:["L","S","F","V","I","E","T","A"], answer:"FESTIVAL", clue:"Large gathering celebrating music and culture" },
+    quote: `The Woodstock Festival began on August 15th, 1969, becoming one of the most famous music events in history.
+🔗 https://youtu.be/_VMSG7I19xM?si=FExtWMJFIHiYuJ_J`,
+  },
+
+  "2026-08-16": {
+    rounds: [
+      { clue: "City famous for casinos and entertainment", answer: "VEGAS", connection: "VEGAS — Elvis performed many legendary shows in Las Vegas" },
+      { clue: "Spice with a warm, zesty flavour", answer: "GINGER", connection: "GINGER — Ginger Alden was Elvis's fiancée at the time of his death" },
+      { clue: "Major Tennessee city", answer: "MEMPHIS", connection: "MEMPHIS — Elvis died at Graceland in Memphis, Tennessee" },
+      { clue: "Room used for washing", answer: "BATHROOM", connection: "BATHROOM — Elvis was found unresponsive in his bathroom" },
+      { clue: "Building where prisoners are held", answer: "JAILHOUSE", connection: "JAILHOUSE — \"Jailhouse Rock\" is one of Elvis's most iconic songs" },
+    ],
+    anagram: { letters:["E","T","N","E","R","D"], answer:"TENDER", clue:"Word linked with affection" },
+    quote: `Elvis Presley died at Graceland on August 16th, 1977, marking the end of an era in music history.
+🔗 https://youtu.be/gj0Rz-uP4Mk?si=QcWVxdDOQq-AayIL`,
+  },
+
+  "2026-08-17": {
+    rounds: [
+      { clue: "European nationality associated with the Netherlands", answer: "DUTCH", connection: "DUTCH — Indonesia declared independence from Dutch colonial rule" },
+      { clue: "Uprising against authority", answer: "REVOLT", connection: "REVOLT — The proclamation followed years of resistance and revolt against occupation" },
+      { clue: "Capital of Indonesia", answer: "JAKARTA", connection: "JAKARTA — The declaration was made in Jakarta on August 17th, 1945" },
+      { clue: "Connected to an entire country", answer: "NATIONAL", connection: "NATIONAL — The proclamation marked the birth of a new national identity" },
+      { clue: "Message transmitted over radio", answer: "BROADCAST", connection: "BROADCAST — The independence proclamation was broadcast to the public" },
+    ],
+    anagram: { letters:["Y","R","C","O","M","E","E","N"], answer:"CEREMONY", clue:"Formal event marking an important occasion" },
+    quote: `Indonesia declared independence on August 17th, 1945, when Sukarno and Mohammad Hatta proclaimed a new nation free from colonial rule.
+🔗 https://en.wikipedia.org/wiki/Proclamation_of_Indonesian_Independence`,
+  },
+
+  "2026-08-18": {
+    rounds: [
+      { clue: "The act of passing along a message", answer: "RELAY", connection: "RELAY — Bolt also competed in relay events, winning multiple Olympic golds" },
+      { clue: "Achievement that surpasses all previous performances", answer: "RECORD", connection: "RECORD — Bolt set world records in sprinting, including the 200 metres" },
+      { clue: "What country has the capital Kingston", answer: "JAMAICA", connection: "JAMAICA — Bolt represented Jamaica throughout his career" },
+      { clue: "Athlete who runs short‑distance races", answer: "SPRINTER", connection: "SPRINTER — Bolt is widely regarded as the greatest sprinter of all time" },
+      { clue: "The flashing of light produced by a discharge of atmospheric electricity", answer: "LIGHTNING", connection: "LIGHTNING — Bolt's iconic \"Lightning Bolt\" pose" },
+    ],
+    anagram: { letters:["N","L","G","E","D","E"], answer:"LEGEND", clue:"Someone celebrated for extraordinary achievements" },
+    quote: `Usain Bolt won his third Olympic 200‑metre gold, cementing his status as one of the greatest athletes in history.
+🔗 https://youtu.be/pWVyIE30bPs?si=YLi4J_J2X5U-YDCV`,
+  },
+
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
