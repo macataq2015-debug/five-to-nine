@@ -1446,6 +1446,58 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 🔗 https://youtu.be/pWVyIE30bPs?si=YLi4J_J2X5U-YDCV`,
   },
 
+  "2026-08-19": {
+    rounds: [
+      { clue: "Ability to act or control decisions", answer: "POWER", connection: "POWER — The coup shifted political power in Iran, removing Prime Minister Mossadegh" },
+      { clue: "Clement who was British PM in 1953", answer: "ATTLEE", connection: "ATTLEE — Clement Attlee was the British Prime Minister during the early Cold War era tied to the coup's context" },
+      { clue: "Supply kept for future use", answer: "RESERVE", connection: "RESERVE — Control of Iran's oil reserves was central to the crisis" },
+      { clue: "Payment made for the use of money", answer: "INTEREST", connection: "INTEREST — Western economic interests played a major role in the coup" },
+      { clue: "Planned activity carried out for a purpose", answer: "OPERATION", connection: "OPERATION — The coup was executed as Operation Ajax by the CIA and MI6" },
+    ],
+    anagram: { letters:["A","T","H","E","N","R"], answer:"TEHRAN", clue:"Who ran the city in Iran" },
+    quote: `On August 19th, 1953 a coup in Iran overthrew Prime Minister Mohammad Mossadegh, reshaping the nation's political landscape and strengthening the Shah's rule.
+🔗 https://en.wikipedia.org/wiki/1953_Iranian_coup_d%27%C3%A9tat`,
+  },
+
+  "2026-08-20": {
+    rounds: [
+      { clue: "Bulgaria's capital", answer: "SOFIA", connection: "SOFIA — Bulgaria participated in the invasion as part of the Warsaw Pact" },
+      { clue: "Capital city of Poland", answer: "WARSAW", connection: "WARSAW — The Warsaw Pact, named after Poland's capital, led the intervention" },
+      { clue: "Budapest is the capital of..", answer: "HUNGARY", connection: "HUNGARY — Hungary was one of the countries that sent troops into Czechoslovakia" },
+      { clue: "Russian leader from 1964-1982", answer: "BREZHNEV", connection: "BREZHNEV — Leonid Brezhnev authorised the invasion to halt the Prague Spring reforms" },
+      { clue: "Relating to a system where the state controls production", answer: "COMMUNIST", connection: "COMMUNIST — The operation aimed to preserve communist control in Czechoslovakia" },
+    ],
+    anagram: { letters:["B","D","N","A","E","U"], answer:"DANUBE", clue:"Due ban for this European river" },
+    quote: `The Warsaw Pact invasion of Czechoslovakia on August 20–21, 1968 ended the Prague Spring reforms and reasserted hardline communist control.
+🔗 https://en.wikipedia.org/wiki/Warsaw_Pact_invasion_of_Czechoslovakia`,
+  },
+
+  "2026-08-21": {
+    rounds: [
+      { clue: "To take control of territory", answer: "ANNEX", connection: "ANNEX — The U.S. annexed Hawaii before it became a state" },
+      { clue: "First name of Yorke or Eisenhower", answer: "DWIGHT", connection: "DWIGHT — President Dwight Eisenhower signed the statehood proclamation" },
+      { clue: "Large area ruled by a monarch", answer: "KINGDOM", connection: "KINGDOM — Hawaii was once an independent kingdom before U.S. control" },
+      { clue: "Main city of Hawaii", answer: "HONOLULU", connection: "HONOLULU — Honolulu became the capital of the new 50th state" },
+      { clue: "Formal acceptance into a group or organisation", answer: "ADMISSION", connection: "ADMISSION — Hawaii's entry into the Union marked its official admission as a state" },
+    ],
+    anagram: { letters:["L","O","A","A","H"], answer:"ALOHA", clue:"Polynesian greeting" },
+    quote: `Hawaii officially became the 50th U.S. state on August 21st, 1959, marking a major milestone in American history.
+🔗 https://youtu.be/JeJWRPXRueM?si=DcpMwUgWao9aKss-`,
+  },
+
+  "2026-08-22": {
+    rounds: [
+      { clue: "To take possession of something", answer: "CLAIM", connection: "CLAIM — Cook claimed the east coast of Australia for Britain in 1770" },
+      { clue: "Name that comes after 'Boy' and before 'Lucas'", answer: "GEORGE", connection: "GEORGE — The claim was made under King George III" },
+      { clue: "Ocean between Asia and the Americas", answer: "PACIFIC", connection: "PACIFIC — Cook's voyage took place across the Pacific Ocean" },
+      { clue: "Australian state named after a British monarch", answer: "VICTORIA", connection: "VICTORIA — Part of the region Cook charted later became the state of Victoria" },
+      { clue: "To try to do something", answer: "ENDEAVOUR", connection: "ENDEAVOUR — Cook made the claim while commanding HMS Endeavour" },
+    ],
+    anagram: { letters:["C","S","D","V","R","O","I","Y","E"], answer:"DISCOVERY", clue:"Act of finding something for the first time" },
+    quote: `On August 22nd, 1770, Lieutenant James Cook raised a British flag, and claimed the entire continent of Australia for the British Crown.
+🔗 https://www.nma.gov.au/defining-moments/resources/cook-claims-australia`,
+  },
+
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
