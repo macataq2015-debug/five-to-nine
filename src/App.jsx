@@ -1498,6 +1498,71 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 🔗 https://www.nma.gov.au/defining-moments/resources/cook-claims-australia`,
   },
 
+  "2026-08-23": {
+    rounds: [
+      { clue: "Series of linked elements", answer: "CHAIN", connection: "CHAIN — Two million people formed a human chain across the Baltics" },
+      { clue: "Region including Latvia and Lithuania", answer: "BALTIC", connection: "BALTIC — The demonstration united the three Baltic states" },
+      { clue: "Capital of Estonia", answer: "TALLINN", connection: "TALLINN — Tallinn was one end of the 600‑km human chain" },
+      { clue: "Free from violence or conflict", answer: "PEACEFUL", connection: "PEACEFUL — The protest was entirely peaceful" },
+      { clue: "System of government based on free elections", answer: "DEMOCRACY", connection: "DEMOCRACY — The Baltic Way demanded democratic independence from Soviet rule" },
+    ],
+    anagram: { letters:["U","M","H","N","A"], answer:"HUMAN", clue:"Relating to people" },
+    quote: `On August 23rd, 1989, around two million people joined hands forming a 600 km long human chain across Estonia, Latvia and Lithuania in a peaceful demonstration calling for independence.
+🔗 https://www.europeana.eu/en/stories/the-baltic-way-the-day-holding-hands-changed-the-world`,
+  },
+
+  "2026-08-24": {
+    rounds: [
+      { clue: "Group formed for a common purpose", answer: "UNION", connection: "UNION — Ukraine declared independence from the Soviet Union" },
+      { clue: "Region containing Sevastopol and Simferopol", answer: "CRIMEA", connection: "CRIMEA — Crimea was part of Ukraine at the time of independence" },
+      { clue: "Country with capital Kyiv", answer: "UKRAINE", connection: "UKRAINE — The declaration established Ukraine as a sovereign nation" },
+      { clue: "Right of self‑government", answer: "AUTONOMY", connection: "AUTONOMY — Regions within Ukraine debated autonomy during the transition" },
+      { clue: "Soviet leader during the collapse of the USSR", answer: "GORBACHEV", connection: "GORBACHEV — Gorbachev was the Soviet leader when Ukraine declared independence" },
+    ],
+    anagram: { letters:["I","L","Y","S","E","N","T"], answer:"YELTSIN", clue:"Russian leader who recognised the end of the USSR" },
+    quote: `On August 24th, 1991, Ukraine declared independence from the Soviet Union, marking a pivotal moment in the dissolution of the USSR.
+🔗 https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine`,
+  },
+
+  "2026-08-25": {
+    rounds: [
+      { clue: "Tall structure used for observation", answer: "TOWER", connection: "TOWER — Galileo demonstrated his telescope from a tower in Venice." },
+      { clue: "Italian city built on 126 islands", answer: "VENICE", connection: "VENICE — He presented the telescope to Venetian officials in 1609" },
+      { clue: "Systematic study of the natural world", answer: "SCIENCE", connection: "SCIENCE — Galileo’s work transformed modern science" },
+      { clue: "Large church building", answer: "BASILICA", connection: "BASILICA — He demonstrated the telescope in the tower of a Venetian basilica." },
+      { clue: "Instrument used to observe distant objects", answer: "TELESCOPE", connection: "TELESCOPE — The invention Galileo famously demonstrated" },
+    ],
+    anagram: { letters:["E","I","U","R","E","N","V","S"], answer:"UNIVERSE", clue:"All existing matter and space considered as a whole" },
+    quote: `On August 25th 1609, Galileo demonstrated his improved telescope to Venetian leaders, marking a turning point in scientific observation.
+🔗 https://youtu.be/2UjOaL2sBL0?si=m4uR2xpD9HHFFQvL`,
+  },
+
+  "2026-08-26": {
+    rounds: [
+      { clue: "Name after LeBron but before Joyce", answer: "JAMES", connection: "JAMES — William James was a pioneering American philosopher and psychologist" },
+      { clue: "World’s biggest rainforest region", answer: "AMAZON", connection: "AMAZON — James wrote about consciousness and experience, including travels in the Amazon" },
+      { clue: "Ivy League institution", answer: "HARVARD", connection: "HARVARD — He taught at Harvard for decades" },
+      { clue: "Relating to written or scholarly works", answer: "LITERARY", connection: "LITERARY — His work influenced literary modernism and philosophical writing" },
+      { clue: "Medical doctor", answer: "PHYSICIAN", connection: "PHYSICIAN — James originally trained as a physician before turning to psychology" },
+    ],
+    anagram: { letters:["T","S","M","C","S","I","Y","M","I"], answer:"MYSTICISM", clue:"Spiritual experience beyond rational thought" },
+    quote: `William James, often called the “father of American psychology,” died on this date in 1910 after shaping modern philosophy, psychology, and the study of religious experience.
+🔗 https://en.wikipedia.org/wiki/William_James`,
+  },
+
+  "2026-08-27": {
+    rounds: [
+      { clue: "Small shelter or hut", answer: "CABIN", connection: "CABIN — Mountbatten was killed when a bomb exploded on his fishing boat’s cabin" },
+      { clue: "Dark shape cast by an object blocking light", answer: "SHADOW", connection: "SHADOW - The boat Mountbatten was on when the bomb exploded was named Shadow V" },
+      { clue: "High‑ranking official governing on behalf of a monarch", answer: "VICEROY", connection: "VICEROY — Mountbatten had served as the last Viceroy of India" },
+      { clue: "Period of unrest or difficulty", answer: "TROUBLES", connection: "TROUBLES — The assassination occurred during the Northern Ireland Troubles" },
+      { clue: "Exploded deliberately", answer: "DETONATED", connection: "DETONATED — The IRA detonated the bomb that killed Mountbatten" },
+    ],
+    anagram: { letters:["E","B","L","T","O","R","S"], answer:"LOBSTER", clue:"Crustacean often caught in coastal waters" },
+    quote: `On August 27th 1979, Lord Mountbatten was assassinated when a bomb planted by the IRA exploded on his fishing boat in County Sligo.
+🔗 https://en.wikipedia.org/wiki/Assassination_of_Lord_Mountbatten`,
+  },
+
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
