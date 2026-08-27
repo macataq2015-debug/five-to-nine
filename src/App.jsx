@@ -1563,6 +1563,44 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
 🔗 https://en.wikipedia.org/wiki/Assassination_of_Lord_Mountbatten`,
   },
 
+  "2026-08-28": {
+    rounds: [
+      { clue: "Full of rhythm and style", answer: "FUNKY", connection: "FUNKY — Marvin Gaye blended funk and soul throughout his music." },
+      { clue: "Name after Lee and before Hagler", answer: "MARVIN", connection: "MARVIN — Marvin Gaye was the singer behind Let’s Get It On" },
+      { clue: "Expressive and rich in feeling", answer: "SOULFUL", connection: "SOULFUL — His vocal style defined soul music in the 1970s" },
+      { clue: "Performer who creates or interprets melodies", answer: "MUSICIAN", connection: "MUSICIAN — Gaye was one of Motown’s most influential musicians" },
+      { clue: "Power to shape or inspire others", answer: "INFLUENCE", connection: "INFLUENCE — The song became hugely influential in modern R&B and soul" },
+    ],
+    anagram: { letters:["W","M","T","O","N","O"], answer:"MOTOWN", clue:"American music company known for soul and R&B" },
+    quote: `Marvin Gaye released the album Let’s Get It On on this day in 1973, a landmark soul track that became one of his most iconic recordings.
+🔗 https://www.youtube.com/watch?v=x6QZn9xiuOE`,
+  },
+
+  "2026-08-29": {
+    rounds: [
+      { clue: "Strong metal alloy used in construction", answer: "STEEL", connection: "STEEL — Andrew Carnegie made his fortune in the steel industry" },
+      { clue: "Religious music genre", answer: "GOSPEL", connection: "GOSPEL — Carnegie wrote The Gospel of Wealth, outlining his philosophy of philanthropy" },
+      { clue: "Place where books are stored and borrowed", answer: "LIBRARY", connection: "LIBRARY — He funded the construction of 2,509 public libraries" },
+      { clue: "System of raising public revenue", answer: "TAXATION", connection: "TAXATION — Carnegie argued philanthropy should complement, not replace, taxation" },
+      { clue: "Process of learning and acquiring knowledge", answer: "EDUCATION", connection: "EDUCATION — His libraries were created to expand public access to education" },
+    ],
+    anagram: { letters:["T","A","C","I","H","Y","R"], answer:"CHARITY", clue:"Generosity toward others" },
+    quote: `Andrew Carnegie funded the first of more than 2,500 public libraries, beginning in his hometown. His first opened on this day in 1883 in Dunfermline, Scotland.
+🔗 https://en.wikipedia.org/wiki/Andrew_Carnegie`,
+  },
+
+  "2026-08-30": {
+    rounds: [
+      { clue: "Surname of the inventor of dynamite", answer: "NOBEL", connection: "NOBEL — Heaney won the Nobel Prize in Literature in 1995" },
+      { clue: "English city known for its university", answer: "OXFORD", connection: "OXFORD — He taught at Oxford and served as Professor of Poetry" },
+      { clue: "Act of excavating earth", answer: "DIGGING", connection: "DIGGING — “Digging” is one of his most famous poems" },
+      { clue: "Person injured or killed in an accident", answer: "CASUALTY", connection: "CASUALTY — He wrote the poem “Casualty” in Field Work" },
+      { clue: "Ancient Greek tragedian", answer: "SOPHOCLES", connection: "SOPHOCLES — Heaney translated Sophocles’ Antigone and Philoctetes" },
+    ],
+    anagram: { letters:["E","N","L","A","U","A","G","G"], answer:"LANGUAGE", clue:"Structured method of expressing ideas" },
+    quote: `Seamus Heaney, one of Ireland’s greatest poets and a Nobel laureate, died on August 30th 2013, leaving a legacy of work rooted in memory, landscape and language.
+🔗 https://www.youtube.com/watch?v=KNRkPU1LSUg`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
