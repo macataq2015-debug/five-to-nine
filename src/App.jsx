@@ -1601,6 +1601,123 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
     quote: `Seamus Heaney, one of Ireland’s greatest poets and a Nobel laureate, died on August 30th 2013, leaving a legacy of work rooted in memory, landscape and language.
 🔗 https://www.youtube.com/watch?v=KNRkPU1LSUg`,
   },
+
+  "2026-08-31": {
+    rounds: [
+      { clue: "Coverage by newspapers", answer: "MEDIA", connection: "MEDIA — Global media coverage dominated the aftermath of Diana's death." },
+      { clue: "Underground passage", answer: "TUNNEL", connection: "TUNNEL — The crash occurred in the Pont de l’Alma tunnel" },
+      { clue: "Relating to the heart", answer: "CARDIAC", connection: "CARDIAC — Diana suffered fatal cardiac arrest after the collision" },
+      { clue: "Royal title", answer: "PRINCESS", connection: "PRINCESS — She was Princess Diana, Princess of Wales" },
+      { clue: "Photographers who pursue celebrities", answer: "PAPARAZZI", connection: "PAPARAZZI — Paparazzi pursuit was a major factor in the tragedy" },
+    ],
+    anagram: { letters:["G","U","M","I","N","O","R","N"], answer:"MOURNING", clue:"Feeling expressed during times of sadness" },
+    quote: `Princess Diana’s death on August 31st 1997 prompted an unprecedented outpouring of grief across the UK
+🔗 https://en.wikipedia.org/wiki/Death_of_Diana,_Princess_of_Wales`,
+  },
+
+  "2026-09-01": {
+    rounds: [
+      { clue: "UK slang for a police Officer", answer: "BOBBY", connection: "BOBBY — Bobby Fischer defeated Boris Spassky to become World Chess Champion" },
+      { clue: "Russian physiologist known for experiments on conditioned reflexes", answer: "PAVLOV", connection: "PAVLOV —" },
+      { clue: "Unit of time measuring 100 years", answer: "CENTURY", connection: "CENTURY — The match was widely called The Chess Match of the Century" },
+      { clue: "Board game with a Jail and a Banker", answer: "MONOPOLY", connection: "MONOPOLY — The USSR had a decades‑long monopoly on the world chess title" },
+      { clue: "Capital city of Iceland", answer: "REYKJAVIK", connection: "REYKJAVIK — The match took place in Reykjavík, Iceland" },
+    ],
+    anagram: { letters:["E","S","F","H","I","R","C"], answer:"FISCHER", clue:"Surname of the famous US Chess Champion" },
+    quote: `Bobby Fischer’s victory in Reykjavík in 1972 ended decades of Soviet dominance and became one of the most famous chess matches in history.
+🔗 https://en.wikipedia.org/wiki/World_Chess_Championship_1972`,
+  },
+
+  "2026-09-02": {
+    rounds: [
+      { clue: "One of King Charles’ sons", answer: "HARRY", connection: "HARRY — U.S. President Harry S. Truman oversaw Japan's surrender." },
+      { clue: "Relating to nuclear energy", answer: "ATOMIC", connection: "ATOMIC — The atomic bombings preceded Japan’s decision to surrender" },
+      { clue: "Protection against attack", answer: "DEFENSE", connection: "DEFENSE — Japan’s defensive capacity was exhausted by late 1945" },
+      { clue: "A sudden collapse or defeat", answer: "DOWNFALL", connection: "DOWNFALL — Operation Downfall was the planned Allied invasion of Japan" },
+      { clue: "To give up resistance", answer: "SURRENDER", connection: "SURRENDER — Japan formally surrendered aboard USS Missouri on September 2, 1945" },
+    ],
+    anagram: { letters:["O","R","H","H","M","S","I","A","I"], answer:"HIROSHIMA", clue:"Japanese city devastated during WWII" },
+    quote: `Japan’s formal surrender aboard USS Missouri on September 2nd 1945 brought World War II to an end and reshaped global history.
+🔗 https://en.wikipedia.org/wiki/Surrender_of_Japan`,
+  },
+
+  "2026-09-03": {
+    rounds: [
+      { clue: "Home of the Louvre", answer: "PARIS", connection: "PARIS — The treaty ending the American Revolutionary War was signed in Paris." },
+      { clue: "Formal agreement between two or more parties", answer: "TREATY", connection: "TREATY — It formally ended hostilities between Britain and the United States" },
+      { clue: "US state home of the Dolphins and the Buccaneers", answer: "FLORIDA", connection: "FLORIDA — Britain ceded Florida to Spain as part of the treaty’s territorial terms" },
+      { clue: "Youngest son of Jacob and Rachel in the Hebrew Bible, or a 100‑dollar bill", answer: "BENJAMIN", connection: "BENJAMIN — Benjamin Franklin was one of the American negotiators" },
+      { clue: "Independent authority or rule", answer: "SOVEREIGN", connection: "SOVEREIGN — The treaty acknowledged the United States as a sovereign nation" },
+    ],
+    anagram: { letters:["N","I","T","E","T","H","R","E"], answer:"THIRTEEN", clue:"Number of colonies in the US in 1783" },
+    quote: `The Treaty of Paris, signed on September 3rd 1783, formally ended the American Revolutionary War and recognized the United States as an independent, sovereign nation.
+🔗 https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)`,
+  },
+
+  "2026-09-04": {
+    rounds: [
+      { clue: "Happening very quickly", answer: "RAPID", connection: "RAPID — Google became known for its rapid search results." },
+      { clue: "To look for information", answer: "SEARCH", connection: "SEARCH — Google launched as a search engine" },
+      { clue: "System of interconnected computers", answer: "NETWORK", connection: "NETWORK — Google indexed the growing network of web pages" },
+      { clue: "University in California known for innovation", answer: "STANFORD", connection: "STANFORD — Google was created by Page and Brin while at Stanford University" },
+      { clue: "Process of obtaining stored information", answer: "RETRIEVAL", connection: "RETRIEVAL — Google’s core function is information retrieval" },
+    ],
+    anagram: { letters:["L","G","O","O","E","G"], answer:"GOOGLE", clue:"Company formed in 1998 by Larry Page and Sergey Brin" },
+    quote: `Larry Page and Sergey Brin founded Google on September 4th 1998, launching what would become the world's dominant search engine.
+🔗 https://en.wikipedia.org/wiki/History_of_Google`,
+  },
+
+  "2026-09-05": {
+    rounds: [
+      { clue: "Dark colour", answer: "BLACK", connection: "BLACK — The attackers were members of the extremist group Black September." },
+      { clue: "Major city in Bavaria", answer: "MUNICH", connection: "MUNICH — The attack occurred during the 1972 Munich Olympic Games" },
+      { clue: "Small town", answer: "VILLAGE", connection: "VILLAGE — The terrorists entered the Olympic Village to seize the athletes" },
+      { clue: "Violent killing of multiple people", answer: "MASSACRE", connection: "MASSACRE — The event is historically known as the Munich massacre" },
+      { clue: "Month derived from the latin number seven", answer: "SEPTEMBER", connection: "SEPTEMBER — The attack took place on September 5th, 1972" },
+    ],
+    anagram: { letters:["G","S","H","A","O","E","T"], answer:"HOSTAGE", clue:"Person held against their will" },
+    quote: `The Munich massacre on September 5th 1972 shocked the world, leading to major changes in Olympic security and international counter‑terrorism policy.
+🔗 https://en.wikipedia.org/wiki/Munich_massacre`,
+  },
+
+  "2026-09-06": {
+    rounds: [
+      { clue: "Art form involving melody and rhythm", answer: "MUSIC", connection: "MUSIC — McKinley was attending a public musical reception at the Pan‑American Exposition." },
+      { clue: "Formal address delivered to an audience", answer: "SPEECH", connection: "SPEECH — He had delivered a major speech at the exposition the day before" },
+      { clue: "City in New York or large bovine species", answer: "BUFFALO", connection: "BUFFALO — The shooting occurred in Buffalo, New York" },
+      { clue: "Measures taken to protect people or property", answer: "SECURITY", connection: "SECURITY — Security at the exposition was minimal, enabling the attacker to approach him" },
+      { clue: "Person who rejects government authority", answer: "ANARCHIST", connection: "ANARCHIST — The attacker, Leon Czolgosz, was an anarchist responsible for severe harm and loss of life" },
+    ],
+    anagram: { letters:["E","N","G","E","R","A","G","N"], answer:"GANGRENE", clue:"Condition caused by severe infection" },
+    quote: `President William McKinley was shot on September 6th 1901 during a public reception in Buffalo, and he died days later, leading to Theodore Roosevelt becoming President.
+🔗 https://en.wikipedia.org/wiki/Assassination_of_William_McKinley`,
+  },
+
+  "2026-09-07": {
+    rounds: [
+      { clue: "A living organism that grows in soil", answer: "PLANT", connection: "PLANT — Robert Plant was the band's lead singer." },
+      { clue: "Surname of famous Rock n Roll drummer John..", answer: "BONHAM", connection: "BONHAM — John Bonham was the band’s drummer" },
+      { clue: "Large venue used for sports or concerts", answer: "STADIUM", connection: "STADIUM — Led Zeppelin later became known for massive stadium shows" },
+      { clue: "Rigid airship used in early aviation", answer: "ZEPPELIN", connection: "ZEPPELIN — The band’s name was inspired by the German airship" },
+      { clue: "Not liked or favoured", answer: "UNPOPULAR", connection: "UNPOPULAR — Their first gig (as “The New Yardbirds”) was poorly received and largely unpopular" },
+    ],
+    anagram: { letters:["L","R","M","A","E","B"], answer:"RAMBLE", clue:"A type of walk taken without a clear destination" },
+    quote: `Led Zeppelin played their first gig on September 7th 1968 in Gladsaxe, Denmark, performing as “The New Yardbirds” before adopting the name that would define rock history.
+🔗 https://www.youtube.com/watch?v=LzGBQerkvWs`,
+  },
+
+  "2026-09-08": {
+    rounds: [
+      { clue: "Beckham, Baddiel or Attenborough", answer: "DAVID", connection: "DAVID — The statue depicts the biblical hero David." },
+      { clue: "Metamorphic rock formed from limestone prized for its beauty  & durability", answer: "MARBLE", connection: "MARBLE — Michelangelo carved the statue from a single block of marble" },
+      { clue: "Giant defeated by a shepherd boy in the Bible", answer: "GOLIATH", connection: "GOLIATH — David is shown before confronting Goliath" },
+      { clue: "The base of an upright structure", answer: "PEDESTAL", connection: "PEDESTAL — The statue was placed on a large pedestal in Florence" },
+      { clue: "Three‑dimensional artwork created by carving or modeling", answer: "SCULPTURE", connection: "SCULPTURE — David is one of the most famous sculptures in history" },
+    ],
+    anagram: { letters:["E","O","F","N","E","L","R","C"], answer:"FLORENCE", clue:"Italian city known for Renaissance art" },
+    quote: `Michelangelo’s David, unveiled on September 8th 1504, became a symbol of Florentine pride and one of the defining masterpieces of Renaissance sculpture.
+🔗 https://en.wikipedia.org/wiki/David_(Michelangelo)`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
