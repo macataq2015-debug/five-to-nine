@@ -1718,6 +1718,58 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
     quote: `Michelangelo’s David, unveiled on September 8th 1504, became a symbol of Florentine pride and one of the defining masterpieces of Renaissance sculpture.
 🔗 https://en.wikipedia.org/wiki/David_(Michelangelo)`,
   },
+
+  "2026-09-09": {
+    rounds: [
+      { clue: "Island nation east of China", answer: "JAPAN", connection: "JAPAN — Japan’s defeat in WWII ended its occupation of Korea, enabling the peninsula’s division" },
+      { clue: "Relating to Russia or the former USSR", answer: "SOVIET", connection: "SOVIET — The Soviet Union established the northern administration that became the DPRK" },
+      { clue: "Line of hereditary rulers", answer: "DYNASTY", connection: "DYNASTY — The Kim family began the political dynasty that still rules North Korea" },
+      { clue: "System of ideas forming a political or social philosophy", answer: "IDEOLOGY", connection: "IDEOLOGY — The DPRK was founded on a strict socialist‑Marxist ideology" },
+      { clue: "Capital city of North Korea", answer: "PYONGYANG", connection: "PYONGYANG — Pyongyang became the capital of the newly formed state" },
+    ],
+    anagram: { letters:["I","N","P","S","L","N","E","A","U"], answer:"PENINSULA", clue:"Landform surrounded by water on three sides" },
+    quote: `The Democratic People’s Republic of Korea was proclaimed on September 9th 1948, establishing a Soviet‑aligned state under Kim Il‑sung and shaping the geopolitical landscape of the Korean Peninsula.
+🔗 https://historysnacks.io/event/ADka3Mt3/the-democratic-people-s-republic-of-korea-north-korea-was-established-with-kim/`,
+  },
+
+  "2026-09-10": {
+    rounds: [
+      { clue: "Very big in size", answer: "LARGE", connection: "LARGE — The LHC is the world’s largest particle accelerator" },
+      { clue: "Nag Eve for this Swiss city", answer: "GENEVA", connection: "GENEVA — CERN is located near Geneva, Switzerland" },
+      { clue: "Relating to atomic energy", answer: "NUCLEAR", connection: "NUCLEAR — The collider studies nuclear and subatomic physics" },
+      { clue: "Tiny unit of matter", answer: "PARTICLE", connection: "PARTICLE — The LHC accelerates and collides particles at high energies" },
+      { clue: "Made up of several parts", answer: "COMPOSITE", connection: "COMPOSITE — Protons, used in LHC collisions, are composite particles made of quarks" },
+    ],
+    anagram: { letters:["O","P","O","R","N","T"], answer:"PROTON", clue:"Subatomic particle found in atomic nuclei" },
+    quote: `The Large Hadron Collider began operations on September 10th 2008, marking a major milestone in particle physics and paving the way for discoveries like the Higgs boson.
+🔗 https://www.youtube.com/watch?v=bTHzB4h0po4`,
+  },
+
+  "2026-09-11": {
+    rounds: [
+      { clue: "Military operation involving surrounding a fortified place", answer: "SIEGE", connection: "SIEGE — Drogheda was taken after a siege by Cromwell’s forces" },
+      { clue: "First name of the orphan in Dickens’ famous novel", answer: "OLIVER", connection: "OLIVER — Oliver Cromwell commanded the attacking army" },
+      { clue: "Soldiers who fight on horseback", answer: "CAVALRY", connection: "CAVALRY — Cromwell’s cavalry units breached the town’s defenses" },
+      { clue: "Brutal slaughter from same scar", answer: "MASSACRE", connection: "MASSACRE — The event is historically known as the Drogheda massacre" },
+      { clue: "Heavy weapons used in warfare", answer: "ARTILLERY", connection: "ARTILLERY — Cromwell’s artillery bombardment opened the way for the assault" },
+    ],
+    anagram: { letters:["N","R","G","S","I","A","R","O"], answer:"GARRISON", clue:"Group of soldiers defending a fortified position" },
+    quote: `The storming of Drogheda on September 11th 1649 became one of the most infamous episodes of Cromwell’s Irish campaign, remembered for its devastating consequences and lasting historical impact.
+🔗 https://en.wikipedia.org/wiki/Siege_of_Drogheda`,
+  },
+
+  "2026-09-12": {
+    rounds: [
+      { clue: "Group that seizes power by force", answer: "JUNTA", connection: "JUNTA — A military junta known as the Derg seized power" },
+      { clue: "To overthrow or remove from power", answer: "TOPPLE", connection: "TOPPLE — The coup toppled Haile Selassie’s long‑standing rule" },
+      { clue: "Person enrolled in an educational institution", answer: "STUDENT", connection: "STUDENT — Student protests were a major catalyst for the uprising" },
+      { clue: "Addis Ababa is the capital city of where?", answer: "ETHIOPIA", connection: "ETHIOPIA — The coup occurred in Ethiopia, ending imperial rule" },
+      { clue: "Formally ended or done away with", answer: "ABOLISHED", connection: "ABOLISHED — The monarchy was abolished following the takeover" },
+    ],
+    anagram: { letters:["E","S","M","C","A","A","S","R"], answer:"MASSACRE", clue:"Brutal killing of many people" },
+    quote: `The 1974 coup in Ethiopia toppled Haile Selassie and ushered in the Derg regime, reshaping the nation’s political future.
+🔗 https://en.wikipedia.org/wiki/1974_Ethiopian_coup_d%27%C3%A9tat`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
