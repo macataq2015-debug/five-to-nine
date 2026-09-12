@@ -1770,6 +1770,71 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
     quote: `The 1974 coup in Ethiopia toppled Haile Selassie and ushered in the Derg regime, reshaping the nation’s political future.
 🔗 https://en.wikipedia.org/wiki/1974_Ethiopian_coup_d%27%C3%A9tat`,
   },
+
+  "2026-09-13": {
+    rounds: [
+      { clue: "Soft fruit often associated with a fuzzy skin.", answer: "PEACH", connection: "PEACH — James and the Giant Peach The giant fruit at the centre of the story." },
+      { clue: "Name of multiple historical kings of England.", answer: "GEORGE", connection: "GEORGE — George’s Marvellous Medicine The inventive protagonist." },
+      { clue: "Alpha, Bravo,…...", answer: "CHARLIE", connection: "CHARLIE — Charlie and the Chocolate Factory The boy who finds the golden ticket." },
+      { clue: "One who finishes first", answer: "CHAMPION", connection: "CHAMPION — Danny, the Champion of the World The title character." },
+      { clue: "Word meaning excellent or extraordinarily good.", answer: "FANTASTIC", connection: "FANTASTIC — Fantastic Mr Fox The clever fox who outsmarts the farmers." },
+    ],
+    anagram: { letters:["R","C","F","O","A","Y","T"], answer:"FACTORY", clue:"A place where goods are produced." },
+    quote: `“Those who don’t believe in magic will never find it.” – Roald Dahl, born on this day in 1916
+🔗 https://en.wikipedia.org/wiki/Roald_Dahl#`,
+  },
+
+  "2026-09-14": {
+    rounds: [
+      { clue: "A place where people go to recover from addiction", answer: "REHAB", connection: "REHAB — One of her most iconic songs, defining her sound and public narrative." },
+      { clue: "London district known for markets, music venues, and nightlife.", answer: "CAMDEN", connection: "CAMDEN — Camden Town Her home turf, creative base, and the place most associated with her life." },
+      { clue: "A word meaning difficulty or distress", answer: "TROUBLE", connection: "TROUBLE — themes Trouble, turmoil, and emotional struggle run through her lyrics and story." },
+      { clue: "Describes something with great strength or impact.", answer: "POWERFUL", connection: "POWERFUL — A uniquely forceful voice and soulful delivery that made her instantly recognisable." },
+      { clue: "The lowest female classical singing voice type", answer: "CONTRALTO", connection: "CONTRALTO — Amy’s deep, smoky contralto was central to her signature sound." },
+    ],
+    anagram: { letters:["V","E","B","I","E","E","H"], answer:"BEEHIVE", clue:"Structure built by bees" },
+    quote: `“Life’s short. Anything could happen, and it usually does, so there is no point in sitting around thinking about all the ifs, ands and buts.” – Amy Winehouse, born on 14 September 1983
+🔗 https://www.youtube.com/watch?v=TJAfLE39ZZ8`,
+  },
+
+  "2026-09-15": {
+    rounds: [
+      { clue: "Something harmful or poisonous.", answer: "TOXIC", connection: "TOXIC — Lehman held large quantities of toxic mortgage‑backed securities that rapidly lost value." },
+      { clue: "Money lent with the expectation of future repayment.", answer: "CREDIT", connection: "CREDIT — Their collapse froze global credit markets and triggered panic." },
+      { clue: "Financial assistance given to prevent collapse.", answer: "BAILOUT", connection: "BAILOUT — Lehman was the major institution not bailed out, intensifying the crisis." },
+      { clue: "Using borrowed capital to increase potential returns.", answer: "LEVERAGE", connection: "LEVERAGE — Lehman’s extremely high leverage ratio magnified losses and accelerated insolvency." },
+      { clue: "Loans used to purchase property.", answer: "MORTGAGES", connection: "MORTGAGES — Their exposure to collapsing mortgage products was central to the downfall." },
+    ],
+    anagram: { letters:["E","B","S","I","R","U","P","M"], answer:"SUBPRIME", clue:"A high‑risk loan made to a borrower with below‑standard credit qualifications" },
+    quote: `The fall of Lehman Brothers marked the moment the financial world realised how fragile the system had become – 15 September 2008
+🔗 https://www.youtube.com/watch?v=BnDbdQa_r38`,
+  },
+
+  "2026-09-16": {
+    rounds: [
+      { clue: "Name before Mayweather, Landis, Patterson", answer: "FLOYD", connection: "FLOYD — Pink Floyd released Wish You Were Here in 1975" },
+      { clue: "Like a heartbreaking story", answer: "TRAGIC", connection: "TRAGIC — Syd Barrett’s tragic decline inspired much of the album’s emotional core" },
+      { clue: "Gem that really catches the light", answer: "DIAMOND", connection: "DIAMOND — “Shine On You Crazy Diamond” is the album’s central multi‑part suite" },
+      { clue: "Belief that reality can match your highest hopes", answer: "IDEALISM", connection: "IDEALISM — “Wish You Were Here” reflects disillusionment with lost artistic idealism" },
+      { clue: "Twisted, agonizing, hard to endure", answer: "TORTUROUS", connection: "TORTUROUS — “Welcome to the Machine” depicts the torturous grind of the music industry" },
+    ],
+    anagram: { letters:["N","C","M","I","A","E","H"], answer:"MACHINE", clue:"Mechanical device used to perform work" },
+    quote: `Pink Floyd’s Wish You Were Here, released on September 16th 1975, stands as one of rock’s most emotionally resonant albums — a tribute to Syd Barrett, a critique of the music industry, and a meditation on absence, longing and artistic integrity.
+🔗 https://youtu.be/IXdNnw99-Ic?si=nJ5x7btHrY-XuVYp`,
+  },
+
+  "2026-09-17": {
+    rounds: [
+      { clue: "What country is Uijeongbu in", answer: "KOREA", connection: "KOREA — The series is set during the Korean War" },
+      { clue: "Genre with humour", answer: "COMEDY", connection: "COMEDY — The show blends humour with wartime drama" },
+      { clue: "Nickname for someone with exceptionally sharp vision", answer: "HAWKEYE", connection: "HAWKEYE — Hawkeye Pierce is the central character" },
+      { clue: "Causing no physical discomfort", answer: "PAINLESS", connection: "PAINLESS — “Painless” is the nickname of the camp dentist" },
+      { clue: "****", answer: "ASTERISKS", connection: "ASTERISKS — The title MASH* famously uses asterisks*" },
+    ],
+    anagram: { letters:["L","R","S","C","I","U","G","A"], answer:"SURGICAL", clue:"Relating to medical operations" },
+    quote: `MASH*, which premiered on September 17th 1972, became one of television’s most influential series — a sharp, humane blend of comedy and wartime commentary that explored friendship, trauma and morality through the lives of the 4077th’s surgeons and staff.
+🔗 https://en.wikipedia.org/wiki/M*A*S*H_(TV_series)`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
