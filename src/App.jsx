@@ -1835,6 +1835,55 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
     quote: `MASH*, which premiered on September 17th 1972, became one of television’s most influential series — a sharp, humane blend of comedy and wartime commentary that explored friendship, trauma and morality through the lives of the 4077th’s surgeons and staff.
 🔗 https://en.wikipedia.org/wiki/M*A*S*H_(TV_series)`,
   },
+
+  "2026-09-18": {
+    rounds: [
+      { clue: "Showing wild, uncontrolled excitement", answer: "MANIC", connection: "MANIC — One of Jimi's famous songs was Manic Depression" },
+      { clue: "Small", answer: "LITTLE", connection: "LITTLE — Little Wing was another of his most famous tunes" },
+      { clue: "Unparalelleled, Momentous or highly significant", answer: "EPOCHAL", connection: "EPOCHAL — his guitar playing revolutionised Rock n roll and inspired a whole generation" },
+      { clue: "A condition arising when the body is deprived of oxygen", answer: "ASPHYXIA", connection: "ASPHYXIA — played a cause in his untimely death" },
+      { clue: "Famous music festival from 1969", answer: "WOODSTOCK", connection: "WOODSTOCK — One of his most famous sets was at Woodstock in 1969" },
+    ],
+    anagram: { letters:["C","E","E","R","T","L","C","I"], answer:"ELECTRIC", clue:"Having or producing a sense of thrilling excitement" },
+    quote: `"Who are you to judge the life I live
+I know I'm not perfect and I don't live to be.
+but before you start pointing fingers
+make sure your hands are clean." Jimi Hendrix , legendary guitar player, who died on this day in 1970
+🔗 https://www.youtube.com/watch?v=gRP3Ti_0ffg&list=RDgRP3Ti_0ffg&start_radio=1`,
+  },
+
+  "2026-09-19": {
+    rounds: [
+      { clue: "Cowell, Pegg or Le Bon", answer: "SIMON", connection: "SIMON — Paul Simon played at this famous concert reuniting with Art Garfunkel" },
+      { clue: "Royal part of New York?", answer: "QUEENS", connection: "QUEENS — Both Simon and Garfunkel grew up in Queens where they were child hood friends" },
+      { clue: "Int the area that is the middle of something", answer: "CENTRAL", connection: "CENTRAL — The famous concert took place in Central Park" },
+      { clue: "Sugar Ray, Smokey or Mary!", answer: "ROBINSON", connection: "ROBINSON — Mrs Robinson was one of the tunes they playes" },
+      { clue: "A failure of a relationship or system", answer: "BREAKDOWN", connection: "BREAKDOWN — The relationship between the artists had been strained for a number of years" },
+    ],
+    anagram: { letters:["C","L","S","N","I","E","E"], answer:"SILENCE", clue:"License to be completely quiet?" },
+    quote: `I've built walls
+A fortress, steep and mighty
+That none may penetrate
+I have no need of friendship
+Friendship causes pain
+Its laughter and its loving I disdain
+I am a rock
+I am an island' On this day in 1981 — Simon & Garfunkel’s reunited to play in front of 500,000 people in Central Park
+🔗 https://www.youtube.com/watch?v=NAEppFUWLfc`,
+  },
+
+  "2026-09-20": {
+    rounds: [
+      { clue: "Number of Deadly Sins", answer: "SEVEN", connection: "SEVEN — A Knight of the Seven Kingdoms was created by him" },
+      { clue: "Mythical monster resembling a giant reptile", answer: "DRAGON", connection: "DRAGON — House of the Dragon was created by him" },
+      { clue: "Ceremonial chairs for kings", answer: "THRONES", connection: "THRONES — Game of Thrones was created by him" },
+      { clue: "Royalcountries or states", answer: "KINGDOMS", connection: "KINGDOMS — A Knight of the Seven Kingdoms was created by him" },
+      { clue: "Having administrative or managerial responsibility", answer: "EXECUTIVE", connection: "EXECUTIVE — He is the executive producer of HBO's famous series" },
+    ],
+    anagram: { letters:["E","W","N","I","R","T"], answer:"WINTER", clue:"Cold season in Europe" },
+    quote: `When you play the game of thrones, you win or you die. There is no middle ground' - George Raymond Richard Martin was born on September 20, 1948.
+🔗 https://www.youtube.com/watch?v=KPLWWIOCOOQ`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
