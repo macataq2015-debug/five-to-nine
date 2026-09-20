@@ -1845,8 +1845,8 @@ Bloomsday is celebrated every June 16th in LEOPOLD Bloom\'s honour.
       { clue: "Famous music festival from 1969", answer: "WOODSTOCK", connection: "WOODSTOCK — One of his most famous sets was at Woodstock in 1969" },
     ],
     anagram: { letters:["C","E","E","R","T","L","C","I"], answer:"ELECTRIC", clue:"Having or producing a sense of thrilling excitement" },
-    quote: `"Who are you to judge the life I live
-I know I'm not perfect and I don't live to be.
+    quote: `"Who are you to judge the life i live
+i know i'm not perfect and i don't live to be.
 but before you start pointing fingers
 make sure your hands are clean." Jimi Hendrix , legendary guitar player, who died on this day in 1970
 🔗 https://www.youtube.com/watch?v=gRP3Ti_0ffg&list=RDgRP3Ti_0ffg&start_radio=1`,
@@ -1868,7 +1868,7 @@ I have no need of friendship
 Friendship causes pain
 Its laughter and its loving I disdain
 I am a rock
-I am an island' On this day in 1981 — Simon & Garfunkel’s reunited to play in front of 500,000 people in Central Park
+I am an island' On this day in 1981 — Simon & Garfunkel’s reunited to play in front of 500,000 in Central Park
 🔗 https://www.youtube.com/watch?v=NAEppFUWLfc`,
   },
 
@@ -1883,6 +1883,19 @@ I am an island' On this day in 1981 — Simon & Garfunkel’s reunited to play i
     anagram: { letters:["E","W","N","I","R","T"], answer:"WINTER", clue:"Cold season in Europe" },
     quote: `When you play the game of thrones, you win or you die. There is no middle ground' - George Raymond Richard Martin was born on September 20, 1948.
 🔗 https://www.youtube.com/watch?v=KPLWWIOCOOQ`,
+  },
+
+  "2026-09-21": {
+    rounds: [
+      { clue: "Journey undertaken to achieve a goal", answer: "QUEST", connection: "QUEST — Bilbo joins a quest with Thorin’s company to reclaim the dwarven treasure" },
+      { clue: "Magic‑using figure in folklore", answer: "WIZARD", connection: "WIZARD — Gandalf the wizard initiates the adventure and guides the company" },
+      { clue: "Genre involving imaginary worlds and creatures", answer: "FANTASY", connection: "FANTASY — The Hobbit is a foundational work of modern fantasy literature" },
+      { clue: "Large natural elevation of the earth’s surface", answer: "MOUNTAIN", connection: "MOUNTAIN — The Lonely Mountain is the ultimate destination of the quest" },
+      { clue: "Traditional stories explaining origins or beliefs", answer: "MYTHOLOGY", connection: "MYTHOLOGY — Tolkien drew heavily on Norse and Germanic mythology when creating Middle‑earth" },
+    ],
+    anagram: { letters:["L","N","G","A","A","F","D"], answer:"GANDALF", clue:"Tolkien’s famous wizard" },
+    quote: `“I'm going on an adventure!” — Bilbo Baggins. J.R.R. Tolkien’s The Hobbit, published on September 21st 1937, introduced readers to Middle‑earth and set the stage for one of the most influential fantasy worlds ever created.
+🔗 https://en.wikipedia.org/wiki/The_Hobbit`,
   },
 };
 
