@@ -1897,6 +1897,124 @@ I am an island' On this day in 1981 — Simon & Garfunkel’s reunited to play i
     quote: `“I'm going on an adventure!” — Bilbo Baggins. J.R.R. Tolkien’s The Hobbit, published on September 21st 1937, introduced readers to Middle‑earth and set the stage for one of the most influential fantasy worlds ever created.
 🔗 https://en.wikipedia.org/wiki/The_Hobbit`,
   },
+
+  "2026-09-22": {
+    rounds: [
+      { clue: "Digital folders used to store information", answer: "FILES", connection: "FILES — Cave runs The Red Hand Files, answering fan questions directly" },
+      { clue: "Human beings collectively", answer: "PEOPLE", connection: "PEOPLE — “People Ain’t No Good” is one of his most widely‑used songs in film/TV" },
+      { clue: "Expectation or anticipation of someone’s arrival", answer: "WAITING", connection: "WAITING — “Are You the One That I’ve Been Waiting For?” is a signature ballad" },
+      { clue: "Annual celebration marking the day someone was born", answer: "BIRTHDAY", connection: "BIRTHDAY — Cave first became famous as frontman of The Birthday Party" },
+      { clue: "A solemn declaration of truth or belief", answer: "TESTAMENT", connection: "TESTAMENT — His lyrics draw heavily on Old and New Testament imagery" },
+    ],
+    anagram: { letters:["E","R","M","Y","C"], answer:"MERCY", clue:"Leniency granted instead of punishment" },
+    quote: `Nick Cave, born on September 22nd 1957, became one of the most distinctive voices in modern music — moving from the ferocity of The Birthday Party to the emotional depth of the Bad Seeds, and later opening his heart to the world through The Red Hand Files.
+🔗 https://www.theredhandfiles.com/`,
+  },
+
+  "2026-09-23": {
+    rounds: [
+      { clue: "Name after Lenny and before Lee", answer: "BRUCE", connection: "BRUCE — Bruce Springsteen was born on September 23rd 1949" },
+      { clue: "Public road", answer: "STREET", connection: "STREET — He leads the legendary E Street Band" },
+      { clue: "Loud rumbling sound during a storm", answer: "THUNDER", connection: "THUNDER — “Thunder Road” is one of his most iconic songs" },
+      { clue: "What US state is Lincoln the capital of?", answer: "NEBRASKA", connection: "NEBRASKA — Nebraska is his stark, critically acclaimed 1982 album" },
+      { clue: "Region representing traditional rural values", answer: "HEARTLAND", connection: "HEARTLAND — Springsteen is synonymous with heartland rock and working‑class storytelling" },
+    ],
+    anagram: { letters:["R","E","A","C","N","I","M","A","A"], answer:"AMERICANA", clue:"Music rooted in US folk and rock traditions" },
+    quote: `“The great challenge of adulthood is holding on to your idealism after you lose your innocence.”
+Bruce Springsteen was born on this day in 1949, becoming one of the defining voices of American music and working‑class storytelling.
+🔗 https://www.youtube.com/watch?v=lrpXArn3hII`,
+  },
+
+  "2026-09-24": {
+    rounds: [
+      { clue: "Poetic pattern of repeated sounds", answer: "RHYME", connection: "RHYME — Seuss’s books rely heavily on rhythmic, rhyming verse" },
+      { clue: "Green creature who hates Christmas", answer: "GRINCH", connection: "GRINCH — One of his most famous creations, central to his legacy" },
+      { clue: "Dreamlike, strange, imaginative", answer: "SURREAL", connection: "SURREAL — His art style blends surrealism with childlike imagination" },
+      { clue: "Creator of moving images", answer: "ANIMATOR", connection: "ANIMATOR — He produced animated training films during WWII" },
+      { clue: "Playfully imaginative in style", answer: "WHIMSICAL", connection: "WHIMSICAL — His stories and drawings are defined by whimsical creativity" },
+    ],
+    anagram: { letters:["R","O","S","T","M","Y","T","E","I"], answer:"STORYTIME", clue:"What children gather for at bedtime" },
+    quote: `“Don’t cry because it’s over. Smile because it happened.” Dr. Seuss, who died on this day in 1991, left behind a legacy of imagination, rhythm, and timeless stories that shaped generations of readers.
+🔗 https://en.wikipedia.org/wiki/Dr._Seuss`,
+  },
+
+  "2026-09-25": {
+    rounds: [
+      { clue: "Solid structure forming part of a building", answer: "BLOCK", connection: "BLOCK — The Maze was organised into H‑Blocks" },
+      { clue: "Act of breaking free from confinement", answer: "ESCAPE", connection: "ESCAPE — The 1983 breakout was the largest in UK history" },
+      { clue: "Remaining the same in all cases and at all times", answer: "UNIFORM", connection: "UNIFORM — Prison uniforms were used to impersonate officers" },
+      { clue: "Measures taken to prevent escape", answer: "SECURITY", connection: "SECURITY — The event highlighted severe security weaknesses" },
+      { clue: "Those held in custody", answer: "PRISONERS", connection: "PRISONERS — 38 IRA prisoners escaped during the operation" },
+    ],
+    anagram: { letters:["T","R","F","F","E","I","O","D","I"], answer:"FORTIFIED", clue:"Built to be escape‑proof" },
+    quote: `The Sept 25th, 1983 Maze Prison escape remains one of the most dramatic breakouts in modern history, exposing deep flaws in prison security and becoming a defining moment in the Troubles.
+🔗 https://en.wikipedia.org/wiki/Maze_Prison_escape`,
+  },
+
+  "2026-09-26": {
+    rounds: [
+      { clue: "Signal indicating danger", answer: "ALERT", connection: "ALERT — Petrov was responding to a nuclear alert signal" },
+      { clue: "Shared by two sides", answer: "MUTUAL", connection: "MUTUAL — The Cold War nuclear balance relied on Mutual Assured Destruction (MAD)" },
+      { clue: "Indication of possible threat", answer: "WARNING", connection: "WARNING — The Soviet system issued a false missile warning" },
+      { clue: "Choice made between alternatives", answer: "DECISION", connection: "DECISION — Petrov’s decision not to report the alert prevented disaster" },
+      { clue: "Type of missile launched on a high arc", answer: "BALLISTIC", connection: "BALLISTIC — The system falsely detected incoming U.S. ballistic missiles" },
+    ],
+    anagram: { letters:["L","S","M","I","I","E","S"], answer:"MISSILE", clue:"Weapon delivered by rocket propulsion" },
+    quote: `Stanislav Petrov’s calm judgement on September 26th, 1983 prevented a potential nuclear catastrophe, making him one of the most quietly influential figures of the Cold War.
+🔗 https://en.wikipedia.org/wiki/1983_Soviet_nuclear_false_alarm_incident`,
+  },
+
+  "2026-09-27": {
+    rounds: [
+      { clue: "Energy produced by heating water", answer: "STEAM", connection: "STEAM — The railway used steam locomotives like Locomotion No. 1." },
+      { clue: "Best, Michael or Harrison", answer: "GEORGE", connection: "GEORGE — George Stephenson engineered the line and its locomotives." },
+      { clue: "Goods carried by trains", answer: "FREIGHT", connection: "FREIGHT — The railway’s main purpose was hauling freight, especially coal." },
+      { clue: "Coal mine and its associated works", answer: "COLLIERY", connection: "COLLIERY — It linked collieries to the port at Stockton." },
+      { clue: "Highly profitable", answer: "LUCRATIVE", connection: "LUCRATIVE — Cheaper transport made coal trade more lucrative." },
+    ],
+    anagram: { letters:["E","E","S","P","L","R","E"], answer:"SLEEPER", clue:"Railway support laid beneath the track" },
+    quote: `On September 27th, 1825, the Stockton–Darlington Railway opened in England, becoming the world’s first public railway to use steam locomotives and transforming the transport of coal, freight, and people.
+🔗 https://en.wikipedia.org/wiki/Stockton_and_Darlington_Railway`,
+  },
+
+  "2026-09-28": {
+    rounds: [
+      { clue: "Principle guiding right and wrong behavior", answer: "MORAL", connection: "MORAL — Confucius emphasized moral cultivation as the foundation of good character" },
+      { clue: "System of values shaping conduct", answer: "ETHICS", connection: "ETHICS — His teachings form the basis of Confucian ethical philosophy" },
+      { clue: "One who instructs or imparts knowledge", answer: "TEACHER", connection: "TEACHER — Confucius is remembered as one of history’s greatest teachers" },
+      { clue: "Quality of being gentle and considerate", answer: "KINDNESS", connection: "KINDNESS — Benevolence (rén) and kindness are central virtues in his thought" },
+      { clue: "Honesty in intention and action", answer: "SINCERITY", connection: "SINCERITY — Confucius stressed sincerity as essential to personal integrity" },
+    ],
+    anagram: { letters:["N","R","H","O","A","Y","M"], answer:"HARMONY", clue:"State of peaceful balance" },
+    quote: `“Real knowledge is to know the extent of one’s ignorance.” — Confucius. Confucius, traditionally believed to have been born on September 28th, 551 BCE, shaped East Asian philosophy with teachings on virtue, sincerity, and the pursuit of moral harmony.
+🔗 https://en.wikipedia.org/wiki/Confucius`,
+  },
+
+  "2026-09-29": {
+    rounds: [
+      { clue: "Sharp practical understanding", answer: "SAVVY", connection: "SAVVY — Rockefeller’s business savvy helped build Standard Oil into a dominant force" },
+      { clue: "Modest and unassuming in manner", answer: "HUMBLE", connection: "HUMBLE — Despite his wealth, Rockefeller cultivated a public image of humility" },
+      { clue: "Amount equal to one thousand million", answer: "BILLION", connection: "BILLION — In 1916, Rockefeller became the world’s first billionaire" },
+      { clue: "Widely accepted level of quality", answer: "STANDARD", connection: "STANDARD — Standard Oil was the company that made him the richest man alive" },
+      { clue: "President whose face appears on Mount Rushmore", answer: "ROOSEVELT", connection: "ROOSEVELT — President Theodore Roosevelt pursued antitrust action against Standard Oil" },
+    ],
+    anagram: { letters:["E","R","K","E","S","E","O","N"], answer:"KEROSENE", clue:"Oil product that lit homes before electricity" },
+    quote: `John D. Rockefeller, who became the world’s first billionaire in 1916, reshaped American industry through Standard Oil and left a legacy of philanthropy, influence, and controversy that still defines modern capitalism.
+🔗 https://en.wikipedia.org/wiki/John_D._Rockefeller`,
+  },
+
+  "2026-09-30": {
+    rounds: [
+      { clue: "Person who resists convention", answer: "REBEL", connection: "REBEL — Dean became the symbol of youthful rebellion" },
+      { clue: "High‑speed competitive driving", answer: "RACING", connection: "RACING — He was passionate about racing and died while driving his Porsche" },
+      { clue: "Great victory or achievement", answer: "TRIUMPH", connection: "TRIUMPH — The brand of motorcycle Dean famously rode" },
+      { clue: "Unexpected harmful event", answer: "ACCIDENT", connection: "ACCIDENT — He died in a car accident on September 30th 1955" },
+      { clue: "Centre of the American film industry", answer: "HOLLYWOOD", connection: "HOLLYWOOD — His short career left a lasting impact on Hollywood" },
+    ],
+    anagram: { letters:["I","A","G","T","N"], answer:"GIANT", clue:"Massive figure of great strength or size" },
+    quote: `“Dream as if you’ll live forever. Live as if you’ll die today.” —  James Dean’s death on September 30th 1955 ended a brief but iconic career that reshaped Hollywood’s image of youth, rebellion, and vulnerability.
+🔗 https://www.youtube.com/watch?v=i1vInw9FqK0&t=11s`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
