@@ -2015,6 +2015,32 @@ Bruce Springsteen was born on this day in 1949, becoming one of the defining voi
     quote: `“Dream as if you’ll live forever. Live as if you’ll die today.” —  James Dean’s death on September 30th 1955 ended a brief but iconic career that reshaped Hollywood’s image of youth, rebellion, and vulnerability.
 🔗 https://www.youtube.com/watch?v=i1vInw9FqK0&t=11s`,
   },
+
+  "2026-10-01": {
+    rounds: [
+      { clue: "Orderly, polite", answer: "CIVIL", connection: "CIVIL — The Chinese Civil War ended in 1949, allowing Mao Zedong to proclaim the People’s Republic of China in Beijing" },
+      { clue: "Humans collectively", answer: "PEOPLE", connection: "PEOPLE — Mao declared that the Central People’s Government of the People’s Republic of China was established on October 1, 1949" },
+      { clue: "Capital that hosted the 2008 Olympics", answer: "BEIJING", connection: "BEIJING — The proclamation took place in Beijing" },
+      { clue: "Large landmass, not an island", answer: "MAINLAND", connection: "MAINLAND — By late 1949, the CCP controlled most of mainland China, with the Nationalists retreating offshore" },
+      { clue: "Historic plaza whose name means “Gate of Heavenly Peace” located in Beijing", answer: "TIANANMEN", connection: "TIANANMEN — Mao proclaimed the founding of the PRC from the Tiananmen Gate overlooking Tiananmen Square" },
+    ],
+    anagram: { letters:["C","P","R","L","B","E","U","I"], answer:"REPUBLIC", clue:"State in which power rests with the people and their elected representatives" },
+    quote: `The Central People’s Government of the People’s REPUBLIC of China was founded on this day in 1949
+🔗 https://en.wikipedia.org/wiki/Proclamation_of_the_People%27s_Republic_of_China`,
+  },
+
+  "2026-10-02": {
+    rounds: [
+      { clue: "Long, narrow piece cut from something", answer: "STRIP", connection: "STRIP — Peanuts debuted as a comic strip on October 2, 1950, appearing in seven newspapers" },
+      { clue: "Dog breed often used for tracking and detection", answer: "BEAGLE", connection: "BEAGLE — Snoopy, one of the most iconic characters introduced early in the strip, is famously a beagle" },
+      { clue: "NATO’s letter “C”", answer: "CHARLIE", connection: "CHARLIE — The central character of the strip is Charlie Brown, who appeared from the very first Peanuts publication" },
+      { clue: "State of being safe or protected", answer: "SECURITY", connection: "SECURITY — Linus is known for his beloved security blanket, one of the most enduring symbols in Peanuts lore" },
+      { clue: "Feeling of pleasure or well‑being", answer: "HAPPINESS", connection: "HAPPINESS — The strip popularised the phrase “Happiness is a warm puppy,” one of the most famous Peanuts‑related lines ever written" },
+    ],
+    anagram: { letters:["S","T","U","N","A","P","E"], answer:"PEANUTS", clue:"Small edible legumes often eaten roasted" },
+    quote: `“Happiness is a warm puppy.” — Charles M. Schulz, whose PEANUTS comic strip first appeared on this day in 1950
+🔗 https://www.peanuts.com/`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
