@@ -2041,6 +2041,32 @@ Bruce Springsteen was born on this day in 1949, becoming one of the defining voi
     quote: `“Happiness is a warm puppy.” — Charles M. Schulz, whose PEANUTS comic strip first appeared on this day in 1950
 🔗 https://www.peanuts.com/`,
   },
+
+  "2026-10-03": {
+    rounds: [
+      { clue: "State of being joined together as one", answer: "UNITY", connection: "UNITY — German reunification created unity between East and West Germany on 3 October 1990" },
+      { clue: "Isaiah or Irving, or a German city", answer: "BERLIN", connection: "BERLIN — Reunification restored Berlin as the capital of the unified German state" },
+      { clue: "Fabric hanging used to block light", answer: "CURTAIN", connection: "CURTAIN — The reunification symbolically ended the Iron Curtain, which had divided Europe for decades" },
+      { clue: "Nation governed by elected representatives", answer: "REPUBLIC", connection: "REPUBLIC — The reunified nation continued as the Federal Republic of Germany under the Basic Law" },
+      { clue: "Act of increasing in size or scope", answer: "EXPANSION", connection: "EXPANSION — Reunification led to the expansion of the Federal Republic’s territory to include the former GDR" },
+    ],
+    anagram: { letters:["R","R","F","E","M","O"], answer:"REFORM", clue:"Fix what’s broken by changing it" },
+    quote: `“Wir sind ein Volk.” (We are one people) — chanted during German reunification, which took place on this day in 1990
+🔗 https://en.wikipedia.org/wiki/German_reunification`,
+  },
+
+  "2026-10-04": {
+    rounds: [
+      { clue: "Unintended escapes of liquid or information", answer: "LEAKS", connection: "LEAKS — WikiLeaks became known for publishing classified leaks from governments and organisations" },
+      { clue: "Person who gains unauthorised digital access", answer: "HACKER", connection: "HACKER — Julian Assange was previously involved in hacker communities before founding WikiLeaks" },
+      { clue: "London district known for its football club", answer: "CHELSEA", connection: "CHELSEA — Chelsea Manning supplied the major U.S. military and diplomatic leaks that made WikiLeaks globally known" },
+      { clue: "Electronic device that processes data", answer: "COMPUTER", connection: "COMPUTER — The leaked files were accessed, stored, and transmitted through computer systems" },
+      { clue: "Capital of Victoria, Australia", answer: "MELBOURNE", connection: "MELBOURNE — Julian Assange was born in Melbourne, Australia, in 1971" },
+    ],
+    anagram: { letters:["A","U","D","E","O","R","C"], answer:"ECUADOR", clue:"Quito is the capital of?" },
+    quote: `“If wars can be started by lies, they can be stopped by truth.” — Julian Assange, who registered the WikiLeaks website on this day in 2006
+🔗 https://en.wikipedia.org/wiki/Julian_Assange`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
