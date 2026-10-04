@@ -2067,6 +2067,45 @@ Bruce Springsteen was born on this day in 1949, becoming one of the defining voi
     quote: `“If wars can be started by lies, they can be stopped by truth.” — Julian Assange, who registered the WikiLeaks website on this day in 2006
 🔗 https://en.wikipedia.org/wiki/Julian_Assange`,
   },
+
+  "2026-10-05": {
+    rounds: [
+      { clue: "Illegal deception used to fix the result of a vote", answer: "FRAUD", connection: "FRAUD — Milošević’s attempted election fraud in the 2000 presidential election" },
+      { clue: "Country whose capital is Belgrade", answer: "SERBIA", connection: "SERBIA — Country where the uprising took place" },
+      { clue: "Public demonstration against an unpopular decision or authority", answer: "PROTEST", connection: "PROTEST — Mass street protests against the disputed election results" },
+      { clue: "Formal process in which citizens choose their political leaders", answer: "ELECTION", connection: "ELECTION — The 2000 Yugoslav presidential election that triggered the crisis" },
+      { clue: "Heavy vehicle used to push down obstacles", answer: "BULLDOZER", connection: "BULLDOZER — The bulldozer used to storm the parliament, an iconic image of the revolution" },
+    ],
+    anagram: { letters:["N","N","S","I","T","A","C","O"], answer:"SANCTION", clue:"Punitive measure imposed by other states to pressure a government to change its behaviour" },
+    quote: `“Gotov je!” (“He’s finished!”) — the chant of the protesters in Belgrade on this day in the year 2000 when the overthrow of Slobodan Milošević occurred
+🔗 https://en.wikipedia.org/wiki/Overthrow_of_Slobodan_Milo%C5%A1evi%C4%87`,
+  },
+
+  "2026-10-06": {
+    rounds: [
+      { clue: "Something you take during work.", answer: "BREAK", connection: "BREAK — “Break, Break, Break” was one of his famous poems" },
+      { clue: "Batman's butler", answer: "ALFRED", connection: "ALFRED — Tennyson’s first name" },
+      { clue: "A military unit larger than a regiment.", answer: "BRIGADE", connection: "BRIGADE — Refers to his iconic poem “The Charge of the Light Brigade”" },
+      { clue: "A title awarded to someone honoured for artistic or scholarly achievement", answer: "LAUREATE", connection: "LAUREATE — Tennyson served as Poet Laureate of the United Kingdom from 1850 until his death" },
+      { clue: "English city known for its ancient university", answer: "CAMBRIDGE", connection: "CAMBRIDGE — Tennyson studied at Cambridge University, where he joined the Cambridge Apostles" },
+    ],
+    anagram: { letters:["U","M","T","K","U","I","B","T"], answer:"TIMBUKTU", clue:"City in Mali" },
+    quote: `"'Tis better to have loved and lost / Than never to have loved at all" — Alfred Tennyson, 1st Baron Tennyson, who died on this day in 1892, was Poet Laureate of the United Kingdom
+🔗 https://en.wikipedia.org/wiki/Alfred,_Lord_Tennyson`,
+  },
+
+  "2026-10-07": {
+    rounds: [
+      { clue: "Curves or angles in a road or river", answer: "BENDS", connection: "BENDS — The Bends is Radiohead’s breakthrough 1995 album, featuring Yorke’s early signature vocal style" },
+      { clue: "A person skilled in creative expression", answer: "ARTIST", connection: "ARTIST — Thom Yorke is an influential artist, known for Radiohead, solo work, and Atoms for Peace" },
+      { clue: "Lonely or abandoned in appearance", answer: "FORLORN", connection: "FORLORN — Yorke’s lyrics and vocal delivery are often described as forlorn, capturing alienation and emotional fragility" },
+      { clue: "Machine used for digital tasks", answer: "COMPUTER", connection: "COMPUTER — Radiohead’s landmark album OK Computer reshaped alternative music and cemented Yorke’s reputation" },
+      { clue: "Unexpected events or reactions", answer: "SURPRISES", connection: "SURPRISES — “No Surprises” is one of Radiohead’s most iconic songs, released on OK Computer" },
+    ],
+    anagram: { letters:["R","E","C","P","E"], answer:"CREEP", clue:"Someone who makes others uneasy" },
+    quote: `“I’m not afraid of dying. I’m afraid of not being alive.” — Thom Yorke, lead singer of Radiohead, born on this day in 1968
+🔗 https://www.youtube.com/watch?v=lcmbLpCXUGk`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
