@@ -2106,6 +2106,73 @@ Bruce Springsteen was born on this day in 1949, becoming one of the defining voi
     quote: `“I’m not afraid of dying. I’m afraid of not being alive.” — Thom Yorke, lead singer of Radiohead, born on this day in 1968
 🔗 https://www.youtube.com/watch?v=lcmbLpCXUGk`,
   },
+
+  "2026-10-08": {
+    rounds: [
+      { clue: "From or relating to the largest island in the Caribbean", answer: "CUBAN", connection: "CUBAN — Che Guevara was a Cuban revolutionary leader, central to the Cuban Revolution alongside Fidel Castro" },
+      { clue: "An organisation that carries out official duties.", answer: "AGENCY", connection: "AGENCY — He was hunted by the Bolivian intelligence agencies and the CIA, who assisted in locating him" },
+      { clue: "Cuban dictator overthrown in a revolution in 1959", answer: "BATISTA", connection: "BATISTA — Batista was the Cuban leader ousted in the revolution Che helped lead" },
+      { clue: "Taken into custody", answer: "CAPTURED", connection: "CAPTURED — On 8 October 1967, Che Guevara was captured by Bolivian forces in La Higuera" },
+      { clue: "A member of a small independent group taking part in irregular fighting, typically against larger regular forces", answer: "GUERRILLA", connection: "GUERRILLA — Che led a guerrilla campaign in Bolivia, attempting to spark a continental revolution" },
+    ],
+    anagram: { letters:["I","L","B","V","O","A","I"], answer:"BOLIVIA", clue:"Country with cities of La Paz and Sucre" },
+    quote: `“The revolution is not an apple that falls when it is ripe. You have to make it fall.” Che Guevara was captured by Bolivian forces on 8 October 1967 after his guerrilla group was surrounded in the Yuro ravine.
+🔗 https://en.wikipedia.org/wiki/Che_Guevara#`,
+  },
+
+  "2026-10-09": {
+    rounds: [
+      { clue: "State of calm or absence of conflict", answer: "PEACE", connection: "PEACE — John Lennon became a global symbol of peace, leading anti‑war activism and the famous “Bed‑Ins”" },
+      { clue: "Large Arctic marine mammal with tusks", answer: "WALRUS", connection: "WALRUS — Lennon wrote “I Am the Walrus,” one of The Beatles’ most surreal and iconic songs" },
+      { clue: "Form a mental picture of something", answer: "IMAGINE", connection: "IMAGINE — His solo masterpiece “Imagine” became an anthem for hope, unity, and a better world" },
+      { clue: "Someone who takes action to promote political or social change.", answer: "ACTIVIST", connection: "ACTIVIST — John Lennon became a global peace activist, using his music to campaign against war" },
+      { clue: "City on the Mersey", answer: "LIVERPOOL", connection: "LIVERPOOL — John Lennon was born in Liverpool on 9 October 1940, where The Beatles first formed" },
+    ],
+    anagram: { letters:["R","C","V","A","N","E"], answer:"CAVERN", clue:"Craven venue where the Beatles played their first gig" },
+    quote: `“Life is what happens to you while you’re busy making other plans.”
+John Lennon, born on this day in 1940.
+🔗 https://www.youtube.com/watch?v=wADRRYNHhOA`,
+  },
+
+  "2026-10-10": {
+    rounds: [
+      { clue: "Common sweetener from cane or beet", answer: "SUGAR", connection: "SUGAR — Fiji’s economy has long relied on sugar production, especially sugarcane farming" },
+      { clue: "Landmass surrounded by water", answer: "ISLAND", connection: "ISLAND — Fiji is an island nation made up of more than 300 islands" },
+      { clue: "Region including Australia and Pacific islands", answer: "OCEANIA", connection: "OCEANIA — Fiji is part of Oceania, located in the central South Pacific" },
+      { clue: "Relating to mountains that spew magma", answer: "VOLCANIC", connection: "VOLCANIC — Most of Fiji’s islands are volcanic in origin, formed by ancient eruptions" },
+      { clue: "Pacific region of many islands", answer: "POLYNESIA", connection: "POLYNESIA — Fiji sits at a cultural crossroads between Polynesia and Melanesia" },
+    ],
+    anagram: { letters:["I","C","P","F","A","C","I"], answer:"PACIFIC", clue:"Largest ocean on Earth" },
+    quote: `“Fiji became a fully independent sovereign state on 10 October 1970.”
+🔗 https://en.wikipedia.org/wiki/Fiji`,
+  },
+
+  "2026-10-11": {
+    rounds: [
+      { clue: "Time between sunset and sunrise", answer: "NIGHT", connection: "NIGHT — Saturday Night Live premiered late at night on NBC on 11 October 1975" },
+      { clue: "Quick drawing or outline", answer: "SKETCH", connection: "SKETCH — SNL is built around comedic sketch performances, its defining format" },
+      { clue: "A mix of different types", answer: "VARIETY", connection: "VARIETY — The show was originally conceived as a variety program with music, comedy, and guest hosts" },
+      { clue: "Day of the week", answer: "SATURDAY", connection: "SATURDAY — It airs live every Saturday from Studio 8H in New York" },
+      { clue: "Individual with widespread recognition", answer: "CELEBRITY", connection: "CELEBRITY — Each episode features a celebrity host and musical guest" },
+    ],
+    anagram: { letters:["O","M","L","O","A","N","P"], answer:"LAMPOON", clue:"Mock or ridicule through comedy" },
+    quote: `“Live from New York, it’s Saturday Night!”
+Spoken for the first time on 11 October 1975.
+🔗 https://www.youtube.com/watch?v=VUlBUvgrc_s`,
+  },
+
+  "2026-10-12": {
+    rounds: [
+      { clue: "Course or direction of travel", answer: "ROUTE", connection: "ROUTE — Kipchoge ran a precisely measured route through Vienna designed for optimal pacing and speed" },
+      { clue: "Austrian capital", answer: "VIENNA", connection: "VIENNA — He completed the historic sub‑2 marathon in Vienna during the INEOS 1:59 Challenge" },
+      { clue: "Obstacle that blocks progress", answer: "BARRIER", connection: "BARRIER — The attempt was aimed at breaking the seemingly impossible barrier of two hours" },
+      { clue: "Act of causing something to stop functioning", answer: "BREAKING", connection: "BREAKING — Kipchoge succeeded in breaking the 2‑hour mark, finishing in 1:59:40" },
+      { clue: "Device that regulates heartbeat", answer: "PACEMAKER", connection: "PACEMAKER — A team of rotating pacemakers helped maintain the exact speed required for the record" },
+    ],
+    anagram: { letters:["N","R","M","H","T","A","A","O"], answer:"MARATHON", clue:"26.2 miles race" },
+    quote: `"Only the disciplined ones in life are free. If you are undisciplined, you are a slave to your moods and your passions." Eliud Kipchoge, who broke two hours in the marathon in Vienna on this day in 2019
+🔗 https://www.youtube.com/watch?v=GzWezWxJxvs`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
