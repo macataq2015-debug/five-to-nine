@@ -2173,6 +2173,33 @@ Spoken for the first time on 11 October 1975.
     quote: `"Only the disciplined ones in life are free. If you are undisciplined, you are a slave to your moods and your passions." Eliud Kipchoge, who broke two hours in the marathon in Vienna on this day in 2019
 🔗 https://www.youtube.com/watch?v=GzWezWxJxvs`,
   },
+
+  "2026-10-13": {
+    rounds: [
+      { clue: "Highest quality or top condition", answer: "PRIME", connection: "PRIME — The 1884 conference was held to choose a prime meridian for global use, a single zero‑longitude line" },
+      { clue: "Quantity with both direction and magnitude", answer: "VECTOR", connection: "VECTOR — Longitude is measured as a directional vector east or west from the chosen meridian" },
+      { clue: "Transport network using locomotives", answer: "RAILWAY", connection: "RAILWAY — Pressure to unify time came from railway timetables, which struggled with dozens of local times across the U.S. and Europe" },
+      { clue: "Level of quality used as a benchmark", answer: "STANDARD", connection: "STANDARD — The conference established Greenwich as the standard reference for 0° longitude and universal time" },
+      { clue: "Village in New York where Bob Dylan first performed", answer: "GREENWICH", connection: "GREENWICH — Delegates voted 22–1 to adopt Greenwich as the international meridian" },
+    ],
+    anagram: { letters:["G","N","L","T","D","I","O","E","U"], answer:"LONGITUDE", clue:"Geographic coordinate measuring east–west position" },
+    quote: `On 13 October 1884, delegates voted to adopt Greenwich as the world’s prime meridian
+🔗 https://en.wikipedia.org/wiki/International_Meridian_Conference`,
+  },
+
+  "2026-10-14": {
+    rounds: [
+      { clue: "Harmony between people or nations", answer: "PEACE", connection: "PEACE — Martin Luther King Jr. received the Nobel Prize for his leadership in the peace movement and non‑violent resistance" },
+      { clue: "Surname of Coldplay lead singer", answer: "MARTIN", connection: "MARTIN — His first name" },
+      { clue: "Make of a luxury American car brand or surname of a famous US President", answer: "LINCOLN", connection: "LINCOLN — King delivered his famous “I Have a Dream” speech at the Lincoln Memorial during the 1963 March on Washington" },
+      { clue: "Hard fight against obstacles", answer: "STRUGGLE", connection: "STRUGGLE — MLK dedicated his life to the struggle for civil rights, equality, and justice" },
+      { clue: "Feeling of thankfulness", answer: "GRATITUDE", connection: "GRATITUDE — Upon receiving the Nobel Prize, King expressed deep gratitude for the recognition of the civil rights movement" },
+    ],
+    anagram: { letters:["R","E","D","M","A"], answer:"DREAM", clue:"Armed? Rearranged into a vision of hope" },
+    quote: `“We shall overcome because the arc of the moral universe is long, but it bends toward justice.”
+Martin Luther King Jr., awarded the Nobel Peace Prize on this day in 1964.
+🔗 https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
