@@ -2200,6 +2200,45 @@ Spoken for the first time on 11 October 1975.
 Martin Luther King Jr., awarded the Nobel Peace Prize on this day in 1964.
 🔗 https://en.wikipedia.org/wiki/Martin_Luther_King_Jr.`,
   },
+  "2026-10-15": {
+    rounds: [
+      { clue: "Humour based on contradiction or reversal", answer: "IRONY", connection: "IRONY — Nietzsche frequently used irony and sharp aphorisms to critique morality, religion, and culture" },
+      { clue: "Often unwell or in poor health", answer: "SICKLY", connection: "SICKLY — He lived much of his adult life sickly, suffering chronic migraines, eye problems, and long periods of physical collapse" },
+      { clue: "Extreme or far‑reaching in change", answer: "RADICAL", connection: "RADICAL — Nietzsche’s critiques of morality, Christianity, and truth were radical, reshaping modern philosophy" },
+      { clue: "Academic discipline examining the divine", answer: "THEOLOGY", connection: "THEOLOGY — He began his studies intending to pursue theology, before turning to philology and later philosophy" },
+      { clue: "Concerned with beauty or artistic taste", answer: "AESTHETIC", connection: "AESTHETIC — Nietzsche wrote extensively about aesthetic experience, especially in The Birth of Tragedy and his ideas on the Apollonian and Dionysian" },
+    ],
+    anagram: { letters:["Y","L","S","A","T","O","I","R"], answer:"SOLITARY", clue:"Living or existing alone" },
+    quote: `“To live is to suffer, to survive is to find some meaning in the suffering.”
+Friedrich Nietzsche, born on this day in 1844.
+🔗 https://en.wikipedia.org/wiki/Friedrich_Nietzsche`,
+  },
+  "2026-10-16": {
+    rounds: [
+      { clue: "Ability to influence or control outcomes", answer: "POWER", connection: "POWER — The raised fist was a symbol of Black Power, representing resistance to racial injustice" },
+      { clue: "Large country south of the United States", answer: "MEXICO", connection: "MEXICO — The protest took place at the 1968 Olympic Games in Mexico City" },
+      { clue: "Movement of the body expressing meaning", answer: "GESTURE", connection: "GESTURE — Smith and Carlos made their statement through a silent gesture: the iconic raised, gloved fists" },
+      { clue: "International multi‑sport event held every four years", answer: "OLYMPICS", connection: "OLYMPICS — The demonstration occurred during the Olympic medal ceremony for the 200‑metre sprint" },
+      { clue: "Act or speak on behalf of others", answer: "REPRESENT", connection: "REPRESENT — The athletes used the moment to represent oppressed people worldwide and highlight civil rights struggles" },
+    ],
+    anagram: { letters:["L","O","G","E","V"], answer:"GLOVE", clue:"Covering worn on the hand for protection or warmth" },
+    quote: `“We had to be seen because we couldn’t be heard.”
+Tommie Smith and John Carlos each raised a black gloved fist after winning Olympic medals on this day in 1968, in protest.
+🔗 https://en.wikipedia.org/wiki/1968_Olympics_Black_Power_salute`,
+  },
+  "2026-10-17": {
+    rounds: [
+      { clue: "Country shaped like a boot", answer: "ITALY", connection: "ITALY — Capone was born to parents who had emigrated from Italy, shaping his early background" },
+      { clue: "Place where people are held after conviction", answer: "PRISON", connection: "PRISON — He was ultimately convicted of tax evasion and sent to federal prison for 11 years" },
+      { clue: "Major U.S. city on Lake Michigan", answer: "CHICAGO", connection: "CHICAGO — Capone built his criminal empire in Chicago, becoming the city’s most notorious mob boss" },
+      { clue: "Member of an organized criminal group", answer: "GANGSTER", connection: "GANGSTER — He rose to national infamy as a gangster during Prohibition, controlling rackets and violence" },
+      { clue: "Person chosen to receive a romantic greeting on 14th of February", answer: "VALENTINE", connection: "VALENTINE — The St. Valentine’s Day Massacre became the most infamous act associated with Capone’s organization" },
+    ],
+    anagram: { letters:["O","C","A","H","L","L","O"], answer:"ALCOHOL", clue:"Chemical compound present in spirits and wine" },
+    quote: `“You accomplish more with a smile, a handshake, and a gun than you do with just a smile and a handshake.”
+Al Capone was sentenced to 11 years in federal prison on this day in 1931.
+🔗 https://en.wikipedia.org/wiki/Al_Capone`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
