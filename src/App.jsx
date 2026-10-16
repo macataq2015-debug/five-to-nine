@@ -2239,6 +2239,46 @@ Tommie Smith and John Carlos each raised a black gloved fist after winning Olymp
 Al Capone was sentenced to 11 years in federal prison on this day in 1931.
 🔗 https://en.wikipedia.org/wiki/Al_Capone`,
   },
+
+  "2026-10-18": {
+    rounds: [
+      { clue: "Canadian territory bordering Alaska", answer: "YUKON", connection: "YUKON — Alaska borders the Yukon Territory, forming part of its eastern boundary" },
+      { clue: "Country spanning Eastern Europe and Asia once ruled by Tsars", answer: "RUSSIA", connection: "RUSSIA — Alaska was purchased from Russia in 1867 for $7.2 million" },
+      { clue: "Continent containing the United States", answer: "AMERICA", connection: "AMERICA — The sale transferred Alaska to America, becoming a U.S. territory and later a state" },
+      { clue: "Area where petroleum is extracted", answer: "OILFIELD", connection: "OILFIELD — Alaska contains major oilfields, including Prudhoe Bay, central to its economy" },
+      { clue: "Urban centre on Alaska’s south coast", answer: "ANCHORAGE", connection: "ANCHORAGE — Anchorage is Alaska’s largest city and a major hub for transport and commerce" },
+    ],
+    anagram: { letters:["I","A","C","R","C","T"], answer:"ARCTIC", clue:"Cold northern zone with tundra landscapes" },
+    quote: `Alaska Day commemorates the 1867 sale of Alaska from Russia to the United States for $7.2 million.
+🔗 https://en.wikipedia.org/wiki/Alaska`,
+  },
+
+  "2026-10-19": {
+    rounds: [
+      { clue: "Written language in ordinary form", answer: "PROSE", connection: "PROSE — Jane Eyre is written in rich, expressive prose that helped define the Victorian novel" },
+      { clue: "Person without surviving parents", answer: "ORPHAN", connection: "ORPHAN — Jane begins life as an orphan, shaping her resilience and independence throughout the story" },
+      { clue: "Meeting again after separation", answer: "REUNION", connection: "REUNION — The novel culminates in Jane’s emotional reunion with Rochester after the fire at Thornfield" },
+      { clue: "Principles of right and wrong behaviour", answer: "MORALITY", connection: "MORALITY — The book explores morality through Jane’s struggle to balance passion, conscience, and principle" },
+      { clue: "Spider who spun words to save a pig, Wilbur", answer: "CHARLOTTE", connection: "CHARLOTTE — The novel was written by Charlotte Brontë, published under the pen name Currer Bell" },
+    ],
+    anagram: { letters:["I","T","A","V","R","N","A","E","R"], answer:"NARRATIVE", clue:"Account of connected events; a story" },
+    quote: `“I am no bird; and no net ensnares me: I am a free human being with an independent will.”
+— Jane Eyre, by Charlotte Brontë, was published on this day in 1847
+🔗 https://en.wikipedia.org/wiki/Jane_Eyre`,
+  },
+
+  "2026-10-20": {
+    rounds: [
+      { clue: "Shaggy or fur‑laden in appearance", answer: "HAIRY", connection: "HAIRY — The band’s image and stage presence often featured long, hairy, Southern‑rock style looks" },
+      { clue: "Plain or lacking complexity", answer: "SIMPLE", connection: "SIMPLE — “Simple Man” is one of Lynyrd Skynyrd’s most iconic songs, central to their legacy" },
+      { clue: "Southern U.S. state bordering Georgia and Mississippi", answer: "ALABAMA", connection: "ALABAMA — “Sweet Home Alabama” became their signature anthem and remains tied to the band’s identity" },
+      { clue: "Characteristic of regions below the equator or lower latitudes", answer: "SOUTHERN", connection: "SOUTHERN — The group defined the Southern rock genre, blending blues, country, and rock influences" },
+      { clue: "Members who perform together in a musical group", answer: "BANDMATES", connection: "BANDMATES — Several bandmates were killed or injured when the plane crashed during their 1977 tour" },
+    ],
+    anagram: { letters:["A","R","C","S","H"], answer:"CRASH", clue:"Sudden collision causing damage" },
+    quote: `On this day in 1977, following a performance, three members of Lynyrd Skynyrd died in a plane crash
+🔗 https://www.youtube.com/watch?v=MQNRKX8GwPo`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
