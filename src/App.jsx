@@ -2279,6 +2279,45 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `On this day in 1977, following a performance, three members of Lynyrd Skynyrd died in a plane crash
 🔗 https://www.youtube.com/watch?v=MQNRKX8GwPo`,
   },
+
+  "2026-10-21": {
+    rounds: [
+      { clue: "Person trained to care for the sick", answer: "NURSE", connection: "NURSE — Nightingale became the most influential nurse of the 19th century, transforming the profession" },
+      { clue: "Black Sea peninsula contested in history", answer: "CRIMEA", connection: "CRIMEA — She travelled to Crimea in 1854 to care for wounded soldiers during the war" },
+      { clue: "Practices that maintain cleanliness and health", answer: "HYGIENE", connection: "HYGIENE — Nightingale revolutionised hygiene practices, drastically reducing infection and disease" },
+      { clue: "Place where medical treatment is provided", answer: "HOSPITAL", connection: "HOSPITAL — She reformed hospital conditions, improving ventilation, cleanliness, and patient care" },
+      { clue: "Rate of death within a population", answer: "MORTALITY", connection: "MORTALITY — Her work reduced mortality rates and introduced statistical methods to track improvements" },
+    ],
+    anagram: { letters:["E","O","P","E","I","R","N"], answer:"PIONEER", clue:"Innovator who breaks new ground" },
+    quote: `“I attribute my success to this – I never gave or took any excuse.” — Florence Nightingale, who travelled to the Crimean War in 1854 with 38 nurses to transform military care.
+🔗 https://en.wikipedia.org/wiki/Florence_Nightingale`,
+  },
+
+  "2026-10-22": {
+    rounds: [
+      { clue: "Medieval cavalry weapon used in jousting", answer: "LANCE", connection: "LANCE — Lance Armstrong was the central figure in the Tour de France doping scandal" },
+      { clue: "Established pattern of authority or control", answer: "REGIME", connection: "REGIME — Investigators uncovered a systematic doping regime within his team" },
+      { clue: "Maker of high‑performance red supercars", answer: "FERRARI", connection: "FERRARI — Armstrong worked with Dr. Michele Ferrari, linked to performance‑enhancing programmes" },
+      { clue: "Removed coverings or layers", answer: "STRIPPED", connection: "STRIPPED — In 2012 he was formally stripped of all seven Tour de France titles" },
+      { clue: "Sworn document used as legal evidence", answer: "AFFIDAVIT", connection: "AFFIDAVIT — Former teammates provided affidavits detailing the doping practices" },
+    ],
+    anagram: { letters:["N","G","I","P","D","O"], answer:"DOPING", clue:"Use of banned substances in sport" },
+    quote: `On this day in 2012, Lance Armstrong was officially stripped of his seven Tour de France victories after the USADA investigation exposed a long‑running doping programme
+🔗 https://en.wikipedia.org/wiki/Lance_Armstrong`,
+  },
+
+  "2026-10-23": {
+    rounds: [
+      { clue: "Capital of Vietnam", answer: "HANOI", connection: "HANOI — Hanoi was the northern centre of political power during the period surrounding the referendum" },
+      { clue: "Paper used to cast a vote", answer: "BALLOT", connection: "BALLOT — The 1955 referendum relied on ballots that were widely reported as manipulated" },
+      { clue: "State of disorder due to lack of authority", answer: "ANARCHY", connection: "ANARCHY — The vote occurred amid political instability and accusations of disorder and coercion" },
+      { clue: "Form of government without a monarch", answer: "REPUBLIC", connection: "REPUBLIC — The referendum declared the State of Vietnam a republic under Ngô Đình Diệm" },
+      { clue: "Processes where citizens choose leaders", answer: "ELECTIONS", connection: "ELECTIONS — The event was framed as elections to remove Bảo Đại and consolidate Diệm’s authority" },
+    ],
+    anagram: { letters:["G","A","I","S","N","O"], answer:"SAIGON", clue:"Former name of a major Vietnamese city" },
+    quote: `On this day in 1955, the Vietnam referendum declared Ngô Đình Diệm president, a vote widely condemned for fraud, coercion, and impossible tallies
+🔗 https://en.wikipedia.org/wiki/1955_in_the_Vietnam_War`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
