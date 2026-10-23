@@ -2318,6 +2318,19 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `On this day in 1955, the Vietnam referendum declared Ngô Đình Diệm president, a vote widely condemned for fraud, coercion, and impossible tallies
 🔗 https://en.wikipedia.org/wiki/1955_in_the_Vietnam_War`,
   },
+
+  "2026-10-24": {
+    rounds: [
+      { clue: "Girl’s name shared by a famous orphan", answer: "ANNIE", connection: "ANNIE — Annie Edson Taylor was the first person to survive going over Niagara Falls" },
+      { clue: "Phil, Denis, Alice or Elizabeth", answer: "TAYLOR", connection: "TAYLOR — Taylor was her surname, used in all accounts of her 1901 stunt" },
+      { clue: "North American border region known for thunderous waterfalls", answer: "NIAGARA", connection: "NIAGARA — She went over Niagara Falls in a custom‑made barrel on her 63rd birthday" },
+      { clue: "Occasion for cake, candles, and turning a year older", answer: "BIRTHDAY", connection: "BIRTHDAY — The stunt took place on her actual birthday, 24 October 1901" },
+      { clue: "Person who performs risky stunts", answer: "DAREDEVIL", connection: "DAREDEVIL — Taylor became a daredevil icon after surviving the plunge" },
+    ],
+    anagram: { letters:["E","B","R","A","L","R"], answer:"BARREL", clue:"Large cylindrical container for liquids" },
+    quote: `On this day in 1901, Annie Edson Taylor became the first person to survive going over Niagara Falls, completing the daredevil plunge in a padded barrel on her 63rd birthday.
+🔗 https://en.wikipedia.org/wiki/Annie_Edson_Taylor`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
