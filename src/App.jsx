@@ -2331,6 +2331,162 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `On this day in 1901, Annie Edson Taylor became the first person to survive going over Niagara Falls, completing the daredevil plunge in a padded barrel on her 63rd birthday.
 🔗 https://en.wikipedia.org/wiki/Annie_Edson_Taylor`,
   },
+
+  "2026-10-25": {
+    rounds: [
+      { clue: "City famed for museums, fashion, and the Seine", answer: "PARIS", connection: "PARIS — Picasso spent much of his career in Paris, developing Cubism and producing major works" },
+      { clue: "Southern coastal city in Spain’s Andalusia", answer: "MALAGA", connection: "MÁLAGA — He was born in Málaga, Spain, on 25 October 1881" },
+      { clue: "Child with exceptional talent or ability", answer: "PRODIGY", connection: "PRODIGY — Picasso was recognised as a prodigy, trained early by his father and painting masterworks as a teenager" },
+      { clue: "Basque location devastated in 1937", answer: "GUERNICA", connection: "GUERNICA — His painting Guernica became a global symbol of anti‑war protest and modern art" },
+      { clue: "Art form shaped from stone, clay, or metal", answer: "SCULPTURE", connection: "SCULPTURE — Picasso worked extensively in sculpture, experimenting with metal, wood, ceramics, and assemblage" },
+    ],
+    anagram: { letters:["G","L","C","A","O","E","L"], answer:"COLLAGE", clue:"Artwork made by assembling cut pieces" },
+    quote: `“Art washes away from the soul the dust of everyday life.” — Pablo Picasso, born on this day in 1881.
+🔗 https://www.wikiart.org/en/pablo-picasso`,
+  },
+
+  "2026-10-26": {
+    rounds: [
+      { clue: "Person who possesses something legally", answer: "OWNER", connection: "OWNER — Cecil Chubb was the last private owner of Stonehenge before gifting it" },
+      { clue: "Give something freely for a cause", answer: "DONATE", connection: "DONATE — He donated Stonehenge to the British Government in 1918" },
+      { clue: "Belonging to an individual rather than the state", answer: "PRIVATE", connection: "PRIVATE — Stonehenge had been privately owned until Chubb transferred it to public care" },
+      { clue: "Historic site known for cultural significance", answer: "LANDMARK", connection: "LANDMARK — Stonehenge is one of the world’s most iconic prehistoric landmarks" },
+      { clue: "Construction made of stones, beams, or materials", answer: "STRUCTURE", connection: "STRUCTURE — The monument’s ancient stone structure remains a major archaeological wonder" },
+    ],
+    anagram: { letters:["O","I","T","S","E","S","C","L"], answer:"SOLSTICE", clue:"Astronomical event marking longest or shortest day" },
+    quote: `Cecil Chubb gave Stonehenge to the British Government on 26 October 1918, ensuring the ancient monument’s preservation for future generations.
+🔗 https://www.youtube.com/watch?v=_RyqU1r1Fmk`,
+  },
+
+  "2026-10-27": {
+    rounds: [
+      { clue: "Time when darkness falls", answer: "NIGHT", connection: "NIGHT — The song’s mood and imagery echo the gospel themes of protection “through the night,” drawn from Psalm 46" },
+      { clue: "Fall suddenly or roll downwards", answer: "TUMBLE", connection: "TUMBLE — The original gospel inspiration referenced mountains being “carried into the midst of the sea,” evoking collapse and upheaval" },
+      { clue: "Term of affection for a loved one", answer: "DARLING", connection: "DARLING — “Stand by Me” is a love‑song classic, widely recognised as an affectionate plea for steadfast support" },
+      { clue: "Large natural elevation of the earth’s surface", answer: "MOUNTAIN", connection: "MOUNTAIN — The biblical source text includes imagery of mountains moving and trembling, which inspired the song’s emotional tone" },
+      { clue: "Religious song rooted in gospel tradition", answer: "SPIRITUAL", connection: "SPIRITUAL — Ben E. King based the song on the earlier spiritual “Stand by Me Father,” recorded by the Soul Stirrers" },
+    ],
+    anagram: { letters:["A","T","S","N","D"], answer:"STAND", clue:"Hold firm without falling" },
+    quote: `Ben E. King first recorded “Stand by Me” on 27 October 1960, transforming a gospel spiritual into one of the most enduring soul classics.
+🔗 https://www.youtube.com/watch?v=hwZNL7QVJjE`,
+  },
+
+  "2026-10-28": {
+    rounds: [
+      { clue: "Sudden violent impact or collision", answer: "CRASH", connection: "CRASH — Hemingway survived multiple plane crashes in Africa, injuries that shaped his later life" },
+      { clue: "Author of literary works", answer: "WRITER", connection: "WRITER — He was honoured as a writer “for his mastery of the art of narrative.”" },
+      { clue: "Tragic self‑inflicted death", answer: "SUICIDE", connection: "SUICIDE — Hemingway died by suicide in 1961 after long struggles with illness and depression" },
+      { clue: "Word used when parting or saying goodbye", answer: "FAREWELL", connection: "FAREWELL — A Farewell to Arms is one of his most famous novels" },
+      { clue: "Journey filled with challenge and discovery", answer: "ADVENTURE", connection: "ADVENTURE — His life and fiction were steeped in adventure: war, safaris, bullfighting, fishing" },
+    ],
+    anagram: { letters:["M","H","A","N","E","Y","W","G","I"], answer:"HEMINGWAY", clue:"Surname of the author of 'The Old Man and the Sea'" },
+    quote: `“There is nothing noble in being superior to your fellow men. True nobility lies in being superior to your former self.” — Hemingway won the Nobel Prize on this day in 1954.
+🔗 https://en.wikipedia.org/wiki/Ernest_Hemingway`,
+  },
+
+  "2026-10-29": {
+    rounds: [
+      { clue: "Earliest in a sequence or event", answer: "FIRST", connection: "FIRST — The ARPANET transmission on 29 October 1969 is recognised as the first internet message" },
+      { clue: "Point where something begins or starts", answer: "ORIGIN", connection: "ORIGIN — This moment marks the origin of host‑to‑host communication and the foundation of the modern internet" },
+      { clue: "Communication delivered electronically or verbally", answer: "MESSAGE", connection: "MESSAGE — The message attempted was “LOGIN,” but only “LO” was transmitted before the system crashed" },
+      { clue: "Global network linking computers worldwide", answer: "INTERNET", connection: "INTERNET — ARPANET was the precursor to today’s internet, connecting UCLA and Stanford" },
+      { clue: "Significant event marking progress or development", answer: "MILESTONE", connection: "MILESTONE — The event is widely cited as a major milestone in computing history" },
+    ],
+    anagram: { letters:["N","A","T","R","F","D","S","O"], answer:"STANFORD", clue:"California university" },
+    quote: `The first internet message — “LO” — was sent from UCLA to Stanford on 29 October 1969, marking the birth of online communication.
+🔗 https://en.wikipedia.org/wiki/ARPANET`,
+  },
+
+  "2026-10-30": {
+    rounds: [
+      { clue: "Royal rulers in a deck of cards", answer: "KINGS", connection: "KINGS — Ali and Foreman were considered kings of the heavyweight division" },
+      { clue: "Surname of Zaire’s long-ruling ex-president", answer: "MOBUTU", connection: "MOBUTU — President Mobutu hosted the event in Zaire" },
+      { clue: "Person supervising workers on a site", answer: "FOREMAN", connection: "FOREMAN — George Foreman was Ali’s undefeated opponent" },
+      { clue: "Capital of the Democratic Republic of the Congo", answer: "KINSHASA", connection: "KINSHASA — The fight took place in Kinshasa on 30 October 1974" },
+      { clue: "Wild, powerful punches thrown with full force", answer: "HAYMAKERS", connection: "HAYMAKERS — The bout featured massive power punches" },
+    ],
+    anagram: { letters:["E","A","R","T","T","E","G","S"], answer:"GREATEST", clue:"Superlative meaning “most excellent”" },
+    quote: `“I hated every minute of training, but I said, ‘Don’t quit. Suffer now and live the rest of your life as a champion.’” — Muhammad Ali, who won the Rumble in the Jungle on this day in 1974.
+🔗 https://www.youtube.com/watch?v=pqRP_5H5jmU`,
+  },
+
+  "2026-10-31": {
+    rounds: [
+      { clue: "Principle guiding ethical choices", answer: "MORAL", connection: "MORAL — Luther challenged the moral corruption he saw in Church practices" },
+      { clue: "Improve something by making changes", answer: "REFORM", connection: "REFORM — His Theses ignited the Protestant Reformation" },
+      { clue: "Transfer of money for goods or services", answer: "PAYMENT", connection: "PAYMENT — He opposed the sale of indulgences, which required payment for forgiveness" },
+      { clue: "Measure of how effective something is", answer: "EFFICACY", connection: "EFFICACY — Luther argued indulgences had no spiritual efficacy" },
+      { clue: "Place of purification before redemption", answer: "PURGATORY", connection: "PURGATORY — Indulgences claimed to reduce time in purgatory" },
+    ],
+    anagram: { letters:["Y","G","E","H","O","T","L","O"], answer:"THEOLOGY", clue:"Study of religious belief and doctrine" },
+    quote: `“Those who trust indulgence letters for salvation will be damned.” — Luther posted his Ninety‑five Theses on this day in 1517, marking the start of the Protestant Reformation
+🔗 https://en.wikipedia.org/wiki/Ninety-five_Theses`,
+  },
+
+  "2026-11-01": {
+    rounds: [
+      { clue: "Thick insulated wire carrying electricity", answer: "CABLE", connection: "CABLE — MTV Unplugged sessions removed electric cables for a raw sound" },
+      { clue: "Major award in the music industry", answer: "GRAMMY", connection: "GRAMMY — Nirvana’s Unplugged album later won a Grammy" },
+      { clue: "State of perfect peace in Buddhism", answer: "NIRVANA", connection: "NIRVANA — The band released their iconic MTV Unplugged performance in 1994" },
+      { clue: "Produced without electronic amplification", answer: "ACOUSTIC", connection: "ACOUSTIC — The entire set was performed acoustically" },
+      { clue: "Disconnected from a power source", answer: "UNPLUGGED", connection: "UNPLUGGED — Part of MTV’s Unplugged series, one of its most famous episodes" },
+    ],
+    anagram: { letters:["A","N","S","E","U","M","B"], answer:"SUNBEAM", clue:"Ray of light breaking through clouds" },
+    quote: `“They laugh at me because I’m different; I laugh at them because they’re all the same.” — Kurt Cobain. Nirvana’s MTV Unplugged performance was released on this day in 1994
+🔗 https://www.youtube.com/watch?v=1YhR5UfaAzM`,
+  },
+
+  "2026-11-02": {
+    rounds: [
+      { clue: "System of reasoning based on rules", answer: "LOGIC", connection: "LOGIC — Boole created Boolean logic, the foundation of modern computation" },
+      { clue: "Code built from zeros and ones", answer: "BINARY", connection: "BINARY — Boolean logic operates on binary values: true/false, 1/0" },
+      { clue: "Type of value that is true or false", answer: "BOOLEAN", connection: "BOOLEAN — His Boolean algebra underpins digital circuits and programming" },
+      { clue: "Detailed examination of something complex", answer: "ANALYSIS", connection: "ANALYSIS — Boole applied rigorous mathematical analysis to logic" },
+      { clue: "Relating to mathematical symbols and equations", answer: "ALGEBRAIC", connection: "ALGEBRAIC — He expressed logic through algebraic structures, a revolutionary idea" },
+    ],
+    anagram: { letters:["E","O","S","P","F","S","R","R","O"], answer:"PROFESSOR", clue:"Senior academic teaching at university level" },
+    quote: `George Boole, founder of Boolean logic, was born on this day in 1815
+🔗 https://en.wikipedia.org/wiki/George_Boole`,
+  },
+
+  "2026-11-03": {
+    rounds: [
+      { clue: "Cavill, Winkler or the hoover", answer: "HENRY", connection: "HENRY — The Act declared Henry VIII the Supreme Head of the Church of England" },
+      { clue: "Correct faults through alteration", answer: "REFORM", connection: "REFORM — The Act empowered the Crown to “reform and redress all errors, heresies and abuses”" },
+      { clue: "Ultimate or most elevated", answer: "SUPREME", connection: "SUPREME — Henry was declared “the only supreme head on Earth of the Church of England”" },
+      { clue: "Worldwide branch of Christianity", answer: "CATHOLIC", connection: "CATHOLIC — The Act broke from the Catholic Church and rejected papal authority" },
+      { clue: "O'Hara, Tae or Zeta-Jones", answer: "CATHERINE", connection: "CATHERINE — Henry sought to annul his marriage to Catherine of Aragon, a key motivation behind the Act" },
+    ],
+    anagram: { letters:["C","U","C","H","R","H"], answer:"CHURCH", clue:"Place of worship for Christians" },
+    quote: `Henry VIII was declared Supreme Head of the Church of England on this day in 1534.
+🔗 https://en.wikipedia.org/wiki/Acts_of_Supremacy#Act_of_Supremacy_1534`,
+  },
+
+  "2026-11-04": {
+    rounds: [
+      { clue: "A supposed spell bringing misfortune", answer: "CURSE", connection: "CURSE — Carnarvon’s death sparked rumours of a “curse of Tutankhamun”" },
+      { clue: "Low land between mountains", answer: "VALLEY", connection: "VALLEY — The tomb was discovered in the Valley of the Kings" },
+      { clue: "Title for an ancient Egyptian ruler", answer: "PHARAOH", connection: "PHARAOH — Tutankhamun was an Eighteenth Dynasty pharaoh" },
+      { clue: "Dig out material from the ground", answer: "EXCAVATE", connection: "EXCAVATE — Carter’s team excavated the debris and uncovered the tomb entrance" },
+      { clue: "Items recovered from ancient cultures", answer: "ARTEFACTS", connection: "ARTEFACTS — Over 5,000 artefacts were found inside the tomb" },
+    ],
+    anagram: { letters:["R","B","I","A","U","L"], answer:"BURIAL", clue:"Interment of a body or remains" },
+    quote: `Tutankhamun’s tomb was uncovered on this day in 1922, revealing the only near‑intact royal burial ever found
+🔗 https://en.wikipedia.org/wiki/Discovery_of_the_tomb_of_Tutankhamun`,
+  },
+
+  "2026-11-05": {
+    rounds: [
+      { clue: "Grab hold of something suddenly", answer: "CATCH", connection: "CATCH — Garfunkel appeared in the 1970 film Catch‑22 in one of his earliest acting roles" },
+      { clue: "Person who travels on foot", answer: "WALKER", connection: "WALKER — Garfunkel is famous for his long, meditative walks across continents" },
+      { clue: "Absence of sound or noise", answer: "SILENCE", connection: "SILENCE — Refers to “The Sound of Silence,” one of Simon & Garfunkel’s breakthrough hits" },
+      { clue: "Feeling distressed or uneasy", answer: "TROUBLED", connection: "TROUBLED — Linked to “Bridge over Troubled Water,” their most acclaimed song and album title" },
+      { clue: "Musical notes blended pleasingly", answer: "HARMONIES", connection: "HARMONIES — His harmonies with Paul Simon defined their iconic sound" },
+    ],
+    anagram: { letters:["C","O","A","T","R"], answer:"ACTOR", clue:"Performer in film or theatre" },
+    quote: `“I have the feeling that in a balanced life one should die penniless. The trick is dismantling.” — Art Garfunkel, born on this day in 1941.
+🔗 https://www.youtube.com/watch?v=WrcwRt6J32o`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
