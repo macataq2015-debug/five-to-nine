@@ -2487,6 +2487,19 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `“I have the feeling that in a balanced life one should die penniless. The trick is dismantling.” — Art Garfunkel, born on this day in 1941.
 🔗 https://www.youtube.com/watch?v=WrcwRt6J32o`,
   },
+
+  "2026-11-06": {
+    rounds: [
+      { clue: "Band behind Bohemian Rhapsody", answer: "QUEEN", connection: "QUEEN — The Sex Pistols’ most famous single was “God Save the Queen”" },
+      { clue: "Decayed or spoiled", answer: "ROTTEN", connection: "ROTTEN — Johnny Rotten was the stage name of the Sex Pistols’ lead singer" },
+      { clue: "Cruel and deliberately harmful", answer: "VICIOUS", connection: "VICIOUS — Sid Vicious was the stage name of the Sex Pistols’ bassist" },
+      { clue: "What a symphony has multiple of", answer: "MOVEMENT", connection: "MOVEMENT — The Sex Pistols became the most famous band of the punk movement" },
+      { clue: "The manner in which someone acts", answer: "BEHAVIOUR", connection: "BEHAVIOUR — The Sex Pistols became notorious for their disruptive and controversial behaviour both on and off stage" },
+    ],
+    anagram: { letters:["O","P","S","I","L","T"], answer:"PISTOL", clue:"Type of gun" },
+    quote: `“Punk wasn’t about fashion. Punk was about an attitude.” The Sex Pistols played their first gig at Saint Martin’s School of Art on 6 November 1975
+🔗 https://www.youtube.com/watch?v=yqrAPOZxgzU`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
