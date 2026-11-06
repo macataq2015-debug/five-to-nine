@@ -2500,6 +2500,32 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `“Punk wasn’t about fashion. Punk was about an attitude.” The Sex Pistols played their first gig at Saint Martin’s School of Art on 6 November 1975
 🔗 https://www.youtube.com/watch?v=yqrAPOZxgzU`,
   },
+
+  "2026-11-07": {
+    rounds: [
+      { clue: "Prestigious international award", answer: "NOBEL", connection: "NOBEL — Marie Curie won Nobel Prizes in both Physics and Chemistry" },
+      { clue: "Radioactive metallic element", answer: "RADIUM", connection: "RADIUM — Marie Curie co-discovered the element radium" },
+      { clue: "Pharmacy", answer: "CHEMIST", connection: "CHEMIST — Marie Curie was one of history’s most famous chemists" },
+      { clue: "Systematic investigation and study", answer: "RESEARCH", connection: "RESEARCH — Her pioneering research transformed modern science" },
+      { clue: "Energy emitted from radioactive material", answer: "RADIATION", connection: "RADIATION — Marie Curie’s work advanced understanding of radiation and radioactivity" },
+    ],
+    anagram: { letters:["A","W","R","A","W","S"], answer:"WARSAW", clue:"Capital city of Poland" },
+    quote: `“Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.” — Marie Curie, born on this day in 1867
+🔗 https://en.wikipedia.org/wiki/Marie_Curie`,
+  },
+
+  "2026-11-08": {
+    rounds: [
+      { clue: "Determine the total number of something", answer: "COUNT", connection: "COUNT — Count Dracula is Bram Stoker’s most famous creation" },
+      { clue: "Relating to a prevalent style of medieval architecture", answer: "GOTHIC", connection: "GOTHIC — Dracula is regarded as a classic Gothic novel" },
+      { clue: "Group of three things", answer: "TRINITY", connection: "TRINITY — Bram Stoker graduated from Trinity College Dublin" },
+      { clue: "Cutting from a newspaper", answer: "CLIPPING", connection: "CLIPPING — Dracula is partly told through newspaper clippings" },
+      { clue: "Confined to bed through illness", answer: "BEDRIDDEN", connection: "BEDRIDDEN — Stoker suffered a lengthy childhood illness that left him bedridden" },
+    ],
+    anagram: { letters:["C","A","U","D","L","A","R"], answer:"DRACULA", clue:"Famous vampire novel" },
+    quote: `“How blessed are some people, whose lives have no fears, no dreads; to whom sleep is a blessing that comes nightly, and brings nothing but sweet dreams.” A line from Dracula. Bram Stoker was born on this day in 1847.
+🔗 https://en.wikipedia.org/wiki/Bram_Stoker`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
