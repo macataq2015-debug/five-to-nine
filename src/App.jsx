@@ -2526,6 +2526,19 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `“How blessed are some people, whose lives have no fears, no dreads; to whom sleep is a blessing that comes nightly, and brings nothing but sweet dreams.” A line from Dracula. Bram Stoker was born on this day in 1847.
 🔗 https://en.wikipedia.org/wiki/Bram_Stoker`,
   },
+
+  "2026-11-09": {
+    rounds: [
+      { clue: "Watcher responsible for security", answer: "GUARD", connection: "GUARD — Border guards were a defining feature of the Berlin Wall" },
+      { clue: "German capital city", answer: "BERLIN", connection: "BERLIN — The Wall divided East and West Berlin until 1989" },
+      { clue: "A hanging drape or stage screen", answer: "CURTAIN", connection: "CURTAIN — Refers to the Iron Curtain that separated Eastern and Western Europe" },
+      { clue: "Hard building substance made from cement", answer: "CONCRETE", connection: "CONCRETE — The Berlin Wall was primarily constructed from concrete" },
+      { clue: "Protected by defensive structures", answer: "FORTIFIED", connection: "FORTIFIED — The border system was heavily fortified during the Cold War" },
+    ],
+    anagram: { letters:["E","B","R","O","R","D"], answer:"BORDER", clue:"Frontier between neighbouring countries" },
+    quote: `The opening of border crossings in Berlin on this day in 1989 became one of the defining moments in the end of the Cold War.
+🔗 https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
