@@ -2539,6 +2539,19 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `The opening of border crossings in Berlin on this day in 1989 became one of the defining moments in the end of the Cold War.
 🔗 https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall`,
   },
+
+  "2026-11-10": {
+    rounds: [
+      { clue: "Numerical tally of people, votes or objects", answer: "COUNT", connection: "COUNT — Count von Count became one of Sesame Street’s most memorable educational characters" },
+      { clue: "Common urban thoroughfare", answer: "STREET", connection: "STREET — The programme’s title is Sesame Street" },
+      { clue: "Frightening creature often found in myths and fiction", answer: "MONSTER", connection: "MONSTER — Cookie Monster and several other popular characters are monsters" },
+      { clue: "Performance art involving controlled figures", answer: "PUPPETRY", connection: "PUPPETRY — Sesame Street is renowned for its Muppet puppetry" },
+      { clue: "Technique using moving drawings", answer: "ANIMATION", connection: "ANIMATION — Animated segments were a regular feature of the series" },
+    ],
+    anagram: { letters:["M","S","S","E","E","A"], answer:"SESAME", clue:"Seeds that sometimes top burger buns" },
+    quote: `Sesame Street premiered on this day in 1969, launching one of the most influential children’s television programmes ever created.
+🔗 https://www.youtube.com/watch?v=KrsIX-OajaY`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
