@@ -2552,6 +2552,71 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `Sesame Street premiered on this day in 1969, launching one of the most influential children’s television programmes ever created.
 🔗 https://www.youtube.com/watch?v=KrsIX-OajaY`,
   },
+
+  "2026-11-11": {
+    rounds: [
+      { clue: "Leading position in a queue", answer: "FRONT", connection: "FRONT — Fighting ceased on the Western Front on 11 November 1918" },
+      { clue: "Military manoeuvre attacking from two sides", answer: "PINCER", connection: "PINCER — Pincer tactics were used during major WWI offensives" },
+      { clue: "Largest country in Central Europe by population", answer: "GERMANY", connection: "GERMANY — Germany signed the Armistice ending the war" },
+      { clue: "Relating to an emperor or empire", answer: "IMPERIAL", connection: "IMPERIAL — Imperial Germany collapsed shortly before the Armistice" },
+      { clue: "Formal agreement to stop fighting", answer: "ARMISTICE", connection: "ARMISTICE — The Armistice ended hostilities in World War I" },
+    ],
+    anagram: { letters:["T","T","E","N","N","E","E"], answer:"ENTENTE", clue:"Allied wartime partnership" },
+    quote: `“The eleventh hour of the eleventh day of the eleventh month.” World War One ended on this day in 1918
+🔗 https://en.wikipedia.org/wiki/Armistice_of_11_November_1918`,
+  },
+
+  "2026-11-12": {
+    rounds: [
+      { clue: "Elegance in movement", answer: "GRACE", connection: "GRACE — Nadia Comăneci was renowned for her graceful routines" },
+      { clue: "Type of bars used in gymnastics", answer: "UNEVEN", connection: "UNEVEN — She won Olympic gold on the uneven bars" },
+      { clue: "Competitor in floor and vault events", answer: "GYMNAST", connection: "GYMNAST — Nadia Comăneci became one of the world’s most famous gymnasts" },
+      { clue: "Quebec metropolis", answer: "MONTREAL", connection: "MONTREAL — She scored the first Olympic perfect 10 at the 1976 Montreal Games" },
+      { clue: "Largest city in Romania", answer: "BUCHAREST", connection: "BUCHAREST — Romania’s capital city is where Comăneci went to university" },
+    ],
+    anagram: { letters:["T","C","E","F","R","P","E"], answer:"PERFECT", clue:"Flawless" },
+    quote: `Nadia Comăneci was born on this day in 1961. She was the first gymnast to score a perfect 10 at the Olympics.
+🔗 https://www.youtube.com/watch?v=Yi_5xbd5xdE`,
+  },
+
+  "2026-11-13": {
+    rounds: [
+      { clue: "Pacific island nation between Fiji and Tonga", answer: "SAMOA", connection: "SAMOA — Stevenson spent his final years living in Samoa" },
+      { clue: "Chemical element with symbol Ag", answer: "SILVER", connection: "SILVER — Long John Silver is a principal character in Treasure Island" },
+      { clue: "Unusual or out of the ordinary", answer: "STRANGE", connection: "STRANGE — Relates to The Strange Case of Dr Jekyll and Mr Hyde" },
+      { clue: "Something valuable hidden or discovered", answer: "TREASURE", connection: "TREASURE — Treasure Island is Stevenson’s most famous novel" },
+      { clue: "Forced to go somewhere against one’s will", answer: "KIDNAPPED", connection: "KIDNAPPED — Kidnapped is another of Stevenson’s best-known novels" },
+    ],
+    anagram: { letters:["K","J","L","E","Y","L"], answer:"JEKYLL", clue:"What doctor and Mr Hyde?" },
+    quote: `“Don’t judge each day by the harvest you reap but by the seeds that you plant.” — Robert Louis Stevenson, born on this day in 1850. He was the famous author of Treasure Island, Kidnapped and Dr Jekyll and Mr Hyde.
+🔗 https://en.wikipedia.org/wiki/Robert_Louis_Stevenson`,
+  },
+
+  "2026-11-14": {
+    rounds: [
+      { clue: "Liquid essential for life", answer: "WATER", connection: "WATER — Monet’s most famous works feature water, including his Water Lilies series" },
+      { clue: "French first name used in a popular AI model", answer: "CLAUDE", connection: "CLAUDE — Claude was Monet’s first name" },
+      { clue: "Creator of visual art on canvas", answer: "PAINTER", connection: "PAINTER — Monet was one of the most influential painters in art history" },
+      { clue: "Historic region in northwestern France", answer: "NORMANDY", connection: "NORMANDY — Monet was born in Paris but grew up in Le Havre, Normandy" },
+      { clue: "Artistic movement associated with breaking traditional styles", answer: "MODERNISM", connection: "MODERNISM — Monet’s Impressionist style helped pave the way for modern art movements" },
+    ],
+    anagram: { letters:["T","C","T","R","A","A","C","A"], answer:"CATARACT", clue:"Condition where the lens of the eye becomes cloudy" },
+    quote: `“Color is my day-long obsession, joy and torment.” — Claude Monet, born on this day in 1840
+🔗 https://www.thecollector.com/claude-monet-paintings-to-know/`,
+  },
+
+  "2026-11-15": {
+    rounds: [
+      { clue: "Competitive contests played for sport", answer: "GAMES", connection: "GAMES — The Zappas Olympics were athletic games held in Greece before the modern Olympic Games" },
+      { clue: "Capital city of Greece", answer: "ATHENS", connection: "ATHENS — The revived Olympic events were staged in Athens" },
+      { clue: "A return to popularity or renewed interest", answer: "REVIVAL", connection: "REVIVAL — The Zappas Olympics helped revive the ancient Olympic tradition" },
+      { clue: "Act of propelling an object through the air", answer: "THROWING", connection: "THROWING — Throwing events featured in the athletic programme" },
+      { clue: "Combat sport involving grappling holds", answer: "WRESTLING", connection: "WRESTLING — Wrestling was one of the sports contested in the revived Olympics" },
+    ],
+    anagram: { letters:["I","C","S","D","S","U"], answer:"DISCUS", clue:"Athletic event involving a heavy circular object" },
+    quote: `“The important thing in life is not the triumph but the struggle; the essential thing is not to have conquered but to have fought well.” — Pierre de Coubertin. The modern revival of the Olympics started on this day in 1859
+🔗 https://en.wikipedia.org/wiki/Zappas_Olympics`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
