@@ -2617,6 +2617,19 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `“The important thing in life is not the triumph but the struggle; the essential thing is not to have conquered but to have fought well.” — Pierre de Coubertin. The modern revival of the Olympics started on this day in 1859
 🔗 https://en.wikipedia.org/wiki/Zappas_Olympics`,
   },
+
+  "2026-11-16": {
+    rounds: [
+      { clue: "The earth and everyone on it", answer: "WORLD", connection: "WORLD — UNESCO runs the World Heritage list, which protects over 1,000 sites worldwide" },
+      { clue: "Joined together as one", answer: "UNITED", connection: "UNITED — UNESCO is the United Nations’ agency for education, science and culture" },
+      { clue: "Sovereign states or countries", answer: "NATIONS", connection: "NATIONS — It was founded by 37 nations that signed its constitution in London on 16 November 1945" },
+      { clue: "Relating to the arts, customs and heritage of a society", answer: "CULTURAL", connection: "CULTURAL — The “C” in UNESCO stands for Cultural" },
+      { clue: "Variety, or a wide range of differences", answer: "DIVERSITY", connection: "DIVERSITY — UNESCO adopted the Universal Declaration on Cultural Diversity in 2001" },
+    ],
+    anagram: { letters:["C","U","E","T","O","A","D","N","I"], answer:"EDUCATION", clue:"Learning gained through schooling and teaching" },
+    quote: `“Since wars begin in the minds of men, it is in the minds of men that the defences of peace must be constructed.” This is from UNESCO’s constitution, which was signed on this day in 1945.
+🔗 https://www.unesco.org/en`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
