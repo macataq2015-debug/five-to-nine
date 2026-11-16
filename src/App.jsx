@@ -2630,6 +2630,84 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `“Since wars begin in the minds of men, it is in the minds of men that the defences of peace must be constructed.” This is from UNESCO’s constitution, which was signed on this day in 1945.
 🔗 https://www.unesco.org/en`,
   },
+
+  "2026-11-17": {
+    rounds: [
+      { clue: "Land of the pyramids and the Nile", answer: "EGYPT", connection: "EGYPT — The canal cuts through Egypt, linking the Mediterranean to the Red Sea" },
+      { clue: "Sharp, acrid taste, like strong coffee", answer: "BITTER", connection: "BITTER — Ships pass through the Great Bitter Lake, about halfway along the canal" },
+      { clue: "Narrow strip of land joining two larger landmasses", answer: "ISTHMUS", connection: "ISTHMUS — The canal was dug across the Isthmus of Suez, separating Africa from Asia" },
+      { clue: "Transport of goods by sea", answer: "SHIPPING", connection: "SHIPPING — Ships no longer had to sail around Africa, which cut thousands of miles off the route between Europe and Asia" },
+      { clue: "Large box used to carry goods", answer: "CONTAINER", connection: "CONTAINER — In 2021 the container ship Ever Given ran aground and blocked the canal for six days" },
+    ],
+    anagram: { letters:["A","N","C","L","A"], answer:"CANAL", clue:"Artificial waterway built for boats" },
+    quote: `The Suez Canal opened on this day in 1869, after ten years of construction led by Frenchman Ferdinand de Lesseps
+🔗 https://www.youtube.com/watch?v=i9p-a8YJO-o`,
+  },
+
+  "2026-11-18": {
+    rounds: [
+      { clue: "Enclosed space for sport or spectacle", answer: "ARENA", connection: "ARENA — The chariot race was filmed in a huge arena built at Cinecittà Studios in Rome" },
+      { clue: "Animals that pull a stagecoach", answer: "HORSES", connection: "HORSES — Judah’s chariot is pulled by four white Arabian horses" },
+      { clue: "Two-wheeled vehicle raced in ancient Rome", answer: "CHARIOT", connection: "CHARIOT — The nine-minute chariot race is one of the most famous action scenes in film history" },
+      { clue: "Surname of Bobby and Jack - famous soccer brothers", answer: "CHARLTON", connection: "CHARLTON — Charlton Heston won the Best Actor Oscar for the title role" },
+      { clue: "Holy city sacred to three faiths", answer: "JERUSALEM", connection: "JERUSALEM — Judah Ben-Hur is a Jewish prince from Jerusalem" },
+    ],
+    anagram: { letters:["R","P","O","L","S","Y","E"], answer:"LEPROSY", clue:"Infectious disease once feared in colonies of outcasts" },
+    quote: `Ben-Hur premiered on this day in 1959 and went on to win a record 11 Academy Awards.
+🔗 https://www.youtube.com/watch?v=NR1ZHKw09n8`,
+  },
+
+  "2026-11-19": {
+    rounds: [
+      { clue: "Workers’ organisation, or a joining together", answer: "UNION", connection: "UNION — Lincoln led the Union side in the American Civil War" },
+      { clue: "Formal address to an audience", answer: "SPEECH", connection: "SPEECH — At about 270 words and two minutes, it’s one of the most famous speeches in history" },
+      { clue: "Biblical patriarch, father of Isaac", answer: "ABRAHAM", connection: "ABRAHAM — Abraham Lincoln, the 16th US President, delivered the address" },
+      { clue: "Burial ground", answer: "CEMETERY", connection: "CEMETERY — It was given at the dedication of the Soldiers’ National Cemetery at Gettysburg" },
+      { clue: "Government by the people", answer: "DEMOCRACY", connection: "DEMOCRACY — It famously defined democracy as “government of the people, by the people, for the people”" },
+    ],
+    anagram: { letters:["T","A","T","B","E","L"], answer:"BATTLE", clue:"Armed clash between opposing forces" },
+    quote: `“…that government of the people, by the people, for the people, shall not perish from the earth.” — Abraham Lincoln delivered the Gettysburg Address on this day in 1863.
+🔗 https://en.wikipedia.org/wiki/Gettysburg_Address`,
+  },
+
+  "2026-11-20": {
+    rounds: [
+      { clue: "Test of performance", answer: "TRIAL", connection: "TRIAL — Twenty-two leading Nazis were tried before the International Military Tribunal" },
+      { clue: "Responsible for a wrong", answer: "GUILTY", connection: "GUILTY — Nineteen defendants were found guilty, and twelve were sentenced to death" },
+      { clue: "Fair treatment under the law", answer: "JUSTICE", connection: "JUSTICE — The trials set the principle that leaders can be held to account under international law" },
+      { clue: "The human race, or kindness and compassion", answer: "HUMANITY", connection: "HUMANITY — “Crimes against humanity” was introduced as a new legal charge at Nuremberg" },
+      { clue: "Destruction or slaughter on a massive scale", answer: "HOLOCAUST", connection: "HOLOCAUST — Evidence of the Holocaust was presented to the world in court" },
+    ],
+    anagram: { letters:["T","I","A","R","U","N","L","B"], answer:"TRIBUNAL", clue:"Court or panel set up to judge a particular matter" },
+    quote: `“The wrongs which we seek to condemn and punish have been so calculated, so malignant, and so devastating, that civilization cannot tolerate their being ignored, because it cannot survive their being repeated.” — US chief prosecutor Robert H. Jackson. The Nuremberg Trials began on this day in 1945.
+🔗 https://en.wikipedia.org/wiki/Nuremberg_trials`,
+  },
+
+  "2026-11-21": {
+    rounds: [
+      { clue: "Push or pull that changes an object’s motion", answer: "FORCE", connection: "FORCE — Relativity changed how physicists understood force and motion at very high speeds" },
+      { clue: "The physical world and its laws", answer: "NATURE", connection: "NATURE — Einstein’s work changed our understanding of the nature of space and time" },
+      { clue: "Army officer of high rank", answer: "GENERAL", connection: "GENERAL — Einstein extended his ideas into the General Theory of Relativity in 1915" },
+      { clue: "A family member", answer: "RELATIVE", connection: "RELATIVE — Relativity shows that time and motion are relative to the observer" },
+      { clue: "Branch of physics dealing with motion and forces", answer: "MECHANICS", connection: "MECHANICS — Relativity overturned parts of Newton’s classical mechanics" },
+    ],
+    anagram: { letters:["A","G","V","I","R","T","Y"], answer:"GRAVITY", clue:"Force that keeps our feet on the ground" },
+    quote: `On this day in 1905, Albert Einstein published the paper that introduced E = mc², showing that mass and energy are equivalent.
+🔗 https://www.youtube.com/watch?v=TgH9KXEQ0YU`,
+  },
+
+  "2026-11-22": {
+    rounds: [
+      { clue: "Lone Star State", answer: "TEXAS", connection: "TEXAS — Kennedy was shot in Dealey Plaza, Dallas, Texas" },
+      { clue: "Marksman who shoots from a hidden position", answer: "SNIPER", connection: "SNIPER — Lee Harvey Oswald fired from a sixth-floor window of the Texas School Book Depository" },
+      { clue: "Sound or wound from a fired weapon", answer: "GUNSHOT", connection: "GUNSHOT — The Warren Commission concluded that three shots were fired" },
+      { clue: "Ideas proposed to explain something", answer: "THEORIES", connection: "THEORIES — The killing has inspired countless conspiracy theories ever since" },
+      { clue: "Long, luxurious chauffeur-driven car", answer: "LIMOUSINE", connection: "LIMOUSINE — JFK was riding in an open-top Lincoln Continental limousine" },
+    ],
+    anagram: { letters:["N","L","K","O","L"], answer:"KNOLL", clue:"Small rounded hill or mound" },
+    quote: `“Ask not what your country can do for you — ask what you can do for your country.” — John F. Kennedy, who was assassinated in Dallas on this day in 1963.
+🔗 https://en.wikipedia.org/wiki/Assassination_of_John_F._Kennedy`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
