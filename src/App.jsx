@@ -2708,6 +2708,19 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `“Ask not what your country can do for you — ask what you can do for your country.” — John F. Kennedy, who was assassinated in Dallas on this day in 1963.
 🔗 https://en.wikipedia.org/wiki/Assassination_of_John_F._Kennedy`,
   },
+
+  "2026-11-23": {
+    rounds: [
+      { clue: "Person who rises up against authority", answer: "REBEL", connection: "REBEL — He fought with the Regulators in New Mexico’s Lincoln County War" },
+      { clue: "Criminal on the run", answer: "OUTLAW", connection: "OUTLAW — Billy the Kid became the most famous outlaw of the Wild West" },
+      { clue: "Thief of cattle or horses", answer: "RUSTLER", connection: "RUSTLER — He was involved in cattle and horse theft across New Mexico" },
+      { clue: "Person who has escaped and is hiding", answer: "FUGITIVE", connection: "FUGITIVE — In 1881 he escaped from Lincoln County jail, killing two deputies" },
+      { clue: "Famous for something bad", answer: "NOTORIOUS", connection: "NOTORIOUS — Governor Lew Wallace put a $500 reward on his head" },
+    ],
+    anagram: { letters:["N","L","G","E","D","E"], answer:"LEGEND", clue:"Story handed down from the past; or a famous person" },
+    quote: `Billy the Kid, born Henry McCarty, is believed to have been born on this day in 1859. He was shot dead by Sheriff Pat Garrett at the age of 21
+🔗 https://www.youtube.com/watch?v=J4P3RdZDmFk&list=PLKZWLu6q09LOCvL-VvaDjTOE0e6WC2lyR&index=3`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
