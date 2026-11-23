@@ -2721,6 +2721,97 @@ Al Capone was sentenced to 11 years in federal prison on this day in 1931.
     quote: `Billy the Kid, born Henry McCarty, is believed to have been born on this day in 1859. He was shot dead by Sheriff Pat Garrett at the age of 21
 🔗 https://www.youtube.com/watch?v=J4P3RdZDmFk&list=PLKZWLu6q09LOCvL-VvaDjTOE0e6WC2lyR&index=3`,
   },
+
+  "2026-11-24": {
+    rounds: [
+      { clue: "Female monarch", answer: "QUEEN", connection: "QUEEN — Freddie Mercury was the lead singer of Queen" },
+      { clue: "Texas state capital", answer: "AUSTIN", connection: "AUSTIN — Mary Austin, his lifelong friend and former partner, inherited his London home, Garden Lodge" },
+      { clue: "Planet closest to the Sun", answer: "MERCURY", connection: "MERCURY — Born Farrokh Bulsara, he took the stage name Freddie Mercury in 1970" },
+      { clue: "Related to grand musical dramas sung on stage", answer: "OPERATIC", connection: "OPERATIC — “Bohemian Rhapsody” is famous for its operatic middle section" },
+      { clue: "Winners of a competition", answer: "CHAMPIONS", connection: "CHAMPIONS — “We Are the Champions” became one of the world’s best-known stadium anthems" },
+    ],
+    anagram: { letters:["R","N","Z","B","I","A","Z","A"], answer:"ZANZIBAR", clue:"Spice island off the coast of Tanzania" },
+    quote: `Freddie Mercury, one of the greatest voices in rock, died on this day in 1991, aged 45.
+🔗 https://www.youtube.com/watch?v=a01QQZyl-_I`,
+  },
+
+  "2026-11-25": {
+    rounds: [
+      { clue: "Not old", answer: "YOUNG", connection: "YOUNG — Neil Young was one of the star guests on the night" },
+      { clue: "Seas, lakes and rivers", answer: "WATERS", connection: "WATERS — Blues legend Muddy Waters performed “Mannish Boy”" },
+      { clue: "Hardest natural gemstone", answer: "DIAMOND", connection: "DIAMOND — Neil Diamond, a surprise guest, sang “Dry Your Eyes”" },
+      { clue: "Final goodbye", answer: "FAREWELL", connection: "FAREWELL — It was The Band’s farewell concert after 16 years on the road" },
+      { clue: "Performers of music", answer: "MUSICIANS", connection: "MUSICIANS — Bob Dylan, Joni Mitchell, Van Morrison and Eric Clapton were among the musicians on stage" },
+    ],
+    anagram: { letters:["C","E","S","R","E","S","S","O"], answer:"SCORSESE", clue:"Surname of the director of Taxi Driver and Goodfellas" },
+    quote: `The Band played their farewell concert, The Last Waltz, at San Francisco’s Winterland Ballroom on Thanksgiving Day, 25 November 1976
+🔗 https://www.youtube.com/watch?v=6dDbnwQlCek`,
+  },
+
+  "2026-11-26": {
+    rounds: [
+      { clue: "City of the Eiffel Tower", answer: "PARIS", connection: "PARIS — Rick and Ilsa fell in love in Paris before the war, remembered in “We’ll always have Paris”" },
+      { clue: "Documents, or sheets", answer: "PAPERS", connection: "PAPERS — The plot turns on two stolen letters of transit, papers that guarantee escape from Casablanca" },
+      { clue: "North African country whose capital is Rabat", answer: "MOROCCO", connection: "MOROCCO — The film is set in Casablanca, Morocco, during the Second World War" },
+      { clue: "People thought to be guilty", answer: "SUSPECTS", connection: "SUSPECTS — Captain Renault’s line “Round up the usual suspects” is one of cinema’s most quoted" },
+      { clue: "Late-night venue for drinks and music", answer: "NIGHTCLUB", connection: "NIGHTCLUB — Most of the action takes place in Rick’s Café Américain, Humphrey Bogart’s nightclub" },
+    ],
+    anagram: { letters:["C","V","R","I","T","O"], answer:"VICTOR", clue:"Winner of a contest" },
+    quote: `“Here’s looking at you, kid.” Casablanca, starring Humphrey Bogart and Ingrid Bergman, premiered in New York on this day in 1942.
+🔗 https://www.youtube.com/watch?v=MF7JH_54d8c`,
+  },
+
+  "2026-11-27": {
+    rounds: [
+      { clue: "Liquid that falls as rain", answer: "WATER", connection: "WATER — “Be water, my friend” is Bruce Lee’s most famous philosophy" },
+      { clue: "Fire-breathing beast of legend", answer: "DRAGON", connection: "DRAGON — Enter the Dragon (1973) made him a global star" },
+      { clue: "Relating to war or combat", answer: "MARTIAL", connection: "MARTIAL — He founded his own martial art, Jeet Kune Do" },
+      { clue: "Magnetic personal charm", answer: "CHARISMA", connection: "CHARISMA — His screen charisma made him the first Asian-American action superstar" },
+      { clue: "Exactness and accuracy", answer: "PRECISION", connection: "PRECISION — His famous “one-inch punch” showed incredible speed and precision" },
+    ],
+    anagram: { letters:["T","E","H","O","N","R"], answer:"HORNET", clue:"Large wasp with a powerful sting" },
+    quote: `“Running water never goes stale. So you just have to keep on flowing.” — Bruce Lee, born on this day in 1940.
+🔗 https://www.youtube.com/watch?v=nzQWYHHqvIw`,
+  },
+
+  "2026-11-28": {
+    rounds: [
+      { clue: "Keyboard instrument", answer: "PIANO", connection: "PIANO — Rachmaninoff was one of the greatest pianists of his age and played the solo part himself at the premiere" },
+      { clue: "Russian capital", answer: "MOSCOW", connection: "MOSCOW — He trained at the Moscow Conservatory, graduating with its Great Gold Medal" },
+      { clue: "Of enormous size or strength", answer: "TITANIC", connection: "TITANIC — The “Rach 3” is a titanic work, often called one of the hardest piano concertos ever written" },
+      { clue: "Musical work for soloist and orchestra", answer: "CONCERTO", connection: "CONCERTO — It was his third piano concerto, written for his first tour of America" },
+      { clue: "Relating to skill and method", answer: "TECHNICAL", connection: "TECHNICAL — Its huge technical demands are famously dramatised in the 1996 film Shine" },
+    ],
+    anagram: { letters:["H","A","R","T","E","R","O","S","C"], answer:"ORCHESTRA", clue:"Large group of musicians led by a conductor" },
+    quote: `Sergei Rachmaninoff gave the world premiere of his Piano Concerto No. 3 in New York on this day in 1909
+🔗 https://www.youtube.com/watch?v=5bX_yRzCuM4`,
+  },
+
+  "2026-11-29": {
+    rounds: [
+      { clue: "Great lion of children’s fiction", answer: "ASLAN", connection: "ASLAN — The great lion Aslan is the hero of the Narnia books" },
+      { clue: "City of dreaming spires", answer: "OXFORD", connection: "OXFORD — Lewis taught English at Oxford for nearly 30 years" },
+      { clue: "Imaginative fiction with magic and other worlds", answer: "FANTASY", connection: "FANTASY — Along with his friend J.R.R. Tolkien, he helped shape modern fantasy writing" },
+      { clue: "Tall cupboard for hanging clothes", answer: "WARDROBE", connection: "WARDROBE — In The Lion, the Witch and the Wardrobe, the children reach Narnia through a wardrobe" },
+      { clue: "Body of traditional stories of gods and heroes", answer: "MYTHOLOGY", connection: "MYTHOLOGY — His love of Norse and Greek mythology inspired Narnia’s fauns, centaurs and giants" },
+    ],
+    anagram: { letters:["A","I","A","R","N","N"], answer:"NARNIA", clue:"Magical land reached through a wardrobe" },
+    quote: `“Humility is not thinking less of yourself, it’s thinking of yourself less.” C.S. Lewis, author of The Chronicles of Narnia, was born in Belfast on this day in 1898
+🔗 https://en.wikipedia.org/wiki/C._S._Lewis`,
+  },
+
+  "2026-11-30": {
+    rounds: [
+      { clue: "Long work of fiction; or new and original", answer: "NOVEL", connection: "NOVEL — Adventures of Huckleberry Finn is often called the Great American Novel" },
+      { clue: "Biblical prophet who anointed King David", answer: "SAMUEL", connection: "SAMUEL — Mark Twain was the pen name of Samuel Langhorne Clemens" },
+      { clue: "The years before becoming a man", answer: "BOYHOOD", connection: "BOYHOOD — Tom Sawyer drew on his boyhood in Hannibal, on the Mississippi River" },
+      { clue: "State where Kansas City is located", answer: "MISSOURI", connection: "MISSOURI — He was born in Florida, Missouri, and grew up in Hannibal" },
+      { clue: "Exciting or daring experience", answer: "ADVENTURE", connection: "ADVENTURE — The Adventures of Tom Sawyer and Adventures of Huckleberry Finn are his best-loved books" },
+    ],
+    anagram: { letters:["R","S","E","T","A","I"], answer:"SATIRE", clue:"Humour used to mock or criticise" },
+    quote: `“Courage is resistance to fear, mastery of fear — not absence of fear.” — Mark Twain, born on this day in 1835.
+🔗 https://en.wikipedia.org/wiki/Mark_Twain`,
+  },
 };
 
 // ─── STREAK ───────────────────────────────────────────────────────────────────
